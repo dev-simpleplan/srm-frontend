@@ -79,7 +79,7 @@ h6.font-16 {
     font-size: 16px;
 }
 p {
-    font-size: var(--bodyFont);
+    font-size: var(--baseFont);
     font-weight: 400;
     margin: 0px;
     line-height: 150%;
@@ -410,6 +410,7 @@ input:focus, textarea:focus, select:focus {
 .footer-top .footer-in {
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
 .footer-right {
     width: 80%;
@@ -541,7 +542,7 @@ input.form-control {
     line-height: 150%; /* 18px */
 }
 input.newsletter-btn {
-    padding: 8px 32px;
+    padding: 8px 45px;
     border-radius: 5px;
     background: var(--srm-orange, #CF9E69);
     border: 0px;
@@ -991,3 +992,140 @@ span.swiper-pagination-bullet{
 .srm-help-wrapper{
     margin-top: 50px;
 }
+.srm-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.srm-help-box:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-image: url(../img/srmhelp1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 0px;
+}
+
+.srm-help-box.pink:before{
+    background-image: url(../img/srmhelp1.png);
+}
+.srm-help-box.purple:before{
+    background-image: url(../img/srmhelp2.png);
+}
+.srm-help-box.orange:before{
+    background-image: url(../img/srmhelp3.png);
+}
+.srm-help-box.lightPink:before{
+    background-image: url(../img/srmhelp4.png);
+}
+.srm-help-box {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #B7557F;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.srm-help-box.pink{
+    background: #B7557F;
+}
+.srm-help-box.purple{
+    background: #49378D;
+}
+.srm-help-box.orange{
+    background: #CF9E69;
+}
+.srm-help-box.lightPink{
+    background: #CC6B93;;
+}
+.srm-help-content {
+    position: relative;
+    z-index: 10;
+}
+.heading-wrap .heading-para{
+    margin-top: 9px;
+}
+.heading-wrap .heading-para p{
+    color: var(--srm-grey, #6B6970);
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.srm-help-para{
+    margin-top: 9px;
+}
+.srm-help-para p {
+    color: var(--srm-grey, #6B6970);
+    max-width: 30ch;
+}
+.srmhelp-cta{
+    margin-top: 18px;
+}
+.secondary-cta{
+    color: var(--srm-black, #25232B);
+    font-family:var(--bodyFont);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%; /* 10.12px */
+    letter-spacing: 1.766px;
+    text-decoration-line: underline;
+}
+
+/* SRM Help Section End */
+
+/* Weekly Wisdom Section CSS start */
+section.weekly-wisdom-section {
+    position: relative;
+    padding-top: 50px;
+}
+section.weekly-wisdom-section:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-image: url(../img/weekly-overlay.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: -1;
+    background-position: bottom;
+}
+.weekly-wisdom-newsletter-wrap {
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.weekly-wisdom-newsletter-wrap input.newsletter-btn {
+    background: var(--srm-purple, #49378D);
+}
+.spiritual-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 100px;
+}
+.spiritualnum{
+    color: var(--srm-purple, #49378D);
+    text-align: center;
+    font-family: var(--headingfont);
+    font-size: 78.08px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 127.5%; /* 99.552px */
+    text-transform: capitalize;
+}
+.spiritual-coounter-wrap {
+    margin-top: 80px;
+}
+.spiritual-title h4 {
+    color: var(--srm-grey, #6B6970);
+    text-align: center;
+    text-transform: capitalize;
+}
+/* Weekly Wisdom Section CSS End */
