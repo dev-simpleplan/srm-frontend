@@ -33,3 +33,23 @@ var swiper = new Swiper(".featuredSlider", {
         }   
     });
         
+// History Slider 
+var swiper = new Swiper(".history-thumbnail", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 6,
+  freeMode: true,
+  watchSlidesProgress: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+});
+var swiper2 = new Swiper(".history-main-slide", {
+  loop: true,
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+ 
+});
