@@ -104,14 +104,47 @@
     h6 {
         font-size: 14px;
     }
-
+    .album_heading_btm{
+        width: 100%;
+    }
+    .album_name_main{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .album_img_top .album_name_img{
+        width: 50%;
+        padding-top: 50%;
+    }  
+    .album_img_top{
+        flex-direction: column;
+    }
+    .album_text{
+        margin-top: 40px;
+    }
+    .album_name_heading {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .album_heading_btm{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .related_img_item{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 /* 767 px End */
 
 
 /* 500 px Start */
 @media only screen and (max-width: 500px) {
-
+    .related_img_item{
+        grid-template-columns: repeat(2,1fr);
+    }
+.album_img_top .album_name_img{
+    width: 100%;
+    padding-top: 100%;
+} 
 
 }
 /* 500 px End */
