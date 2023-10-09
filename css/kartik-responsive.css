@@ -1,6 +1,18 @@
 /* 1500 px Start */
 @media only screen and (max-width: 1500px) {
-
+    .initiative-thumb-slider-box {
+        padding: 50px 0;
+        width: 90%;
+    }
+    .initiative-navigation {
+        padding: 30px 0;
+        width: 100%;
+        text-align: left;
+        left: 0 !important;
+        justify-content: start;
+        padding-left: 20px;
+        bottom: 40px;
+    }
 
 }
 /* 1500 px End */
