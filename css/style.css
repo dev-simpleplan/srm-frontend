@@ -1159,6 +1159,8 @@ section.weekly-wisdom-section:before {
 
 
 
+/* album section start */
+
 .album_name p {
     text-transform: capitalize;
     font-size: var(--baseFont);
@@ -1178,14 +1180,12 @@ section.weekly-wisdom-section:before {
     font-size: 48px;
   }
   .album_name_main {
-    border: 1px solid red;
     width: 66%;
     margin-left: 17%;
     margin-top: 80px;
   }
   .album_img_top {
     display: flex;
-    justify-content: space-between;
     column-gap: 39.18px;
   }
   .album_img_top .album_name_img {
@@ -1231,22 +1231,24 @@ section.weekly-wisdom-section:before {
     align-items: center;
     column-gap: 5px;
     margin-top: 10px;
+    margin-bottom: 18px;
   }
   .album_heading_btm_icon .icon {
-    width: 44%;
+    width: 30%;
     height: 0;
-    padding-top: 11%;
+    padding-top: 7%;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 7px;
   }
   .album_heading_btm_icon .album_headig_icon2 {
-    width: 30%;
-    padding-top: 10%;
+    width:22%;
+    padding-top: 7%;
   }
   .album_headig_link{
       display: flex;
       align-items: center;
+      margin-left: 15px;
   }
   .album_headig_link a {
     font-size: var(--baseFont);
@@ -1265,7 +1267,7 @@ section.weekly-wisdom-section:before {
     inset: 0;
     object-fit: cover;
   }
-  .album_para {
+  .album_text {
     margin-top: 80px;
   }
   .album_para p {
@@ -1287,7 +1289,11 @@ section.weekly-wisdom-section:before {
     color: var(--paracolor);
     font-family: var(--bodyFont);
   }
+
+  /* album section ends */
   
+
+
   /* related album start */
   
   .related_album_heading{
@@ -1310,13 +1316,14 @@ section.weekly-wisdom-section:before {
       display: grid;
       grid-template-columns: repeat(7,1fr);
       gap: 27.61px;
+      margin-top: 25px;
   }
-  .related_img_item{
-      width: 100%;
-      height: 0;
-      padding-top:100% ;
-      position: relative;
-      overflow: hidden;
+.related_img_icon{
+    width: 100%;
+    height: 0;
+    padding-top:100% ;
+    position: relative;
+    overflow: hidden;
   }
   .related_img_item img{
       width: 100%;
@@ -1324,9 +1331,10 @@ section.weekly-wisdom-section:before {
       position: absolute;
       inset: 0;
       object-fit: cover;
+      border-radius: 10px;
   }
-  .related_img_icon p{
-      margin-top: 18.6px;
+  .related_img_icon_wrapper p{
+      margin-top: 19.2px;
       font-size: 18px;
       line-height: 120%;
       color: #25232B;
