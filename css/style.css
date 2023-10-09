@@ -198,6 +198,7 @@ input:focus, textarea:focus, select:focus {
     clip-path: inset(0 0 0 0);
 }
 
+
 /* Spacer Start */
 .spacer{
     padding: 60px 0;
@@ -219,6 +220,14 @@ input:focus, textarea:focus, select:focus {
 .main-header {
     transition: 0.4s ease all;
     padding-top: 30px;
+}
+.main-header.header-active{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: 0.4s ease all;
+    height: 80px;
+    background-color: #F0E9E1;
 }
 .main-header .header-in {
     display: flex;
@@ -662,6 +671,10 @@ ul.static-link-ul li a:hover:before{
 .banner-img-wrapper {
     width:60%;
     margin-left: auto;
+    transition: 0.8s ease all;
+}
+.banner-img-wrapper.active .banner-img {
+    clip-path: inset(0% 0% 0% 0%);
 }
 .banner-img {
     position: relative;
@@ -669,6 +682,8 @@ ul.static-link-ul li a:hover:before{
     height: 0;
     overflow: hidden;
     padding-top: 90%;
+    transition: 1s ease all;
+    clip-path: inset(0% 0% 0% 100%);
 }
 .banner-img  img{
     position: absolute;
@@ -836,6 +851,15 @@ ul.static-link-ul li a:hover:before{
     left: 0;
     top: 0px;
     object-fit: cover;
+    transition: 1s ease all;
+    clip-path: inset(0% 0% 0% 100%);
+}
+.element.in-viewport .srm-exp-img img{
+    clip-path: inset(0% 0% 0% 0%);
+}
+.was-in-viewport .srm-exp-img img {
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
 }
 .srm-exp-title h2 {
     max-width: 16ch;
@@ -865,6 +889,7 @@ ul.static-link-ul li a:hover:before{
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: 0.4s ease all;
+    display: inline-block;
 }
 .custom-btn.purple{
     background: var(--srm-purple, #49378D);
@@ -1153,10 +1178,251 @@ section.weekly-wisdom-section:before {
 .history-slider-wrapper {
     margin-top: 50px;
 }
+.history-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.history-img {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: 60%;
+}
+.history-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.history-img {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: 48%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.history-content {
+    position: absolute;
+    top: 90px;
+    left: 75px;
+    width: 28%;
+    padding: 22px 36px 36px 32px;
+    border-radius: 10px;
+    background: #FDFDFD;
+}
+.history-date h6 {
+    color: var(--srm-orange, #CF9E69);
+    text-transform: capitalize;
+}
+.history-title h4 {
+    text-transform: capitalize;
+}
+.history-para {
+    margin-top: 9px;
+    max-width: 35ch;
+}
+.history-para p{
+    color: var(--srm-grey, #6B6970);
+}
+/* thumbnail slider CSS */
+.swiper.history-thumbnail{
+    padding: 0 56px;
+    margin-top: -100px;
+}
+.thumbnail-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.thumbnail-box {
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    padding-top: 60%;
+    border-radius: 5px;
+}
+.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal{
+    position: absolute;
+    bottom: 0px;
+    top: inherit;
+    margin: 0 56px;
+    overflow: hidden;
+    width: calc(100% - 112px);
+    background-color: rgba(211, 140, 44, 0.20) !important;
+}
+span.swiper-pagination-progressbar-fill{
+    background-color: #CF9E69 !important;
+    border-radius: 10px;
+}
+.swiper.history-main-slide.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
+    padding-bottom: 55px;
 
+}
 
 /* history Section CSS End */
 
+/* Initiative Section Start */
+.initiative-wrapper {
+    display: flex;
+    gap: 12px;
+}
+.swiper.initiative-slider {
+    width: 65%;
+}
+.initiative-img {
+    position: relative;
+    height: 0;
+    padding-top: 80%;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+.initiative-img img{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   object-fit: cover;
+}
+.swiper.initiative-thumb-slider {
+    width: 35%;
+    border-radius: 0px 10px 10px 0px;
+    background: #F0E9E1;
+    position: relative;
+}
+.swiper.initiative-thumb-slider:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    background-image: url(../img/srm-exp-overlay.png);
+    z-index: -1;
+    background-repeat: no-repeat;
+    bottom: 0;
+    background-size: cover;
+}
+.initiative-slider .initiative-para {
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 48px);
+    margin: 0;
+    margin: 0 24px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.initiative-slider .swiper-slide.swiper-slide-active .initiative-para {
+    opacity: 1;
+}
+.initiative-slider .initiative-para p{
+    color: #FFF;
+}
+.initiative-thumb-slider-box {
+    padding: 80px;
+    width: 80%;
+    margin: 0 auto;
+}
+.initiative-para{
+    margin-top: 26px;
+}
+.initiative-para p {
+    color: var(--srm-grey, #6B6970);
+}
+.initiative-navigation {
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    padding: 40px;
+    width: 44%;
+}
+.init-btn {
+    position: relative;
+    left: inherit;
+    right: inherit;
+    width: 42px;
+    height: 42px;
+}
+.init-btn span{
+    position: relative;
+    left: inherit;
+    right: inherit;
+    width: 42px;
+    height: 42px;
+}
+
+.init-btn:after{
+    display: none;
+}
+.init-btn.swiper-button-next {
+    transform: rotate(178deg);
+}
+
+/* Initiative Section End */
+
+/* Witness Section start */
+.witness-flex {
+    display: flex;
+    align-items: end;
+    gap: 32px;
+    position: relative;
+}
+.witness-main-img {
+    width: 55%;
+}
+.witness-profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.witness-profile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    padding-top: 120%;
+    height: 0;
+}
+.witness-info-box {
+    width: 45%;
+}
+.about-witness-img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.about-witness-img-box {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    padding-top: 50%;
+}
+.about-witness-box {
+    position: absolute;
+    width: 53%;
+    bottom: calc(100% - 63%);
+    right: 0;
+    padding: 66px 50px 50px 44px;
+    border-radius: 17.586px;
+    background: #F0E9E1;
+}
+.witness-para {
+    padding-top: 32px;
+    max-width: 65ch;
+}
+.witness-para p{
+    color: var(--srm-grey, #6B6970)
+}
+.witness-cta {
+    margin-top: 50px;
+}
+/* Witness Section End */
 
 
 /* album section start */
