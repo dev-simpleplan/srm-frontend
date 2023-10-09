@@ -1148,6 +1148,17 @@ section.weekly-wisdom-section:before {
 }
 
 /* Weekly Wisdom Section CSS End */
+
+/* history Section CSS Start */
+.history-slider-wrapper {
+    margin-top: 50px;
+}
+
+
+/* history Section CSS End */
+
+
+
 .album_name p {
     text-transform: capitalize;
     font-size: var(--baseFont);
