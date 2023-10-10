@@ -35,13 +35,50 @@
     <header class="main-header">
         <div class="container-fluid">
             <div class="header-in">
+              
                 <div class="website_logo">
+                    <div class="nav-menu">
+                        <div class=" cd-nav-trigger js-cd-nav-trigger text-replace" onclick="openNav()">
+                            <div class="navbar_toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                    <path d="M5 8.33301H24.1667" stroke="#7A7676" stroke-width="3" stroke-linecap="round"/>
+                                    <path d="M5 15.3944H24.1667" stroke="#7A7676" stroke-width="3" stroke-linecap="round"/>
+                                    <path d="M5 22.4551H24.1667" stroke="#7A7676" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                     <a href="index.html">
                         <img src="img/header-logo.svg" alt="SRM Logo">
                     </a>
                 </div>
                 <div class="navigation">
                     <div class="nav-left">
+                        <div class="nav-cross">
+                            <div class="nav-cross-btn" onclick="closeNav()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                    <path d="M1 1.28809L15.7509 16.039" stroke="#6B6970" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M15.7521 1L1.00117 15.7509" stroke="#6B6970" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="login-icon">
+                            <a href="#" class="login-btn">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                    <circle cx="22.5" cy="22.5" r="22.5" fill="white"/>
+                                    <mask id="mask0_1558_4847" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="39" height="39">
+                                    <circle cx="22.5" cy="22.5" r="18.75" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_1558_4847)">
+                                    <ellipse cx="22.5371" cy="17.4176" rx="9.29883" ry="8.94393" fill="#6B6970"/>
+                                    <rect x="9.85742" y="27.9873" width="25.3604" height="24.3925" rx="4" fill="#6B6970"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                                Login
+                            </a>
+                        </div>
                         <div class="nav_list">
                             <ul>
                                 <li class="has_subs"> 
@@ -99,8 +136,18 @@
                                 </li>
                                 <li><a href="">Contact</a></li>
                             </ul>
+                            <div class="mobile-link-list">
+                                <div class="break-link"></div>
+                                <ul class="mobile-new-link">
+                                    <li>
+                                        <a href="#" class="about-link">About Sri Guru</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="about-link">About SRM Organisation</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                       
                     </div>
                     <div class="nav-right">
                         <div class="nav-cart">
@@ -118,13 +165,7 @@
                             |
                             <a href="#" class="nav-lang nav-lang-Hindi">Hin</a>
                         </div>
-                        <div class="nav-menu">
-                            <div class=" cd-nav-trigger js-cd-nav-trigger text-replace" onclick="openNav()">
-                                <div class="navbar_toggler">
-
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -263,7 +304,9 @@
                                 <p class="trans-second" >Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                             <div class="srm-cta trans">
-                                <a href="#" class="custom-btn purple trans-third">Know more</a>
+                                <div class="trans-third">
+                                    <a href="#" class="custom-btn purple ">Know more<span class="arrow">></span></a>
+                                </div>
                             </div>
                         </div>
                         <div class="srm-exp-img trans">
@@ -358,13 +401,13 @@
                       </div>
                 </div>
                 <div class="feat-testimonial-wrap">
-                    <div class="feat-testimonial-box">
-                        <div class="feat-testimonial-title">
-                            <h2 class="font-48">“Learning what’s within is the first step to experience the infintie.”</h2>
+                    <div class="feat-testimonial-box element i-v">
+                        <div class="feat-testimonial-title trans">
+                            <h2 class="font-48 trans-first">“Learning what’s within is the first step to experience the infintie.”</h2>
                         </div>
                         <div class="feat-testimonail-br"></div>
-                        <div class="feat-testimonial-authorName">
-                            <p>sri guru</p>
+                        <div class="feat-testimonial-authorName trans">
+                            <p class="trans-second">sri guru</p>
                         </div>
                     </div>
                 </div>
@@ -462,12 +505,12 @@
             <div class="container-fluid">
                 <div class="wisdom-wrapper">
                     <div class="weekly-wisdom-wrap">
-                        <div class="heading-wrap">
-                            <div class="heading-title center">
-                                <h2>Weekly Wisdom</h2>
+                        <div class="heading-wrap element i-v">
+                            <div class="heading-title center trans">
+                                <h2 class="trans-first">Weekly Wisdom</h2>
                             </div>
-                            <div class="heading-para center">
-                                <p>The newsletter that inspires your best self— mind, body, and spirit.</p>
+                            <div class="heading-para center trans">
+                                <p class="trans-second">The newsletter that inspires your best self— mind, body, and spirit.</p>
                             </div>
                         </div>
                         <div class="weekly-wisdom-newsletter-wrap">
@@ -532,13 +575,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="weekly-testimonial-wrap">
-                        <div class="weekly-testimonial-title">
-                            <h3 class="font-26">Lorem ipsum dolor sit amet consectetur. Nec ridiculus aliquam parturient commodo in gravida enim id. 
+                    <div class="weekly-testimonial-wrap element i-v">
+                        <div class="weekly-testimonial-title trans">
+                            <h3 class="font-26 trans-first">Lorem ipsum dolor sit amet consectetur. Nec ridiculus aliquam parturient commodo in gravida enim id. 
                                 Pellentesque eget lorem id commodo habitant at amet sed. Elit consequat maecenas.</h3>
                         </div>
-                        <div class="weekly-testimonial-cta">
-                            <a href="#" class="custom-btn purple">explore srm wisdom</a>
+                        <div class="weekly-testimonial-cta trans">
+                            <a href="#" class="custom-btn purple trans-second">explore srm wisdom</a>
                         </div>
                     </div>
                 </div>
@@ -554,9 +597,9 @@
          <!-- History Section start -->
         <section class="brief-history-section">
             <div class="container-fluid">
-                <div class="heading-wrap">
-                    <div class="heading-title center">
-                        <h2>Weekly Wisdom</h2>
+                <div class="heading-wrap element i-v">
+                    <div class="heading-title center trans">
+                        <h2 class="trans-first">Weekly Wisdom</h2>
                     </div>
                 </div>
                 <div class="history-slider-wrapper">
@@ -782,41 +825,41 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="initiative-thumb-slider-box">
-                            <div class="initiative-title">
-                                <h2 class="font-48">Our Initiatives</h2>
+                            <div class="initiative-title trans">
+                                <h2 class="font-48 trans-first">Our Initiatives</h2>
                             </div>
-                            <div class="initiative-para">
-                                <p>Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="initiative-thumb-slider-box">
-                            <div class="initiative-title">
-                                <h2 class="font-48">Our Initiatives 2</h2>
-                            </div>
-                            <div class="initiative-para">
-                                <p>Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
+                            <div class="initiative-para trans">
+                                <p class="trans-second">Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div class="initiative-thumb-slider-box">
-                            <div class="initiative-title">
-                                <h2 class="font-48">Our Initiatives 3</h2>
+                            <div class="initiative-title trans">
+                                <h2 class="font-48 trans-first">Our Initiatives 2</h2>
                             </div>
-                            <div class="initiative-para">
-                                <p>Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
+                            <div class="initiative-para trans">
+                                <p class="trans-second">Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div class="initiative-thumb-slider-box">
-                            <div class="initiative-title">
-                                <h2 class="font-48">Our Initiatives 4</h2>
+                            <div class="initiative-title trans">
+                                <h2 class="font-48 trans-first">Our Initiatives 3</h2>
                             </div>
-                            <div class="initiative-para">
-                                <p>Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
+                            <div class="initiative-para trans">
+                                <p class="trans-second">Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="initiative-thumb-slider-box">
+                            <div class="initiative-title trans">
+                                <h2 class="font-48 trans-first">Our Initiatives 4</h2>
+                            </div>
+                            <div class="initiative-para trans">
+                                <p class="trans-second">Join us in person for the experience of a lifetime. Check out lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
                       </div>
@@ -847,8 +890,8 @@
                             <div class="initiative-img">
                                 <img src="img/initiative-1.png" alt="Initiative Slider 1">
                             </div>
-                            <div class="initiative-para">
-                                <p>Annadaanam: SRM provides food to 2000+ patients and their families in  
+                            <div class="initiative-para trans">
+                                <p class="trans-first">Annadaanam: SRM provides food to 2000+ patients and their families in  
                                     Govt. Hospitals on 1sr of every month.</p>
                             </div>
                            </div>
@@ -858,8 +901,8 @@
                          <div class="initiative-img">
                              <img src="img/initiative-2.png" alt="Initiative Slider ">
                          </div>
-                         <div class="initiative-para">
-                             <p>Annadaanam: SRM provides food to 2000+ patients and their families in  
+                         <div class="initiative-para trans">
+                             <p class="trans-first">Annadaanam: SRM provides food to 2000+ patients and their families in  
                                  Govt. Hospitals on 1sr of every month.</p>
                          </div>
                         </div>
@@ -869,8 +912,8 @@
                          <div class="initiative-img">
                              <img src="img/initiative-1.png" alt="Initiative Slider 1">
                          </div>
-                         <div class="initiative-para">
-                             <p>Annadaanam: SRM provides food to 2000+ patients and their families in  
+                         <div class="initiative-para trans">
+                             <p class="trans-first">Annadaanam: SRM provides food to 2000+ patients and their families in  
                                  Govt. Hospitals on 1sr of every month.</p>
                          </div>
                         </div>
@@ -880,8 +923,8 @@
                       <div class="initiative-img">
                           <img src="img/initiative-2.png" alt="Initiative Slider ">
                       </div>
-                      <div class="initiative-para">
-                          <p>Annadaanam: SRM provides food to 2000+ patients and their families in  
+                      <div class="initiative-para trans">
+                          <p class="trans-first">Annadaanam: SRM provides food to 2000+ patients and their families in  
                               Govt. Hospitals on 1sr of every month.</p>
                       </div>
                      </div>
@@ -901,24 +944,31 @@
         <!-- Witness Swaraj Start -->
         <section class="witness-section">
             <div class="container-fluid">
-                <div class="witness-wrapper">
+                <div class="witness-wrapper element i-v">
                     <div class="witness-flex">
-                        <div class="witness-main-img">
+                        <div class="witness-main-img ">
                             <div class="witness-profile">
                                 <img src="img/swaraj-profile.png" alt="Swaraj Profile">
+                            </div>
+                            <div class="wintess-mobile-section">
+                                <div class="about-witness-img">
+                                    <div class="about-witness-img-box">
+                                        <img src="img/witness-about.png" alt="Witness About">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="witness-info-box">
                             <div class="about-witness-box">
-                                <div class="witness-title">
-                                    <h2>Witness Swaraj Kriya</h2>
+                                <div class="witness-title trans">
+                                    <h2 class="trans-first">Witness Swaraj Kriya</h2>
                                 </div>
-                                <div class="witness-para">
-                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque justo erat lorem elit porta convallis. 
+                                <div class="witness-para trans">
+                                    <p class="trans-second">Lorem ipsum dolor sit amet consectetur. Pellentesque justo erat lorem elit porta convallis. 
                                         In nulla fames non et. Diam tortor pretium sit convallis. In nulla fames non et. Diam tortor pretium sit convallis.</p>
                                 </div>
-                                <div class="witness-cta">
-                                    <a href="#" class="custom-btn purple">explore srm wisdom</a>
+                                <div class="witness-cta trans">
+                                    <a href="#" class="custom-btn purple trans-third">explore srm wisdom</a>
                                 </div>
                             </div>
                             <div class="about-witness-img">
@@ -952,6 +1002,16 @@
                             <a href="index.html">
                                 <img src="img/footer-logo.svg" alt="SRM Logo">
                             </a>
+                        </div>
+                        <div class="footer-link-box">
+                            <ul class="footer-link-list">
+                                <li>
+                                    <a href="#" class="footer-about-link">Watch Sri Guru’s Talks</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-about-link">Guided Meditations</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="footer-right">
