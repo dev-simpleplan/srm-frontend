@@ -35,15 +35,56 @@
     h3.font-26{
         font-size: 24px;
     }
+    .banner-content-box {
+        width: 50%;
+    }
+    .banner-content-wrapper{
+        top: 80px;
+    }
+    .join-srm-grid {
+        gap: 58px;
+        margin: 0 0px;
+    }
+    .srm-exp-content{
+        padding-left: 50px;
+    }
+    .spiritualnum{
+        font-size: 70px;
+    }
+    .initiative-navigation {
+        padding: 0px 0;
+        bottom: 20px;
+        padding-left: 20px;
+    }
+    .initiative-thumb-slider-box {
+        padding: 20px 0;
+        width: 90%;
+    }
 
 }
 /* 1300 px End */
 
 
-
 /* 1200 px Start */
 @media only screen and (max-width: 1200px) {
-
+    .spacer {
+        padding: 50px 0;
+    }
+    .srm-help-box:before{
+        width: 100%;
+    }
+    .weekly-wisdom-newsletter-wrap {
+        width: 55%;
+    }
+    .wisdom-wrapper {
+        gap: 80px;
+    }
+    .spiritualnum{
+        font-size: 64px;
+    }
+    .spiritual-grid {
+        gap: 60px;
+    }
 
 }
 /* 1200 px End */
@@ -85,10 +126,329 @@
     h6 {
         font-size: 16px;
     }
+    .navigation{
+        justify-content: flex-end;
+    }
+    .navigation .nav-left {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+        padding-top: 0px;
+        z-index: 9999;
+        transition: 1s ease-in-out;
+        top: 0px;
+        clip-path: inset(0% 100% 0% 0%);
+        width: 50%;
+        background: #F0E9E1;
+        height: 100%;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    .main-header.header-active {
+        height: auto;
+        padding: 24px 0;
+    }
+    .nav-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .website_logo {
+        display: flex;
+        gap: 12px;
+    }
+    .navigation .nav-left.active{
+        clip-path: inset(0 0 0 0%);
+    }
+    .nav_list ul{
+        flex-direction: column;
+        align-items:start;
+    }
+    .nav-cross{
+        display: block;
+        position: relative;
+        padding-top: 20px;
+        text-align: right;
+    }
+    .login-icon{
+        display: block;
+    }
+    .login-btn {
+        font-size: 20px;
+        color: var(--srm-grey, #6B6970);
+        letter-spacing: 0.6px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav_list ul {
+        gap: 20px;
+    }
+    .nav-left .nav_list ul a {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 0px;
+    
+    }
+    .nav_list ul a span {
+        margin-left: 4px;
+        transition: 0.6s ease all;
+        transform: rotate(270deg);
+    }
+    .nav-left .nav_list ul li {
+        display: block;
+        width: 100%;
+    }
+    .nav-left .nav_list ul li:hover .nav-dropdown {
+        opacity: inherit;
+        visibility: inherit;
+        top: inherit;
+        width: inherit;
+        -webkit-transition: none;
+        animation: none;
+    }
+    .nav-dropdown{
+        position: relative;
+        box-shadow: none;
+        padding: 0px;
+        opacity: 1;
+        visibility: visible;
+        padding-left: 24px;
+        display: none;
+    }
+    .nav_list ul.nav-dropdown-list{
+        height: auto;
+    }
+    li.has_subs.active .nav-dropdown {
+        margin-top: 14px;
+    }
+    .nav-left .nav_list ul li:hover a span svg {
+        transform: none;
+    }
+    li.has_subs.active a span {
+        transform: rotate(180deg);
+    }
+    .nav-left .nav_list ul.nav-dropdown-list li a{
+        font-size: 16px;
+    }
+    .nav_list ul.nav-dropdown-list{
+        gap: 10px;
+    }
+    .mobile-link-list{
+        display: block;
+    }
+    .break-link {
+        width: 100%;
+        height: 1px;
+        background: #CF9E69;
+        margin: 30px 0 30px;
+    }
+    ul.mobile-new-link {
+        gap: 16px;
+    }
+    .nav-left .nav_list .about-link{
+        font-size: 14px;
+        color: #6B6970;
+    }
+    .height-100vh {
+        height: calc(90vh - 60px);
+        min-height: auto;
+        align-items: end;
+    }
+    .banner-content-para p{
+        font-size: 18px;
+    }
+    .about-us-section {
+        padding: 40px 20px;
+    }
+    .spacer {
+        padding: 40px 0;
+    }
+    .join-srm-box {
+        width: 27%;
+    }
+    .join-srm-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .srm-exp-img {
+        padding-top: 37%;
+    }
+    .srm-exp-content{
+        padding: 30px;
+    }
+    .srm-cta {
+        margin-top: 30px;
+    }
+    .featured-slider-wrap {
+        width: 100%;
+    }
+    .featured-video-section {
+        padding-bottom: 60px;
+    }
+    .srm-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .srm-help-box:before {
+        width: 70%;
+        right: 30px;
+        left: inherit;
+    }
+    .spiritualnum{
+        font-size: 58px;
+    }
+    .weekly-wisdom-newsletter-wrap {
+        width: 70%;
+    }
+    .spiritual-coounter-wrap {
+        margin-top: 50px;
+    }
+    .spiritual-grid {
+        gap: 10px;
+    }
+    .spiritual-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .wisdom-wrapper {
+        gap: 50px;
+    }
+    .spiritual-coounter-wrap {
+        margin-top: 30px;
+    }
+    .history-content {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+       width: 48%;  
+    }
+    .swiper.history-thumbnail {
+        margin: 0 20px;
+        padding: 0;
+        margin-top: -100px;
+    }
+    .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal{
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+    .srm-exp-flex {
+        flex-direction: column-reverse;
+    }
+    .srm-exp-content {
+        width: 100%;
+    }
+    .srm-exp-img {
+        padding-top: 56%;
+        width: 100%;
+    }
+    .initiative-wrapper {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .swiper.initiative-thumb-slider {
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .swiper.initiative-slider {
+        width:100%;
+    }
+    .initiative-thumb-slider-box {
+        padding: 50px 0 100px;
+        width: 90%;
+        margin-left: 20px;
+    }
+    .initiative-para {
+        margin-top: 10px;
+        max-width: 50ch;
+    }
+    .wintess-mobile-section{
+        display: block;
+    }
+    .witness-flex{
+        flex-direction: column;
+    }
+    .witness-profile {
+        width: 40%;
+        clip-path: none;
+        padding-top: 36%;
+    }
+    .wintess-mobile-section {
+        width: 60%;
+    }
+    .witness-main-img {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .about-witness-img-box {
+        border-radius: 20px;
+        padding-top: 62%;
+    }
+    .witness-info-box .about-witness-img {
+        display: none;
+    }
+    .witness-info-box {
+        width: 100%;
+    }
+    .about-witness-box {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        padding: 50px 40px 50px 24px;
+        border-radius: 17.586px;
+        background: #F0E9E1;
+    }
+    .witness-cta {
+        margin-top: 30px;
+    }
+    .witness-para {
+        padding-top: 15px;
+        max-width: 65ch;
+    }
+    .footer-navigation {
+        width: 95%;
+        gap: 35px;
+    }
+    .footer-right {
+       flex-direction: column;
+       align-items: end;
+        gap: 40px;
 
+    }
 }
 /* 991 px End */
 
+/* 800px  Start */
+@media only screen and (max-width: 800px) {
+    .height-100vh {
+        height: auto;
+        min-height: auto;
+        align-items: end;
+    }
+    .banner-img-wrapper {
+        width: 100%;
+        margin-left: auto;
+        transition: 0.8s ease all;
+    }
+    .banner-content-wrapper {
+        top: 0;
+        position: relative;
+        padding: 30px 0 40px;
+    }
+    .banner-content-box {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+/* 800px  End */
 
 /* 767 px Start */
 @media only screen and (max-width: 767px) {
@@ -116,14 +476,184 @@
     h6 {
         font-size: 14px;
     }
-
+    .banner-content-para p {
+        font-size: 16px;
+    }
+    .banner-content-para {
+        margin-top: 18px;
+    }
+    .about-us-wrapper {
+        gap: 24px;
+    }
+    .spacer {
+        padding: 25px 0;
+    }
+    .srm-help-box:before {
+        width: 50%;
+        right: 130px;
+    }
+    .srm-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .spiritualnum{
+        font-size: 50px;
+    }
+    .history-img {
+        padding-top: 78%;
+    }
+    .history-content {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        width: 68%;
+    }
+    .swiper.history-main-slide.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        padding-bottom: 45px;
+    }
+    .swiper.history-thumbnail {
+        margin-top: -100px;
+    }
+    .weekly-wisdom-newsletter-wrap {
+        width: 100%;
+    }
+    input.newsletter-btn {
+        padding: 8px 25px;
+    }
+    .witness-flex {
+        display: flex;
+        align-items: end;
+        gap: 10px;
+        position: relative;
+    }
+    .witness-main-img {
+        gap: 10px;
+    }
+    .about-witness-box {
+        padding: 20px 40px 30px 24px;
+    }
+    .footer-link-box {
+        display: block;
+        margin-top: 30px;
+    }
+    ul.footer-link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer-about-link {
+        color: var(--srm-white, #FDFDFD);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 127.5%;
+        text-transform: capitalize;
+    }
+    .footer-top .footer-in {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-navigation {
+        width: 100%;
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+    .footer-right {
+        align-items: start;
+        gap: 30px;
+        width: 100%;
+        margin-top: 32px;
+        padding-top: 26px;
+        border-top: 1px solid #5B46A9;
+    }
+    .social-icon-label {
+        align-items: start;
+    }
+    .newsletter-box {
+        width: 100%;
+    }
+    .footer-nav-box {
+        width: 45%;
+    }
+    ul.footer-list li a{
+        max-width: 100%;
+    }
+    .newsletter-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .static-link-ul {
+        align-items: start;
+        gap: 8px;
+    }
+    .footer-bottom {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .footer-top {
+        gap: 50px;
+    }
+    .social-icon-wrapper {
+        padding: 32px 0;
+        width: 100%;
+        border-top: 1px solid #5B46A9;
+        border-bottom: 1px solid #5B46A9;
+    }
 }
 /* 767 px End */
 
 
 /* 500 px Start */
 @media only screen and (max-width: 500px) {
-
+    .srm-help-box:before {
+        width: 60%;
+        right: 100px;
+    }
+    .srm-help-box{
+        height: 250px;
+    }
+    .spiritualnum{
+        font-size: 40px;
+    }
+    .history-img {
+        padding-top: 68%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .history-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #f0e9e1;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 20px 30px 70px 20px;
+    }
+    .swiper.history-thumbnail {
+        margin-top: -120px;
+    }
+    .swiper.history-main-slide.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        padding-bottom: 65px;
+    }
+    .navigation .nav-left{
+        width: 80%;
+    }
+    .join-srm-box {
+        width: 50%;
+    }
+    .join-srm-title p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .main-footer{
+        padding-top: 50px;
+    }
+    .footer-nav-box {
+        width: 100%;
+    }
+    .main-footer:before {
+        height: 10%;
+    }
+    
 
 }
 /* 500 px End */
@@ -131,7 +661,13 @@
 
 /* 350 px Start */
 @media only screen and (max-width: 350px) {
-
+    .srm-help-box:before {
+        width: 70%;
+        right: 30px;
+    }
+    .swiper.history-thumbnail {
+        margin-top: -100px;
+    }
 
 }
 /* 350 px End */
