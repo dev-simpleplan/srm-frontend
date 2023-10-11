@@ -553,7 +553,7 @@
     }
     .footer-navigation {
         width: 100%;
-        gap: 35px;
+        gap: 24px;
         flex-wrap: wrap;
     }
     .footer-right {
@@ -653,7 +653,18 @@
     .main-footer:before {
         height: 10%;
     }
-    
+    .footer-navigation {
+        display: none;
+    }
+    .footer-navigation.mobile-navigation {
+        display: flex;
+    }
+    ul.footer-list{
+        display: none;
+    }
+    .footer-label{
+        cursor: pointer;
+    }
 
 }
 /* 500 px End */
