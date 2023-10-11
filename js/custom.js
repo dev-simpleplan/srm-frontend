@@ -55,6 +55,9 @@ var swiper = new Swiper(".history-thumbnail", {
     },
     991: {
       slidesPerView: 6,
+    },
+    1200: {
+      slidesPerView: 8,
     }
   }
 });
@@ -163,10 +166,10 @@ if ($(window).width() > 991)
 // Banner Animation JS
    setTimeout(function() {
     $('.banner-img-wrapper').addClass('active');
-   }, 2000);
+   }, 3000);
    setTimeout(function() {
     $('.banner-content-wrapper').addClass('active');
-   }, 2300);
+   }, 3400);
   
     
 
@@ -190,7 +193,6 @@ function closeNav() {
 }
 
 $(document).ready(function(){
- 
     
   $('.has_subs a > span').click(function() {
     if($(this).parent("a").parent(".has_subs").hasClass("active")) {
@@ -210,24 +212,30 @@ $(document).ready(function(){
 
 
 // Footer accordian 
-const btns = document.querySelectorAll(".acc-btn");
 
-// fn
-function accordion() {
-  // this = the btn | icon & bg changed
-  this.classList.toggle("is-open");
+$('.mobile-navigation .footer-label').click(function(e) {
+  e.preventDefault();
+  $(this).parent().removeClass('active');
+  $(this).parent().siblings().removeClass('active');
+  var $this = $(this);
 
-  // the acc-content
-  const content = this.nextElementSibling;
+  if ($this.next().hasClass('show')) {
+      //  $this.next().removeClass('show');
+      // $this.next().slideUp(350);
+  } else {
+      $this.parent().parent().find('.footer-list').removeClass('show');
+      $this.parent().toggleClass('active');
+      $this.parent().parent().find('.footer-list').slideUp(350);
+      $this.next().toggleClass('show');
+      $this.next().slideToggle(350);
+  }
+});
 
-  // IF open, close | else open
-  if (content.style.maxHeight) content.style.maxHeight = null;
-  else content.style.maxHeight = content.scrollHeight + "px";
-}
 
-// event
-btns.forEach((el) => el.addEventListener("click", accordion));
+//loader
 
-
+setTimeout(function() {
+  $('.loader').addClass('active');
+}, 2000);
 
 
