@@ -28,12 +28,14 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/wbainner.css">
     <link rel="stylesheet" href="css/manish-responsive.css">
+    <link rel="stylesheet" href="css/blogs.css">
+    <link href="css/kartik-responsive.css" rel="stylesheet">
     <!-- CSS Ends-->
 </head>  
-<body>
+<body id="body">
 
- <!-- Header start -->
- <header class="main-header">
+  <!-- Header start -->
+  <header class="main-header">
     <div class="container-fluid">
         <div class="header-in">
           
@@ -309,9 +311,55 @@
      <!-- Realated Album Section End -->
     <!-- modal section -->
     <section class="modal_section" id="modal_section">
-        <div class="container-fluid">
-            <div class="modal_main">
-                    
+        <div class="modal_main" id="modal_main">
+            <div class="container-fluid">
+                    <div class="connect_main">
+                        <div class="connect_inner modal_inner">
+                            <div class="nav-cross modal_cross">
+                                <div class="nav-cross-btn modal_cross_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                                        <path d="M1 1.28809L15.7509 16.039" stroke="#6B6970" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M15.7521 1L1.00117 15.7509" stroke="#6B6970" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="connect_text">
+                               <p>more ways to connect</p>
+                            </div>
+                            <div class="connect_icons">
+                                 <div class="connect_item modal_item">
+                                    <div class="connect_item1 modal_item1">
+                                        <a href=""><img src="img/connect-img1.svg" alt=""></a>                                   
+                                    </div>
+                                   <p>YouTube</p>
+                                 </div>
+                                 <div class="connect_item modal_item">
+                                    <div class="connect_item1 modal_item1">
+                                        <a href=""><img src="img/connect-img2.svg" alt=""></a>                                     
+                                    </div>
+                                   <p>Spotify</p>
+                                 </div>
+                                 <div class="connect_item modal_item">
+                                    <div class="connect_item1 modal_item1">
+                                        <a href=""><img src="img/connect-img3.svg" alt=""></a>                                    
+                                    </div>
+                                   <p>Apple Podcast</p>
+                                 </div>
+                                 <div class="connect_item modal_item">
+                                    <div class="connect_item1 modal_item1">
+                                        <a href=""><img src="img/connect-img4.svg" alt=""></a>                                   
+                                    </div>
+                                   <p>Spotify</p>
+                                 </div>
+                                 <div class="connect_item modal_item">
+                                    <div class="connect_item1 modal_item1">
+                                        <a href=""><img src="img/connect-img5.svg" alt=""></a>                                      
+                                    </div>
+                                   <p>Twitter</p>
+                                 </div>                       
+                            </div>
+                        </div>
+                    </div>  
             </div>
         </div>
     </section>
@@ -320,6 +368,53 @@
      <!-- spacer -->
      <div class="spacer"></div>
      <!-- spacer -->
+    <!-- Witness Swaraj Start -->
+    <section class="witness-section">
+        <div class="container-fluid">
+            <div class="witness-wrapper element i-v">
+                <div class="witness-flex">
+                    <div class="witness-main-img ">
+                        <div class="witness-profile">
+                            <img src="img/swaraj-profile.png" alt="Swaraj Profile">
+                        </div>
+                        <div class="wintess-mobile-section">
+                            <div class="about-witness-img">
+                                <div class="about-witness-img-box">
+                                    <img src="img/witness-about.png" alt="Witness About">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="witness-info-box">
+                        <div class="about-witness-box">
+                            <div class="witness-title trans">
+                                <h2 class="trans-first">Witness Swaraj Kriya</h2>
+                            </div>
+                            <div class="witness-para trans">
+                                <p class="trans-second">Lorem ipsum dolor sit amet consectetur. Pellentesque justo erat lorem elit porta convallis. 
+                                    In nulla fames non et. Diam tortor pretium sit convallis. In nulla fames non et. Diam tortor pretium sit convallis.</p>
+                            </div>
+                            <div class="witness-cta trans">
+                                <a href="#" class="custom-btn purple trans-third">explore srm wisdom</a>
+                            </div>
+                        </div>
+                        <div class="about-witness-img">
+                            <div class="about-witness-img-box">
+                                <img src="img/witness-about.png" alt="Witness About">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Witness Swaraj End -->
+
+      <!-- spacer -->
+      <div class="spacer"></div>
+      <!-- spacer -->
+
+
       <!-- Footer start -->
       <footer class="main-footer" >
         <div class="container-fluid">
@@ -558,14 +653,24 @@
      <script>
        const modalOpener = document.querySelector(".modal_opener");
        const modalSection = document.getElementById("modal_section");
+       const modalMain = document.getElementById("modal_main");
+       const body = document.getElementById("body");
 
        modalOpener.addEventListener('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
-        modalSection.style.top ="0px";
+        // modalSection.style.top ="0px";
+        modalSection.style.visibility = "visible";
+        modalMain.style.top = "30%";
+        body.style.overflow = "hidden";
     });
     document.body.addEventListener('click',function(){
-        modalSection.style.top = "-100%";
+        event.preventDefault();
+            event.stopPropagation();
+        // modalSection.style.top = "-100%";
+        modalMain.style.top = "-100%";
+        modalSection.style.visibility = "hidden";
+        body.style.overflow = "visible";
     })
 
 
