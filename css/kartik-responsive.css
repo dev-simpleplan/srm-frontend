@@ -60,7 +60,25 @@
         padding: 20px 0;
         width: 90%;
     }
-
+    ul.featred-topic-list li a{
+        font-size: 18px;
+    }
+    .featured-topic-title p{
+        font-size: 16px;
+    }
+    .newest-talk-wrapper {
+        padding-top: 50px;
+    }
+    .play-btn {
+        bottom: 8px;
+        top: inherit;
+    }
+    .featured-topic-flex{
+        margin-top: 50px;
+    }
+    .today-read-section {
+        padding: 70px 0;
+    }
 }
 /* 1300 px End */
 
@@ -84,6 +102,18 @@
     }
     .spiritual-grid {
         gap: 60px;
+    }
+    ul.more.topic-list li a {
+        font-size: 16px;
+    }
+    ul.more.topic-list {
+        column-gap: 44px;
+        row-gap: 11px;
+    }
+    .more-topic-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
 }
@@ -219,6 +249,7 @@
         visibility: visible;
         padding-left: 24px;
         display: none;
+        margin-top: 14px;
     }
     .nav_list ul.nav-dropdown-list{
         height: auto;
@@ -426,6 +457,73 @@
     .nav-left .nav_list ul li{
         padding-right: 0px;
     }
+    ul.featred-topic-list li a {
+        font-size: 15px;
+    }
+    .wisdom-top-header-flex{
+        gap: 90px;
+    }
+    .wisdom-top-category-flex {
+        gap: 40px;
+    }
+    h3.font-32 {
+        font-size: 28px;
+    }
+    .wisdom-top-header-box {
+        padding: 50px 0 30px;
+    }
+    ul.featred-topic-list li {
+        margin-right: 7px;
+        padding-right: 7px;
+    }
+    .album-music-grid{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .today-read-wrapper {
+        margin-top: 50px;
+    }
+    .spacer-160 {
+        padding: 50px 0;
+    }
+    .related_img_item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .related_img_icon_wrapper{
+        width: calc(30%);
+        margin-bottom: 20px;
+    }
+    .album_text{
+        margin-top: 40px;
+    }
+    ul.more.topic-list {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    .talks-banner-flex{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .talks-banner-img {
+        width: 100%;
+        padding-top: 54%;
+    }
+    .talks-banner-content {
+        width: 100%;
+    }
+    .talks-banner-para p {
+        max-width: 90%;
+    }
+    .talks-banner-cta {
+        margin-top: 20px;
+    }
+    .watch-series-grid{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .watch-series-grid.grid-3{
+        grid-template-columns: repeat(2 , 1fr);
+    }
 }
 /* 991 px End */
 
@@ -448,6 +546,26 @@
     }
     .banner-content-box {
         width: 100%;
+        max-width: 100%;
+    }
+    .featured-topic-flex{
+        gap: 30px;
+    }
+    .today-read-flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .today-read-blog-box {
+        width: 100%;
+        display: flex;
+        gap: 55px;
+    }
+    .similiar-blog-box {
+        width: 100%;
+        padding: 26px;
+    }
+    ul.similiar-bog-ul li a {
+        font-size: 15px;
         max-width: 100%;
     }
 }
@@ -603,9 +721,104 @@
     .navigation .nav-left{
         transition: 0.5s ease all;
     }
+    .album-music-grid{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .wisdom-top-header-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .category-title p {
+        font-size: 15px;
+    }
+    .featured-topic-flex {
+        gap: 10px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .featured-topic-title p {
+        font-size: 14px;
+    }
+    ul.featred-topic-list li:before{
+        display: none;
+    }
+    ul.featred-topic-list li a {
+        font-size: 14px;
+        padding: 6px 16px;
+        border: 1px solid #E3AD64;
+        border-radius: 30px;
+        color: #6B6970;
+    }
+    ul.featred-topic-list li {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+    .featred-topic-list {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        scroll-snap-type: x mandatory;
+        justify-content: start;
+        overflow-x: auto;
+        gap: 8px;
+        padding: 8px 0 0px;
+        padding-bottom: 20px;
+        /* padding-right: 20px; */
+        
+    }
+    ul.featred-topic-list li {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+    .blog-content-box {
+        width: 80%;
+    }
+    .today-read-blog-box {
+        gap: 15px;
+    }
+    .spacer-160 {
+        padding: 40px 0;
+    }
+    .album_heading_btm{
+        width: 100%;
+    }
+    .album_name_main{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .album_img_top .album_name_img{
+        width: 50%;
+        padding-top: 50%;
+    }  
+    .album_img_top{
+        flex-direction: column;
+    }
+   
+    .album_name_heading {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .album_heading_btm{
+        margin-top: 10px;
+        width: 100%;
+    }
+    ul.more.topic-list li a {
+        font-size: 14px;
+    }
 }
 /* 767 px End */
 
+/* 650 px start */
+
+@media screen and (max-width:650px) {
+    .related_img_icon_wrapper{
+        width: calc(47%);
+    }
+}
+
+
+/* 650 px end */
 
 /* 500 px Start */
 @media only screen and (max-width: 500px) {
@@ -671,7 +884,68 @@
     .footer-label{
         cursor: pointer;
     }
-
+    .today-read-blog-box {
+        flex-direction: column;
+    }
+    .author-img-box {
+        width: 40%;
+    }
+    .blog-content-box {
+        width: 100%;
+    }
+    .today-read-blog-box {
+        gap: 22px;
+    }
+    .today-read-wrapper {
+        margin-top: 30px;
+    }
+    .heading-wrap.flex-box {
+        align-items: baseline;
+        gap: 17px;
+        flex-direction: column;
+    }
+    .spacer-160 {
+        padding: 30px 0;
+    }
+    .wisdom-top-header-box {
+        padding: 30px 0 15px;
+    }
+    .wisdom-bottom-content p {
+        font-size: 12px;
+    }
+    .album_img_top .album_name_img{
+        width: 100%;
+        padding-top: 100%;
+    } 
+    .related_img_icon_wrapper{
+        width: calc(100%);
+    }
+    .more-topic-wrapper {
+        width: 80%;
+    }
+    ul.more.topic-list {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .related_img_icon_wrapper p {
+        margin-top: 13px;
+        font-size: 16px;
+    }
+    .related_img_icon_wrapper {
+        width: calc(45%);
+    }
+    .related_img_item {
+        align-items: start;
+    }
+    .watch-series-grid {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 30px;
+    }
+    .watch-series-grid.grid-3 {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .more-topic-wrapper {
+        width: 100%;
+    }
 }
 /* 500 px End */
 
@@ -685,7 +959,9 @@
     .swiper.history-thumbnail {
         margin-top: -100px;
     }
-
+    .related_img_icon_wrapper {
+        width: calc(100%);
+    }
 }
 /* 350 px End */
 
