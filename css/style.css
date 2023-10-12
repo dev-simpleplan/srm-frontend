@@ -209,6 +209,15 @@ input:focus, textarea:focus, select:focus {
 .spacer{
     padding: 60px 0;
 }
+.spacer-160{
+    padding: 80px 0;
+}
+.break-point{
+    border-top: 1px solid #EFD7BD;
+}
+.spacer-80{
+    padding: 40px 0;
+}
 /* Spacer End */
 
 /* swiper custom css start */
@@ -230,6 +239,7 @@ input:focus, textarea:focus, select:focus {
     height: 100%;
     left: 0;
     right: 0;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,7 +370,9 @@ span[class^="dot-"]{
 }
 
 /* Loader Start End */
-
+.body-wrapper {
+    margin-top: 80px;
+}
 /* Header CSS Start */
 .main-header {
     transition: 0.4s ease all;
@@ -369,7 +381,8 @@ span[class^="dot-"]{
     background: linear-gradient(260deg, #FFF 1.16%, #F9F6F3 95.93%);
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 100;
+    top: 0;
 }
 
 .main-header.header-active{
@@ -468,7 +481,7 @@ span[class^="dot-"]{
 .nav_list ul a span svg {
     transition: 0.6s ease all;
 }
-.nav-left .nav_list ul li a:hover~ .nav-dropdown {
+.nav-left .nav_list ul li:hover .nav-dropdown {
     opacity: 1;
     visibility: visible;
     top: 100%;
@@ -2162,7 +2175,11 @@ ul.similiar-bog-ul li a {
 
 /* Talks By Sri Guru CSS start */
 .newest-talk-wrapper {
-    margin-top: 70px;
+    padding-top: 65px;
+    overflow: hidden;
+}
+section.talks-section {
+    overflow: hidden;
 }
 .newest-slider-wrapper {
     margin-top: 30px;
@@ -2176,11 +2193,195 @@ ul.similiar-bog-ul li a {
     overflow: unset;
 }
 .newest-slider-wrapper .swiper-wrapper{
+    /* overflow: hidden; */
+}
+.newest-slider-wrapper .swiper.featured-slider {
+    overflow: unset;
+}
+.slider-arrow-nav {
+    position: absolute;
+    top: -70px;
+    right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100px;
+    height: 34px;
+    gap: 22px;
+}
+.slider-arrow-nav .swiper-btn:after{
+    display: none;
+}
+.swiper-btn.swiper-button-prev span{
+    transform: rotate(180deg);
+
+}
+.slider-arrow-nav .swiper-btn svg path{
+    fill: var(--srmpurple);
+    transition: 0.4s ease all;
+}
+.slider-arrow-nav .swiper-btn{
+    position: relative;
+    width: 34px;
+    height: 34px;
+    display: block;
+    transition: 0.4s ease all;
+}
+.slider-arrow-nav .swiper-btn span  {
+    width:34px;
+    height: 34px;
+    display: flex;
+    transition: 0.4s ease all;
+    border: 1px solid var(--srmpurple);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.slider-arrow-nav .swiper-btn:hover span{
+    background-color: var(--srmpurple);
+}
+.slider-arrow-nav .swiper-btn svg{
+    transition: 0.4s ease all;
+}
+.slider-arrow-nav .swiper-btn svg circle{
+    transition: 0.4s ease all;
+}
+.slider-arrow-nav .swiper-btn svg path{
+    transition: 0.4s ease all;
+}
+.slider-arrow-nav .swiper-btn:hover svg circle{
+    fill: #49378D;
+}
+.slider-arrow-nav .swiper-btn:hover svg path{
+    fill: #fff;
+}
+.newsest-img {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 60%;
+    border-radius: 10px;
+}
+.newsest-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.featured-title h6 {
+    color: var(--srm-black, #25232B);
+    text-transform: capitalize;
+}
+.featured-content {
+    padding-top: 12px;
+}
+.featured-episode{
+    padding-top: 5px;
+}
+.featured-episode h6{
+    color: var(--srm-purple, #49378D);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.5%; /* 15.3px */
+    text-transform: capitalize;
+}
+/* Talks By Sri Guru CSS End */
+
+/* Tune Section Start */
+.album-music-wrap{
+    padding-top: 30px;
+}
+.album-music-grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 12px;
+}
+.album-music-box {
+    position: relative;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #F0E9E1;
     overflow: hidden;
 }
-
-
-/* Talks By Sri Guru CSS End */
+.alnum-music-label p {
+    color: var(--srm-pink, #B7557F);
+    font-family: var(--bodyFont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%;
+    letter-spacing: 1.596px;
+    text-transform: uppercase;
+}
+.alnum-music-title {
+    max-width: 40ch;
+    margin-top: 6px;
+}
+.alnum-music-author{
+    margin-top: 6px;
+}
+.alnum-music-author p{
+    color: var(--srm-grey, #6B6970);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}
+.play-btn {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    transition: 0.4s ease all;
+}
+.album-music-box .play-btn svg circle{
+    transition: 0.4s ease all;
+}
+.album-music-box .play-btn svg path{
+    transition: 0.4s ease all;
+}
+.album-music-box:hover .play-btn svg circle{
+    fill: var(--srmpurple);
+}
+.album-music-box:hover .play-btn svg path{
+    fill: #fff;
+}
+.newest-talk-wrapper .related_img_item {
+    margin: auto;
+}
+section.more-topic-section{
+    padding-bottom: 80px;
+}
+.more-topic-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+ul.more.topic-list {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 94px;
+    row-gap: 17px;
+}
+ul.more.topic-list li a{
+    color: var(--srm-grey, #6B6970);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
+.more-topic-cta{
+    margin-top: 60px;
+    text-align: center;
+}
+.more-topic-cta a{
+    display: block;
+}
+.more-topic-title{
+    text-transform: capitalize;
+}
 
  /* Wisdom Main Page End */
 
@@ -2224,8 +2425,105 @@ ul.similiar-bog-ul li a {
 .modal_cross_btn{
     cursor: pointer;
 }
-  /* modal section ends */
-=======
 
-  /* modal section ends */
 
+/* connect section start */
+.connect_section {
+    background-color: #faf7f5;
+    padding: 34.5px 0px;
+  }
+  .connect_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .connect_text p {
+    color: #cf9e69;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.615px;
+    text-transform: uppercase;
+  }
+  .connect_icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 44px;
+    text-align: center;
+    margin-top: 39px;
+  }
+  .connect_item1 {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .connect_item1 img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+  }
+  .connect_item p {
+    line-height: 120%;
+    color: var(--headingcolor);
+    margin-top: 14px;
+  }
+  /* connect section ends */
+
+  /* Wisdom talks Main CSS Start */
+.talks-banner-wrapper {
+    margin-top: 50px;
+}
+.talks-banner-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.talks-banner-content{
+    width: 40%;
+}
+.talks-banner-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.talks-banner-img {
+    width: 60%;
+    POSITION: relative;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-top: 34%;
+}
+.talks-banner-title h3 {
+    text-transform: capitalize;
+}
+.talks-banner-para {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+.talks-banner-cta {
+    margin-top: 40px;
+}
+.talks-banner-para p{
+    color: var(--srm-grey, #6B6970);
+    max-width: 56ch;
+}
+.watch-series-grid{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 22px;
+}
+.watch-series-grid.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+}
+/* Wisdom talks Main CSS End */

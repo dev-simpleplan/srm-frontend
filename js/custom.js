@@ -250,15 +250,6 @@ setTimeout(function() {
 }, 2000);
 
 
-// Newest Talks Slider
-var swiper = new Swiper(".newest-slider", {
-  slidesPerView: 3,
-  spaceBetween: 24,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
 
 
 // Scroll button offset
@@ -303,3 +294,60 @@ $(document).ready(function () {
   });
 });
   
+
+
+// Newest Talks Slider
+var swiper = new Swiper(".newest-slider", {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+
+    },
+    767: {
+      slidesPerView: 2,
+
+    },
+    800: {
+      slidesPerView: 3,
+    },
+    991:{
+      slidesPerView: 3,
+    }
+  }
+});
+
+// Featured Slider
+var swiper = new Swiper(".featured-slider", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+
+    },
+    500: {
+      slidesPerView: 2,
+
+    },
+    767: {
+      slidesPerView: 2,
+
+    },
+    800: {
+      slidesPerView: 3,
+    },
+    991:{
+      slidesPerView: 4,
+    }
+  }
+});

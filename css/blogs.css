@@ -6,7 +6,7 @@
 .blogs_main {
   margin-top: 80px;
 }
-ul li a {
+.blogs_banner ul li a {
   display: flex;
   flex-direction: column;
   font-size: var(--baseFont);
@@ -14,7 +14,7 @@ ul li a {
   color: var(--paracolor);
   text-align: center;
 }
-ul li a:hover {
+.blogs_banner ul li a:hover {
   color: var(--headingcolor);
 }
 .blogs_main {
