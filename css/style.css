@@ -234,15 +234,15 @@ input:focus, textarea:focus, select:focus {
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, rgba(78, 62, 136, 0.20) 67.02%, rgba(0, 0, 0, 0.20) 97.11%), linear-gradient(180deg, rgba(92, 69, 183, 0.20) 0%, rgba(27, 16, 64, 0.20) 20.04%), linear-gradient(180deg, #49378D 0%, #3D2C7D 50%, #49378D 100%);
-    z-index: 1000;
+    z-index: 100000;
     transition: opacity 0.8s cubic-bezier(0.82, 0, 0.36, 1),height 0.6s cubic-bezier(0.82, 0, 0.36, 1);
     flex-direction: column;
     gap: 70px;
+    overflow: hidden;
 }
 .loader.active {
     height: 0vh;
     transition: opacity 0.8s cubic-bezier(0.82, 0, 0.36, 1),height 1.2s cubic-bezier(0.82, 0, 0.36, 1) 0.2s;
-    z-index: 900;
 }
 .loader:before{
     content: "";
@@ -334,9 +334,9 @@ span[class^="dot-"]{
     transition: 0s cubic-bezier(0.82, 0, 0.36, 1) 1s;
 }
 .loader.active .loader-img{
-    transform: scale(0.8);
+    /* transform: scale(0.8); */
     /* opacity: 0; */
-    transition: 0.6s cubic-bezier(0.82, 0, 0.36, 1) 0s;
+    /* transition: 0.6s cubic-bezier(0.82, 0, 0.36, 1) 0s; */
 }
 .loader-flex-box {
     transform: scale(1);
@@ -345,18 +345,18 @@ span[class^="dot-"]{
 ;
 }
 .loader.active .loader-flex-box{
-    transform: scale(0.8);
+    /* transform: scale(0.8); */
     /* opacity: 0; */
     transition: 0.6s cubic-bezier(0.82, 0, 0.36, 1) 0s;
     
 }
 .loader.active .loader-icon{
-    width: 0;
-    height: 0;
+    /* width: 0;
+    height: 0; */
 }
 .loader.active .loader-icon svg{
-    width: 0;
-    height: 0;
+    /* width: 0;
+    height: 0; */
 }
 
 /* Loader Start End */
@@ -367,6 +367,9 @@ span[class^="dot-"]{
     padding-top: 30px;
     padding-bottom: 30px;
     background: linear-gradient(260deg, #FFF 1.16%, #F9F6F3 95.93%);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .main-header.header-active{
@@ -393,7 +396,7 @@ span[class^="dot-"]{
 .nav_list ul {
     display: flex;
     align-items: center;
-    gap: 38px;
+    /* gap: 38px; */
 }
 .navigation .nav-left {
     display: flex;   
@@ -404,6 +407,7 @@ span[class^="dot-"]{
     padding: 0 0;
     z-index: 10;
     cursor: pointer;
+    padding-right: 38px;
 }
 .nav-left .nav_list ul li:before {
     /* content: "";
@@ -424,7 +428,7 @@ span[class^="dot-"]{
     line-height: 150%;
     letter-spacing: 0.25px;
     color: #6B6970;
-    transition: 0.4s ease all;
+    transition: 0.2s ease all;
     border-radius: 2px;
     z-index: 4;
     position: relative;
@@ -454,7 +458,7 @@ span[class^="dot-"]{
     background: #F0E9E1;
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.10);
     min-width: 140px;
-    transition: 0.6s ease all;
+    transition: 0.2s ease all;
     padding: 20px 10px;
 
 }
@@ -464,7 +468,7 @@ span[class^="dot-"]{
 .nav_list ul a span svg {
     transition: 0.6s ease all;
 }
-.nav-left .nav_list ul li:hover .nav-dropdown {
+.nav-left .nav_list ul li a:hover~ .nav-dropdown {
     opacity: 1;
     visibility: visible;
     top: 100%;
@@ -721,7 +725,7 @@ input.form-control {
 input.newsletter-btn {
     padding: 8px 45px;
     border-radius: 5px;
-    background: var(--srm-orange, #CF9E69);
+    background: linear-gradient(90deg, #CF9E69 -0.02%, #CF9E69 100%);
     border: 0px;
     color: #FFF;
     text-align: center;
@@ -732,7 +736,14 @@ input.newsletter-btn {
     line-height: 150%; /* 18px */
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: 0.4s ease all;
+    position: relative;
+    transition: 0.4s ease-out;
 }
+input.newsletter-btn:hover{
+    background: linear-gradient(90deg, #CF9E69 -0.02%, #b36e25 100%);
+}
+
 .static-link-ul {
     display: flex;
     flex-direction: column;
@@ -845,10 +856,10 @@ ul.static-link-ul li a:hover:before{
 .scroll-btn-box{
     width: 90px;
     height: 90px;
-    position: fixed;
-    z-index: 110;
+    position: absolute;
+    z-index: 1;
     left: 50px;
-    bottom: 100px;
+    bottom: 50px;
     background: rgb(240, 233, 225);
     border-radius: 50%;
     animation: 2s ease 0s infinite normal none running pulse-animation;
@@ -856,8 +867,12 @@ ul.static-link-ul li a:hover:before{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    transition: 0.4s ease all;
 }
-
+/* .scroll-btn-box.factive.active {
+    opacity: 1;
+} */
 .scroll-btn-box a {
     display: flex;
     flex-direction: column;
@@ -1102,6 +1117,7 @@ ul.static-link-ul li a:hover:before{
 }
 .custom-btn {
     padding: 16px 32px;
+    padding-right: 36px;
     border-radius: 5px;
     text-align: center;
     font-size: 12px;
@@ -1112,12 +1128,36 @@ ul.static-link-ul li a:hover:before{
     text-transform: uppercase;
     transition: 0.4s ease all;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
-.custom-btn.purple:hover{
+.custom-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(270deg, #4E3A97 -0.02%, #1A0761 100%);
+    transition: 0.4s ease-out;
+    z-index: -1;
+}
+.custom-btn:hover:before{
+    width: 100%;
+}
+/* .custom-btn.purple:hover{
     background: linear-gradient(90deg, #4E3A97 -0.02%, #1A0761 100%);
-}
+} */
 .custom-btn.purple:hover span{
     opacity: 1;
+    margin-left: 5px;
+}
+.custom-btn.purple span{
+    opacity: 0;
+    transition: 0.4s ease all;
+    margin-left: -15px;
+    position: absolute;
 }
 .custom-btn.purple{
     background: var(--srm-purple, #49378D);
@@ -1151,7 +1191,11 @@ ul.static-link-ul li a:hover:before{
     background-position: bottom;
 }
 .featured-slider-wrap .swiper-wrapper{
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+.swiper.featuredSlider{
+    overflow: unset;
 }
 .featured-slider-wrap  .swiper-pagination{
     bottom: 0px;
@@ -1377,7 +1421,10 @@ section.weekly-wisdom-section:before {
     margin-top: 50px;
 }
 .weekly-wisdom-newsletter-wrap input.newsletter-btn {
-    background: var(--srm-purple, #49378D);
+    background:linear-gradient(90deg, #4E3A97 -0.02%, #49378D 100%);
+}
+.weekly-wisdom-newsletter-wrap input.newsletter-btn:hover{
+    background: linear-gradient(90deg, #4E3A97 -0.02%, #1A0761 100%);
 }
 .spiritual-grid {
     display: grid;
@@ -2112,9 +2159,32 @@ ul.similiar-bog-ul li a {
     gap: 32px;
 }
 /* read More Section CSS End */
+
+/* Talks By Sri Guru CSS start */
+.newest-talk-wrapper {
+    margin-top: 70px;
+}
+.newest-slider-wrapper {
+    margin-top: 30px;
+}
+.newest-title h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.newest-slider-wrapper .swiper.newest-slider{
+    overflow: unset;
+}
+.newest-slider-wrapper .swiper-wrapper{
+    overflow: hidden;
+}
+
+
+/* Talks By Sri Guru CSS End */
+
  /* Wisdom Main Page End */
 
-=======
+
   /* modal section start*/
   .modal_section {
     height: 100vh;

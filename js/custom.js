@@ -4,6 +4,7 @@ var swiper = new Swiper(".featuredSlider", {
   effect: 'fade',
   pagination: {
     el: ".swiper-pagination",
+    clickable: true
   },
 });
 
@@ -11,28 +12,29 @@ var swiper = new Swiper(".featuredSlider", {
 //Spiritiual Counter
         
     //Number counter
-    var section = document.querySelector('.number_sec');
-    var hasEntered = false;
+    // var section = document.querySelector('.spiritual-coounter-wrap');
+    // var hasEntered = false;
 
-    window.addEventListener('scroll', (e) => {
-        var shouldAnimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
+    // window.addEventListener('scroll', (e) => {
+    //     var shouldAnimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
 
-        if (shouldAnimate && !hasEntered) {
-        hasEntered = true;
+    //     if (shouldAnimate && !hasEntered) {
+    //     hasEntered = true;
 
-        $('.value').each(function () {
-            $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-            }, {
-            duration: 2000,
-            easing: 'swing',
-            step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-             });
-          });
-        }   
-    });
+    //     $('.value').each(function () {
+    //         $(this).prop('Counter',0).animate({
+    //         Counter: $(this).text()
+    //         }, {
+    //         duration: 2000,
+    //         easing: 'swing',
+    //         step: function (now) {
+    //                 $(this).text(Math.ceil(now));
+    //             }
+    //          });
+    //       });
+    //     }   
+    // });
+
         
 // History Slider 
 var swiper = new Swiper(".history-thumbnail", {
@@ -116,44 +118,43 @@ var swiper2 = new Swiper(".initiative-slider", {
 
 
 // header Top
-if ($(window).width() > 991)
-{
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        //$('#main-header').addClass('fixed-header');
-        $('.main-header').css({ "margin-top": "0px" });
+// if ($(window).width() > 991)
+// {
+//     var prevScrollpos = window.pageYOffset;
+//     window.onscroll = function() {
+//       var currentScrollPos = window.pageYOffset;
+//       if (prevScrollpos > currentScrollPos) {
+//         //$('#main-header').addClass('fixed-header');
+//         $('.main-header').css({ "margin-top": "0px" });
         
-      } else {
-        $('.main-header').css({ "margin-top": "-90px" });
-      }
-      prevScrollpos = currentScrollPos;
-    }
-} 
+//       } else {
+//         $('.main-header').css({ "margin-top": "-90px" });
+//       }
+//       prevScrollpos = currentScrollPos;
+//     }
+// } 
 
-if (
-navigator.userAgent.indexOf('Safari') != -1 && 
-navigator.userAgent.indexOf('Chrome') == -1 && 
-navigator.userAgent.indexOf('CriOS/') == -1
-)  { 
-if ($(window).width() > 991)
-    {
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-          var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos+2 > currentScrollPos || prevScrollpos === currentScrollPos) {
-            $('.main-header').css({ "margin-top": "0px" });
-          } else {
-            $('.main-header').css({ "margin-top": "-90px" });
-          }
-          prevScrollpos = currentScrollPos;
-        }
-    } 
-}
+// if (
+// navigator.userAgent.indexOf('Safari') != -1 && 
+// navigator.userAgent.indexOf('Chrome') == -1 && 
+// navigator.userAgent.indexOf('CriOS/') == -1
+// )  { 
+// if ($(window).width() > 991)
+//     {
+//         var prevScrollpos = window.pageYOffset;
+//         window.onscroll = function() {
+//           var currentScrollPos = window.pageYOffset;
+//           if (prevScrollpos+2 > currentScrollPos || prevScrollpos === currentScrollPos) {
+//             $('.main-header').css({ "margin-top": "0px" });
+//           } else {
+//             $('.main-header').css({ "margin-top": "-90px" });
+//           }
+//           prevScrollpos = currentScrollPos;
+//         }
+//     } 
+// }
 
 // header scroll fixed
- // Dorna header black
  $(window).scroll(function(){
   if ($(this).scrollTop() > 10) {
      $('.main-header').addClass('header-active');
@@ -161,6 +162,16 @@ if ($(window).width() > 991)
      $('.main-header').removeClass('header-active');
   }
 });
+
+// Scroll Top
+// header scroll fixed
+// $(window).scroll(function(){
+//   if ($(this).scrollTop() > 600) {
+//      $('.scroll-btn-box').addClass('active');
+//   } else {
+//      $('.scroll-btn-box').removeClass('active');
+//   }
+// });
 
 
 // Banner Animation JS
@@ -239,3 +250,56 @@ setTimeout(function() {
 }, 2000);
 
 
+// Newest Talks Slider
+var swiper = new Swiper(".newest-slider", {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+// Scroll button offset
+// function checkOffset() {
+//   if($('.scroll-btn-box').offset().top + $('.scroll-btn-box').height() 
+//                  <= $('#main-footer').offset().top - 0){
+//                         $('.scroll-btn-box').addClass('factive');
+//                   }else{
+//                         $('.scroll-btn-box').removeClass('factive');
+//                         $('.scroll-btn-box').removeClass('active');                  
+//                   }
+      
+//   if($(document).scrollTop() + window.innerHeight <= $('#main-footer').offset().top){
+//       $('.scroll-btn-box').addClass('factive'); // restore when you scroll up
+//   }
+//       else{
+//           $('.scroll-btn-box').removeClass('factive');
+//           $('.scroll-btn-box').removeClass('active');
+//       }
+
+// }
+// $(document).scroll(function() {
+//   checkOffset();
+// })
+
+
+$(document).ready(function () {
+  $('.scroll-btn-box a').on('click', function (e) {
+      // e.preventDefault();
+
+      var target = this.hash,
+          $target = $(target);
+
+     $('html, body').stop().animate({
+      'scrollTop': $target.offset().top-90
+  }, 400, 'swing', function () {
+  });
+
+      console.log(window.location);
+
+      return false;
+  });
+});
+  
