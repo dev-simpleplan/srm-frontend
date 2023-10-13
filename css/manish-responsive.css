@@ -53,7 +53,7 @@
         font-size: 32px;
     }
     h2 {
-        font-size: 32px;
+        font-size: 26px;
     }
     h2.font-48{
         font-size: 36px;
@@ -71,6 +71,18 @@
         font-size: 18px;
     }
     h6 {
+        font-size: 16px;
+    }
+    .album_name p {
+        font-size: 14px;
+    }
+    .artist_name p {
+        font-size: 16px;
+    }
+    .related_album_heading h4 {
+        font-size: 20px;
+    }
+    .related_img_icon_wrapper p {
         font-size: 16px;
     }
     .related_img_item{
@@ -117,8 +129,11 @@
     h6 {
         font-size: 14px;
     }
+    .artist_name p{
+        font-size: 14px;
+    }
     .album_heading {
-        margin-top: 25px;
+        margin-top: 15px;
     }
     .album_heading_btm{
         width: 100%;
@@ -128,11 +143,11 @@
     }
     .album_name_main{
         width: 100%;
-        margin-top: 50px;
+        margin-top: 25px;
         margin-left: 0px;
     }
     .album_text{
-        margin-top: 15px;
+        margin-top: 0px;
     }
     .album_topic_covered {
         margin-top: 15px;
