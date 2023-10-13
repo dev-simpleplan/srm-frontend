@@ -45,6 +45,9 @@ h1 {
     font-weight: 500;
     line-height: 120%;
 }
+h1.font-48{
+    font-size: 48px;
+}
 h2 {
     font-size: 40px;
     line-height: 120%;
@@ -172,24 +175,28 @@ input:focus, textarea:focus, select:focus {
     transition: 0.7s ease all;
     transition-delay: 1.1s;
 }
+.trans-five{
+    transition: 0.7s ease all;
+    transition-delay: 1.5s;
+}
 
-.trans p, .trans h1, .trans h2, .trans h3, .trans h4, .trans h5, .trans h6,  .trans a, .trans .nav-button{
+.trans p, .trans h1, .trans h2, .trans h3, .trans h4, .trans h5, .trans h6, .trans .custom-btn{
     transform: translateY(100%);
 }
 .choose-tag.trans div{
     transform: translateY(100%);
 }
-.active .trans p, .active .trans h1, .active .trans h2, .active .trans h3, .active .trans h4, .active .trans h5, .active .trans h6, .active .trans a, .active .trans .nav-button {
+.active .trans p, .active .trans h1, .active .trans h2, .active .trans h3, .active .trans h4, .active .trans h5, .active .trans h6, .active .trans .custom-btn{
     transform: translateY(0);
 }
 
 .active .choose-tag.trans div{
     transform: translateY(100%);
 }
-.element.in-viewport .trans p, .element.in-viewport .trans h1, .element.in-viewport .trans h2, .element.in-viewport .trans h3, .element.in-viewport .trans h4, .element.in-viewport .trans h5, .element.in-viewport .trans a, .element.in-viewport .trans .nav-button{
+.element.in-viewport .trans p, .element.in-viewport .trans h1, .element.in-viewport .trans h2, .element.in-viewport .trans h3, .element.in-viewport .trans h4, .element.in-viewport .trans h5, .element.in-viewport .trans h6, .element.in-viewport .trans .custom-btn{
     transform: translateY(0);
 }
-.was-in-viewport .trans p, .was-in-viewport .trans h1, .was-in-viewport .trans h2, .was-in-viewport .trans h3, .was-in-viewport .trans h4, .was-in-viewport .trans h5, .was-in-viewport .trans a, .was-in-viewport .trans .nav-button{
+.was-in-viewport .trans p, .was-in-viewport .trans h1, .was-in-viewport .trans h2, .was-in-viewport .trans h3, .was-in-viewport .trans h4, .was-in-viewport .trans h5, .was-in-viewport .trans h6, .was-in-viewport .trans .custom-btn{
     transform: translateY(0);
 }
 .was-in-viewport .our-centre-box {
@@ -1139,7 +1146,7 @@ ul.static-link-ul li a:hover:before{
     line-height: 150%;
     letter-spacing: 2px;
     text-transform: uppercase;
-    transition: 0.4s ease all;
+    /* transition: 0.4s ease all; */
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -2083,6 +2090,11 @@ ul.featred-topic-list li:last-child a{
 }
 .author-img-box {
     width: 26%;
+    transition: 1s ease all;
+    clip-path: inset(100% 0% 0% 0%);
+}
+section.today-read-section.active .author-img-box {
+    clip-path: inset(0% 0% 0% 0%);
 }
 .blog-author-img {
     position: relative;
@@ -2127,6 +2139,8 @@ ul.featred-topic-list li:last-child a{
     line-height: 120%; 
     display: flex;
     align-items: center;
+    text-transform: capitalize;
+    gap: 4px;
 }
 .cta-arrow{
     margin-left: 5px;
@@ -2537,3 +2551,114 @@ ul.more.topic-list li a{
     gap: 30px;
 }
 /* Wisdom talks Main CSS End */
+
+
+/* Wisdom Topic Main Page CSS Start */
+.wisdom-talks_section {
+    margin-top: 80px;
+}
+.spacer-160.pt-40 {
+    padding-top: 40px;
+}
+.blog-topic-wrapper {
+    margin-top: 50px;
+}
+.blog-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 95px;
+}
+.all-topic-cta .cta-arrow {
+    margin-left: 0;
+    margin-right: 4px;
+    padding-bottom: 3px;
+}
+section.wisdom-talks_section .banner-content-title {
+    margin-top: 26px;
+}
+/* Wisdom Topic Main Page CSS End */
+
+
+/* Wisdom Talks Series CSS Start */
+.breadcrumbs-list {
+    display: flex;
+    align-items: center;
+}
+.breadcrumbs-list li{
+    position: relative;
+    padding-right: 8px;
+    margin-right: 4px;
+}
+.breadcrumbs-list li:before{
+    content: "/";
+    position: absolute;
+    right: 0;
+
+
+}
+.breadcrumbs-list li a{
+    color: var(--srm-black, #25232B);
+    font-family: var(--bodyFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+    position: relative;
+    text-transform: capitalize;
+}
+.breadcrumbs-list li:last-child a{
+    font-weight: 400;
+    color: var(--srm-grey, #6B6970);
+    cursor: auto;
+}
+.breadcrumbs-list li:last-child:before{
+    display: none;
+}
+.wisdom-header-wrapper.breadcrumbs-section .wisdom-top-header-flex {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.watch-series-grid.grid-2 {
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 14px;
+}
+.featured-series-section{
+    padding-top: 80px;
+}
+.featured-series-wrapper{
+    margin-top: 50px;
+}
+.sort-by-dropdown-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sort-by-box.nav-left .nav_list ul li{
+    padding-right: 0px;
+    text-align: right;
+    padding-left: 38px;
+}
+.sort-by-box.nav-left .nav_list ul li .nav-dropdown{
+    left: inherit;
+    right: 0;
+}
+.sort-by-box.nav-left .nav_list ul li .nav-dropdown li{
+    padding-left: 0px;
+    text-align: right;
+    width: 100%;
+    justify-content: right;
+    align-items: end;
+}
+section.all-series-section .newest-talk-wrapper {
+    padding-top: 50px;
+}
+.all-series-section  .watch-series-grid{
+    gap: 25px;
+}
+.events-section .srm-experience-wrapper{
+    margin-top: 0px;
+}
+.breadcrumbs-section .wisdom-top-header-box {
+    padding-top: 20px;
+}
+/* Wisdom Talks Series CSS End */
