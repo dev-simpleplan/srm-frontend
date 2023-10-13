@@ -1,0 +1,376 @@
+/* Wisdom Talk Inner */
+
+section.video-directory {
+    padding-top: 110px;
+}
+section.video-directory .vd-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+}
+.vd-wrapper .vd-anchor{
+    color: var(--paracolor, #6B6970);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: var(--bodyFont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    text-transform: capitalize;
+}
+.vd-wrapper .vd-anchor.bold{
+    color: var(--headingcolor, #25232B);
+    font-size: var(--baseFont);
+    font-weight: 600;
+}
+.ytvs-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.ytvsh-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+.ytvsh-img{
+    position: relative;
+    width: 10%;
+    padding-top: 6%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.ytvsh-txt-con {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.ytvsh-txt-con .playlist-name{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+.ytvsh-txt-con .playlist-name a{
+    color: var(--paracolor, #6B6970);
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--bodyFont);
+    font-size: var(--baseFont);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.ytvsh-txt-con .video-title h3{
+    font-weight: 500;
+}
+section.yt-video-section{
+    padding-top: 80px;
+}
+.ytvs-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 22px;
+}
+.ytvs-content-wrapper .ytvs-left {
+    width: 68%;
+}
+.ytvs-content-wrapper .ytvs-right{
+    width: 28%;
+}
+.ytvs-content-wrapper .ytvs-left .yt-video {
+    position: relative;
+    padding-top: 56%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.ytvs-content-wrapper .ytvs-left .yt-video iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+.ytvs-content-wrapper .ytvs-left .share-thought{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 14px;
+}
+.ytvs-content-wrapper .ytvs-left .share-thought a img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+.ytvs-content-wrapper .ytvs-left .share-thought a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--srmorange);
+}
+.ytvs-content-wrapper .ytvs-left .share-thought .sm-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.ytvs-content-wrapper .ytvs-left .share-thought p{
+    color: var(--paracolor, #6B6970);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: var(--bodyFont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.ytvs-content-wrapper .ytvs-left .ytvs-txt-area{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 80ch;
+}
+.ytvs-content-wrapper .ytvs-left .ytvs-txt-area p{
+    color: var(--paracolor);
+}
+.ytvs-content-wrapper .ytvs-left .video-desp{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 62px;
+    margin-top: 40px;
+}
+.ytvs-content-wrapper .ytvs-left .video-desp .item{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.ytvs-content-wrapper .ytvs-left .video-desp .item .head{
+    color: var(--headingcolor, #25232B);
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--bodyFont);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%; /* 12.65px */
+    letter-spacing: 1.596px;
+    text-transform: uppercase;
+}
+.ytvs-content-wrapper .ytvs-left .video-desp .item .desp{
+    color: var(--paracolor);
+    font-family: var(--bodyFont);
+    font-size: var(--baseFont);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.ytvs-content-wrapper .ytvs-left .comment-plugin{
+    margin-top: 80px;
+
+}
+.ytvs-content-wrapper .ytvs-left .comment-plugin .plugin{
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    background: #F4F4F4;
+    text-align: center;
+    margin-top: 28px;
+}
+.ytvs-content-wrapper .ytvs-right .upper-playlist{
+    padding: 24px 22px;
+    border-radius: 10px;
+    background: #F0E9E1;
+    overflow: hidden;
+}
+.ytvs-content-wrapper .ytvs-right .upper-playlist .up-next{
+    color: var(--srmorange, #CF9E69);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: var(--bodyFont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: 1.33px;
+    text-transform: uppercase;
+}
+.uplc-wrapper{
+    margin-top: 26px;
+    padding-left: 26px;
+}
+.uplc-wrapper .item .pub-date-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.uplc-wrapper .item .pub-date-time .date{
+    color: var(--srm-pink, #B7557F);
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--bodyFont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%; /* 15.18px */
+    letter-spacing: 1.596px;
+    text-transform: uppercase;
+}
+.uplc-wrapper .item .pub-date-time .time{
+    color: var(--paracolor, #6B6970);
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--bodyFont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}
+.uplc-wrapper .item .vid-title{
+    margin-top: 13px;
+    max-width: 24ch;
+}
+.uplc-wrapper .item .vid-title p{
+    color: var(--headingcolor, #25232B);
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--headingfont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.5%; /* 17.85px */
+    text-transform: capitalize;
+}
+.uplc-wrapper .item .vid-desp{
+    margin-top: 16px;
+}
+.uplc-wrapper .item .vid-desp p{
+    color: var(--paracolor, #6B6970);
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}
+.uplc-wrapper .item{
+    padding-top: 14px;
+    padding-bottom: 23px;
+    border-top: 1px solid var(--srmorange);
+    position: relative;
+}
+.uplc-wrapper .item::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    top: 16px;
+    left: -25px;
+    background-image: url('../img/play.svg');
+    background-position: left top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.4s all ease;
+}
+.uplc-wrapper a:first-child .item::before{
+    top: 2px;
+}
+.uplc-wrapper .item.active::before{
+    opacity: 1;
+}
+.uplc-wrapper a:first-child .item{
+    padding-top: 0;
+    border-top: none;
+}
+.uplc-wrapper a:last-child .item{
+    padding-bottom: 0;
+}
+.ad-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+.ad-box{
+    width: 100%;
+    min-height: 320px;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+section.related-videos{
+    padding-top: 85px;
+}
+section.related-videos .rv-wrapper h4{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+section.related-videos .rv-wrapper iframe, section.related-videos .rv-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+section.related-videos .rv-wrapper .rv-frame{
+    padding-top: 55%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+section.related-videos .rv-wrapper .rv-slider{
+    margin-top: 30px;
+}
+section.related-videos .rv-wrapper .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.related-videos .rv-wrapper .nav-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+section.related-videos .rv-wrapper .nav-arrow button{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    position: relative;
+}
+section.related-videos .rv-wrapper .nav-arrow button img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Wisdom Talk Inner Ends */
