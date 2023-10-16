@@ -374,3 +374,107 @@ section.related-videos .rv-wrapper .nav-arrow button img{
 }
 
 /* Wisdom Talk Inner Ends */
+
+/* Wisdom Blog Inner */
+
+.article-topic p{
+    color: var(--paracolor, #6B6970);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--bodyFont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%; /* 15.18px */
+    letter-spacing: 1.596px;
+    text-transform: uppercase;
+}
+.topics_left_heading h3.font-32{
+    font-weight: 500;
+}
+.top-pub-date-name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    margin-top: 12px;
+}
+.top-pub-date-name .dot{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--paracolor);
+}
+.top-pub-date-name .pub-date{
+    color: var(--paracolor, #6B6970);
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--bodyFont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%; /* 15.18px */
+    letter-spacing: 1.596px;
+    text-transform: uppercase;
+}
+.top-pub-date-name .pub-name{
+    color: var(--paracolor, #6B6970);
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--bodyFont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+.blog-inner .topics_left_heading {
+    max-width: 55ch;
+}
+.blog-inner-body {
+    margin-top: 75px;
+}
+.blog-inner-body .bid-para-wrapper{
+    display: flex;
+    gap: 36px;
+    flex-direction: column;
+}
+.blog-inner-body .bid-para-wrapper p{
+    color: var(--paracolor);
+}
+.blog-inner-body .bid-para-wrapper h5{
+    color: var(--headingcolor, #25232B);
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--bodyFont);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    margin-bottom: 24px;
+}
+.blog-inner .blogs_main{
+    align-items: stretch;
+}
+.blog-inner .blogs_right_btm{
+    margin-top: 0;
+}
+.blog-inner .blogs_right{
+    width: 58%;
+}
+.blog-inner .blogs_right_btm_item1{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.blog-inner .blogs_right_btm_item1 .topics_left, .blog-inner .blogs_right_btm_item1 .topics_right{
+    width: auto;
+}
+.blog-inner ul.social-icon-list{
+    gap: 7px;
+}
+.blog-inner .social-icon-label{
+    gap: 14px;
+}
+
+/* Wisdom Blog Inner Ends */
