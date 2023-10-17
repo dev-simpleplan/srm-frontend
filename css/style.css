@@ -1867,6 +1867,7 @@ span.swiper-pagination-progressbar-fill{
       align-items: center;
       margin-left: 15px;
       cursor: pointer;
+      gap: 9px;
   }
   .album_headig_link a {
     font-size: var(--baseFont);
@@ -1876,8 +1877,9 @@ span.swiper-pagination-progressbar-fill{
 
   .album_headig_link img {
     width: auto;
-    height: 11px;
-    margin-left: 5px;
+    height: 10px;
+    margin-top: 2px;
+    /* margin-left: 5px; */
   }
   .album_heading_btm_icon .icon img {
     width: 100%;
@@ -1915,10 +1917,19 @@ span.swiper-pagination-progressbar-fill{
 
   /* related album start */
   
-  .related_album_heading{
+  .related_album_heading a{
       display: flex;
       align-items: center;
       gap: 9px;
+  }
+  .heading_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+  }
+  .latest_albums_heading{
+    gap:32px;
   }
   
   .related_album_heading h4 {
@@ -1936,6 +1947,9 @@ span.swiper-pagination-progressbar-fill{
       grid-template-columns: repeat(7,1fr);
       gap: 27.61px;
       margin-top: 25px;
+  }
+  .bhakti_main_img_item{
+    margin-top: 51.58px;
   }
 .related_img_icon{
     width: 100%;

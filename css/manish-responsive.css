@@ -82,6 +82,10 @@
     .related_album_heading h4 {
         font-size: 20px;
     }
+    .related_album_heading img{
+        height: 8px;
+        margin-top: 2px;
+    }
     .related_img_icon_wrapper p {
         font-size: 16px;
     }
@@ -97,6 +101,10 @@
     }
     .album_text{
         margin-top: 40px;
+    }
+    .album_headig_link  img{
+        height: 8px;
+        margin-top: 2px;
     }
 
 }
@@ -171,7 +179,9 @@
     .related_img_item{
         justify-content: start;
     }
-   
+    .bhakti_main_img_item{
+        margin-top:25px;
+      }
 }
 /* 767 px End */
 
@@ -204,7 +214,14 @@
 }
 /* 500 px End */
 
-
+/* 400 starts */
+@media screen and (max-width:400px) {
+    .related_album_heading img{
+        height: 8px;
+        margin-top: 4px;
+    }
+}
+/* 400 ends */
 /* 350 px Start */
 @media only screen and (max-width: 350px) {
     

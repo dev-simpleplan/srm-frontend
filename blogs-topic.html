@@ -30,9 +30,35 @@
     <link rel="stylesheet" href="css/manish-responsive.css">
     <link rel="stylesheet" href="css/blogs.css">
     <link href="css/kartik-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/anshul.css">
     <!-- CSS Ends-->
 </head>  
 <body>
+    
+ <!-- Loader Start CSS  -->
+ <div class="loader">
+    <div class="loader-img">
+        <img src="img/loader-logo.png" alt="Loader Image ">
+    </div>
+    <div class="loader-flex-box">
+        <div class="loader-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="34" viewBox="0 0 26 34" fill="none">
+                <path d="M13.0006 0.942139L0.185547 17.3872L13.0006 33.8322L25.8157 17.3872L13.0006 0.942139Z" fill="#E3B583"/>
+                <path d="M13.0003 3.83496L2.43945 17.3872L13.0003 30.9395L23.5611 17.3872L13.0003 3.83496Z" fill="#D6A570"/>
+                <path d="M13.0014 8.43726L6.02734 17.3868L13.0014 26.3362L19.9754 17.3868L13.0014 8.43726Z" fill="#CF9E69"/>
+            </svg>
+        </div>
+        <div class="loading">
+            <h6>loading
+                <span class="dot-one"> .</span>
+                <span class="dot-two"> .</span>
+                <span class="dot-three"> .</span>
+            </h6>
+        </div>
+    </div>
+</div>
+
+ <!-- Loader Start End    -->
 
    <!-- Header start -->
    <header class="main-header">
@@ -182,8 +208,16 @@
    <div class="body-wrapper">
     <section class="banner blogs_banner">
         <div class="container-fluid">
-            <div class="album_name">
-                <p>blogs <span>/topic name</span></p>
+            <div class="vd-wrapper heading_wrapper">
+                <div class="vd-item">
+                    <a href="javascript:void(0)" class="vd-anchor bold">Blogs</a>
+                </div>
+                <div class="vdi-slash">
+                    /
+                </div>
+                <div class="vd-item">
+                    <a href="javascript:void(0)" class="vd-anchor">Topic Name</a>
+                </div>
             </div>
             <div class="album_heading">
                 <h1>Blogs</h1>
@@ -224,11 +258,12 @@
                    <hr class="third_hr">
                    <div class="blogs_left_item4">
                     <p>subscribe to newsletter</p>
-                    <div class="input_field">
+                    <div class="input_field ">
                         <input type="text" placeholder="Enter your email address">
-                        <a class="custom-btn purple">subscribe</a>
+                        <a href="#" class="custom-btn purple">subscribe</a>
                     </div>
                    </div>
+                   
                    <div class="blogs_left_item5">
                     <ul>
                         <li><a href="">About Sri Guru</a></li>
@@ -596,7 +631,6 @@
             </div>
         </div>
     </section>
-   
      <!-- Body Wrapper End -->
      <!-- spacer -->
      <div class="spacer"></div>
@@ -604,53 +638,63 @@
 
      <!-- connect section start -->
      <section class="connect_section">
-         <div class="container-fluid">
-            <div class="connect_main">
-                <div class="connect_inner">                                       
-                    <div class="connect_text">
-                       <p>more ways to connect</p>
-                    </div>
-                    <div class="connect_icons">
-                         <div class="connect_item">
-                            <div class="connect_item1">
-                                <a href=""><img src="img/connect-img1.svg" alt=""></a>
-                              
-                            </div>
-                           <p>YouTube</p>
-                         </div>
-                         <div class="connect_item">
-                            <div class="connect_item1">
-                                <a href=""><img src="img/connect-img2.svg" alt=""></a>
-                              
-                            </div>
-                           <p>Spotify</p>
-                         </div>
-                         <div class="connect_item">
-                            <div class="connect_item1">
-                                <a href=""><img src="img/connect-img3.svg" alt=""></a>
-                              
-                            </div>
-                           <p>Apple Podcast</p>
-                         </div>
-                         <div class="connect_item">
-                            <div class="connect_item1">
-                                <a href=""><img src="img/connect-img4.svg" alt=""></a>
-                              
-                            </div>
-                           <p>Spotify</p>
-                         </div>
-                         <div class="connect_item">
-                            <div class="connect_item1">
-                                <a href=""><img src="img/connect-img5.svg" alt=""></a>
-                              
-                            </div>
-                           <p>Twitter</p>
-                         </div>                       
-                    </div>
-                </div>
-            </div>
-         </div>
-     </section>
+        <div class="container-fluid">
+           <div class="connect_main">
+               <div class="connect_inner">                                       
+                   <div class="connect_text">
+                      <p>more ways to connect</p>
+                   </div>
+                   <div class="connect_icons">
+                        <div class="connect_item">
+                           <a href="">
+                               <div class="connect_item1">
+                                  <img src="img/connect-img1.svg" alt="">
+                                 
+                               </div>
+                              <p>YouTube</p>
+                           </a>
+                        </div>
+                        <div class="connect_item">
+                           <a href="">
+                               <div class="connect_item1">
+                                   <img src="img/connect-img2.svg" alt="">
+                                 
+                               </div>
+                              <p>Spotify</p>
+                           </a>
+                        </div>
+                        <div class="connect_item">
+                           <a href="">
+                               <div class="connect_item1">
+                                   <img src="img/connect-img3.svg" alt="">
+                                 
+                               </div>
+                              <p>Apple Podcast</p>
+                           </a>
+                        </div>
+                        <div class="connect_item">
+                           <a href="">
+                               <div class="connect_item1">
+                                  <img src="img/connect-img4.svg" alt="">
+                                 
+                               </div>
+                              <p>Spotify</p>
+                           </a>
+                        </div>
+                        <div class="connect_item">
+                           <a href="">
+                               <div class="connect_item1">
+                                   <img src="img/connect-img5.svg" alt="">
+                                 
+                               </div>
+                              <p>Twitter</p>
+                           </a>
+                        </div>                       
+                   </div>
+               </div>
+           </div>
+        </div>
+    </section>
      <!-- connect section ends -->
       <!-- spacer -->
       <div class="spacer"></div>
