@@ -186,6 +186,7 @@ hr {
 }
 .topics_left_heading h4 {
   font-size: 26px;
+  text-transform: capitalize;
 }
 .topics_left_para {
   margin-top: 24px;
@@ -235,7 +236,8 @@ hr {
   text-transform: capitalize;
 }
 
-/* blogs-all-topic start*/
+
+/* Blogs-all-topic start*/
 
 .blogs_alltpoic_right_btm{
   gap: 52px;
@@ -264,15 +266,9 @@ hr {
 /* blogs-all-topic ends */
 
 
+/* Banner ends */
 
 
-
-
-
-
-
-
-/* banner ends */
 
 /* connect section start */
 .connect_section {
@@ -338,6 +334,117 @@ hr {
 /* modal ends */
 /* connect section ends */
 
+
+/* Bhkati-Topic Page CSS Start */
+
+.bhakti_topic_header{
+  padding: 44.5px 0px !important;
+}
+.spacer_40{
+  padding: 40px 0px;
+}
+.bhakti_topic_img_item{
+  grid-row-gap: 32px !important;
+}
+.bhakti_topic_img_all_album{
+  margin-top: 0px !important;
+  grid-column-gap: 28px !important;
+  grid-row-gap: 32px !important;
+}
+/* Bhkati-Topic Page CSS Ends */
+
+
+/* Bhakti main start */
+.bhakti_main_more_topic{
+  padding-bottom: 120px !important;
+}
+/* Bhakti Main ends */
+
+/* Talks Series Start */
+.talks_banner_inner_main{
+  width: 83%;
+  margin: 0 auto;
+}
+.tbop_inner{
+  height: 0;
+  width: 100%;
+  padding-top: 36%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.tbop_inner img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  inset: 0;
+}
+.talks_banner{
+  margin-top: 40px;
+}
+.tb_btm{
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.tbbtm_left{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.tbbtm_left p{
+  color: var(--paracolor);
+}
+.tbbtm_right{
+  width: 26%;
+}
+.tbbtm_right .custom-btn {
+  display: block;
+}
+.tbbtmr_btn2{
+  margin-top: 9px;
+}
+.tbbtmr_btn2 a{
+  border-radius: 5px;
+  border: 1px solid var(--srm-purple, #49378D);
+}
+
+ .talks_right_btm{
+  margin-top: 0px !important;
+ }
+
+.talks_series_heading h5{
+  margin-top: 12px;
+  text-transform: capitalize;
+}
+.talks_date p{
+  color: var(--srm-pink, #B7557F);
+  font-family: var(--bodyFont);
+}
+.talks_series_topic_left{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  margin-top: 16px;
+}
+.talks_series_btm_item1{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+/* Talks Series Ends */
+
+
+
+
+
+
+
+
+
 /* media query */
 
 /* 1150 start */
@@ -384,6 +491,28 @@ hr {
   .batrb_item_top p{
     font-size: 16px;
   }
+  /* Bhakti Topic Page */
+  .bhakti_topic_header{
+    padding: 30px 0px !important;
+  }
+  .bhakti_topic_related h4{
+    font-size: 30px !important;
+  }
+  .spacer_40{
+    padding: 30px 0px;
+  }
+  .bhakti_main_more_topic{
+    padding-bottom: 80px !important;
+  }
+
+  /*Talks Series start */
+  .talks_series_right{
+    width: auto !important;
+  }
+  .talks_series_social_icon{
+    align-items: flex-end !important;
+  }
+  /* Talks Series Ends */
 }
 
 /* 992 ends */
@@ -495,25 +624,43 @@ hr {
     gap: 14px;
   }
   .batrb_item_btm{
-    margin-top: 0px;
+    margin-top: 5px;
   }
   /* .batrb_item_btm {
     margin-top: 5px;
     justify-content: space-between;
   }
    */
-  
+   /* Bhkati Topic */
+   .spacer_40{
+    padding: 20px 0px;
+  }
+  .bhakti_main_more_topic{
+    padding-bottom: 60px !important;
+  }
 }
+
+/* 600 px start */
+@media screen and (max-width:600px) {
+  .talks_series_btm_item1{
+    flex-direction: column !important;
+  }
+  .talks_series_social_icon{
+    align-items: flex-start !important;
+  }
+}
+/* 600 px ends */
+
 
 /* 500 px start */
 @media screen and (max-width:550px) {
-  /* .batrb_item_btm{
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 0px;
-   
-  } */
+ /* Bhkati Topic Page */
+ .bhakti_topic_related h4{
+  font-size: 20px !important;
 }
+}
+
+
 /* 500 px ends */
 
 @media screen and (max-width: 500px) {
@@ -551,6 +698,8 @@ hr {
   grid-column-gap: 50px;
 }
 }
+
+/* 500 px ends */
 
 /* 400 px start */
 
