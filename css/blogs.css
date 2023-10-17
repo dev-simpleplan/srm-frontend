@@ -318,6 +318,24 @@ hr {
   color: var(--headingcolor);
   margin-top: 14px;
 }
+
+/* modal start*/
+.modal_item1{
+  width: 50px;
+  height: 50px;
+  position: relative; 
+  padding-top: 0px !important;
+}
+.modal_item1 img {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+  max-height: 100%;
+  aspect-ratio: 1/1;
+}
+/* modal ends */
 /* connect section ends */
 
 /* media query */
@@ -517,6 +535,12 @@ hr {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
+  }
+  .modal_item1{
+    width: 50px;
+    height: 50px;
+    position: relative; 
+    padding-top: 0px !important;
   }
   .batrb_item_btm_list ul {
     display: grid;
