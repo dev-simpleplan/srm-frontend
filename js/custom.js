@@ -1,10 +1,13 @@
 // Featured Slider
 
 var swiper = new Swiper(".featuredSlider", {
-  effect: 'fade',
+ effect:"fade",
   pagination: {
     el: ".swiper-pagination",
     clickable: true
+  },
+  autoplay: {
+    delay: 3000,
   },
 });
 
@@ -39,8 +42,8 @@ var swiper = new Swiper(".featuredSlider", {
 // History Slider 
 var swiper = new Swiper(".history-thumbnail", {
   loop: true,
-  spaceBetween: 10,
-  slidesPerView: 8,
+  spaceBetween: 0,
+  slidesPerView: "auto",
   freeMode: true,
   watchSlidesProgress: true,
   breakpoints: {
@@ -59,14 +62,20 @@ var swiper = new Swiper(".history-thumbnail", {
       slidesPerView: 6,
     },
     1200: {
-      slidesPerView: 8,
+      slidesPerView: "auto",
     }
   }
 });
 var swiper2 = new Swiper(".history-main-slide", {
   loop: true,
   spaceBetween: 10,
-  effect: 'fade',
+  speed: 1000,
+  slidesPerView: 1,
+  parallax: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   thumbs: {
     swiper: swiper,
   },
@@ -91,6 +100,8 @@ var swiper2 = new Swiper(".initiative-slider", {
   loop: true,
   spaceBetween: 12,
   slidesPerView: 1.8,
+  speed: 1000,
+  parallax: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -219,6 +230,7 @@ $(document).ready(function(){
     return false;
   });
   
+
 });
 
 
@@ -247,6 +259,7 @@ $('.mobile-navigation .footer-label').click(function(e) {
 
 setTimeout(function() {
   $('.loader').addClass('active');
+  $('body').removeClass('stay');
 }, 2000);
 
 

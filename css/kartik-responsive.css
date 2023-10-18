@@ -121,6 +121,10 @@
     .blog-grid-3 {
         gap: 45px;
     }
+    .footer-navigation {
+        width: 75%;
+        gap: 39px;
+    }
 }
 /* 1200 px End */
 
@@ -248,6 +252,7 @@
         width: inherit;
         -webkit-transition: none;
         animation: none;
+        display: none;
     }
     .nav-dropdown{
         position: relative;
@@ -541,6 +546,9 @@
     }
     .featured-series-section {
         padding-top: 60px;
+    }
+    .newsletter-box {
+        width: 65%;
     }
 }
 /* 991 px End */
@@ -842,6 +850,9 @@
     }
     .featured-series-section {
         padding-top: 50px;
+    }
+    .scroll-btn-box{
+        display: none;
     }
 }
 /* 767 px End */
