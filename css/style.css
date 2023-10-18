@@ -2445,26 +2445,6 @@ ul.more.topic-list li a{
     border-bottom: none !important;
 }
  
-/* 600 px start */
-
-.modal.show .modal-dialog{
-    padding: 20px !important;
-}
-
-/* 600 px ends */
-/* 500 px start*/
-
-@media screen and (max-width:500px) {
-    .modal_icons {
-        grid-column-gap: 50px !important;
-    }
-    .modal_item{
-        width: 20% !important;
-    }
-}
-
-
-/* 500 px ends */
   /* modal section ends */
 
 /* connect section start */
