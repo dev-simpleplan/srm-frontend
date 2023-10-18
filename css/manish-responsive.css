@@ -48,7 +48,7 @@
 
 
 /* 991 px Start */
-@media only screen and (max-width: 991px) {
+@media  screen and (max-width: 991px) {
     h1 {
         font-size: 32px;
     }
@@ -72,6 +72,11 @@
     }
     h6 {
         font-size: 16px;
+    }
+    .album_name_main{
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0px;
     }
     .album_name p {
         font-size: 14px;
@@ -149,11 +154,7 @@
     .album_heading h1{
         text-align: start;
     }
-    .album_name_main{
-        width: 100%;
-        margin-top: 25px;
-        margin-left: 0px;
-    }
+   
     .album_text{
         margin-top: 0px;
     }
