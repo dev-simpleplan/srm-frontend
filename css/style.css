@@ -657,6 +657,7 @@ section.weekly-wisdom-section {
     position: relative;
     padding-top: 50px;
 }
+
 section.weekly-wisdom-section:before {
     content: "";
     position: absolute;
@@ -1277,6 +1278,10 @@ span.swiper-pagination-progressbar-fill{
 .featred-topic-list {
     display: flex;
     align-items: center;
+}
+.wisdom-bottom-img {
+    max-width: 40px;
+    max-height: 40px;
 }
 .wisdom-category-link {
     display: flex;
