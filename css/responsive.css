@@ -805,64 +805,9 @@
         top: 10px !important;
         margin-top: 0px !important;
     }
-    /* .nav-left .nav_list_mobile ul a {
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding-bottom: 0px;
+    .main-header{
+        height: 80px;
     }
-    .nav_list_mobile ul {
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-left .nav_list_mobile ul li {
-        position: relative;
-        padding: 0 0;
-        z-index: 10;
-        cursor: pointer;
-        padding-right: 0px;
-        display: block;
-        width: 100%;
-        opacity: 1;
-        transform: none;
-    }
-    .nav-left .nav_list_mobile ul.nav-dropdown-list li a {
-        background: transparent !important;
-        padding: 0px;
-        display: flex;
-        color: #6B6970;
-        transform: none;
-    }
-    .nav-left .nav_list_mobile ul.nav-dropdown-list li a {
-        font-size: 16px;
-    }
-    .nav-left .nav_list_mobile ul.nav-dropdown-list li a {
-        background: transparent !important;
-        padding: 0px;
-        display: flex;
-        color: #6B6970;
-        transform: none;
-    }
-    ul.nav-dropdown-list{
-        position: relative;
-        box-shadow: none;
-        padding: 0px;
-        
-    }
-    .nav_list_mobile ul.nav-dropdown-list {
-        gap: 10px;
-    }
-    .nav-dropdown_mobile {
-        display: none;
-    }
-    .nav_list_mobile .nav-dropdown{
-        clip-path: unset;
-        top: 10px;
-        margin-top: 0px !important;
-    } */
 }
 /* 991 px End */
 
