@@ -1,3 +1,15 @@
+/* 1700 px Start */
+@media only screen and (max-width: 1700px) {
+    .initiative-navigation {
+        bottom: 10px;
+        padding: 40px;
+        width: 50%;
+    }
+
+
+}
+
+
 /* 1500 px Start */
 @media only screen and (max-width: 1500px) {
     .initiative-thumb-slider-box {
@@ -13,7 +25,7 @@
         padding-left: 20px;
         bottom: 40px;
     }
-
+    
 }
 /* 1500 px End */
 
@@ -963,7 +975,7 @@
     }
     .footer-top .footer-in {
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
     }
     .footer-navigation {
         width: 100%;
