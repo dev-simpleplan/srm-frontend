@@ -379,19 +379,20 @@ span[class^="dot-"]{
 
 /* Loader Start End */
 .body-wrapper {
-    margin-top: 80px;
+    margin-top:0px;
 }
 /* Header CSS Start */
 .main-header {
     transition: 0.4s ease all;
     padding-top: 30px;
     padding-bottom: 30px;
-    background: linear-gradient(260deg, #FFF 1.16%, #F9F6F3 95.93%);
+    /* background: linear-gradient(260deg, #FFF 1.16%, #F9F6F3 95.93%); */
     position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;
     height: 80px;
+    transition: 0.5s ease all;
 }
 
 .main-header.header-active{
