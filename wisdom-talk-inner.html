@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/" type="image/gif" sizes="16x16">
+    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
     <title>SRM || Wisdom Talk Inner </title>
 
    
@@ -53,7 +53,6 @@
             </div>
         </div>
     </div>
-
      <!-- Loader Start End    -->
 
     <!-- Header start -->
@@ -678,37 +677,37 @@
 
     <script>
            var a = 0;
-$(window).scroll(function() {
+                $(window).scroll(function() {
 
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.value').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
+                var oTop = $('#counter').offset().top - window.innerHeight;
+                if (a == 0 && $(window).scrollTop() > oTop) {
+                    $('.value').each(function() {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                        },
 
-        {
+                        {
 
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-            //alert('finished');
-          }
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
 
-        });
-    });
-    a = 1;
-  }
+                        });
+                    });
+                    a = 1;
+                }
 
-});
+                });
     </script>
 
     <script>

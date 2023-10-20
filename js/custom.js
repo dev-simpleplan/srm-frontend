@@ -262,7 +262,7 @@ $('.mobile-navigation .footer-label').click(function(e) {
       //  $this.next().removeClass('show');
       // $this.next().slideUp(350);
   } else {
-      $this.parent().parent().find('.footer-list').removeClass('show');
+      $('.footer-list').removeClass('show');
       $this.parent().toggleClass('active');
       $this.parent().parent().find('.footer-list').slideUp(350);
       $this.next().toggleClass('show');

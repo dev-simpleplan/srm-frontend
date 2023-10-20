@@ -808,6 +808,7 @@
     .main-header{
         height: 80px;
     }
+    
 }
 /* 991 px End */
 
@@ -851,6 +852,11 @@
     ul.similiar-bog-ul li a {
         font-size: 15px;
         max-width: 100%;
+    }
+    .scroll-btn-box {
+        left: inherit;
+        bottom: 270px;
+        right: 40px;
     }
 }
 /* 800px  End */
@@ -1041,11 +1047,13 @@
         margin-right: 0;
         padding-right: 0;
     }
-    
+    .featured-topic-box{
+        overflow: hidden;
+    }
     .featred-topic-list {
         display: flex;
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
         scroll-snap-type: x mandatory;
         justify-content: start;
         overflow-x: auto;
@@ -1053,6 +1061,8 @@
         padding: 8px 0 0px;
         padding-bottom: 20px;
         /* padding-right: 20px; */
+        padding-right: 60px;
+        width: 100vw;
         
     }
     ul.featred-topic-list li {
@@ -1109,11 +1119,15 @@
     .featured-series-section {
         padding-top: 50px;
     }
-    .scroll-btn-box{
-        display: none;
-    }
     section.initiative-section {
         padding-top: 40px;
+    }
+    .scroll-btn-box {
+        left: inherit;
+        bottom: 250px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
     }
     .ytvs-head{
         flex-direction: column;
@@ -1361,26 +1375,36 @@
         }
         .bhakti_main_img_item{
             margin-top:25px;
-          }
+         }
+        .about-us-section {
+            padding: 40px 0px;
+        }
+        .feat-testimonial-wrap {
+            margin-top: 60px;
+        }
+        .related_img_item a {
+            width: calc(45%);
+        }
+        .sort-by-box.nav-left .nav-dropdown {
+            top: 30px !important;
+        }
+        .footer-logo {
+            max-height: 80px;
+        }
+        .modal_main .container-fluid {
+            padding: 0;
+        }
+        h3.font-32 {
+            font-size: 24px;
+        }
 }
 /* 767 px End */
-
-/* 650 px start */
-
-@media screen and (max-width:650px) {
-    /* .related_img_icon_wrapper{
-        width: calc(47%);
-    } */
-}
-
-
-/* 650 px end */
 
 /* 500 px Start */
 @media only screen and (max-width: 500px) {
     .srm-help-box:before {
-        width: 60%;
-        right: 100px;
+        width: 70%;
+        right: 60px;
     }
     .srm-help-box{
         height: 250px;
@@ -1565,6 +1589,49 @@
     .nav-dropdown{
         padding-left: 14px;
     }
+    .scroll-btn-box {
+        left: inherit;
+        bottom: 290px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    span.scroll-icon svg {
+        width: 20px;
+        height: 18px;
+    }
+    .scroll-btn-box a{
+        font-size: 10px;
+    }
+    .feat-testimonial-wrap {
+        margin-top: 40px;
+    }
+    .wisdom-bottom-header-box{
+        padding: 5px;
+    }
+    .wisdom-bottom-content p{
+        text-align: left;
+    }
+    .album_heading_btm_icon{
+        flex-direction: column;
+        gap: 16px;
+        align-items: start
+    }
+    .album_heading_btm_icon .icon {
+        width: 50%;
+    padding-top: 12%;
+    }
+    .album_heading_btm_icon .album_headig_icon2 {
+        width: 50%;
+        padding-top: 18%;
+    }
+    .album_headig_link {
+        margin-left: 0;
+    }
+    .modal_icons {
+        grid-column-gap: 40px !important;
+    }
+
 }
 /* 500 px End */
 
@@ -1589,6 +1656,9 @@
     }
     .related_img_item a{
         width: calc(100%);
+    }
+    .modal_item {
+        width: 38% !important;
     }
 }
 /* 350 px End */
