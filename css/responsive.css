@@ -125,10 +125,25 @@
         width: 75%;
         gap: 39px;
     }
+    .about-title{
+        margin-bottom: 70px;
+    }
+    section.yt-video-section {
+        padding-top: 60px;
+    }
+    .ytvs-content-wrapper .ytvs-left .video-desp{
+        gap: 50px;
+    }
+    .ytvsh-txt-con{
+        gap: 15px;
+    }
+    .batrb_item_btm_list ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 80px;
+      }
 }
 /* 1200 px End */
-
-
 
 /* 1024 px Start */
 @media only screen and (max-width: 1024px) {
@@ -246,7 +261,7 @@
         width: 100%;
     }
     .nav-left .nav_list ul li:hover .nav-dropdown {
-        opacity: inherit;
+        opacity: 1;
         visibility: inherit;
         top: inherit;
         width: inherit;
@@ -550,6 +565,304 @@
     .newsletter-box {
         width: 65%;
     }
+    .ytvs-content-wrapper{
+        flex-direction: column;
+        gap: 50px;
+        position: relative;
+    }
+    .ytvs-content-wrapper .ytvs-left, .ytvs-content-wrapper .ytvs-right{
+        width: 100%;
+    }
+    .ytvs-content-wrapper .ytvs-right .upper-playlist{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: auto;
+        width: 50%;
+        display: none;
+    }
+    .ytvsh-mob-ham{
+        display: block;
+        align-self: center;
+        margin-left: auto;
+    }
+    .ytvsh-mob-ham{
+        cursor: pointer;
+    }
+    .ytvsh-mob-ham svg{
+        width: 35px;
+        height: 35px;
+    }
+    .upper-playlist{
+        display: none;
+    }
+    section.yt-video-section {
+        padding-top: 40px;
+    }
+    section.video-directory{
+        padding-top: 40px;
+    }
+    .ytvs-content-wrapper .ytvs-left .ytvs-txt-area{
+        max-width: 100%;
+    }
+    .blog-inner .blogs_right{
+        width: 100%;
+    }
+    .blog-inner .blogs_right_btm_item1 .topics_left, .blog-inner .blogs_right_btm_item1 .topics_right{
+        width: 100%;
+    }
+    .blog-inner .topics_left_heading{
+        max-width: 100%;
+    }
+    .blog-inner .blogs_right_btm_item1{
+        gap: 25px;
+    }
+    .blog-inner-body{
+        margin-top: 45px
+    }
+    .blog-inner-body .bid-para-wrapper{
+        gap: 30px;
+    }
+    .blog-inner-body .bid-para-wrapper h5{
+        margin-bottom: 16px;
+    }
+    .topic-covered{
+        margin-top: 60px;
+    }
+    .page-comm .pc-wrapper{
+        width: 75%;
+    }
+    .page-comm .pc-wrapper .comments{
+        margin-top: 60px;
+    }
+    .page-comm{
+        margin-top: 30px;
+    }
+    .album_heading h1 {
+        font-size: 32px;
+      }
+      .topics_left_heading h4 {
+        font-size: 20px;
+      }
+      .blogs_left_heading h4 {
+        font-size: 20px;
+      }
+      .blogs_right_btm_item1 {
+        flex-direction: column;
+        gap: 30px;
+      }
+      .topics_left,
+      .topics_right {
+        width: 100%;
+      }
+      .topics_icon_wrapper {
+        border: none !important;
+        padding: 0px !important;
+      }
+      .blogs_social_icon {
+        align-items: flex-start;
+      }
+      .batrb_item_btm {
+        gap: 45px;
+      }
+      .batrb_item_top p {
+        font-size: 16px;
+      }
+      /* Bhakti Topic Page */
+      .bhakti_topic_header {
+        padding: 30px 0px !important;
+      }
+      .bhakti_topic_related h4 {
+        font-size: 30px !important;
+      }
+      .spacer_40 {
+        padding: 30px 0px;
+      }
+      .bhakti_main_more_topic {
+        padding-bottom: 80px !important;
+      }
+    
+      /*Talks Series start */
+      .talks_banner {
+        margin-top: 30px;
+      }
+      .talks_banner_inner_main {
+        width: 100%;
+      }
+      .tbop_inner {
+        border-radius: 10px;
+      }
+      .tb_btm {
+        margin-top: 40px;
+        flex-direction: column;
+      }
+      .tbbtm_left {
+        width: 100%;
+      }
+      .tbbtm_right {
+        margin-top: 20px;
+        display: flex;
+      }
+      .tbbtmr_btn2,
+      .tbbtmr_btn1 {
+        max-width: 260px;
+      }
+      .tbbtmr_btn2 {
+        margin: 0px 0px 0px 9px;
+      }
+      .talks_series_right {
+        width: auto !important;
+      }
+      .talks_series_social_icon {
+        align-items: flex-end !important;
+      }
+      .tbbtm_left {
+        gap: 6px;
+      }
+      .talks_series_heading {
+        margin-top: 10px;
+      }
+      .talks_series_topic_left {
+        margin-top: 12px;
+      }
+      /* Talks Series Ends */
+      .batrb_item_btm_list ul {
+        grid-column-gap: 50px;
+      }
+      .album_name_main{
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+    .album_name p {
+        font-size: 14px;
+    }
+    .artist_name p {
+        font-size: 16px;
+    }
+    .related_album_heading h4 {
+        font-size: 20px;
+    }
+    .related_album_heading img{
+        height: 8px;
+        margin-top: 2px;
+    }
+    .related_img_icon_wrapper p {
+        font-size: 16px;
+    }
+    .related_img_item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .related_img_item a{
+        width: calc(30%);
+        margin-bottom: 20px;
+    }
+    .album_text{
+        margin-top: 40px;
+    }
+    .album_headig_link  img{
+        height: 8px;
+        margin-top: 2px;
+    }
+    .sort-by-box.nav-left .nav-dropdown {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: auto;
+        width: 80%;
+        clip-path: none;
+        padding: 20px 15px;
+        min-width: 180px;
+    }
+    .sort-by-box.nav-left .nav-dropdown ul.nav-dropdown-list li a{
+        display: block;
+    }
+    .nav-left .nav_list ul li:hover .nav-dropdown{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
+        opacity: 1;
+    }
+    .nav-dropdown{
+
+    }
+    .nav-left .nav_list ul li .nav-dropdown{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
+        opacity: 1;
+    }
+    .desktop-nav {
+        display: block;
+    }
+    .tablet-nav {
+        display: none;
+    }
+    .nav-dropdown ul.nav-dropdown-list li{
+        opacity: 1;
+        transform: unset !important;
+    }
+    .nav-dropdown{
+        top: 10px !important;
+        margin-top: 0px !important;
+    }
+    /* .nav-left .nav_list_mobile ul a {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .nav_list_mobile ul {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-left .nav_list_mobile ul li {
+        position: relative;
+        padding: 0 0;
+        z-index: 10;
+        cursor: pointer;
+        padding-right: 0px;
+        display: block;
+        width: 100%;
+        opacity: 1;
+        transform: none;
+    }
+    .nav-left .nav_list_mobile ul.nav-dropdown-list li a {
+        background: transparent !important;
+        padding: 0px;
+        display: flex;
+        color: #6B6970;
+        transform: none;
+    }
+    .nav-left .nav_list_mobile ul.nav-dropdown-list li a {
+        font-size: 16px;
+    }
+    .nav-left .nav_list_mobile ul.nav-dropdown-list li a {
+        background: transparent !important;
+        padding: 0px;
+        display: flex;
+        color: #6B6970;
+        transform: none;
+    }
+    ul.nav-dropdown-list{
+        position: relative;
+        box-shadow: none;
+        padding: 0px;
+        
+    }
+    .nav_list_mobile ul.nav-dropdown-list {
+        gap: 10px;
+    }
+    .nav-dropdown_mobile {
+        display: none;
+    }
+    .nav_list_mobile .nav-dropdown{
+        clip-path: unset;
+        top: 10px;
+        margin-top: 0px !important;
+    } */
 }
 /* 991 px End */
 
@@ -854,6 +1167,256 @@
     .scroll-btn-box{
         display: none;
     }
+    section.initiative-section {
+        padding-top: 40px;
+    }
+    .ytvs-head{
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .ytvsh-img{
+        width: 25%;
+        padding-top: 25%;
+    }
+    .ytvsh-mob-ham{
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+    }
+    .ytvsh-mob-ham svg{
+        width: 25px;
+        height: 25px;
+    }
+    .ytvs-content-wrapper .ytvs-right .upper-playlist{
+        width: 100%;
+    }
+    section.video-directory {
+        padding-top: 32px;
+    }
+    .ytvs-content-wrapper .ytvs-left .ytvs-txt-area{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .ytvs-content-wrapper .ytvs-left .video-desp{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .ytvs-content-wrapper .ytvs-left .share-thought a{
+        width: 30px;
+        height: 30px;
+    }
+    .ytvs-content-wrapper .ytvs-left .comment-plugin {
+        margin-top: 40px;
+    }
+    .ytvs-content-wrapper{
+        gap: 30px;
+    }
+    .blog-inner .blogs_main{
+        gap: 40px;
+    }
+    .blog-inner .blogs_right{
+        padding-bottom: 40px;
+    }
+    .blog-inner-body {
+        margin-top: 35px;
+    }
+    .topic-covered{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .page-comm .empty-div{
+        display: none;
+    }
+    .page-comm .pc-wrapper{
+        width: 100%;
+    }
+    .page-comm .pc-wrapper .comments {
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .album_heading h1 {
+        font-size: 30px;
+      }
+      .topics_left_heading h4 {
+        font-size: 18px;
+      }
+      .blogs_banner ul li a {
+        margin-bottom: 5px;
+      }
+      .blogs_main {
+        flex-direction: column;
+        margin-top: 30px;
+      }
+      .blogs_left {
+        width: 100%;
+        gap: 15px;
+      }
+      .blogs_left hr {
+        width: 100%;
+      }
+      .blogs_left hr:last-child {
+        display: none;
+      }
+      .blogs_left_item2 ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+      }
+      .blogs_left_item2 ul li {
+        min-width: 206px;
+      }
+      .blogs_left_item3 {
+        text-align: start;
+      }
+      .blogs_left_item3 ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+        overflow-x: scroll;
+      }
+      .blogs_left_item3 ul li a {
+        border-radius: 21px;
+        border: 1px solid #e3ad64;
+        display: inline-flex;
+        padding: 5px 10px;
+        justify-content: center;
+        align-items: center;
+        min-width: 150px;
+      }
+      .blogs_left_item3 ul li a {
+        margin-bottom: 10px;
+      }
+      .topics_left_para {
+        margin-top: 15px;
+      }
+      .blogs_left_item4,
+      .blogs_left_item5 {
+        display: none;
+      }
+      .blogs_right {
+        width: 100%;
+      }
+      .blogs_topic_right {
+        margin-top: 30px;
+      }
+      .blogs_right_all_topic {
+        margin-top: 25px;
+      }
+      .blogs_right_btm {
+        margin-top: 25px;
+      }
+    
+      .blogs_right_btm_item1 {
+        gap: 15px;
+      }
+      .blogs_right_btm hr {
+        margin: 20px 0px;
+      }
+      .blogs_right_btm hr:last-child {
+        margin: 15px 0px 0px 0px;
+      }
+    
+      .third_hr {
+        display: none;
+      }
+      .blogs_alltpoic_right_btm {
+        margin-top: 10px !important;
+        gap: 14px;
+      }
+      .batrb_item_btm {
+        margin-top: 5px;
+      }
+      /* .batrb_item_btm {
+        margin-top: 5px;
+        justify-content: space-between;
+      }
+       */
+      /* Bhkati Topic start*/
+      .spacer_40 {
+        padding: 20px 0px;
+      }
+      .bhakti_main_more_topic {
+        padding-bottom: 60px !important;
+      }
+      /* Bhakti topic ends */
+    
+      /* Talks series start */
+      .tb_btm {
+        margin-top: 25px;
+      }
+      /* talks series ends */
+       /* Bhkati Topic Page */
+        .bhakti_topic_related h4 {
+            font-size: 20px !important;
+        }
+
+        /* talks series */
+        .tbbtm_right {
+            flex-direction: column;
+        }
+        .tbbtmr_btn2 {
+            margin: 9px 0px 0px;
+        }
+        /* talks series */
+        /* talks series start */
+        .talks_series_btm_item1 {
+            flex-direction: column !important;
+        }
+        .talks_series_social_icon {
+            align-items: flex-start !important;
+        }
+        /* talks series ends */
+
+        /* modal css starts*/
+        .modal.show .modal-dialog {
+            padding: 20px !important;
+        }
+        /* modal css ends */
+        .artist_name p{
+            font-size: 14px;
+        }
+        .album_heading {
+            margin-top: 15px;
+        }
+        .album_heading_btm{
+            width: 100%;
+        }
+        .album_heading h1{
+            text-align: start;
+        }
+       
+        .album_text{
+            margin-top: 0px;
+        }
+        .album_topic_covered {
+            margin-top: 15px;
+        }
+        .album_img_top .album_name_img{
+            width: 50%;
+            padding-top: 50%;
+        }  
+        .album_img_top{
+            flex-direction: column;
+        }
+       
+        .album_name_heading {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .album_heading_btm{
+            margin-top: 10px;
+            width: 100%;
+        }
+        .related_img_item{
+            justify-content: start;
+        }
+        .bhakti_main_img_item{
+            margin-top:25px;
+          }
 }
 /* 767 px End */
 
@@ -994,8 +1557,69 @@
     .more-topic-wrapper {
         width: 100%;
     }
-   
-    
+    section.initiative-section {
+        padding-top: 0px;
+    }
+    .connect_icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 25px;
+      }
+      .connect_item {
+        width: calc(30% - 5px);
+        margin-bottom: 20px;
+      }
+      .connect_item1 {
+        width: 60%;
+        height: 0;
+        padding-top: 60%;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      .modal_item1 {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        padding-top: 0px !important;
+      }
+      .modal_icons {
+        grid-column-gap: 50px !important;
+      }
+      .modal_item {
+        width: 20% !important;
+      }
+      .batrb_item_btm_list ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 80px;
+      }
+      .batrb_item_btm_list ul {
+        grid-column-gap: 50px;
+      }
+      .connect_icons {
+        column-gap: 70px;
+      }
+      .related_img_item{
+        align-items: start;
+    }
+    .related_img_icon_wrapper p{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .album_img_top .album_name_img{
+        width: 100%;
+        padding-top: 100%;
+    } 
+    .related_album_heading img{
+        height: 8px;
+        margin-top: 4px;
+    }
+    .nav-dropdown{
+        padding-left: 14px;
+    }
 }
 /* 500 px End */
 
@@ -1017,6 +1641,9 @@
     }
     .newest-title h3{
         max-width: 10ch;
+    }
+    .related_img_item a{
+        width: calc(100%);
     }
 }
 /* 350 px End */
