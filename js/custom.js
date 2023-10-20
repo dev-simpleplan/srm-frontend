@@ -1,14 +1,25 @@
 // Featured Slider
 
 var swiper = new Swiper(".featuredSlider", {
- effect:"fade",
   pagination: {
     el: ".swiper-pagination",
     clickable: true
   },
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  grabCursor: true,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-120%", 0, -500],
+        },
+        next: {
+          shadow: true,
+          translate: ["120%", 0, -500],
+        },
+      },
 });
 
 
@@ -105,6 +116,10 @@ var swiper2 = new Swiper(".initiative-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
   thumbs: {
     swiper: swiper,
@@ -216,14 +231,15 @@ function closeNav() {
 
 $(document).ready(function(){
     
-  $('.has_subs a > span').click(function() {
+  $(' .has_subs a > span').click(function() {
+    
     if($(this).parent("a").parent(".has_subs").hasClass("active")) {
 
       $(this).parent("a").parent(".has_subs").removeClass("active").find(".nav-dropdown").slideUp();
       
     } else {
       $(" .nav-dropdown").slideUp();
-      $(this).parent("a").parent(".has_subs").removeClass("active");
+      $(".has_subs").removeClass("active");
       $(this).parent("a").parent(".has_subs").addClass("active").find(".nav-dropdown").slideDown();
      
     }
@@ -364,3 +380,8 @@ var swiper = new Swiper(".featured-slider", {
     }
   }
 });
+
+
+
+
+// Mobile Sidebar JS 

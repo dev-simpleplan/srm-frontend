@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/" type="image/gif" sizes="16x16">
+    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
     <title>SRM || Home </title>
 
    
@@ -19,14 +19,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Sources Sans pro  Font End-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <!-- Owl Carousal Slider -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/comman.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/kartik-responsive.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
     <!-- CSS Ends-->
 </head>  
 <body class="stay">
@@ -34,7 +37,7 @@
     <!-- Loader Start CSS  -->
     <div class="loader">
         <div class="loader-img">
-            <img src="img/loader-logo.png" alt="Loader Image ">
+            <img src="img/srmloader.svg" alt="Loader Image ">
         </div>
         <div class="loader-flex-box">
             <div class="loader-icon">
@@ -104,7 +107,9 @@
                                 Login
                             </a>
                         </div>
-                        <div class="nav_list">
+
+                        <!-- Desktop Navbar Start -->
+                        <div class="nav_list desktop-nav">
                             <ul>
                                 <li class="has_subs"> 
                                     <a href="#">Wisdom
@@ -173,6 +178,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- Desktop Navbar End -->
                     </div>
                     <div class="nav-right">
                         <div class="nav-cart">
@@ -204,9 +210,9 @@
         <!-- Banner Section Start -->
         <section class="banner height-100vh parallax-banner" >
             <div class="container-fluid">
-                <div class="banner-img-wrapper">
-                    <div class="banner-img">
-                        <img src="img/banner.png" alt="Home Page Banner">
+                <div class="banner-img-wrapper ">
+                    <div class="banner-img ">
+                        <img class=" " src="img/banner.png" alt="Home Page Banner">
                     </div>
                 </div>
                 <div class="banner-content-wrapper">
@@ -249,9 +255,9 @@
                             in different ways to connect & push people inwards.</h3>
                     </div>
                     <div class="about-icon ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="47" viewBox="0 0 37 47" fill="none"  >
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="37" height="47" viewBox="0 0 37 47" fill="none"  >
                             <path d="M18.4246 0.641602L0.611816 23.5L18.4246 46.3583L36.2373 23.5L18.4246 0.641602Z" fill="#CF9E69"/>
-                         </svg>
+                         </svg> -->
                     </div>
                 </div>
             </div>
@@ -1277,7 +1283,9 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <script src="js/jquery.in-viewport-class.js"></script>
    
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
