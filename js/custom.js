@@ -324,6 +324,24 @@ $(document).ready(function () {
 });
   
 
+$(document).ready(function () {
+  $('.all-topic-link').on('click', function (e) {
+      // e.preventDefault();
+
+      var target = this.hash,
+          $target = $(target);
+
+     $('html, body').stop().animate({
+      'scrollTop': $target.offset().top-120
+  }, 400, 'swing', function () {
+  });
+
+      console.log(window.location);
+
+      return false;
+  });
+});
+
 
 // Newest Talks Slider
 var swiper = new Swiper(".newest-slider", {
