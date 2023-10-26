@@ -1326,6 +1326,25 @@ span.swiper-pagination-progressbar-fill{
     transform: scaleX(1);
     transform-origin: left;
 }
+.all-topic-link2:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--srmpurple);
+    left: 0;
+    bottom: 0px;
+    right: 0px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s;
+    z-index: 2;
+}
+
+.all-topic-link2:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
 .wisdom-bottom-img {
     max-width: 40px;
     max-height: 40px;
@@ -2145,7 +2164,7 @@ ul.social-icon-list li a, ul.social-icon-list li a svg path{
 .blog-main-cta{
     transition: 0.5s ease all;
     position: relative;
-    display: inline-block;
+    display: inline-block !important;
 }
 .blog-main-cta:hover{
     color: var(--srmorange);
@@ -2513,9 +2532,9 @@ section.yt-video-section{
     border-radius: 5px;
     overflow: hidden;
 }
-section.related-videos{
+/* section.related-videos{
     padding-top: 85px;
-}
+} */
 section.related-videos .rv-wrapper h4{
     display: inline-flex;
     align-items: center;
@@ -2558,6 +2577,7 @@ section.related-videos .rv-wrapper .nav-arrow button{
     border: none;
     position: relative;
 }
+
 section.related-videos .rv-wrapper .nav-arrow button img{
     width: 100%;
     height: auto;
