@@ -254,7 +254,7 @@ $(document).ready(function(){
 
 $('.mobile-navigation .footer-label').click(function(e) {
   e.preventDefault();
-  $(this).parent().removeClass('active');
+  // $(this).parent().removeClass('active');
   $(this).parent().siblings().removeClass('active');
   var $this = $(this);
 
@@ -325,7 +325,21 @@ $(document).ready(function () {
   
 
 $(document).ready(function () {
-  $('.all-topic-link').on('click', function (e) {
+  // Check for the presence of the 'scrollTo' query parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const scrollTo = urlParams.get("scrollTo");
+
+  if (scrollTo === "more-topic-section") {
+    // Scroll to the "more-topic-section" if the query parameter is present
+    $('html, body').animate({
+      scrollTop: $('#more-topic-section').offset().top - 120
+    }, 400, 'swing', function () {
+      // Scroll completed
+    });
+  }
+});
+$(document).ready(function () {
+  $('.all-topic-link2').on('click', function (e) {
       // e.preventDefault();
 
       var target = this.hash,
@@ -341,6 +355,8 @@ $(document).ready(function () {
       return false;
   });
 });
+  
+
 
 
 // Newest Talks Slider
