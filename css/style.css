@@ -92,6 +92,7 @@ section.banner.height-100vh.parallax-banner {
   color: var(--srm-orange, #cf9e69);
   transition: 0.4s ease all;
   position: relative;
+  display: inline-block;
 }
 .banner-link:after {
   content: "";
@@ -100,7 +101,7 @@ section.banner.height-100vh.parallax-banner {
   width: 100%;
   height: 3px;
   background-color: var(--srm-orange, #cf9e69);
-  bottom: 5px;
+  bottom: 0px;
   transform: scaleX(1);
   transform-origin: right;
   transition: transform 0.6s;
@@ -114,7 +115,7 @@ section.banner.height-100vh.parallax-banner {
   height: 3px;
   background-color: var(--srmpurple);
   left: 0;
-  bottom: 5px;
+  bottom: 0px;
   right: 0px;
   transform: scaleX(0);
   transform-origin: right;
@@ -1901,6 +1902,12 @@ ul.more.topic-list li a:hover {
   text-align: center;
   margin-top: 39px;
 }
+.connect_item{
+  transition: .5s ease all;
+}
+.connect_item:hover{
+  transform: translateY(-10px);
+}
 .connect_item1 {
   width: 100%;
   height: 0;
@@ -3245,8 +3252,8 @@ hr {
   font-size: 26px;
 }
 .guidance_inner {
-  border: 1px solid red;
   width: 100%;
+  margin-bottom: 30px;
 }
 .guidance_inner {
   display: flex;
@@ -3262,4 +3269,66 @@ hr {
     flex-direction: column;
     row-gap: 6px;
 }
+.guidance_link span{
+  margin-left: 8px;
+  color:#B7557F;
+}
+.guidance_link span a{
+  display: inline-flex;
+  align-items:center;
+  font-weight: 600;
+}
+.guidance_link span a svg{
+  margin-left: 5px;
+}
+.guidance-modal-dialog {
+  max-width: 600px !important;
+}
+.blur{
+  position: relative;
+  z-index: 1;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(15px);
+  transition: .5s ease all;
+  z-index: 1;
+}
+.modal.show .modal-dialog {
+  position: relative;
+  z-index: 99;
+}
+.modal_cross_btn{
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 26px;
+}
+.modal_cross_btn svg{
+  height: 14px !important;
+  width: 14px !important;
+}
+.modal_cross_btn svg path{
+  stroke:var(--srmpurple);
+  fill:var(--srmpurple);
+  transition: .5s ease all;
+}
+.modal_cross_btn:hover svg path {
+  stroke: var(--srmorange);
+  fill: var(--srmorange);
+  transition: .5s ease all;
+}
+.guidance_img{
+  width: 100px;
+  position: absolute;
+  top: -14%;
+  left: 42px;
+}
+.guidance_link_inner:hover svg path{
+     stroke:var(--srmorange);
+     fill:var(--srmorange);
+}
+
+
 /* guidance modal ends */
