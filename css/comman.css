@@ -161,6 +161,7 @@ input:focus, textarea:focus, select:focus {
     overflow: hidden;
 }
 .trans-first{
+    padding-bottom: 5px;
     transition: 1s ease all;
     transition-delay: .2s;
 }

@@ -820,6 +820,14 @@
     .main-header{
         height: 80px;
     }
+    /* guidance start */
+    .guidance_inner{
+        row-gap: 20px;
+    }
+    .modal_cross_btn{
+      padding: 8px;
+    }
+    /* guidance ends */
     
 }
 /* 991 px End */
@@ -1634,8 +1642,8 @@
     padding-top: 12%;
     }
     .album_heading_btm_icon .album_headig_icon2 {
-        width: 50%;
-        padding-top: 18%;
+        width: 38%;
+        padding-top: 12%;
     }
     .album_headig_link {
         margin-left: 0;
@@ -1643,6 +1651,12 @@
     .modal_icons {
         grid-column-gap: 40px !important;
     }
+
+    /* guidance start */
+    .modal_cross_btn{
+        padding: 8px;
+    }
+    /* guidance ends */
 
 }
 /* 500 px End */
