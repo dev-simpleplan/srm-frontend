@@ -1308,7 +1308,7 @@ span.swiper-pagination-progressbar-fill {
   margin-top: 80px;
   gap: 60px;
 }
-.featred-topic-list {
+.featured-topic-list {
   display: flex;
   align-items: center;
 }
@@ -1381,16 +1381,16 @@ span.swiper-pagination-progressbar-fill {
   letter-spacing: 1.615px;
   text-transform: uppercase;
 }
-ul.featred-topic-list li {
+ul.featured-topic-list li {
   margin-right: 17px;
   padding-right: 17px;
   position: relative;
 }
-ul.featred-topic-list li:last-child {
+ul.featured-topic-list li:last-child {
   margin-right: 0px;
   padding-right: 0px;
 }
-ul.featred-topic-list li:before {
+ul.featured-topic-list li:before {
   content: "";
   position: absolute;
   height: 90%;
@@ -1398,7 +1398,7 @@ ul.featred-topic-list li:before {
   background-color: #b8b8b8;
   width: 1px;
 }
-ul.featred-topic-list li a {
+ul.featured-topic-list li a {
   color: var(--srm-black, #25232b);
   text-align: center;
   font-family: var(--bodyFont);
@@ -1409,20 +1409,20 @@ ul.featred-topic-list li a {
   transition: 0.4s ease all;
   display: inline-block;
 }
-ul.featred-topic-list li a:hover {
+ul.featured-topic-list li a:hover {
   color: var(--srmorange);
 }
-ul.featred-topic-list li:last-child:before {
+ul.featured-topic-list li:last-child:before {
   display: none;
 }
-ul.featred-topic-list li:last-child a:hover {
+ul.featured-topic-list li:last-child a:hover {
   color: var(--srmpurple);
 }
-ul.featred-topic-list li:last-child:hover a svg path {
+ul.featured-topic-list li:last-child:hover a svg path {
   fill: var(--srmpurple);
   transition: 0.4s ease all;
 }
-ul.featred-topic-list li:last-child a {
+ul.featured-topic-list li:last-child a {
   color: var(--srm-orange, #cf9e69);
   font-weight: 600;
 }
