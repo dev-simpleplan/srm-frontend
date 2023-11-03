@@ -1582,7 +1582,7 @@ section.today-read-section.active .author-img-box {
 .similiar-blog-list {
   margin-top: 34px;
 }
-ul.similiar-bog-ul li a {
+ul.similiar-blog-ul li a {
   color: var(--srm-black, #25232b);
   font-family: var(--headingfont);
   font-size: 16px;
@@ -1593,7 +1593,7 @@ ul.similiar-bog-ul li a {
   display: block;
   transition: 0.5s ease all;
 }
-ul.similiar-bog-ul li a:hover {
+ul.similiar-blog-ul li a:hover {
   color: var(--srmorange);
 }
 .newest-talks-box {
@@ -1602,15 +1602,15 @@ ul.similiar-bog-ul li a:hover {
 .newest-talks-box:hover {
   transform: translateY(-10px);
 }
-.similiar-bog-ul li {
+.similiar-blog-ul li {
   padding: 17px 0;
   border-top: 1px solid #cf9e69;
 }
-.similiar-bog-ul li:first-child {
+.similiar-blog-ul li:first-child {
   padding-top: 0px;
   border-top: 0px;
 }
-.similiar-bog-ul li:last-child {
+.similiar-blog-ul li:last-child {
   padding-bottom: 0px;
 }
 .heading-wrap.flex-box {
