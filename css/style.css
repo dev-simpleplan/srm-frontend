@@ -1360,6 +1360,11 @@ span.swiper-pagination-progressbar-fill {
   align-items: center;
   gap: 16px;
 }
+.wisdom-category-box:hover .wisdom-category-link svg path {
+  fill: var(--srmpurple);
+  transition: 0.7s ease all;
+}
+
 .category-title p {
   color: var(--srm-black, #25232b);
   text-align: center;
@@ -1902,10 +1907,10 @@ ul.more.topic-list li a:hover {
   text-align: center;
   margin-top: 39px;
 }
-.connect_item{
-  transition: .5s ease all;
+.connect_item {
+  transition: 0.5s ease all;
 }
-.connect_item:hover{
+.connect_item:hover {
   transform: translateY(-10px);
 }
 .connect_item1 {
@@ -2830,6 +2835,7 @@ section.related-videos .rv-wrapper .nav-arrow button img {
   display: flex;
   column-gap: 47.69px;
 }
+
 .blogs_left {
   width: 25%;
   height: 100%;
@@ -3077,6 +3083,97 @@ hr {
 
 /* Banner ends */
 
+/* blogs new section start */
+.blogs_new_section {
+  display: none;
+  padding-top: 100px;
+}
+.blogs_left_new {
+  background-color: #f0e9e1;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img_text {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: center;
+  column-gap: 16px;
+  width: 100%;
+}
+.imgt_left {
+  height: 0;
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 30%;
+}
+.imgt_left img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* object-fit: cover; */
+  inset: 0;
+}
+.imgt_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blogs_left_heading1{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.blogs_left_heading1 h1 {
+  color: var(--headingcolor);
+  /* text-align: center; */
+  font-size: 40px;
+  line-height: 112%;
+  text-transform: capitalize;
+  width: 20ch;
+  
+}
+.blogs_left_heading1 p{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--srmorange);
+  font-family: var(--headingfont);
+}
+.btn_subscribe {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--srmpurple);
+  color: #fff;
+  padding: 10px 53px;
+}
+.btn_subscribe a{
+  /* border-bottom: 2px solid #FFF; */
+}
+.btn_welcom_text{
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--srmorange);
+}
+.btn_welcom_text a {
+  border-bottom: 2px solid var(--srmorange);
+  display: inline;
+  font-weight: 600;
+}
+.bns_bottom{
+  margin-top: 32px;
+  padding: 0px 16px;
+}
+.bns_bottom p{
+  font-size: 16px;
+}
+
+/* blogs new section ends */
+
 /* connect section start */
 .connect_section {
   background-color: #faf7f5;
@@ -3261,30 +3358,30 @@ hr {
   row-gap: 40px;
   justify-content: flex-start;
 }
-.guidance_inner p{
-    color: var(--paracolor);
+.guidance_inner p {
+  color: var(--paracolor);
 }
 .guidance_link {
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
 }
-.guidance_link span{
+.guidance_link span {
   margin-left: 8px;
-  color:#B7557F;
+  color: #b7557f;
 }
-.guidance_link span a{
+.guidance_link span a {
   display: inline-flex;
-  align-items:center;
+  align-items: center;
   font-weight: 600;
 }
-.guidance_link span a svg{
+.guidance_link span a svg {
   margin-left: 5px;
 }
 .guidance-modal-dialog {
   max-width: 600px !important;
 }
-.blur{
+.blur {
   position: relative;
   z-index: 1;
   -webkit-filter: blur(5px);
@@ -3292,43 +3389,47 @@ hr {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(15px);
-  transition: .5s ease all;
+  transition: 0.5s ease all;
   z-index: 1;
 }
 .modal.show .modal-dialog {
   position: relative;
   z-index: 99;
 }
-.modal_cross_btn{
+.modal_cross_btn {
   padding: 8px;
   border-radius: 50%;
   background-color: #fff;
   margin-bottom: 26px;
 }
-.modal_cross_btn svg{
+.modal_cross_btn svg {
   height: 14px !important;
   width: 14px !important;
 }
-.modal_cross_btn svg path{
-  stroke:var(--srmpurple);
-  fill:var(--srmpurple);
-  transition: .5s ease all;
+.modal_cross_btn svg path {
+  stroke: var(--srmpurple);
+  fill: var(--srmpurple);
+  transition: 0.5s ease all;
 }
 .modal_cross_btn:hover svg path {
   stroke: var(--srmorange);
   fill: var(--srmorange);
-  transition: .5s ease all;
+  transition: 0.5s ease all;
 }
-.guidance_img{
+.guidance_img {
   width: 100px;
   position: absolute;
   top: -14%;
   left: 42px;
+  height: 100px;
+  width: 100px;
 }
-.guidance_link_inner:hover svg path{
-     stroke:var(--srmorange);
-     fill:var(--srmorange);
+.guidance_img img{
+  height: auto !important;
 }
-
+.guidance_link_inner:hover svg path {
+  stroke: var(--srmorange);
+  fill: var(--srmorange);
+}
 
 /* guidance modal ends */

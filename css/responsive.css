@@ -216,7 +216,7 @@
         padding: 20px 30px;
     }
     .main-header.header-active {
-        height: auto;
+        /* height: auto; */
         padding: 24px 0;
     }
     .nav-menu {
@@ -828,7 +828,9 @@
       padding: 8px;
     }
     /* guidance ends */
-    
+    .input_field input {
+        padding: 12.22px 0px;
+    }
 }
 /* 991 px End */
 
@@ -878,6 +880,7 @@
         bottom: 270px;
         right: 40px;
     }
+    
 }
 /* 800px  End */
 
@@ -1226,9 +1229,14 @@
       }
       .blogs_main {
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 14px;
+      }
+      .blogs_new_section{
+        display:flex;
+        flex-direction: column;
       }
       .blogs_left {
+        display: none;
         width: 100%;
         gap: 15px;
       }
@@ -1417,8 +1425,46 @@
         h3.font-32 {
             font-size: 24px;
         }
+        .blogs_left_item3 ul li:last-child a{
+            display: flex;
+          }
+          .blogs_left_item3 ul li:last-child a svg{
+            margin-left: 5px;
+          }
+          .wbmb_new {
+            padding-top: 32px !important;
+          }
 }
 /* 767 px End */
+
+/* 650 start */
+@media screen and (max-width:650px) {
+    .img_text {
+        padding: 10px 40px;
+    }
+    .blogs_left_heading1{
+        gap: 0px;
+    }
+    .blogs_left_heading1 h1 {
+        font-size: 24px;
+    }
+    .btn_welcom_text{
+        font-size: 16px;
+    }
+    .blogs_left_heading1 {
+        font-size: 16px;
+    }
+    .bns_bottom p {
+        font-size: 14px;
+    }
+    .blogs_left_item3 ul {
+        margin-top: 8px;
+    }
+    .wbmb_new {
+        padding-top: 20px !important;
+    }
+}
+/* 650 ends */
 
 /* 500 px Start */
 @media only screen and (max-width: 500px) {
@@ -1658,9 +1704,40 @@
     }
     /* guidance ends */
 
+    .btn_subscribe p{
+        font-size:12px ;
+    }
+    .img_text {
+        padding: 10px 10px;
+    }
+    .blogs_left_item3 ul li a {
+        padding: 2px 0px;
+    }
+    .blogs_main{
+        margin-top: 0px;
+    }
 }
 /* 500 px End */
 
+/* 400px start */
+@media screen and (max-width:400px) {
+    .blogs_left_heading1{
+        row-gap: 5px;
+    }
+    .blogs_left_heading1 h1{
+        font-size: 18px;
+    }
+    .btn_welcom_text{
+        font-size: 14px;
+    }
+    .blogs_left_heading1 p{
+        font-size:12px ;
+    }
+    .bns_bottom p {
+        font-size: 12px;
+    }
+}
+/* 400 ends */
 
 /* 350 px Start */
 @media only screen and (max-width: 350px) {
