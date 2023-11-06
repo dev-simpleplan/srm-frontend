@@ -3263,6 +3263,9 @@ hr {
 /* Bhakti Main ends */
 
 /* Talks Series Start */
+.talks_series_video_directory{
+  padding-top: 100px !important;
+}
 .talks_banner_inner_main {
   width: 83%;
   margin: 0 auto;
