@@ -420,5 +420,24 @@ $(document).ready(function () {
     $(".main-header").removeClass("blur");
   });
 });
-
+$(document).ready(function () {
+  $(".wisdom-bottom-link2").click(function () {
+    $(".body-wrapper").addClass("blur");
+    $(".main-header").addClass("blur");
+  });
+});
 // Mobile Sidebar JS
+
+
+$(document).ready(function () {
+  $("#myModal").click(function () {
+    $(".body-wrapper").removeClass("blur");
+    $(".main-header").removeClass("blur");
+  }); 
+});
+$(document).ready(function () {
+  $("#myModal1").click(function () {
+    $(".body-wrapper").removeClass("blur");
+    $(".main-header").removeClass("blur");
+  }); 
+});
