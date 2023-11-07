@@ -2490,7 +2490,14 @@ section.yt-video-section {
   font-weight: 400;
   line-height: 127.5%; /* 17.85px */
   text-transform: capitalize;
+  text-decoration: none; 
+  transition: text-decoration 0.3s; 
 }
+
+.uplc-wrapper .item .vid-title p:hover {
+  text-decoration: underline; 
+}
+
 .uplc-wrapper .item .vid-desp {
   margin-top: 16px;
 }
@@ -3322,6 +3329,10 @@ hr {
 }
 .talks_right_btm {
   margin-top: 0px !important;
+}
+.tstl_img{
+  height: 4px;
+  width: 4px;
 }
 .talks_series_heading {
   margin-top: 12px;

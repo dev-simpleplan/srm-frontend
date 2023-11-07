@@ -611,9 +611,9 @@
     section.yt-video-section {
         padding-top: 40px;
     }
-    section.video-directory{
+    /* section.video-directory{
         padding-top: 40px;
-    }
+    } */
     .ytvs-content-wrapper .ytvs-left .ytvs-txt-area{
         max-width: 100%;
     }
@@ -1173,9 +1173,9 @@
     .ytvs-content-wrapper .ytvs-right .upper-playlist{
         width: 100%;
     }
-    section.video-directory {
+    /* section.video-directory {
         padding-top: 32px;
-    }
+    } */
     .ytvs-content-wrapper .ytvs-left .ytvs-txt-area{
         width: 100%;
         margin-top: 40px;
