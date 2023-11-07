@@ -441,3 +441,8 @@ $(document).ready(function () {
     $(".main-header").removeClass("blur");
   }); 
 });
+$(document).ready(function (){
+  $(".modal-content").click(function (event){
+     event.stopPropagation();
+  });
+});

@@ -1855,10 +1855,12 @@ ul.more.topic-list li a:hover {
 /* Wisdom Main Page End */
 
 /* modal section start*/
-
 .modal-content {
   background-color: #f0e9e1;
   padding: 20px;
+  position: absolute;
+  /* border: 1px solid red; */
+  z-index: 99999;
 }
 .modal-header,
 .modal-body,
