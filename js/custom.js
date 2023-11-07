@@ -218,8 +218,34 @@ function closeNav() {
   jQuery(".navbar_toggler").removeClass("open");
 }
 
+// $(document).ready(function () {
+//   $(" .has_subs a > span").click(function () {
+//     if ($(this).parent("a").parent(".has_subs").hasClass("active")) {
+//       $(this)
+//         .parent("a")
+//         .parent(".has_subs")
+//         .removeClass("active")
+//         .find(".nav-dropdown")
+//         .slideUp();
+//     } else {
+//       $(" .nav-dropdown").slideUp();
+//       $(".has_subs").removeClass("active");
+//       $(this)
+//         .parent("a")
+//         .parent(".has_subs")
+//         .addClass("active")
+//         .find(".nav-dropdown")
+//         .slideDown();
+//     }
+//     return false;
+//   });
+// });
 $(document).ready(function () {
-  $(" .has_subs a > span").click(function () {
+  // Define a media query
+  var mediaQuery = window.matchMedia('(max-width: 768px)');
+
+  // Function to handle the click event
+  function handleNavClick() {
     if ($(this).parent("a").parent(".has_subs").hasClass("active")) {
       $(this)
         .parent("a")
@@ -238,6 +264,23 @@ $(document).ready(function () {
         .slideDown();
     }
     return false;
+  }
+
+  // Initial execution
+  if (mediaQuery.matches) {
+    // Attach click event handler only if the screen size matches the media query
+    $(" .has_subs a > span").on('click', handleNavClick);
+  }
+
+  // Listen for changes in the media query
+  mediaQuery.addListener(function (event) {
+    if (event.matches) {
+      // Attach click event handler when the media query matches
+      $(" .has_subs a > span").on('click', handleNavClick);
+    } else {
+      // Remove click event handler when the media query doesn't match
+      $(" .has_subs a > span").off('click', handleNavClick);
+    }
   });
 });
 
