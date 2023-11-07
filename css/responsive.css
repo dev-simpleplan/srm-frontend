@@ -303,6 +303,7 @@
     li.has_subs.active a span {
         transform: rotate(180deg);
     }
+  
     .nav-left .nav_list ul.nav-dropdown-list li a{
         font-size: 16px;
     }
