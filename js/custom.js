@@ -219,7 +219,7 @@ function closeNav() {
 }
 
 $(document).ready(function () {
-  $(" .has_subs a > span").click(function () {
+  $(" .nav_list.desktop-nav   .has_subs a > span").click(function () {
     if ($(this).parent("a").parent(".has_subs").hasClass("active")) {
       $(this)
         .parent("a")
@@ -234,7 +234,7 @@ $(document).ready(function () {
         .parent("a")
         .parent(".has_subs")
         .addClass("active")
-        .find(".nav-dropdown")
+        .find(" .nav-dropdown")
         .slideDown();
     }
     return false;
@@ -261,29 +261,29 @@ $(document).ready(function () {
   // Define a media query
   var mediaQuery = window.matchMedia('(max-width: 991px)');
 
-  $('.has_subs_inner').on('click', function (event) {
+  $('.sort-by-box.nav-left .has_subs_inner').on('click', function (event) {
     event.preventDefault(); // Prevent the default behavior of the anchor element
     $(this).toggleClass('clicked');
     var svg = $(this).find('span svg');
     if ($(this).hasClass('clicked')) {
       svg.css('transform', 'rotate(180deg)');
-      $('.nav-dropdown').show(); // Use .show() to display the nav-dropdown
+      $('.sort-by-box.nav-left .nav-dropdown-1').show(); // Use .show() to display the nav-dropdown
     } else {
       svg.css('transform', 'rotate(0deg)');
-      $('.nav-dropdown').hide(); // Use .hide() to hide the nav-dropdown
+      $('.sort-by-box.nav-left .nav-dropdown-1').hide(); // Use .hide() to hide the nav-dropdown
     }
   });
 });
 $(document).ready(function () {
   // Use event delegation for click events on list items inside nav-dropdown
-  $('.nav-dropdown-list').on('click', 'li a', function (event) {
+  $('.sort-by-box.nav-left .nav-dropdown-list').on('click', 'li a', function (event) {
     event.preventDefault(); // Prevent the default behavior of the anchor element
 
     // Toggle active class on the clicked list item
     $(this).toggleClass('active');
 
     // Remove active class from other list items
-    $('.nav-dropdown-list li a').not(this).removeClass('active');
+    $('.sort-by-box.nav-left .nav-dropdown-list li a').not(this).removeClass('active');
   });
 });
 
