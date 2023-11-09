@@ -2952,6 +2952,18 @@ section.related-videos .rv-wrapper .nav-arrow button img {
   text-transform: uppercase;
   font-weight: 700;
 }
+.blogs_left_new_inner{
+  display: flex !important;
+}
+.blogs_left_new_inner p{
+  font-size: 14px;
+}
+.blogs_left_new_inner .input_field{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
 .input_field input {
   width: 100%;
   border: none;
