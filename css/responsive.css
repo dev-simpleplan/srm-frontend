@@ -790,16 +790,14 @@
         padding: 20px 15px;
         min-width: 180px;
     }
-    .sort-by-box.nav-left .nav-dropdown ul.nav-dropdown-list li a{
-        display: block;
-    }
     .nav-left .nav_list ul li:hover .nav-dropdown{
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
         opacity: 1;
     }
     .nav-dropdown{
-
+        display: none;
     }
+
     .nav-left .nav_list ul li .nav-dropdown{
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
         opacity: 1;
@@ -831,6 +829,9 @@
     /* guidance ends */
     .input_field input {
         padding: 12.22px 0px;
+    }
+    .blogs_left_new_inner .input_field input{
+        padding: 12.22px 10px;
     }
 }
 /* 991 px End */
@@ -1285,6 +1286,7 @@
       .blogs_left_item5 {
         display: none;
       }
+      
       .blogs_right {
         width: 100%;
       }
@@ -1360,9 +1362,9 @@
         /* talks series ends */
 
         /* modal css starts*/
-        .modal.show .modal-dialog {
+        /* .modal.show .modal-dialog {
             padding: 20px !important;
-        }
+        } */
         /* modal css ends */
         .artist_name p{
             font-size: 14px;
@@ -1463,6 +1465,9 @@
     }
     .wbmb_new {
         padding-top: 20px !important;
+    }
+    .blogs_left_heading1 p{
+        font-size: 16px;
     }
 }
 /* 650 ends */

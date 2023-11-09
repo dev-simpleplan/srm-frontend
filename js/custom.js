@@ -218,34 +218,8 @@ function closeNav() {
   jQuery(".navbar_toggler").removeClass("open");
 }
 
-// $(document).ready(function () {
-//   $(" .has_subs a > span").click(function () {
-//     if ($(this).parent("a").parent(".has_subs").hasClass("active")) {
-//       $(this)
-//         .parent("a")
-//         .parent(".has_subs")
-//         .removeClass("active")
-//         .find(".nav-dropdown")
-//         .slideUp();
-//     } else {
-//       $(" .nav-dropdown").slideUp();
-//       $(".has_subs").removeClass("active");
-//       $(this)
-//         .parent("a")
-//         .parent(".has_subs")
-//         .addClass("active")
-//         .find(".nav-dropdown")
-//         .slideDown();
-//     }
-//     return false;
-//   });
-// });
 $(document).ready(function () {
-  // Define a media query
-  var mediaQuery = window.matchMedia('(max-width: 768px)');
-
-  // Function to handle the click event
-  function handleNavClick() {
+  $(" .has_subs a > span").click(function () {
     if ($(this).parent("a").parent(".has_subs").hasClass("active")) {
       $(this)
         .parent("a")
@@ -264,25 +238,107 @@ $(document).ready(function () {
         .slideDown();
     }
     return false;
-  }
+  });
+});
+// $(document).ready(function () {
+//   // Define a media query
+//   var mediaQuery = window.matchMedia('(max-width: 991px)');
+  
+//   $(document).ready(function() {
+//     $('.has_subs_inner').on('click', function() {
+//       $(this).toggleClass('clicked');
+//       var svg = $(this).find('span svg');
+//       if ($(this).hasClass('clicked')) {
+//         svg.css('transform', 'rotate(180deg)');
+//       } else {
+//         svg.css('transform', 'rotate(0deg)');
+//       }
+//       $(this).siblings('.nav-dropdown').toggle();
+//     });
+//   });
+// });
+$(document).ready(function () {
+  // Define a media query
+  var mediaQuery = window.matchMedia('(max-width: 991px)');
 
-  // Initial execution
-  if (mediaQuery.matches) {
-    // Attach click event handler only if the screen size matches the media query
-    $(" .has_subs a > span").on('click', handleNavClick);
-  }
-
-  // Listen for changes in the media query
-  mediaQuery.addListener(function (event) {
-    if (event.matches) {
-      // Attach click event handler when the media query matches
-      $(" .has_subs a > span").on('click', handleNavClick);
+  $('.has_subs_inner').on('click', function (event) {
+    event.preventDefault(); // Prevent the default behavior of the anchor element
+    $(this).toggleClass('clicked');
+    var svg = $(this).find('span svg');
+    if ($(this).hasClass('clicked')) {
+      svg.css('transform', 'rotate(180deg)');
+      $('.nav-dropdown').show(); // Use .show() to display the nav-dropdown
     } else {
-      // Remove click event handler when the media query doesn't match
-      $(" .has_subs a > span").off('click', handleNavClick);
+      svg.css('transform', 'rotate(0deg)');
+      $('.nav-dropdown').hide(); // Use .hide() to hide the nav-dropdown
     }
   });
 });
+$(document).ready(function () {
+  // Use event delegation for click events on list items inside nav-dropdown
+  $('.nav-dropdown-list').on('click', 'li a', function (event) {
+    event.preventDefault(); // Prevent the default behavior of the anchor element
+
+    // Toggle active class on the clicked list item
+    $(this).toggleClass('active');
+
+    // Remove active class from other list items
+    $('.nav-dropdown-list li a').not(this).removeClass('active');
+  });
+});
+
+
+
+
+
+
+
+
+
+// $(document).ready(function () {
+//   // Define a media query
+//   var mediaQuery = window.matchMedia('(max-width: 768px)');
+
+//   // Function to handle the click event
+//   function handleNavClick() {
+//     if ($(this).parent("a").parent(".has_subs").hasClass("active")) {
+//       $(this)
+//         .parent("a")
+//         .parent(".has_subs")
+//         .removeClass("active")
+//         .find(".nav-dropdown")
+//         .slideUp();
+//     } else {
+//       $(" .nav-dropdown").slideUp();
+//       $(".has_subs").removeClass("active");
+//       $(this)
+//         .parent("a")
+//         .parent(".has_subs")
+//         .addClass("active")
+//         .find(".nav-dropdown")
+//         .slideDown();
+//     }
+//     return false;
+//   }
+
+//   // Initial execution
+//   if (mediaQuery.matches) {
+//     // Attach click event handler only if the screen size matches the media query
+//     $(" .has_subs a > span").on('click', handleNavClick);
+//   }
+
+//   // Listen for changes in the media query
+//   mediaQuery.addListener(function (event) {
+//     if (event.matches) {
+//       // Attach click event handler when the media query matches
+//       $(" .has_subs a > span").on('click', handleNavClick);
+//     } else {
+//       // Remove click event handler when the media query doesn't match
+//       $(" .has_subs a > span").off('click', handleNavClick);
+//     }
+//   });
+// });
+
 
 // Footer accordian
 
