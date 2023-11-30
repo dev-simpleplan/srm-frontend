@@ -2492,12 +2492,12 @@ section.yt-video-section {
   font-weight: 400;
   line-height: 127.5%; /* 17.85px */
   text-transform: capitalize;
-  text-decoration: none; 
-  transition: text-decoration 0.3s; 
+  text-decoration: none;
+  transition: text-decoration 0.3s;
 }
 
 .uplc-wrapper .item .vid-title p:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .uplc-wrapper .item .vid-desp {
@@ -2952,13 +2952,13 @@ section.related-videos .rv-wrapper .nav-arrow button img {
   text-transform: uppercase;
   font-weight: 700;
 }
-.blogs_left_new_inner{
+.blogs_left_new_inner {
   display: flex !important;
 }
-.blogs_left_new_inner p{
+.blogs_left_new_inner p {
   font-size: 14px;
 }
-.blogs_left_new_inner .input_field{
+.blogs_left_new_inner .input_field {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
@@ -3143,7 +3143,7 @@ hr {
   flex-direction: column;
   justify-content: center;
 }
-.blogs_left_heading1{
+.blogs_left_heading1 {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
@@ -3155,9 +3155,8 @@ hr {
   line-height: 112%;
   text-transform: capitalize;
   width: 20ch;
-  
 }
-.blogs_left_heading1 p{
+.blogs_left_heading1 p {
   font-size: 20px;
   font-weight: 400;
   color: var(--srmorange);
@@ -3172,10 +3171,10 @@ hr {
   color: #fff;
   padding: 10px 53px;
 }
-.btn_subscribe a{
+.btn_subscribe a {
   /* border-bottom: 2px solid #FFF; */
 }
-.btn_welcom_text{
+.btn_welcom_text {
   font-weight: 400;
   font-size: 20px;
   color: var(--srmorange);
@@ -3185,11 +3184,11 @@ hr {
   display: inline;
   font-weight: 600;
 }
-.bns_bottom{
+.bns_bottom {
   margin-top: 32px;
   padding: 0px 16px;
 }
-.bns_bottom p{
+.bns_bottom p {
   font-size: 16px;
 }
 
@@ -3284,7 +3283,7 @@ hr {
 /* Bhakti Main ends */
 
 /* Talks Series Start */
-.talks_series_video_directory{
+.talks_series_video_directory {
   padding-top: 100px !important;
 }
 .talks_banner_inner_main {
@@ -3344,7 +3343,7 @@ hr {
 .talks_right_btm {
   margin-top: 0px !important;
 }
-.tstl_img{
+.tstl_img {
   height: 4px;
   width: 4px;
 }
@@ -3452,7 +3451,7 @@ hr {
   height: 100px;
   width: 100px;
 }
-.guidance_img img{
+.guidance_img img {
   height: auto !important;
 }
 .guidance_link_inner:hover svg path {
@@ -3461,3 +3460,238 @@ hr {
 }
 
 /* guidance modal ends */
+
+/* course section start */
+.course_banner_section{
+  padding-top: 70px;
+}
+
+.course_banner_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course_banner_inner {
+  /* border:1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 29px;
+  align-items: center;
+}
+.cbm_heading {
+  margin-top: 64px;
+}
+.cbm_heading span {
+  color: var(--srmorange);
+}
+.cbm_para {
+  margin-bottom: 142px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.cbm_para p {
+  max-width: 52ch;
+  color: #6b6970;
+}
+.course_featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*   
+  display: flex;
+  justify-content: space-between; */
+  column-gap: 40px;
+  /* flex-wrap: wrap; */
+}
+.cf_icon {
+  padding-top: 133%;
+}
+.cf_wrapper .c_lessons {
+  color: #b7557f;
+  font-family: var(--bodyFont);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 126.5%;
+  letter-spacing: 1.678px;
+  text-transform: uppercase;
+}
+.cf_wrapper p {
+  margin-top: 21px;
+}
+
+.cf_wrapper .c_para {
+  font-size: 26px;
+}
+
+/* course section ends */
+
+/* cources by sriguru section start */
+.cbs_cards {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  margin-top: 70px;
+}
+.cbs_cards .cbsc_item {
+  display: flex;
+  border-radius: 7px;
+  background: #f9f9f9;
+}
+.cbsci_left {
+  width: 30%;
+}
+.cbsci_left .cbscil_img {
+  width: 100%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-top: 133%;
+}
+.cbscil_img img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+.cbsci_right {
+  width: 70%;
+  padding: 21px 43px 0px 26px;
+}
+.cbscir_lesson p {
+  color: #b7557f;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.cbscir_love {
+  margin-top: 5px;
+}
+.cbscir_para {
+  margin-top: 16px;
+}
+.cbscir_btn {
+  margin-top: 30px;
+}
+
+/*  cources by sriguru section ends  */
+
+/* love testimonial section start */
+
+.ltw_para{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.ltw_para h3 {
+  color: #6b6970;
+  text-align: center;
+  font-family: var(--headingfont);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+  max-width: 65ch;
+}
+.ltw_para2 span{
+  font-weight: 400;
+  line-height: 120%;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+
+/* love testimonial section ends */
+
+/* relive section start */
+.relive_section{
+  background-color: #F5EADA;
+}
+.relive_section .container-fluid{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ 
+ .rs_main{
+  position: relative;
+  /* width: 100vw; */
+  display: flex;
+  column-gap: 80px;
+}
+.rsm_left{
+  width: 30%;
+}
+.rsml_img {
+  height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top:61%;
+}
+.rsml_img img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+.rsm_right{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content:center ;
+}
+.rsmr_heading h2{
+  text-transform: capitalize;
+  line-height: 130%;
+}
+.rsmr_para p{
+  font-size: 18px;
+  text-transform: capitalize;
+  max-width: 60ch;
+}
+.rsmr_btn{
+  margin-top: 32px;
+}
+
+
+/* relive section ends */
+
+/* .swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.mySwiper{
+  padding-bottom: 120px;
+}
+.love_testimonial_wrap .mySwiper .swiper-pagination{
+     margin-top: 120px !important;
+     width: 30% !important;
+     left: 30%;
+}
