@@ -92,6 +92,11 @@ var swiper2 = new Swiper(".history-main-slide", {
   },
 });
 
+
+
+
+
+
 // Initiative SLider
 
 var swiper = new Swiper(".initiative-thumb-slider", {
