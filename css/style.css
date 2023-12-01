@@ -3409,7 +3409,7 @@ hr {
   max-width: 600px !important;
 }
 .blur {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
