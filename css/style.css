@@ -3409,7 +3409,6 @@ hr {
   max-width: 600px !important;
 }
 .blur {
-  /* position: relative; */
   z-index: 1;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -3428,6 +3427,11 @@ hr {
   border-radius: 50%;
   background-color: #fff;
   margin-bottom: 26px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal_cross_btn svg {
   height: 14px !important;
@@ -3462,11 +3466,11 @@ hr {
 /* guidance modal ends */
 
 /* course section start */
-.course_banner_section{
+.course_banner_section {
   padding-top: 70px;
   position: relative;
 }
-.course_banner_section::before{
+.course_banner_section::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -3596,11 +3600,10 @@ hr {
 
 /* love testimonial section start */
 .love_section:before {
-  height:30%;
-  
+  height: 30%;
 }
 
-.ltw_para{
+.ltw_para {
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
@@ -3617,7 +3620,7 @@ hr {
   line-height: 120%; /* 38.4px */
   max-width: 65ch;
 }
-.ltw_para2 span{
+.ltw_para2 span {
   font-weight: 400;
   line-height: 120%;
   font-size: 20px;
@@ -3628,22 +3631,22 @@ hr {
 /* love testimonial section ends */
 
 /* relive section start */
-.relive_section{
-  background-color: #F5EADA;
+.relive_section {
+  background-color: #f5eada;
 }
-.relive_section .container-fluid{
+.relive_section .container-fluid {
   width: 100%;
   margin: 0;
   padding: 0;
 }
- 
- .rs_main{
+
+.rs_main {
   position: relative;
   /* width: 100vw; */
   display: flex;
   column-gap: 80px;
 }
-.rsm_left{
+.rsm_left {
   width: 30%;
 }
 .rsml_img {
@@ -3651,48 +3654,137 @@ hr {
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding-top:61%;
+  padding-top: 61%;
 }
-.rsml_img img{
+.rsml_img img {
   height: 100%;
   width: 100%;
   position: absolute;
   inset: 0;
   object-fit: cover;
 }
-.rsm_right{
+.rsm_right {
   width: 70%;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  justify-content:center ;
+  justify-content: center;
 }
-.rsmr_heading h2{
+.rsmr_heading h2 {
   text-transform: capitalize;
   line-height: 130%;
 }
-.rsmr_para p{
+.rsmr_para p {
   font-size: 18px;
   text-transform: capitalize;
   max-width: 60ch;
 }
-.rsmr_btn{
+.rsmr_btn {
   margin-top: 32px;
 }
 
-
 /* relive section ends */
 
-.mySwiper{
+.mySwiper {
   padding-bottom: 120px;
 }
-.love_testimonial_wrap .mySwiper .swiper-pagination{
-     margin-top: 120px !important;
-     margin-bottom: 60px !important;
-     width: 30% !important;
-     left:0;
-     right: 0;
-     max-width: 200px;
-     margin-left: auto  !important;
-     margin-right:auto !important ;
+.love_testimonial_wrap .mySwiper .swiper-pagination {
+  margin-top: 120px !important;
+  margin-bottom: 60px !important;
+  width: 30% !important;
+  left: 0;
+  right: 0;
+  max-width: 200px;
+  margin-left: auto !important;
+  margin-right: auto !important ;
 }
+
+/* course page ends */
+
+/* course inner page start */
+
+.vsm_img {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 36%;
+  overflow: hidden;
+}
+.vsm_img img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+/* explore error */
+.es_main {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.csm_right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  min-width: 462px;
+}
+.csmri_inner {
+  height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 54%;
+}
+.csmri_inner img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+}
+.csmr_pr,
+.csmr_cart {
+  background-color: #f5eada;
+  border-radius: 5px;
+  /* padding: 17px 16px; */
+}
+
+.csmr_item{
+  padding: 16px 22px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.csmr_cart .csmr_item:nth-child(1) p{
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.csmrpr_inner ul li {
+  list-style: disc;
+  margin-left: 30px;
+}
+.csmr_item1 p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.csmrpr_inner{
+  padding: 16px 17px;
+}
+.csmrpr_inner p {
+  color: #25232b;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.csmr_item a {
+  margin-top: 43px;
+  width: 100%;
+}
+
+/* course inner page ends */
