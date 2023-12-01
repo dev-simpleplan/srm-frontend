@@ -883,6 +883,9 @@
       .rs_main {
         column-gap: 32px;
       }
+      .cf_wrapper .c_para {
+        font-size: 24px;
+    }
   /* course page ends */
 }
 /* 991 px End */
@@ -1525,6 +1528,9 @@
    .cbm_para{
     margin-bottom: 30px;
    }
+   .cf_wrapper .c_para {
+    font-size: 18px;
+}
 
 
 
