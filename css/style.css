@@ -3720,9 +3720,18 @@ hr {
 
 /* explore error */
 .es_main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
+  column-gap: 120px;
+}
+.esml_heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+.esml_heading h3 {
+  color: var(--srmpurple);
 }
 .csm_right {
   display: flex;
@@ -3738,11 +3747,11 @@ hr {
   padding-top: 54%;
 }
 .csmri_inner img {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    inset: 0;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
 }
 .csmr_pr,
 .csmr_cart {
@@ -3751,11 +3760,11 @@ hr {
   /* padding: 17px 16px; */
 }
 
-.csmr_item{
+.csmr_item {
   padding: 16px 22px;
   border-bottom: 1px solid #d9d9d9;
 }
-.csmr_cart .csmr_item:nth-child(1) p{
+.csmr_cart .csmr_item:nth-child(1) p {
   color: #000;
   font-size: 24px;
   font-weight: 600;
@@ -3773,7 +3782,7 @@ hr {
   line-height: 140%;
   text-transform: capitalize;
 }
-.csmrpr_inner{
+.csmrpr_inner {
   padding: 16px 17px;
 }
 .csmrpr_inner p {
@@ -3786,5 +3795,282 @@ hr {
   margin-top: 43px;
   width: 100%;
 }
+.esmli_heading p {
+  color: #6b6970;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.emsl_item2,
+.emsl_item3 {
+  margin-top: 56px;
+}
+.esmli_para {
+  margin-top: 20px;
+}
+.csmlip2 {
+  margin-top: 20px;
+}
+.emsli3 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #efd7bd;
+}
+/* accordian section start */
+.faq_section {
+  margin-top: 56px;
+}
+.faqs_main {
+  width: 50%;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+.faqs_main .accordion .accordion-item {
+  border: none !important;
+}
+.accordion {
+  --bs-accordion-border-color: unset;
+}
+.accordion-button:focus {
+  box-shadow: none !important; /* or your desired box-shadow value */
+}
+.accordion-button {
+  --bs-accordion-btn-padding-y: 0px !important;
+  line-height: 127% !important;
+  font-family: var(--bodyFont) !important;
+  color: #333 !important;
+  padding: 0px !important;
+  /* font-size:; */
+  font-weight: 400;
+  line-height: 127.5%;
+  text-transform: capitalize;
+}
+.accordion-button::after {
+  margin-left: 24px;
+}
 
+.faqs_main .accordion .accordion-item {
+  border-bottom: 1px solid #efd7bd !important;
+  padding: 24px 0px !important;
+}
+.accordion-body {
+  padding: 24px 0px 0px !important;
+}
+.accordion-body p {
+  color: #6b6970 !important;
+}
+.faqsm_loadmore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+.faqsm_loadmore a {
+  color: #b7557f;
+  font-weight: 600;
+}
+.faqsm_loadmore a span {
+  margin-left: 9px;
+}
+.faqsm_loadmore a:hover svg path {
+  stroke: var(--srmorange);
+  fill: var(--srmorange);
+}
+.faqs_main .faqsm_loadmore a:hover span {
+  transition: 0.6s ease all;
+  transform: rotate(270deg);
+}
+/* accordian section ends */
+/* course by sriguru seciton start */
+.cbsgm_inner {
+  display: flex;
+  column-gap: 32px;
+  margin-top: 52px;
+}
+.cbsgi_img {
+  height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 52%;
+  border-radius: 5px;
+}
+.cbsgi_img img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.cbsgi_heading {
+  margin-top: 32px;
+}
+.cbsgi_para {
+  margin-top: 14px;
+  color: #6b6970;
+}
+.cbsg_main .mySwiper2 {
+  padding-bottom: 58px;
+}
+.cbsg_main .mySwiper2 .swiper-pagination {
+  margin: 0px;
+  width: 100%;
+}
+.bsg_main .bsg_inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.bsg_main .bsg_inner .bsgi_heading {
+  max-width: 100%;
+  text-align: center;
+}
+/* course by sriguru section ends */
 /* course inner page ends */
+
+/* meditation page start */
+
+.meditation_main_content h1 span,
+.meditation_content_para p span {
+  color: #cf9e69;
+}
+.meditation_content_para p {
+  font-size: 26px;
+  color: #25232b;
+  text-transform: capitalize;
+}
+.meditation_content_para2 p {
+  color: var(--srm-grey, #6b6970);
+  margin-top: 40px;
+}
+.meditation_content_link {
+  margin-top: 24px;
+}
+.meditation_content_link a {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 700;
+}
+.meditation_main_icon {
+  padding-top: 100%;
+}
+.meditation_main_wrapper .mmi_para1 {
+  margin-top: 14px;
+  color: #25232b;
+  font-size: 20px;
+  font-family: var(--headingfont);
+  font-weight: 400;
+  line-height: 127.5%;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+.meditation_main_wrapper .mmi_para2 {
+  color: var(--srm-purple, #49378d);
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 127.5%; /* 20.4px */
+  text-transform: capitalize;
+}
+
+.cs_main {
+  width: 100%;
+  overflow: hidden;
+}
+.csm_item {
+  width: 100%;
+}
+.csmi_left {
+  width: 100%;
+}
+.csm_tab {
+  margin-top: 30px;
+  display: flex;
+  column-gap: 16px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.csmt_item {
+  min-width: 192px;
+  min-height: 41px;
+  border-radius: 5px;
+  border: 1px solid #cf9e69;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cf9e69;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.background{
+  background-color:#cf9e69;
+  color: #FDFDFD;
+}
+.csm_item_main {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+  width: 60%;
+}
+.csm_item {
+  display: flex;
+  column-gap: 27px;
+}
+.csmi_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.csmt_item:hover{
+  background-color: #cf9e69;
+  color:#FDFDFD ;
+  transition: .5s ease all;
+}
+.csml_img {
+  height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+}
+.csml_img img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+.csmir_para1 {
+  color: #49378d;
+  font-family: var(--headingfont);
+}
+.csmir_para2 {
+  margin-top: 10px;
+  width: clamp(40ch, 100%, 64ch);
+}
+.csmir_para2 {
+  color: #6b6970;
+}
+
+/* meditation page ends */
+
+/* meditation inner start */
+.mbh {
+  font-size: 26px !important;
+  font-family: var(--headingfont) !important;
+}
+.meditation_banner_heading span {
+  color: #cf9e69;
+}
+.mbw_second {
+  margin-left: 19px;
+}
+
+/* meditation inner ends*/

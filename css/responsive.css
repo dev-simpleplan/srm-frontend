@@ -153,7 +153,7 @@
 
   /* course page start*/
   .cbsci_right {
-   padding: 12px 0px 0px 14px;
+    padding: 12px 0px 0px 14px;
   }
   .cbscir_btn {
     margin-top: 18px;
@@ -846,47 +846,88 @@
     padding: 12.22px 10px;
   }
 
-
-
   /* phase 2 css*/
-
-
 
   /* course page start */
   .cbm_heading {
     margin-top: 40px;
-   }
-   .cbm_para{
+  }
+  .cbm_para {
     margin-bottom: 60px;
-   }
-
+  }
 
   .cbsci_right {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .cbs_cards {
-        /* border: 1px solid red; */
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 32px;
-        margin-top: 50px;
-    }  
-    .cbscir_para {
-        margin-top: 16px;
-      }
-      .cbscir_btn {
-        margin-top: 30px;
-      }
-      .rs_main {
-        column-gap: 32px;
-      }
-      .cf_wrapper .c_para {
-        font-size: 24px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cbs_cards {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 32px;
+    margin-top: 50px;
+  }
+  .cbscir_para {
+    margin-top: 16px;
+  }
+  .cbscir_btn {
+    margin-top: 30px;
+  }
+  .rs_main {
+    column-gap: 32px;
+  }
+  .cf_wrapper .c_para {
+    font-size: 24px;
+  }
   /* course page ends */
+
+  /* courseinner page start */
+  .csm_right {
+    min-width: 380px;
+  }
+  .es_main {
+    column-gap: 48px;
+  }
+  .emsl_item2,
+  .emsl_item3 {
+    margin-top: 40px;
+  }
+  .faq_section {
+    margin-top: 40px;
+  }
+  .faqs_main {
+    width: 100%;
+  }
+  .cbsgm_inner {
+    margin-top: 40px;
+  }
+  /*  courseinner page ends */
+
+  /* meditation main page start */
+  .meditation_content_para p {
+    font-size: 20px;
+  }
+  .meditation_content_para2 p {
+    margin-top: 24px;
+  }
+  .meditation_content_link {
+    margin-top: 18px;
+  }
+  .meditation_content_link a {
+    font-size: 16px;
+  }
+  .meditation_main_wrapper .mmi_para1{
+    font-size: 18px;
+  }
+  .meditation_main_wrapper .mmi_para2{
+    font-size:16px;
+  }
+  .csm_item_main{
+    width: 80%;
+  }
+  /* meditation main page ends */
 }
 /* 991 px End */
 
@@ -1514,27 +1555,69 @@
     padding-top: 32px !important;
   }
 
-  
-  
   /* phase 2 */
 
   /* course page start */
+  .course_featured{
+    margin-top: 32px;
+    row-gap: 18px !important;
+  }
   .course_banner_inner {
     row-gap: 20px;
   }
   .cbm_heading {
     margin-top: 24px;
-   }
-   .cbm_para{
+  }
+  .cbm_para {
     margin-bottom: 30px;
-   }
-   .cf_wrapper .c_para {
+  }
+  .cf_wrapper .c_para {
     font-size: 18px;
-}
-
-
-
+  }
   /* course page ends */
+
+  /* courseinner page start*/
+
+  .csm_right {
+    min-width: 100%;
+  }
+  .es_main {
+    row-gap: 48px;
+    flex-direction: column;
+  }
+  .emsl_item2,
+  .emsl_item3 {
+    margin-top: 40px;
+  }
+  .cbsgm_inner {
+    margin-top: 30px;
+  }
+
+  /* courseinner page ends */
+
+  /* meditation main page start */
+  .meditation_content_para p {
+    font-size: 16px;
+  }
+  .meditation_content_para2 p {
+    margin-top: 24px;
+  }
+  .meditation_content_link {
+    margin-top: 18px;
+  }
+  .meditation_content_link a {
+    font-size: 14px;
+  }
+  .meditation_main_wrapper .mmi_para1{
+    font-size: 16px;
+  }
+  .meditation_main_wrapper .mmi_para2{
+    font-size:14px ;
+  }
+  .csm_item_main {
+    width: 100%;
+  }
+  /* meditation main page ends */
 }
 /* 767 px End */
 
@@ -1567,6 +1650,25 @@
   .blogs_left_heading1 p {
     font-size: 16px;
   }
+
+  /*phase 2  */
+
+  /* courseinner page start */
+  .cbsgm_inner {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  /* courseinner page ends */
+
+  /* meditation main page start */
+  .csm_item{
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .csmi_left {
+    width: 40%;
+   }
+  /* meditation main page ends */
 }
 /* 650 ends */
 
@@ -1824,7 +1926,7 @@
   /* phase 2 css */
 
   /* course page start */
-  .cbsci_left{
+  .cbsci_left {
     width: 45%;
   }
 
@@ -1832,33 +1934,32 @@
     width: 55%;
     padding: 5px 0px 0px 12px;
   }
-  .cbscir_para{
-     margin-top: 5px;
+  .cbscir_para {
+    margin-top: 5px;
   }
   .cbscir_btn {
     margin-top: 14px;
   }
-
-
 
   /* course page ends */
 }
 /* 500 px End */
 
 /* 450 start */
-@media screen and (max-width:450px) {
-    /* phase 2 */
-    /* course page start */
-     .course_featured a{
-        width: 100%;
-     }
-     /* course page ends */
+@media screen and (max-width: 450px) {
+  /* phase 2 */
+  /* course page start */
+  .course_featured a {
+    width: 100%;
+  }
+  /* course page ends */
+  /* meditation main page start */
+  .csmi_left {
+    width: 100%;
+   }
+  /* meditation main page ends */
 }
 /* 450 ends */
-
-
-
-
 
 /* 400px start */
 @media screen and (max-width: 400px) {

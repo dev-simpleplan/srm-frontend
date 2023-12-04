@@ -38,7 +38,6 @@ ScrollTrigger.defaults({
 const t2 = gsap.timeline({
   scrollTrigger: {
   trigger: ".banner-content-wrapper ",
-    
     start: "10% 30%",
     end: "+=300",
     scrub: 1,
@@ -68,7 +67,6 @@ ScrollTrigger.defaults({
 const t3 = gsap.timeline({
   scrollTrigger: {
   trigger: ".banner-img-wrapper",
-    
   start: "20% 20%",
   end: "60% 100%",
   scrub: 1,
