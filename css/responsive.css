@@ -89,6 +89,18 @@
   .today-read-section {
     padding: 70px 0;
   }
+
+  /* phase 2 */
+  
+  /* sacred store page start */
+  .nasm_items .nasmi_1 .nasmi_inner,
+  .nasm_items .nasmi_2 .nasmi_inner,
+  .nasm_items .nasmi_3 .nasmi_inner {
+    min-width: auto;
+  }
+  /* sacred store page ends */
+  
+
 }
 /* 1300 px End */
 
@@ -159,6 +171,18 @@
     margin-top: 18px;
   }
   /* course page ends */
+
+  /* sacred page start */
+  /* .scsm_right {
+    padding: 40px 0px 0px 28px;
+  }
+  .scsmr_para3 p {
+    margin-top: 0px;
+  }
+  .scsmr_link {
+    margin-top: 14px;
+  } */
+  /* sacred page ends */
 }
 /* 1200 px End */
 
@@ -170,11 +194,30 @@
     margin-top: 14px;
   }
   /* course page ends */
+
+  /* sacred page start */
+
+  .scsm_right .mySwiper3 .swiper-pagination {
+    bottom: 14px;
+    padding-right: 24px;
+   }
+/* sacred page ends */
 }
 /* 1100 px ends */
 
 /* 1024 px Start */
 @media only screen and (max-width: 1024px) {
+  /* sacred page start */
+  .scsm_right {
+    padding: 30px 0px 0px 24px;
+  }
+  .nasm_items .nasmi_1,
+  .nasm_items .nasmi_2,
+  .nasm_items .nasmi_3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  /* sacred page ends */
 }
 /* 1024 px End */
 
@@ -918,16 +961,69 @@
   .meditation_content_link a {
     font-size: 16px;
   }
-  .meditation_main_wrapper .mmi_para1{
+  .meditation_main_wrapper .mmi_para1 {
     font-size: 18px;
   }
-  .meditation_main_wrapper .mmi_para2{
-    font-size:16px;
+  .meditation_main_wrapper .mmi_para2 {
+    font-size: 16px;
   }
-  .csm_item_main{
+  .csm_item_main {
     width: 80%;
   }
   /* meditation main page ends */
+
+    /* sacred page start */
+    .sacred_banner {
+      padding-top: 70px;
+      padding-bottom:80px ;
+    }
+    .sbm_search {
+      margin-top: 32px;
+    }
+    .scs_main {
+       flex-direction: column;
+    }
+    .sb_main {
+      margin-top: 40px;
+    }
+    .scsm_left{
+      width: 100%;
+    }
+    .scsm_right{
+      width: 100%;
+    }
+    .scsmr_link {
+      padding-bottom: 30px;
+    }
+    .sbm_search {
+      flex-direction: column;
+      row-gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .sbms_left{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .sbms_right {
+      width: 80%;
+  }
+    /* sacred page ends */
+
+    /* noresult page start */
+    .no_result_banner{
+      padding-top:48px ;
+      padding-bottom:80px;
+    }
+    .nrb_main .sbm_heading {
+      margin-top: 32px;
+   }
+    .nrb_main .sbm_search {
+      width: 50%;
+      margin-top: 32px;
+  }
+    /* no result page ends */
 }
 /* 991 px End */
 
@@ -1558,7 +1654,7 @@
   /* phase 2 */
 
   /* course page start */
-  .course_featured{
+  .course_featured {
     margin-top: 32px;
     row-gap: 18px !important;
   }
@@ -1608,16 +1704,31 @@
   .meditation_content_link a {
     font-size: 14px;
   }
-  .meditation_main_wrapper .mmi_para1{
+  .meditation_main_wrapper .mmi_para1 {
     font-size: 16px;
   }
-  .meditation_main_wrapper .mmi_para2{
-    font-size:14px ;
+  .meditation_main_wrapper .mmi_para2 {
+    font-size: 14px;
   }
   .csm_item_main {
     width: 100%;
   }
   /* meditation main page ends */
+
+  /* sacred page start */
+  .no_result_banner {
+    padding-bottom: 40px;
+  }
+  .sb_main {
+    margin-top: 20px;
+  }
+  .nasm_items .nasmi_1,
+  .nasm_items .nasmi_2,
+  .nasm_items .nasmi_3 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  /* sacerd page ends */
 }
 /* 767 px End */
 
@@ -1661,16 +1772,54 @@
   /* courseinner page ends */
 
   /* meditation main page start */
-  .csm_item{
+  .csm_item {
     flex-direction: column;
     row-gap: 24px;
   }
   .csmi_left {
     width: 40%;
-   }
+  }
   /* meditation main page ends */
+  
+  /* sacred page start */
+  .sort-by-dropdown-box {
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    row-gap: 10px;
+  }
+  /* sacred page ends */
+  
+  /* noresult page start */
+  .nrb_main .sbm_heading {
+    margin-top: 24px;
+    text-align: center;
+ }
+  .nrb_main .sbm_search {
+    width: 80%;
+    margin-top: 24px;
+}
+  /* no result page ends */
 }
 /* 650 ends */
+
+/* 600 start */
+@media screen and (max-width:600px) {
+    /* sacred page start */
+  .nasm_items .nasmi_1,
+  .nasm_items .nasmi_2,
+  .nasm_items .nasmi_3 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .scsmr_para2 p{
+    font-size: 24px;
+  }
+  /* sacerd page ends */
+}
+/* 600 ends */
+
+
 
 /* 500 px Start */
 @media only screen and (max-width: 500px) {
@@ -1956,7 +2105,7 @@
   /* meditation main page start */
   .csmi_left {
     width: 100%;
-   }
+  }
   /* meditation main page ends */
 }
 /* 450 ends */
