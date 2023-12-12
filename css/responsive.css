@@ -1024,6 +1024,24 @@
       margin-top: 32px;
   }
     /* no result page ends */
+
+    /* product-inner page start */
+    .sacred_banner_btm {
+      margin-top: 50px;
+      display: flex;
+      column-gap: 0px;
+  }
+  .nasm_items {
+    margin-top: 50px;
+  }
+    /* product-inner page ends */
+
+  /* dhyan sangha page start */
+  .sswbw_main{
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 20px;
+  }
+  /* dhyan sangha page ends */
 }
 /* 991 px End */
 
@@ -1729,6 +1747,29 @@
     grid-template-columns: repeat(2,1fr);
   }
   /* sacerd page ends */
+
+  /* product page start */
+  .sacred_banner_btm{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .sbb_left{
+    width: 100%;
+  }
+  .sbb_right{
+    width: 100%;
+  }
+  .sbbr_notebook {
+    margin-top: 24px;
+  }
+  .sbbr_para {
+    margin-top: 24px;
+   }
+   .nasm_items {
+    margin-top: 32px;
+  }
+  /* product page ends */
+
 }
 /* 767 px End */
 
@@ -2091,6 +2132,19 @@
   }
 
   /* course page ends */
+
+  /* dhyan sangha page start */
+  .sswbw_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sswbw_main a{
+    min-width: 380px;
+    
+  }
+  /* dhyan sangha page ends */
 }
 /* 500 px End */
 

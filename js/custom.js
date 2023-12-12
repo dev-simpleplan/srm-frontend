@@ -524,8 +524,9 @@ $(document).ready(function () {
     $(".main-header").removeClass("blur");
   });
 });
+
 $(document).ready(function () {
-  $(".wisdom-bottom-link2").click(function () {
+  $(".dhayan_sangha_banner_btn").click(function () {
     $(".body-wrapper").addClass("blur");
     $(".main-header").addClass("blur");
   });

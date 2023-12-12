@@ -2120,6 +2120,11 @@ ul.social-icon-list li a,
 ul.social-icon-list li a svg path {
   transition: 0.5s ease all;
 }
+ul.social-icon-list li a .ftr_twtr_icon:hover {
+  transition: 0.5s ease all;
+  transform: scale(1.25);
+  filter: invert(100%);
+}
 .modal_opener {
   position: relative;
   transition: 0.4s ease all;
@@ -4250,7 +4255,7 @@ hr {
   position: relative !important;
 }
 .nasm_items {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 .nasm_items .nasmi_citem {
   display: flex;
@@ -4482,12 +4487,75 @@ hr {
   background: #fff;
 }
 .sacred_banner_btm {
+  margin-top: 70px;
   display: flex;
   column-gap: 80px;
 }
 .sbb_left {
   width: 50%;
   display: flex;
+}
+.sbbl_scroll {
+  width: 15%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mySwiper4 {
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  position: relative;
+}
+.mySwiper4 .swiper-button-next {
+  /* top:490px; */
+  transform: rotate(90deg);
+  position: absolute;
+  top: 490px;
+  padding: 35px;
+  right: 0px;
+  /* border: 1px solid red; */
+  background: #fff;
+}
+
+.mySwiper4 .swiper-button-next::after {
+  font-size: 18px;
+  color: #b7557f;
+}
+.mySwiper4 .swiper-button-prev {
+  position: absolute;
+  top: 14px;
+  transform: rotate(90deg);
+  left: 0px;
+  background: #fff;
+  padding: 34px;
+  /* border: 1px solid red; */
+}
+.mySwiper4 .swiper-button-prev::after {
+  font-size: 18px;
+  color: #b7557f;
+}
+.sbblsm_imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  justify-content: center;
+  align-items: center;
+}
+.border2 {
+  border: 1.5px solid #cf9e69;
+}
+.sbblsmi_inner {
+  height: 63px !important;
+  width: 63px !important;
+}
+.sbblsmi_inner img {
+  height: 100%;
+  width: 100%;
 }
 .sbb_right {
   width: 50%;
@@ -4496,7 +4564,7 @@ hr {
   justify-content: center;
 }
 .sbbl_img {
-  width: 90%;
+  width: 85%;
 }
 .sbbli_inner {
   width: 100%;
@@ -4560,10 +4628,20 @@ hr {
   display: flex;
   /* border: 1px solid black; */
 }
-.sbbr_notebook p{
+.sbbr_notebook p {
   font-family: var(--headingfont);
   text-transform: capitalize;
 }
+.nasmdrn1 {
+  /* border: 1px solid red; */
+  width: 218px;
+}
+.nasmd_right .sbbrnd_nav .has_subs .has_subs_inner {
+  text-transform: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .sbbrnr_counter .sbbrnrc_icon {
   border-radius: 4.649px;
   border: 0.947px solid #49378d;
@@ -4571,10 +4649,17 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 10px 13px;
+  color: #49378d;
+  font-size: 13.26px;
 }
-
+.sbbrnr_counter .sbbrnrc_icon span {
+  color: #49378d;
+}
+.sbbrnrc_icon i {
+  cursor: pointer;
+}
 .sbbr_btn {
-  margin-top: 25px;
+  margin-top: 90px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -4601,3 +4686,105 @@ hr {
 }
 
 /* sacred inner page ends */
+
+/* dhayan sangha page start */
+.dhyan_sangha_banner {
+  position: relative;
+}
+.dhyan_sangha_banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-image: url(../img/event-layout-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -60px;
+  z-index: 0;
+  background-position: bottom;
+}
+.dsb_content_para p {
+  color: #6b6970;
+  font-size: 16px;
+  font-family: var(--baseFont);
+}
+.dsbc_para2 {
+  margin-top: 32px;
+}
+.dhayan_sangha_banner_btn {
+  margin-top: 40px;
+}
+.sswbw_main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+.ss_heading {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.ssecw_radio label{
+  font-family: var(--baseFont) !important;
+}
+.sswbwm_card {
+  border-radius: 6px;
+  background: #fdfaf7;
+  padding: 40px 22px;
+  max-width: 380px;
+}
+.sswbwmc_heading h5 {
+  color: #000;
+  font-size: 20px;
+  line-height: 127.5%; /* 25.5px */
+  text-transform: capitalize;
+}
+.ss_inner{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+.ssis_right{
+  min-width: 480px;
+}
+.sswbwmct_host p {
+  color: #cf9e69;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.sswbwmct_name p {
+  color: #444;
+  font-family: var(--headingfont);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127.5%; /* 22.95px */
+  text-transform: capitalize;
+}
+.sswbwmc_text {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sswbwmc_request {
+  margin-top: 32px;
+}
+.sswbwmc_request p {
+  color: var(--srm-pink, #b7557f);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+.sswbw_btn{
+  margin-top: 70px;
+}
+/* dhyan sangha page ends */
