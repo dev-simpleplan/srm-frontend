@@ -1689,6 +1689,10 @@ section.talks-section {
   align-items: center;
   justify-content: center;
 }
+.swiper-button-next svg, .swiper-button-prev svg {
+  max-width: 34px;
+  max-height: 34px;
+}
 .slider-arrow-nav .swiper-btn:hover span {
   background-color: var(--srmpurple);
 }
