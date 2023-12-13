@@ -727,33 +727,7 @@
     <script src="js/custom.js"></script>
     
 
-    <script>
-         document.addEventListener('DOMContentLoaded', function () {
-    // Get all tabs and dropdowns
-    var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
     
-    tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-            var dropdown = this.querySelector('.hs_nav_dropdown');
-            if (dropdown) {
-                var currentDisplay = window.getComputedStyle(dropdown).display;
-                dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
-                         }
-            });
-        });
-    });   
-
-        var swiper = new Swiper('.mySwiper4', {
-        direction: 'vertical',
-        slidesPerView: 6,
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    </script>
  
 </body>
 <!-- Body Ends-->

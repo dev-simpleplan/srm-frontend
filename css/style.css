@@ -1689,7 +1689,8 @@ section.talks-section {
   align-items: center;
   justify-content: center;
 }
-.swiper-button-next svg, .swiper-button-prev svg {
+.swiper-button-next svg,
+.swiper-button-prev svg {
   max-width: 16px;
   max-height: 16px;
 }
@@ -4718,9 +4719,9 @@ hr {
 .dhayan_sangha_banner_btn {
   margin-top: 40px;
 }
-.sswbw_main{
+.sswbw_main {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 40px;
 }
@@ -4730,7 +4731,7 @@ hr {
   display: flex;
   justify-content: center;
 }
-.ssecw_radio label{
+.ssecw_radio label {
   font-family: var(--baseFont) !important;
 }
 .sswbwm_card {
@@ -4745,15 +4746,32 @@ hr {
   line-height: 127.5%; /* 25.5px */
   text-transform: capitalize;
 }
-.ss_inner{
+.ss_inner {
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  gap: 19px;
 }
-.ssis_right{
+.ssi_location,
+.ssi_filter {
+  /* border: 1px solid black; */
+  height: 36px;
+  width: 220px;
+}
+
+.flag_img {
+  height: 30px;
+  width: 40px;
+}
+.ss_inner .ssi_location .nasmd_right .sbbrnd_nav .has_subs .has_subs_inner {
+  padding: 3px 16px;
+  align-items: center;
+}
+
+.ssis_right {
   min-width: 480px;
 }
 .sswbwmct_host p {
@@ -4788,7 +4806,114 @@ hr {
   font-weight: 600;
   line-height: 120%; /* 19.2px */
 }
-.sswbw_btn{
+.sswbw_btn {
   margin-top: 70px;
 }
+
+.dhyan_sangha_modal .modal-content {
+  background-color: #f5eada;
+  padding: 40px 20px;
+}
+.dhyan_sangha_modal .modal_cross_btn {
+  background-color: #f5eada;
+  border-radius: 0%;
+}
+.ds_modal_text h3 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+}
+.ds_modal_text p {
+  margin-top: 10px;
+  color: #6b6970;
+  text-align: start;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0;
+  text-transform: none;
+}
+.ds_modal_input_field {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ds_modal_link {
+  max-width: 150px;
+}
+.dsmif_item {
+  border-radius: 5.427px;
+  border: 1.357px solid #cf9e69;
+  background: #fdfdfd;
+  padding: 16px 12px;
+}
+.dsmif_item:last-child {
+  display: flex;
+  padding: 0px;
+}
+.dsmif_item:last-child input {
+  padding: 0px 16px;
+}
+.dsmif_item input {
+  outline: none;
+  border: none;
+
+  border-radius: 6px;
+}
+.dsmifi3_number {
+  padding: 16px 20px;
+  border-right: 1px solid #cf9e69;
+}
+
 /* dhyan sangha page ends */
+
+/* thank you page start */
+.thank_you_section {
+  height: 100vh;
+  width: 100vw;
+}
+.tys_main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tysm_inner {
+  /* border: 1px solid red; */
+  padding: 60px 40px;
+  border-radius: 6.784px;
+  background: var(--SRM, #f5eada);
+  position: relative;
+}
+.tysmi_cross {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  position: absolute;
+  right:12px;
+  top:14px;
+}
+.tysmi_heading {
+  margin-top: 35px;
+  text-align: center;
+}
+.tysmi_heading h3 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+}
+.tysmi_para p {
+  margin-top: 16px;
+  max-width: 46ch;
+  text-align: center;
+  color: #6b6970;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+/* thank you page ends */

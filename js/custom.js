@@ -513,6 +513,35 @@ var swiper = new Swiper(".featured-slider", {
   },
 });
 
+
+// PasT Event Slider
+
+var swiper = new Swiper(".past-event-slider", {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    800: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+  },
+});
+
 // guidance modal
 $(document).ready(function () {
   $(".wisdom-bottom-link").click(function () {

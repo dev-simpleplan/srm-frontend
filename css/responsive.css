@@ -1041,6 +1041,9 @@
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 20px;
   }
+  .ss_inner{
+    flex-wrap: wrap;
+  }
   /* dhyan sangha page ends */
 }
 /* 991 px End */
@@ -2143,6 +2146,15 @@
   .sswbw_main a{
     min-width: 380px;
     
+  }
+  .ssi_search .sbms_right{
+    max-width:380px;
+    min-width: 380px;
+    display: flex;
+    justify-content: center;
+  }
+  .ssi_search .sbms_right input{
+    width: auto;
   }
   /* dhyan sangha page ends */
 }
