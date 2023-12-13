@@ -652,6 +652,9 @@ section.by_sriguru.testimonaial-sriguru-section .feat-testimonial-title.bsgi_hea
     z-index: -1;
     background-position: bottom;
 }
+.swiper.past-event-extra-slider {
+    padding-bottom: 60px;
+}
 /* Additional Upcoming Event  End */
 
 /* Login Modal CSS start */

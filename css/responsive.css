@@ -2173,6 +2173,19 @@
     width: 100%;
   }
   /* meditation main page ends */
+
+  /* sacred page start */
+  .nasm_dropdown .nasmd_right {
+    display: flex;
+    position: relative;
+    height: 32px;
+    gap: 44px;
+    flex-direction: column;
+  }
+  .nasm_items {
+    margin-top: 72px;
+}
+  /* sacred page ends */
 }
 /* 450 ends */
 
