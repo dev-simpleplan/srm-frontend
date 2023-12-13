@@ -4313,6 +4313,7 @@ hr {
   display: flex;
   position: relative;
   height: 32px;
+  gap:14px;
 }
 .nasmd_right .nasmdr_nav {
   width: 190px;
@@ -4324,6 +4325,7 @@ hr {
   border: 1px solid #cf9e69;
   cursor: pointer;
   position: absolute;
+  width: 100%;
 }
 .nasmdr_nav .has_subs .has_subs_inner {
   padding: 8px 16px;
@@ -4333,6 +4335,8 @@ hr {
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }
 .hs_nav_dropdown {
   padding: 0px 16px 14px;
