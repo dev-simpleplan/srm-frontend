@@ -4446,6 +4446,17 @@ hr {
 
 /* sacred page ends */
 
+/* sacred page selected state start */
+.sacred_banner_searched{
+  padding: 70px 0px 0px;
+}
+/* sacred page selected state ends */
+
+
+
+
+
+
 /* no result page start */
 .no_result_banner {
   padding-top: 70px;
