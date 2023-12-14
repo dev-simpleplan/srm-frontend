@@ -1689,8 +1689,8 @@ section.talks-section {
   align-items: center;
   justify-content: center;
 }
-.swiper-button-next svg,
-.swiper-button-prev svg {
+.related-videos .newest-talk-wrapper .swiper-button-next svg,
+.related-videos .newest-talk-wrapper .swiper-button-prev svg {
   max-width: 16px;
   max-height: 16px;
 }
