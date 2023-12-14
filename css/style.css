@@ -4022,13 +4022,19 @@ hr {
   background-color: #cf9e69;
   color: #fdfdfd;
 }
+
 .csm_item_main {
   margin-top: 55px;
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 36px;
   width: 60%;
 }
+
+.csm_item_main:first-child {
+  display: flex;
+}
+
 .csm_item {
   display: flex;
   column-gap: 27px;
