@@ -3993,7 +3993,7 @@ hr {
   width: 100%;
 }
 .csmi_left {
-  width: 100%;
+  width: 40%;
 }
 .csm_tab {
   margin-top: 30px;
@@ -4043,6 +4043,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 60%;
 }
 .csmt_item:hover {
   background-color: #cf9e69;
@@ -4055,6 +4056,7 @@ hr {
   position: relative;
   overflow: hidden;
   padding-top: 100%;
+  border-radius: 10px;
 }
 .csml_img img {
   height: 100%;
@@ -4319,7 +4321,7 @@ hr {
   display: flex;
   position: relative;
   height: 32px;
-  gap:14px;
+  gap: 14px;
 }
 .nasmd_right .nasmdr_nav {
   width: 190px;
@@ -4356,6 +4358,9 @@ hr {
   display: flex;
   flex-direction: column;
   row-gap: 4px;
+  background-color: #cf9e69;
+  color: #000;
+  padding: 6px 10px;
 }
 /* .nasm_dropdown .nasmd_right .sort-by-box {
   border-radius: 5px;
@@ -4453,15 +4458,10 @@ hr {
 /* sacred page ends */
 
 /* sacred page selected state start */
-.sacred_banner_searched{
+.sacred_banner_searched {
   padding: 70px 0px 0px;
 }
 /* sacred page selected state ends */
-
-
-
-
-
 
 /* no result page start */
 .no_result_banner {
@@ -4538,13 +4538,11 @@ hr {
   position: relative;
 }
 .mySwiper4 .swiper-button-next {
-  /* top:490px; */
   transform: rotate(90deg);
   position: absolute;
   top: 490px;
   padding: 35px;
   right: 0px;
-  /* border: 1px solid red; */
   background: #fff;
 }
 
@@ -4559,7 +4557,6 @@ hr {
   left: 0px;
   background: #fff;
   padding: 34px;
-  /* border: 1px solid red; */
 }
 .mySwiper4 .swiper-button-prev::after {
   font-size: 18px;
@@ -4640,7 +4637,6 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  /* border: 1px solid red; */
 }
 .sbbr_notebook .sbbrn_right,
 .sbbr_notebook .sbbrn_left {
@@ -4652,14 +4648,12 @@ hr {
 .sbbrn_right {
   width: 125.971px;
   display: flex;
-  /* border: 1px solid black; */
 }
 .sbbr_notebook p {
   font-family: var(--headingfont);
   text-transform: capitalize;
 }
 .nasmdrn1 {
-  /* border: 1px solid red; */
   width: 218px;
 }
 .nasmd_right .sbbrnd_nav .has_subs .has_subs_inner {
@@ -4914,8 +4908,8 @@ hr {
   justify-content: end;
   cursor: pointer;
   position: absolute;
-  right:12px;
-  top:14px;
+  right: 12px;
+  top: 14px;
 }
 .tysmi_heading {
   margin-top: 35px;
@@ -4938,3 +4932,412 @@ hr {
 }
 
 /* thank you page ends */
+
+/* registration page start */
+.regbsmed_heading p {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%; /* 33.6px */
+}
+.regbsmed_img {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+.regbsmedi_left {
+  width: 305px;
+}
+.regbsmedil_inner {
+  width: 100%;
+  height: 0;
+  padding-top: 70%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.regbsmedil_inner img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+.regbsmedir_heading h4 {
+  color: #333;
+  text-transform: capitalize;
+}
+.regbsmedir_date {
+  display: flex;
+  gap: 10px;
+}
+.regbsmedir_para p {
+  margin-top: 20px;
+  max-width: 46ch;
+}
+.fsm_top {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.fsmt_name,
+.fsmt_phn,
+.fsmt_ct {
+  display: flex;
+  gap: 24px;
+}
+.fsm_top input {
+  outline: none;
+  border: none;
+  width: 70%;
+}
+.fsmnn_input {
+  border-radius: 4px;
+  border: 1px solid #cf9e69;
+  padding: 5px 15px;
+}
+.fsmtphn_input {
+  display: flex;
+  gap: 10px;
+}
+.fsmtg_btn {
+  display: flex;
+  gap: 40px;
+  padding: 5px 0px;
+}
+.fsmtphn_img {
+  display: flex;
+  gap: 7px;
+}
+.fsmt_resd .fsmnn {
+  width: 30%;
+}
+/* .fsmtc_select{
+  border: 1px solid red;
+} */
+.fsmtc_country .fsmtcc_select {
+  /* border: 1px solid red; */
+  border: none;
+  position: relative;
+  padding: 0px;
+}
+.fsmtc_country {
+  height: 61px;
+}
+.fsmt_ct {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nasmdr_nav .has_subs .fsmtcc_subs_inner {
+  padding: 6px 15px;
+  color: #6b6970;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+.register_member {
+  margin-top: 44px;
+}
+.rn_text p {
+  color: #333;
+}
+.age_input {
+  width: 100px;
+}
+.age_input input {
+  width: 100%;
+}
+.rn_text2 p {
+  color: #000;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 130%;
+}
+.member_details {
+  display: none;
+  margin-top: 20px;
+  padding: 38px 44px;
+  border-radius: 5px;
+  background: #f4f4f4;
+}
+.member {
+  padding: 32px 0px;
+}
+.member_inner {
+  margin-top: 16px;
+}
+.member_full_details input {
+  outline: none;
+  border: none;
+  background-color: #f4f4f4;
+}
+.member_full_details .mfd_main {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.detail_btn {
+  border-bottom: 1px solid #cbcbcb;
+  margin-top: 25px;
+  padding-bottom: 32px;
+  display: flex;
+  gap: 5px;
+}
+.db_remove,
+.db_copy {
+  cursor: pointer;
+}
+.add_more {
+  padding-top: 32px;
+}
+.ad_btn button {
+  border-radius: 8px;
+  border: 1px solid var(--SRM-Purple, #49378d);
+  background: #fff;
+  color: #49378d;
+  padding: 0px 16px;
+}
+.ad_text {
+  margin-top: 16px;
+}
+.ad_text p {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 160%; /* 19.2px */
+}
+.submit_select {
+  border-bottom: 1px solid #cbcbcb;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  margin-top: 44px;
+}
+.sselect_option {
+  position: relative;
+  height: 40px;
+}
+.sselect_text2 p {
+  margin-top: 12px;
+  color: #000;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 130%; /* 15.6px */
+}
+.nasmdr_nav .has_subs .sselecto_inner {
+  text-transform: capitalize;
+  color: #49378d;
+}
+.nasmdr_nav .sselecto_sub {
+  border: 1px solid #49378d;
+}
+.sbtop_text p {
+  max-width: 75ch;
+  color: #626262;
+}
+.sbutton_top {
+  display: flex;
+  gap: 12px;
+}
+.sbutton_btm {
+  margin-top: 32px;
+}
+
+/* registration page ends */
+
+/* about swaraj kriya page start */
+
+.about_swaraj_kriya_banner {
+  padding: 70px 0px;
+  position: relative;
+}
+.about_swaraj_kriya_banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-image: url(../img/course-banner-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  z-index: -1;
+  background-position: bottom;
+}
+.askbanner_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.askbmi_about p {
+  color: #25232b;
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--headingfont);
+}
+.askbmi_heading {
+  margin-top: 12px;
+}
+.askbmi_heading span {
+  color: #cf9e69;
+}
+
+.meditationos_main {
+  height: 400px;
+  position: relative;
+  /* border: 2px solid black; */
+}
+.mosm_inner {
+  width: 74%;
+  position: absolute;
+  top: -15%;
+  left: 13%;
+  /* border: 1px solid red; */
+  border-radius: 14.339px;
+  background: var(--SRM, #f5eada);
+  padding: 38px 40px;
+}
+.mosmi_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mosmit_heading h5 {
+  text-align: center;
+  color: #b7557f;
+}
+.mosmit_svg {
+  margin-top: 20px;
+}
+.mosmit_text {
+  margin-top: 12px;
+}
+.mosmit_text p {
+  color: #cf9e69;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1.14px;
+  text-transform: uppercase;
+}
+.mosmi_btm {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.mosmi_btm p {
+  max-width: 98ch;
+  text-align: center;
+}
+.kriya_tool {
+  padding-top: 120px;
+  padding-bottom: 200px;
+  position: relative;
+}
+.kriya_tool::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-image: url(../img/course-banner-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  z-index: -1;
+  background-position: bottom;
+}
+.sscience_main {
+  display: flex;
+  gap: 120px;
+}
+.sscience_main p {
+  color: #6b6970;
+}
+.ssciencem_left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.ssciencem_right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ssciencemr_item {
+  height: 0;
+  width: 100%;
+  padding-top: 67%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.ssciencemr_item img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+.ssciencemlt_item1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sscienceml_top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.ssciencemlt_btm {
+  display: flex;
+  gap: 40px;
+}
+.sciencemlb_left {
+  border-right: 1px solid #d4cfcf;
+  padding-right: 30px;
+}
+.sciencemlb_left .sciencemlb_item_top{
+  padding-bottom: 28px;
+  border-bottom: 1px solid #d4cfcf;
+}
+.sciencemlb_item_btm{
+  margin-top: 28px;
+}
+.ssciencemltb_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sciencemlb_list{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.scienceml_btm {
+  display: flex;
+}
+.sciencemlb_item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sciencemlb_list_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sciencemlb_right {
+  padding-left: 30px;
+}
+/* about swaraj kriya page ends */
