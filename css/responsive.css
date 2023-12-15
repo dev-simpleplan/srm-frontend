@@ -1,3 +1,12 @@
+/* 2000 start */
+@media screen and (min-width: 2000px) {
+  .initiative-navigation {
+     width: 38%;
+  }
+}
+
+/* 2000 ends */
+
 /* 1700 px Start */
 @media only screen and (max-width: 1700px) {
   .initiative-navigation {
@@ -1045,6 +1054,26 @@
     flex-wrap: wrap;
   }
   /* dhyan sangha page ends */
+
+  /* upcoming event register page start */
+  .member_details {
+    padding: 32px;
+  }
+  .member {
+    padding: 20px 0px;
+  }
+  .fsm_top {
+    gap:32px;
+  }
+
+  /* upcoming event register page ends */
+
+  /* about swaraj kriya page start */
+  .mosm_inner {
+    width: 90%;
+    left: 5%;
+  }
+  /* about swaraj kriya page ends */
 }
 /* 991 px End */
 
@@ -1772,6 +1801,18 @@
     margin-top: 32px;
   }
   /* product page ends */
+  /* upcoming event register page start */
+  .fsm_top {
+    gap:24px;
+  }
+  /* upcoming event register page ends */
+  
+  /* about swaraj kriya page start */
+  .mosm_inner {
+    width: 100%;
+    left: 0%;
+  }
+  /* about swaraj kriya page ends */
 
 }
 /* 767 px End */
@@ -1826,12 +1867,12 @@
   /* meditation main page ends */
   
   /* sacred page start */
-  .sort-by-dropdown-box {
+  /* .sort-by-dropdown-box {
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
     row-gap: 10px;
-  }
+  } */
   /* sacred page ends */
   
   /* noresult page start */
@@ -1844,6 +1885,11 @@
     margin-top: 24px;
 }
   /* no result page ends */
+  /* upcoming event register page start */
+  .fsm_top {
+    gap:18px;
+  }
+  /* upcoming event register page ends */
 }
 /* 650 ends */
 
@@ -1860,6 +1906,16 @@
     font-size: 24px;
   }
   /* sacerd page ends */
+ 
+  /* upcoming event register page start */
+  .regbsmed_img{
+    flex-direction: column;
+  }
+  .regbsmedi_left{
+    width: 100%;
+  }
+  /* upcomng event register page ends */
+
 }
 /* 600 ends */
 

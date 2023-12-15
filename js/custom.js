@@ -279,6 +279,11 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+
+
 $(document).ready(function () {
   // Use event delegation for click events on list items inside nav-dropdown
   $('.sort-by-box.nav-left .nav-dropdown-list').on('click', 'li a', function (event) {
@@ -578,5 +583,30 @@ $(document).ready(function () {
 $(document).ready(function (){
   $(".modal-content").click(function (event){
      event.stopPropagation();
+  });
+});
+
+
+
+// Sort by dropdown function
+
+$(document).ready(function () {
+  $(".all_episode_section .sort-by-dropdown-box .sort-by-box.nav-left  .has_subs .has_subs_inner  ").click(function () {
+    if ($(this).parent(".has_subs").hasClass("active")) {
+      $(this)
+        .parent(".has_subs")
+        .removeClass("active")
+        .find(".nav-dropdown")
+        .slideUp();
+    } else {
+      $(" .nav-dropdown").slideUp();
+      $(".has_subs").removeClass("active");
+      $(this)
+        .parent(".has_subs")
+        .addClass("active")
+        .find(" .nav-dropdown")
+        .slideDown();
+    }
+    return false;
   });
 });
