@@ -2454,10 +2454,14 @@ section.yt-video-section {
   text-transform: uppercase;
 }
 .uplc-wrapper {
-  display: flex;
+  /* display: flex; */
   /* gap:14px; */
   margin-top: 26px;
   /* padding-left: 26px; */
+}
+.uplc-wrapper a{
+  display: flex;
+  gap: 14px;
 }
 .uplc-wrapper-left{
   padding-top: 3px;
