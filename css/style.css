@@ -2461,6 +2461,7 @@ section.yt-video-section {
 }
 .uplc-wrapper a{
   display: flex;
+  justify-content: space-between;
   gap: 14px;
 }
 .uplc-wrapper-left{
@@ -2541,6 +2542,7 @@ section.yt-video-section {
   padding-bottom: 23px;
   border-top: 1px solid var(--srmorange);
   position: relative;
+  width: 90%;
 }
 /* .uplc-wrapper .item::before {
   content: "";
