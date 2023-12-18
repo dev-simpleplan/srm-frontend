@@ -2454,8 +2454,17 @@ section.yt-video-section {
   text-transform: uppercase;
 }
 .uplc-wrapper {
+  display: flex;
+  /* gap:14px; */
   margin-top: 26px;
-  padding-left: 26px;
+  /* padding-left: 26px; */
+}
+.uplc-wrapper-left{
+  padding-top: 3px;
+  width: 10%;
+}
+.uplc-wrapper-right{
+  width: 90%;
 }
 .uplc-wrapper .item .pub-date-time {
   display: flex;
@@ -2529,7 +2538,7 @@ section.yt-video-section {
   border-top: 1px solid var(--srmorange);
   position: relative;
 }
-.uplc-wrapper .item::before {
+/* .uplc-wrapper .item::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -2542,7 +2551,7 @@ section.yt-video-section {
   background-repeat: no-repeat;
   opacity: 0;
   transition: 0.4s all ease;
-}
+} */
 .uplc-wrapper a:first-child .item::before {
   top: 2px;
 }
@@ -3920,8 +3929,16 @@ hr {
   margin-top: 14px;
   color: #6b6970;
 }
+.cbsgm_heading {
+  display: flex;
+  justify-content: center;
+}
 .cbsg_main .mySwiper2 {
   padding-bottom: 58px;
+}
+.cbsgm_inner_featured {
+  display: flex;
+  justify-content: center;
 }
 .cbsg_main .mySwiper2 .swiper-pagination {
   margin: 0px;
@@ -4122,7 +4139,6 @@ hr {
 .sbm_search {
   display: flex;
   margin-top: 52px;
-  /* column-gap: 174px; */
   justify-content: space-between;
   align-items: center;
 }
@@ -4152,7 +4168,6 @@ hr {
   width: 40%;
 }
 .sbms_right {
-  /* border: 1px solid red; */
   width: 60%;
   display: flex;
 }
@@ -4226,7 +4241,7 @@ hr {
   font-size: 28px;
   width: clamp(14ch, 22ch, 22ch);
   font-weight: 500;
-  line-height: 120%; /* 34.17px */
+  line-height: 120%;
 }
 .scsmr_para3 p {
   margin-top: 20px;
@@ -4326,7 +4341,6 @@ hr {
 .nasmd_right .nasmdr_nav {
   width: 190px;
   position: relative;
-  /* border: 1px solid red; */
 }
 .nasmdr_nav .has_subs {
   border-radius: 5px;
@@ -4362,21 +4376,6 @@ hr {
   color: #000;
   padding: 6px 10px;
 }
-/* .nasm_dropdown .nasmd_right .sort-by-box {
-  border-radius: 5px;
-  column-gap: 30px;
-  border: 1px solid #cf9e69;
-}
-.nasm_dropdown .nasmd_right .sort-by-box.nav-left .nav_list ul li {
-  padding-left: 16px !important;
-  padding: 8px 16px;
-  color: #6b6970;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-} */
 .nasmi_inner_img img {
   height: 100%;
   width: 100%;
@@ -4408,7 +4407,7 @@ hr {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
 }
 .nasmit_price p {
   margin-top: 24px;
@@ -5307,11 +5306,11 @@ hr {
   border-right: 1px solid #d4cfcf;
   padding-right: 30px;
 }
-.sciencemlb_left .sciencemlb_item_top{
+.sciencemlb_left .sciencemlb_item_top {
   padding-bottom: 28px;
   border-bottom: 1px solid #d4cfcf;
 }
-.sciencemlb_item_btm{
+.sciencemlb_item_btm {
   margin-top: 28px;
 }
 .ssciencemltb_item {
@@ -5319,10 +5318,10 @@ hr {
   align-items: center;
   gap: 10px;
 }
-.sciencemlb_list{
+.sciencemlb_list {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 }
 .scienceml_btm {
   display: flex;
@@ -5340,4 +5339,144 @@ hr {
 .sciencemlb_right {
   padding-left: 30px;
 }
+.how_to_enroll_section {
+  position: relative;
+  padding-bottom: 200px;
+}
+.how_to_enroll_section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-image: url(../img/course-banner-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  z-index: -1;
+  background-position: bottom;
+}
+.howtes_main {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.htesmtop_para p {
+  max-width: 80ch;
+  color: #6b6970;
+  margin-top: 12px;
+}
+.howtesmb_card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 10px;
+  background: #f8f4f0;
+  max-width: 413px;
+  padding: 30px 24px;
+}
+.howtesmbc_top {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.howtesm_btm {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.howtesmbct_text h5 {
+  color: #25232b;
+  font-size: 20px;
+  line-height: 127.5%;
+  text-transform: capitalize;
+}
+.howtesmbc_btm p {
+  color: #6b6970;
+  min-width: 46ch;
+}
 /* about swaraj kriya page ends */
+
+/* about sriguru page start */
+.about_sriguru_banner {
+  padding: 100px 0px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.aboutsgb_main{
+  display: flex;
+  justify-content: space-between;
+}
+.aboutsgbm_left{
+  width: 50%;
+}
+.aboutsgbm_right{
+  position: absolute;
+  width: 60%;
+  right: 0;
+  bottom: 0;
+}
+.aboutsgbml_para1 p {
+  color: #25232b;
+  font-size: 24px;
+  font-family: var(--headingfont);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.aboutsgbml_para2 {
+  margin-top: 24px;
+}
+.aboutsgbml_para2{
+  color: #6b6970;
+  font-family: var(--headingfont);
+}
+.aboutsgbml_para2 span,
+.aboutsgbml_heading span {
+  color: #cf9e69;
+}
+.aboutsgbmr_inner{
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-top: 64%;
+  overflow: hidden;
+}
+.aboutsgbmr_inner img{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   inset: 0;
+   object-fit: cover;
+}
+.about_sriguru_banner .scroll-btn-box{
+  bottom: 0px;
+  left: 0px;
+}
+.biography_section{
+  padding-top: 120px;
+}
+.biographys_main{
+  display: flex;
+  gap:77px
+}
+.boigraphysm_left,.biographysm_right{
+  width: 50%;
+}
+.biographysml_inner{
+  height: 0;
+  width: 100%;
+  padding-top: 110%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.biographysml_inner img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+/* about sriguru page ends */
