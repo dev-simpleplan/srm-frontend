@@ -1118,7 +1118,7 @@ section.past-event-section {
   width: 100%;
   height: auto;
 }
-.splide__slide {
+#thumbnail-carousel .splide__slide {
   opacity: 0.6;
 }
 
