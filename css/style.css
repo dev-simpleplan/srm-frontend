@@ -4984,6 +4984,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 70%;
 }
 .fsmt_name,
 .fsmt_phn,
@@ -5138,6 +5139,7 @@ hr {
 .nasmdr_nav .has_subs .sselecto_inner {
   text-transform: capitalize;
   color: #49378d;
+  font-weight: 400;
 }
 .nasmdr_nav .sselecto_sub {
   border: 1px solid #49378d;

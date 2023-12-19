@@ -63,6 +63,26 @@
 .featured-event-box .featured-episode {
   padding-top: 0px;
 }
+.featured-event-box .featured-episode h6 {
+  color: #b7557f;
+  text-transform: uppercase;
+  font-family: var(--bodyFont);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 126.5%;
+  letter-spacing: 1.596px;
+  text-transform: uppercase;
+}
+.featured-event-box .featured-title {
+  margin-top: 8px;
+}
+.featured-event-section .featured-event-wrapper .featured-event-box {
+  transition: 0.4s ease all;
+}
+.featured-event-section .featured-event-wrapper .featured-event-box:hover {
+  /* transition: .4s ease all; */
+  transform: scale(1.03);
+}
 .all-event-wrapper {
   margin-top: 50px;
 }
@@ -598,11 +618,11 @@ a.not-signed-link {
 
 /* updated css */
 .upcoming-event-info-box h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.upcoming-event-info-box h2,
+.upcoming-event-info-box h3,
+.upcoming-event-info-box h4,
+.upcoming-event-info-box h5,
+.upcoming-event-info-box h6 {
   margin-top: 30px !important;
 }
 /* .upcoming-event-info-box h1:first-child,
@@ -634,21 +654,23 @@ h6 {
 .upcoming-event-info-box img {
   width: 100% !important;
 }
-.past-event-section-splide{
+.past-event-section-splide {
   padding-bottom: 56px;
 }
 .past-event-section-splide .splide__pagination .splide__pagination__page {
   border-radius: 42px;
-  background: var(--SRM-Orange, #CF9E69);
+  background: var(--SRM-Orange, #cf9e69);
   transform: scale(1);
   width: 40px;
-  opacity: .5;
+  opacity: 0.5;
 }
-.past-event-section-splide .splide__pagination .splide__pagination__page.is-active{
+.past-event-section-splide
+  .splide__pagination
+  .splide__pagination__page.is-active {
   opacity: 1;
 }
-.past-event-section-splide .splide__arrows{
-     display: none;
+.past-event-section-splide .splide__arrows {
+  display: none;
 }
 .past-event-section-splide .splide
 
@@ -1092,8 +1114,7 @@ section.past-event-section {
   height: 100%;
   margin: 0;
 }
-
-/* .splide__slide img {
+.splide__slide img {
   width: 100%;
   height: auto;
 }
@@ -1105,23 +1126,45 @@ section.past-event-section {
   opacity: 1;
 }
 .main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100vh;
   overflow: hidden;
   display: flex;
   gap: 20px;
 }
-#main-carousel {
+.main #main-carousel {
   width: 90%;
+  height: 100%;
+}
+.main #main-carousel .splide__track{
+  height: 100%;
+}
+.main #main-carousel .splide__track .splide__slide{
+  height: 100%;
+}
+.main #main-carousel .splide__track .splide__slide .splides_inner {
+  position: relative;
+  height: 0;
+  padding-top: 90%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main #main-carousel .splide__track .splide__slide .splides_inner img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
 }
 #thumbnail-carousel {
   width: 10%;
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #thumbnail-carousel .splide__list {
   width: 100%;
-  overflow: scroll;
+  overflow: hidden;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -1130,6 +1173,10 @@ section.past-event-section {
   width: 100% !important;
   height: 100px !important;
 }
+#thumbnail-carousel .splide__list .splide__list .splide__slide{
+   border-radius: 10px;
+   overflow: hidden;
+}
 .splide__arrow {
   display: none;
 }
@@ -1137,16 +1184,15 @@ section.past-event-section {
   background: #ccc;
   height: 100vh;
   overflow: hidden;
-  width: 5px; 
+  width: 5px; /* Set the width of the progress bar */
 }
 
 .my-slider-progress-bar {
-  background: greenyellow;
-  transition: height 400ms ease; 
-  height: 0px; 
-  width: 5px; 
-} */
-
+  background: #CF9E69;
+  transition: height 400ms ease; /* Use height instead of width for vertical progress */
+  height: 0px; /* Initial height is 0, it will increase based on progress */
+  width: 5px; /* Set the width of the progress bar */
+}
 /* Past event Inner Page CSS End */
 
 /* Resposnive Screen */
