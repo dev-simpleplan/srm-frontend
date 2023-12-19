@@ -81,7 +81,7 @@
 }
 .featured-event-section .featured-event-wrapper .featured-event-box:hover {
   /* transition: .4s ease all; */
-  transform: scale(1.03);
+  transform:translateY(-10px);
 }
 .all-event-wrapper {
   margin-top: 50px;
