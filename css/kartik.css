@@ -596,17 +596,29 @@ a.not-signed-link {
   font-family: var(--bodyFont);
 }
 
-.upcoming-event-info-box h3 {
-  margin-top: 30px;
+/* updated css */
+.upcoming-event-info-box h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 30px !important;
 }
-.upcoming-event-info-box h3:first-child {
-  margin-top: 0px;
-}
+/* .upcoming-event-info-box h1:first-child,
+.upcoming-event-info-box h2:first-child,
+.upcoming-event-info-box h3:first-child,
+.upcoming-event-info-box h4:first-child,
+.upcoming-event-info-box h5:first-child,
+.upcoming-event-info-box h6:first-child {
+  margin-top: 0px !important;
+} */
+
 .upcoming-event-info-box p {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 .upcoming-event-info-box ol {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 .upcoming-event-info-box ol li:before {
   counter-increment: listitem;
@@ -620,8 +632,25 @@ a.not-signed-link {
   font-weight: bold;
 }
 .upcoming-event-info-box img {
-  width: 100%;
+  width: 100% !important;
 }
+.past-event-section-splide{
+  padding-bottom: 56px;
+}
+.past-event-section-splide .splide__pagination .splide__pagination__page {
+  border-radius: 42px;
+  background: var(--SRM-Orange, #CF9E69);
+  transform: scale(1);
+  width: 40px;
+  opacity: .5;
+}
+.past-event-section-splide .splide__pagination .splide__pagination__page.is-active{
+  opacity: 1;
+}
+.past-event-section-splide .splide__arrows{
+     display: none;
+}
+.past-event-section-splide .splide
 
 /* Upcoming Event Inner Page CSS End */
 
@@ -1063,6 +1092,61 @@ section.past-event-section {
   height: 100%;
   margin: 0;
 }
+
+/* .splide__slide img {
+  width: 100%;
+  height: auto;
+}
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+.main {
+  border: 1px solid red;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+#main-carousel {
+  width: 90%;
+}
+#thumbnail-carousel {
+  width: 10%;
+  display: flex;
+  border: 1px solid black;
+}
+#thumbnail-carousel .splide__list {
+  width: 100%;
+  overflow: scroll;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#thumbnail-carousel .splide__list .splide__list {
+  width: 100% !important;
+  height: 100px !important;
+}
+.splide__arrow {
+  display: none;
+}
+.my-slider-progress {
+  background: #ccc;
+  height: 100vh;
+  overflow: hidden;
+  width: 5px; 
+}
+
+.my-slider-progress-bar {
+  background: greenyellow;
+  transition: height 400ms ease; 
+  height: 0px; 
+  width: 5px; 
+} */
+
 /* Past event Inner Page CSS End */
 
 /* Resposnive Screen */
