@@ -2459,15 +2459,15 @@ section.yt-video-section {
   margin-top: 26px;
   /* padding-left: 26px; */
 }
-.uplc-wrapper a{
+.uplc-wrapper a {
   display: flex;
   justify-content: space-between;
   gap: 14px;
 }
-.uplc-wrapper-left{
+.uplc-wrapper-left {
   width: 10%;
 }
-.uplc-wrapper-right{
+.uplc-wrapper-right {
   width: 90%;
 }
 .uplc-wrapper .item .pub-date-time {
@@ -4344,7 +4344,7 @@ hr {
   gap: 14px;
 }
 .nasmd_right .nasmdr_nav {
-  width: 190px;
+  width: 280px;
   position: relative;
 }
 .nasmdr_nav .has_subs {
@@ -4376,9 +4376,10 @@ hr {
 .hs_nav_dropdown .nav-dropdown-list {
   display: flex;
   flex-direction: column;
-  row-gap: 4px;
-  background-color: #cf9e69;
-  color: #000;
+  row-gap: 10px;
+  background-color: #fff;
+  font-weight: 400;
+  line-height: 128%;
   padding: 6px 10px;
 }
 .nasmi_inner_img img {
@@ -4974,6 +4975,7 @@ hr {
 .regbsmedir_date {
   display: flex;
   gap: 10px;
+  margin-top: 5px;
 }
 .regbsmedir_para p {
   margin-top: 20px;
@@ -4986,11 +4988,46 @@ hr {
   gap: 40px;
   width: 70%;
 }
+.fsm_top input[type="number"]::-webkit-inner-spin-button,
+.fsm_top input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.fsm_top input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
 .fsmt_name,
 .fsmt_phn,
 .fsmt_ct {
   display: flex;
   gap: 24px;
+}
+.fsmt_name .fsmnn {
+  width: 30%;
+}
+.fsmt_name .fsmn_email {
+  width: 54%;
+}
+.fsmnn,
+.fsmn_email {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fsmtgb_male,
+.fsmtgb_female {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fsmtgb_male input[type="radio"],
+.fsmtgb_female input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+input[type="radio"]:checked {
+  background-color: #49378d !important;
+  border-color: #49378d !important;
 }
 .fsm_top input {
   outline: none;
@@ -5014,9 +5051,10 @@ hr {
 .fsmtphn_img {
   display: flex;
   gap: 7px;
+  align-items: center;
 }
 .fsmt_resd .fsmnn {
-  width: 30%;
+  width: 50%;
 }
 /* .fsmtc_select{
   border: 1px solid red;
@@ -5127,6 +5165,7 @@ hr {
 .sselect_option {
   position: relative;
   height: 40px;
+  margin-top: 5px;
 }
 .sselect_text2 p {
   margin-top: 12px;
@@ -5140,6 +5179,8 @@ hr {
   text-transform: capitalize;
   color: #49378d;
   font-weight: 400;
+  letter-spacing: 0;
+  font-size: 16px;
 }
 .nasmdr_nav .sselecto_sub {
   border: 1px solid #49378d;
@@ -5410,14 +5451,14 @@ hr {
   /* border: 1px solid red; */
   position: relative;
 }
-.aboutsgb_main{
+.aboutsgb_main {
   display: flex;
   justify-content: space-between;
 }
-.aboutsgbm_left{
+.aboutsgbm_left {
   width: 50%;
 }
-.aboutsgbm_right{
+.aboutsgbm_right {
   position: absolute;
   width: 60%;
   right: 0;
@@ -5434,7 +5475,7 @@ hr {
 .aboutsgbml_para2 {
   margin-top: 24px;
 }
-.aboutsgbml_para2{
+.aboutsgbml_para2 {
   color: #6b6970;
   font-family: var(--headingfont);
 }
@@ -5442,35 +5483,72 @@ hr {
 .aboutsgbml_heading span {
   color: #cf9e69;
 }
-.aboutsgbmr_inner{
+.aboutsgbmr_inner {
   width: 100%;
   position: relative;
   height: 0;
   padding-top: 64%;
   overflow: hidden;
 }
-.aboutsgbmr_inner img{
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   inset: 0;
-   object-fit: cover;
+.aboutsgbmr_inner img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
 }
-.about_sriguru_banner .scroll-btn-box{
+.about_sriguru_banner .scroll-btn-box {
   bottom: 0px;
-  left: 0px;
+  left: 80px;
 }
-.biography_section{
+.biography_section {
   padding-top: 120px;
 }
-.biographys_main{
+.biographys_main {
   display: flex;
-  gap:77px
+  gap: 77px;
 }
-.boigraphysm_left,.biographysm_right{
+.boigraphysm_left,
+.biographysm_right {
   width: 50%;
 }
-.biographysml_inner{
+.biographysm_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.biographysmr_text {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.biographysmr_text .biographysmr_para1 p,
+.biographysmr_text .biographysmr_para3 p {
+  color: var(--SRM-Grey, #6b6970);
+}
+.biographysmr_para2 .biographysmr_para2_text1 {
+  color: var(--SRM-Pink, #b7557f);
+  font-size: 20px;
+  font-style: normal;
+  font-family: var(--headingfont);
+  font-weight: 400;
+  line-height: 127.5%;
+}
+.biographysmr_para2 .biographysmr_para2_text2 {
+  color: var(--SRM-Orange, #cf9e69);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 18px */
+  letter-spacing: 1.14px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.biographysml_inner {
   height: 0;
   width: 100%;
   padding-top: 110%;
@@ -5478,12 +5556,189 @@ hr {
   overflow: hidden;
   border-radius: 24px;
 }
-.biographysml_inner img{
+.biographysml_inner img {
   height: 100%;
   width: 100%;
   position: absolute;
   inset: 0;
   object-fit: cover;
 }
+.biographysmr_counter_wrap .spiritual-grid {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.biographysmr_counter .biographysmr_counter_wrap {
+  margin-top: 0px;
+}
+.biographysmr_counter_wrap .spiritual-counter-num .spiritualnum {
+  color: var(--SRM-Purple, #49378d);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 127.5%; /* 40.8px */
+  text-transform: capitalize;
+  text-align: start;
+}
+.spiritual-counter-num .spiritual-title h4 {
+  text-align: start;
+}
+.certaintys_main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 200px;
+}
+.certaintym_inner {
+  border-radius: 0px 0px 17px 17px;
+  background: var(--SRM, #f5eada);
+  padding: 60px 100px 240px 100px;
+  position: relative;
+}
+.certaintymi_heading {
+  position: relative;
+}
+.certaintymi_heading svg {
+  position: absolute;
+  left: -32px;
+  top: -10px;
+}
+.certaintyi_para {
+  max-width: 77ch;
+  max-height: 150px;
+  overflow: auto;
+}
+.certaintym_img {
+  position: absolute;
+  bottom: 14%;
+  width: 77ch;
+}
+.certaintyi_inner {
+  height: 0;
+  width: 100%;
+  padding-top: 48%;
+  position: relative;
+  overflow: hidden;
+}
+.certaintyi_inner img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.meditation_artists_inner {
+  padding-top: 60%;
+}
+.meditation_artist_section_main .biographysm_right {
+  justify-content: center;
+}
+.pathtism_card_main {
+  margin-top: 40px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap:32px;
+  flex-wrap: wrap;
+}
+.pathtism_card {
+  display: flex;
+  gap: 25px;
+  max-width: 230px;
+  /* border: 1px solid red; */
+  max-height: 110px;
+  overflow: auto;
+}
+.pathtism_card::-webkit-scrollbar {
+  display: none;
+}
+.pathtismc_left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pathtismc_right {
+  display: flex;
+  align-items: center;
+}
+.pathtismcl_heading h4 {
+  color: var(--SRM-Purple, #49378d);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127.5%; /* 33.15px */
+  text-transform: capitalize;
+}
+.pathtismcl_para p {
+  color: var(--SRM-Grey, #6b6970);
+}
+.learn_from_sriguru_section_title{
+  display: flex;
+  justify-content: space-between;
+}
+.aboutsg_witness_swaraj_kriya_section_main{
+  flex-direction: row-reverse ;
+  border-radius: 10px;
+  background: var(--SRM, #F5EADA);
+  padding: 60px;
+}
+.aboutsg_witness_swaraj_kriya_section_main .biographysm_right{
+  justify-content: unset;
+}
+.aboutsg_witness_swaraj_kriya_section_main .biographysm_right .biographysmr_text{
+  margin-top: 10px;
+}
+.aboutsg_witness_swaraj_kriya_section_main .biographysm_right .biographysmr_counter{
+  margin-top: auto;
+}
+/* .aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left{
+  border: 1px solid red;
+} */
+.aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left{
+  display: flex;
+  flex-direction: column;
+  gap:24px;
+}
+.aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left .awsksm_blbtm{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 14px;
+}
+.boigraphysm_left .awsksm_bltop_inner{
+  height: 0;
+  width: 100%;
+  padding-top: 53%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.boigraphysm_left .awsksm_blbtm .awsksm_blbtm_item{
+  height: 0;
+  width: 100%;
+  position: relative;
+  padding-top: 120%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.awsksm_bltop_inner img,
+.awsksm_blbtm_item_inner img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* about sriguru page ends */

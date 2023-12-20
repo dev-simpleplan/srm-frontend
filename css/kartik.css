@@ -948,6 +948,9 @@ section.past-event-section {
 .past-event-box:hover .past-event-title h3 {
   color: var(--srmpurple);
 }
+.past-event-box:hover .past-event-city p {
+  color: var(--srmpurple);
+}
 .load-more-btn {
   color: var(--srm-pink, #b7557f);
   font-family: var(--bodyFont);
@@ -1114,27 +1117,27 @@ section.past-event-section {
   height: 100%;
   margin: 0;
 }
-.splide__slide img {
+/* .splide__slide img {
   width: 100%;
   height: auto;
-}
+} */
 #thumbnail-carousel .splide__slide {
   opacity: 0.6;
 }
 
-.splide__slide.is-active {
+#thumbnail-carousel .splide__slide.is-active {
   opacity: 1;
 }
 .main {
   /* border: 1px solid red; */
-  height: 100vh;
   overflow: hidden;
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  position: relative;
 }
 .main #main-carousel {
-  width: 90%;
-  height: 100%;
+  width: 100%;
+  /* height: 100%; */
 }
 .main #main-carousel .splide__track{
   height: 100%;
@@ -1145,7 +1148,7 @@ section.past-event-section {
 .main #main-carousel .splide__track .splide__slide .splides_inner {
   position: relative;
   height: 0;
-  padding-top: 90%;
+  padding-top: 69%;
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
@@ -1158,23 +1161,23 @@ section.past-event-section {
   object-fit: cover;
 }
 #thumbnail-carousel {
-  width: 10%;
   display: flex;
-  /* border: 1px solid black; */
+  gap:30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 #thumbnail-carousel .splide__list {
   width: 100%;
-  overflow: hidden;
-  max-height: 100vh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
-#thumbnail-carousel .splide__list .splide__list {
-  width: 100% !important;
-  height: 100px !important;
-}
-#thumbnail-carousel .splide__list .splide__list .splide__slide{
-   border-radius: 10px;
+#thumbnail-carousel .splide__list  .splide__slide{
+  border-radius: 10px;
+  border-radius: 10px;
    overflow: hidden;
 }
 .splide__arrow {
@@ -1182,9 +1185,8 @@ section.past-event-section {
 }
 .my-slider-progress {
   background: #ccc;
-  height: 100vh;
   overflow: hidden;
-  width: 5px; /* Set the width of the progress bar */
+  width: 5px; 
 }
 
 .my-slider-progress-bar {
@@ -1193,6 +1195,11 @@ section.past-event-section {
   height: 0px; /* Initial height is 0, it will increase based on progress */
   width: 5px; /* Set the width of the progress bar */
 }
+
+#thumbnail-carousel .splide__list::-webkit-scrollbar {
+  display: none;
+}
+
 /* Past event Inner Page CSS End */
 
 /* Resposnive Screen */

@@ -899,38 +899,39 @@
       <script>
     
 
-        document.addEventListener("DOMContentLoaded", function () {
-        var main = new Splide("#main-carousel", {
-          type: "fade",
-          rewind: true,
-          pagination: false,
-          arrows: false,
-        });
-        var thumbnail = new Splide("#thumbnail-carousel", {
-          fixedWidth: 100,
-          fixedHeight: 50,
-          // direction:'ttb',
-          gap: 30,
-          rewind: true,
-          pagination: false,
-          cover: true,
-          isNavigation: true,
-          autoplay: true,
-          interval: 2000,
-          breakpoints: {
-            600: {
-              fixedWidth: 60,
-              fixedHeight: 44,
-            },
-          },
-        });
-        main.sync(thumbnail);
-        main.mount();
-        thumbnail.mount();
+    document.addEventListener("DOMContentLoaded", function () {
+  var main = new Splide("#main-carousel", {
+    type: "fade",
+    rewind: true,
+    pagination: false,
+    arrows: false,
+  });
 
+  var thumbnail = new Splide("#thumbnail-carousel", {
+    fixedWidth: 100,
+    fixedHeight: 70,
+    rewind: true,
+    focus: 'center',
+    perPage: 7,
+    pagination: false,
+    cover: true,
+    isNavigation: true,
+    autoplay: true,
+    interval: 2000,
+    breakpoints: {
+      600: {
+        fixedWidth: 60,
+        fixedHeight: 44,
+      },
+    },
+  });
 
-         // Find the correct progress bar element
-      var progressBar = document.querySelector(
+  main.mount();
+  thumbnail.mount();
+  main.sync(thumbnail);
+
+  // Find the correct progress bar element
+  var progressBar = document.querySelector(
         "#thumbnail-carousel .my-slider-progress-bar"
       );
 
@@ -946,7 +947,42 @@
           progressBar.style.height = String(100 * rate) + "%";
         }
       });
-      });
+
+  // Get the thumbnails container and thumbnails
+  var thumbnailsContainer = document.querySelector("#thumbnail-carousel .splide__list");
+  var thumbnails = thumbnailsContainer.querySelectorAll(".splide__slide");
+
+  function reorderThumbnails(clickedIndex) {
+    const activeThumbnail = thumbnails[clickedIndex];
+    const activeThumbnailRect = activeThumbnail.getBoundingClientRect();
+    const activeThumbnailTop = activeThumbnailRect.top;
+    const activeThumbnailHeight = activeThumbnailRect.height;
+    const activeThumbnailCenter = activeThumbnailTop + activeThumbnailHeight / 2;
+
+    // Calculate the total height of thumbnails above the clicked thumbnail
+    let totalHeight = 0;
+    for (let i = 0; i < clickedIndex; i++) {
+      const thumbnail = thumbnails[i];
+      const thumbnailRect = thumbnail.getBoundingClientRect();
+      const thumbnailHeight = thumbnailRect.height;
+      totalHeight += thumbnailHeight;
+    }
+
+    // Scroll the thumbnails container to make the clicked thumbnail visible
+    thumbnailsContainer.style.transition = 'scroll-behavior 0.8s ease-in-out';
+    thumbnailsContainer.scrollTop = totalHeight;
+
+    // Set the clicked thumbnail to the first position
+    thumbnails[0].classList.remove('active');
+    activeThumbnail.classList.add('active');
+  }
+
+  // Listen to the change event of the thumbnail slider
+  thumbnail.on('move', function (newIndex) {
+    reorderThumbnails(newIndex);
+  });
+});
+
 
 
 
@@ -966,7 +1002,6 @@
         500:{
             perPage:1,
         }
-
     }
         });
 
