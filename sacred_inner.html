@@ -19,6 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Sources Sans pro  Font End -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/splide.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/themes/splide-skyblue.min.css"
+  />
     <!-- Owl Carousal Slider -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -26,6 +34,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/comman.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/kartik.css">
     <link href="css/responsive.css" rel="stylesheet">
    
     <!-- CSS Ends-->
@@ -207,8 +216,6 @@
     <!-- Body Wrapper start -->
     
    <div class="body-wrapper" >
-
-
        
        <!-- sacred_inner banner start -->
        <div class="wisdom-header-wrapper breadcrumbs-section sacred_inner_banner">
@@ -222,7 +229,81 @@
                 </div>
                 <div class="sacred_banner_btm">
                     <div class="sbb_left">
-                       <div class="sbbl_scroll">
+                        <div class="main">
+                            <div id="thumbnail-carousel"
+                            class="splide"
+                            aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+                          >
+                            <div class="splide__track">
+                              <ul class="splide__list">
+                                <li class="splide__slide">
+                                  <img src="img/si-img4.svg" alt="" />
+                                </li>
+                                <li class="splide__slide">
+                                  <img src="img/si-img5.svg" alt="" />
+                                </li>
+                                <li class="splide__slide">
+                                  <img src="img/si-img6.svg" alt="" />
+                                </li>
+                                <li class="splide__slide">
+                                  <img src="img/si-img7.svg" alt="" />
+                                </li>
+                                <li class="splide__slide">
+                                  <img src="img/si-sim8.svg" alt="" />
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/si-img9.svg" alt="" />
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/si-img4.svg" alt="" />
+                                  </li>
+                              </ul>
+                            </div>
+                          </div>
+                            <div id="main-carousel">
+                                <div class="splide__track">
+                                  <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="splides_inner">
+                                            <img src="img/si-img4.2.png" alt="" />
+                                        </div>
+                                      </li>
+                                      <li class="splide__slide">
+                                        <div class="splides_inner">
+                                            <img src="img/si-img5.svg" alt="" />
+                                        </div>
+                                      </li>
+                                      <li class="splide__slide">
+                                        <div class="splides_inner">
+                                            <img src="img/si-img6.svg" alt="" />
+                                        </div>
+                                      </li>
+                                      <li class="splide__slide">
+                                        <div class="splides_inner">
+                                            <img src="img/si-img7.svg" alt="" />
+                                        </div>
+                                      </li>
+                                      <li class="splide__slide">
+                                        <div class="splides_inner">
+                                            <img src="img/si-sim8.svg" alt="" />
+                                        </div>
+                                      </li>
+                                      <li class="splide__slide">
+                                        <div class="splides_inner">
+                                            <img src="img/si-img9.svg" alt="" />
+                                        </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="splides_inner">
+                                                <img src="img/si-img4.2.png" alt="" />
+                                            </div>
+                                        </li>
+                                  </ul>
+                                </div>
+                            </div>
+                           
+                            </div>
+                       <!-- <div class="sbbl_scroll">
                             <div class="sbbls_main">
                                 <div class="sbblsm_top_arrow"></div>
                                 <div class="swiper mySwiper4">
@@ -260,12 +341,12 @@
                                 </div>
                                 <div class="sbblsm_btm_arrow"></div>
                             </div>
-                       </div>
-                       <div class="sbbl_img">
+                       </div> -->
+                       <!-- <div class="sbbl_img">
                          <div class="sbbli_inner">
                             <img src="img/si-img1.png" alt="">
                          </div>
-                       </div>
+                       </div> -->
                     </div>
                     <div class="sbb_right">
                          <div class="sbbr_heading">
@@ -706,6 +787,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/jquery.in-viewport-class.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
     <script src="js/custom.js"></script>
     
 
@@ -725,15 +807,74 @@
         });
     });   
 
-        var swiper = new Swiper('.mySwiper4', {
-        direction: 'vertical',
-        slidesPerView: 6,
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
+    document.addEventListener("DOMContentLoaded", function () {
+    var main = new Splide("#main-carousel", {
+    type: "fade",
+    rewind: true,
+    pagination: false,
+    arrows: false,
+  });
+
+  var thumbnail = new Splide("#thumbnail-carousel", {
+    fixedWidth: 100,
+    fixedHeight: 70,
+    rewind: true,
+    focus: 'center',
+    loop:true,
+    perPage: 6,
+    pagination: false,
+    cover: true,
+    isNavigation: true,
+    interval: 2000,
+  });
+
+  main.mount();
+  thumbnail.mount();
+  main.sync(thumbnail);
+
+  // Get the thumbnails container and thumbnails
+  var thumbnailsContainer = document.querySelector("#thumbnail-carousel .splide__list");
+  var thumbnails = thumbnailsContainer.querySelectorAll(".splide__slide");
+
+  function reorderThumbnails(clickedIndex) {
+    // Remove the 'active' class from all thumbnails
+    thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
+
+    // Add the 'active' class to the clicked thumbnail
+    thumbnails[clickedIndex].classList.add('active');
+
+    // Calculate the total height of thumbnails above the clicked thumbnail
+    let totalHeight = 0;
+    for (let i = 0; i < clickedIndex; i++) {
+      const thumbnail = thumbnails[i];
+      const thumbnailRect = thumbnail.getBoundingClientRect();
+      const thumbnailHeight = thumbnailRect.height;
+      totalHeight += thumbnailHeight;
+    }
+
+    // Remove the transition property to prevent scrolling animation
+    thumbnailsContainer.style.transition = 'none';
+
+    // Scroll the thumbnails container to make the clicked thumbnail visible
+    thumbnailsContainer.scrollTop = totalHeight;
+  }
+
+  // Listen to the 'move' event of the main slider
+  main.on('move', function () {
+    // Get the index of the active slide in the main slider
+    const newIndex = main.index;
+
+    // Call the function to reorder thumbnails
+    reorderThumbnails(newIndex);
+  });
+
+  // Listen to arrow click events to re-enable the transition property
+  main.on('click', function () {
+    // Re-enable the transition property after the arrow click
+    thumbnailsContainer.style.transition = 'scroll-behavior 0.8s ease-in-out';
+  });
+});
+
 
     </script>
  

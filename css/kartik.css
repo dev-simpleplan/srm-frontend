@@ -1132,7 +1132,7 @@ section.past-event-section {
   /* border: 1px solid red; */
   overflow: hidden;
   display: grid;
-  grid-template-columns: 8fr 2fr;
+  grid-template-columns: 11fr 2fr;
   position: relative;
 }
 .main #main-carousel {
@@ -1177,10 +1177,9 @@ section.past-event-section {
 }
 #thumbnail-carousel .splide__list  .splide__slide{
   border-radius: 10px;
-  border-radius: 10px;
-   overflow: hidden;
+  overflow: hidden;
 }
-.splide__arrow {
+.main #main-carousel .splide__arrow {
   display: none;
 }
 .my-slider-progress {
@@ -1199,10 +1198,25 @@ section.past-event-section {
 #thumbnail-carousel .splide__list::-webkit-scrollbar {
   display: none;
 }
+#thumbnail-carousel .splide__arrows{
+  display: none ;
+}
 
+.splide--nav>.splide__slider>.splide__track>.splide__list>.splide__slide.is-active, 
+.splide--nav>.splide__track>.splide__list>.splide__slide.is-active {
+ border: 2px solid var(--SRM-Orange, #CF9E69);
+}
 /* Past event Inner Page CSS End */
 
 /* Resposnive Screen */
+
+ @media screen and (max-width:1100px) {
+    .main{
+      grid-template-columns: 9fr 2fr;
+    }
+ }
+
+
 @media only screen and (max-width: 991px) {
   .witness-layout-new .witness-info-box .about-witness-img {
     display: block;
@@ -1297,7 +1311,23 @@ section.past-event-section {
   .glimpse-slider-wrapper {
     margin-top: 50px;
   }
+
+  /*carousel */
+  .main  {
+       grid-template-columns: 7fr 1.5fr;
+  }
+  .main #thumbnail-carousel {
+    gap:16px;
+  }
 }
+ 
+
+@media screen and (max-width:850px) {
+    .main{
+      grid-template-columns: 6fr 1.5fr;
+    }
+}
+
 
 @media only screen and (max-width: 767px) {
   .all-event-flex {
@@ -1420,6 +1450,12 @@ section.past-event-section {
   }
 }
 
+@media screen and (max-width:650px) {
+   .main{
+    grid-template-columns: 5fr 1.5fr;
+   }
+}
+
 @media only screen and (max-width: 500px) {
   .featured-event-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -1435,6 +1471,12 @@ section.past-event-section {
     display: block;
     width: 100%;
   }
+}
+
+@media screen and (max-width:400px) {
+   .main{
+    grid-template-columns: 4fr 1.5fr;
+   }
 }
 
 @media only screen and (max-width: 375px) {

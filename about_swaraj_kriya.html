@@ -567,6 +567,76 @@
        </section>
        <!-- how to enroll section ends -->
 
+       <!-- stories section start -->
+
+       <section class="stories_section">
+         <div class="container-fluid">
+            <div class="stories_main">
+                <div class="storiesm_inner">
+                    <div class="storiesmi_heading">
+                        <h2>Stories of Transformation</h2>
+                    </div>
+                    <div class="storiesmi_scroll">
+                        <div class="storiesmis_commas">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="40" viewBox="0 0 46 40" fill="none">
+                                <path d="M9.92948 39.0247C7.0414 39.0247 4.77907 37.9083 3.1425 35.6755C1.60219 33.3457 0.832031 30.0936 0.832031 25.9194C0.832031 20.0948 2.13167 15.0468 4.73094 10.7755C7.33021 6.50411 11.1329 2.91229 16.1389 0L19.6046 5.67897C15.9463 8.10587 13.2026 10.7269 11.3735 13.5421C9.54441 16.2603 8.62985 19.6579 8.62985 23.7351C8.91866 23.6381 9.35187 23.5895 9.92948 23.5895C11.8549 23.5895 13.5877 24.2205 15.128 25.4825C16.7646 26.7445 17.5829 28.589 17.5829 31.0159C17.5829 33.4428 16.8609 35.3843 15.4168 36.8404C13.9728 38.2966 12.1437 39.0247 9.92948 39.0247ZM35.489 39.0247C32.6009 39.0247 30.3386 37.9083 28.702 35.6755C27.1617 33.3457 26.3915 30.0936 26.3915 25.9194C26.3915 20.0948 27.6912 15.0468 30.2904 10.7755C32.8897 6.50411 36.6924 2.91229 41.6984 0L45.1641 5.67897C41.5058 8.10587 38.7621 10.7269 36.933 13.5421C35.1039 16.2603 34.1894 19.6579 34.1894 23.7351C34.4782 23.6381 34.9114 23.5895 35.489 23.5895C37.4144 23.5895 39.1472 24.2205 40.6875 25.4825C42.3241 26.7445 43.1424 28.589 43.1424 31.0159C43.1424 33.4428 42.4204 35.3843 40.9763 36.8404C39.5323 38.2966 37.7032 39.0247 35.489 39.0247Z" fill="#CF9E69"/>
+                              </svg>
+                        </div>
+                        <div class="storiesmis_para">
+                            <p>Moving on the path of truth with Sri Guru, I 
+                                feel at peace and acceptance to everything.
+                                 There was absolutely no agitation in mind related to Covid-19...<span><a href="">Read More</a></span></p>
+                        </div>
+                        <div class="storiesmis_btm">
+                           <div class="storiesmisb_img">
+                               <div class="storiesmisbi_inner">
+                                <img src="img/Ellipse 161.svg" alt="">
+                               </div>
+                           </div>
+                           <div class="storiesmisb_text">
+                             <p>Jayshree Khadkiwala, <span> Works in Embassy</span></p>
+                           </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Slider main container -->
+                
+
+                <!-- <div class="swiper-container">
+                  
+                    <div class="swiper-wrapper">
+                     
+                        <div class="swiper-slide">
+                            <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/10.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/11.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg" alt="">
+                        </div>
+                    <div class="swiper-slide">
+                            <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg" alt="">
+                        </div>
+                    <div class="swiper-slide">
+                            <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg" alt="">
+                        </div>
+                    <div class="swiper-slide">
+                            <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg" alt="">
+                        </div>
+                    </div>
+                   
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> -->
+            </div>
+         </div>
+       </section>
+
+
+       <!-- stories section ends  -->
+
 
     </div>
      <!-- Body Wrapper End -->
@@ -883,7 +953,29 @@
                 $(".owl-carousel").trigger("next.owl"); 
             });
 
-        
+            var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 3000,
+            },
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: false,
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            })
 
     </script>
  
