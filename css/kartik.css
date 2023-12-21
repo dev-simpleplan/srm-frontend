@@ -641,15 +641,15 @@ a.not-signed-link {
   margin-top: 10px !important;
 }
 .upcoming-event-info-box ol li:before {
-  counter-increment: listitem;
-  content: counters(listitem, ".") ".";
+  counter-increment: listitem !important;
+  content: counters(listitem, ".") "." !important;
 }
 .upcoming-event-info-box ul li:before {
-  content: "\2022";
-  color: #6b6970;
-  position: absolute;
-  left: 0;
-  font-weight: bold;
+  content: "\2022" !important;
+  color: #6b6970 !important;
+  position: absolute !important;
+  left: 0 !important;
+  font-weight: bold !important;
 }
 .upcoming-event-info-box img {
   width: 100% !important;
@@ -1206,6 +1206,36 @@ section.past-event-section {
 .splide--nav>.splide__track>.splide__list>.splide__slide.is-active {
  border: 2px solid var(--SRM-Orange, #CF9E69);
 }
+
+.glimpse-content-wrapper img{
+  width: 100% !important;
+  border-radius: 10px !important;
+}
+.glimpse-content-wrapper p{
+  margin-top: 32px !important;
+}
+.glimpse-content-wrapper h1,
+.glimpse-content-wrapper h2,
+.glimpse-content-wrapper h3,
+.glimpse-content-wrapper h4,
+.glimpse-content-wrapper h5,
+.glimpse-content-wrapper h6 {
+  margin-top: 32px !important;
+}
+.glimpse-content-wrapper ol {
+  margin-top: 10px !important;
+}
+.glimpse-content-wrapper ol li:before {
+  counter-increment: listitem !important;
+  content: counters(listitem, ".") "." !important;
+}
+.glimpse-content-wrapper ul li:before {
+  content: "\2022" !important;
+  color: #6b6970 !important;
+  position: absolute !important;
+  left: 0 !important;
+  font-weight: bold !important;
+}
 /* Past event Inner Page CSS End */
 
 /* Resposnive Screen */
@@ -1448,6 +1478,8 @@ section.past-event-section {
   .glimpse-slider-wrapper {
     margin-top: 40px;
   }
+
+
 }
 
 @media screen and (max-width:650px) {
