@@ -4524,7 +4524,61 @@ hr {
 }
 .sbb_left {
   width: 50%;
+}
+.sbb_left .main {
+  width: 100%;
+  /* height: 100%; */
   display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid red;
+  position: relative;
+}
+.sbb_left .main #main-carousel {
+  width: 75%;
+  border: 1px solid rgb(179, 255, 0);
+}
+.sbb_left .main #thumbnail-carousel {
+  left: 0 !important;
+  right: unset !important;
+  display: block;
+  padding: 40px 0px;
+  height: 90%;
+  top: 5%;
+  /* position: relative; */
+  border: 1px solid rgb(72, 0, 255);
+}
+.sbb_left .main #main-carousel .splide__track .splide__slide .splides_inner {
+  padding-top: 146%;
+}
+.sbb_left .main #thumbnail-carousel .splide__arrows {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.sbb_left .main #thumbnail-carousel .splide__arrows .splide__arrow--prev {
+  position: absolute;
+  top: 6px;
+  left: 37px;
+  transform: rotate(90deg);
+}
+.sbb_left .main #thumbnail-carousel .splide__arrows .splide__arrow--next {
+  position: absolute;
+  border: 1;
+  left: 0px;
+  transform: rotate(90deg);
+}
+
+.sbb_left .main #thumbnail-carousel .splide__arrows .splide__arrow svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.5px;
+  fill: #b7557f;
+}
+.sbb_left .main #thumbnail-carousel .splide__list .splide__slide {
+  border-radius: 0px;
+}
+.sbb_left .main #main-carousel .splide__track .splide__slide .splides_inner {
+  border-radius: 0px;
 }
 .sbbl_scroll {
   width: 15%;
@@ -5443,7 +5497,67 @@ input[type="radio"]:checked {
   color: #6b6970;
   min-width: 46ch;
 }
+.swiper-container {
+  width: 750px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  width: 300px;
+}
+
+.stories_section {
+  background: var(--SRM, #f5eada);
+}
+.stories_main {
+  padding: 40px 0px 80px 0px;
+}
+.storiesmi_heading {
+  display: flex;
+  justify-content: center;
+}
+.storiesmi_scroll {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid red;
+  border-radius: 10px;
+  background: #F8F4F0;
+  padding: 40px 80px 32px 80px;
+  max-width: 670px;
+}
+.storiesmis_para {
+  max-width: 500px;
+}
+.storiesmis_para span{
+  text-decoration-line: underline;
+}
+.storiesmis_para p {
+  color: var(--SRM-Grey, #6b6970);
+  text-align: center;
+  font-size: 18px;
+  font-family:var(--headingfont) ;
+  line-height: 127.5%;
+}
+.storiesmisbi_inner{
+  width: 30px;
+  height: 30px;
+}
+.storiesmis_btm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.storiesmisb_text p{
+  
+}
 /* about swaraj kriya page ends */
+
+
 
 /* about sriguru page start */
 .about_sriguru_banner {
@@ -5637,7 +5751,7 @@ input[type="radio"]:checked {
   margin-top: 40px;
   display: flex;
   /* justify-content: space-between; */
-  gap:32px;
+  gap: 32px;
   flex-wrap: wrap;
 }
 .pathtism_card {
@@ -5671,39 +5785,43 @@ input[type="radio"]:checked {
 .pathtismcl_para p {
   color: var(--SRM-Grey, #6b6970);
 }
-.learn_from_sriguru_section_title{
+.learn_from_sriguru_section_title {
   display: flex;
   justify-content: space-between;
 }
-.aboutsg_witness_swaraj_kriya_section_main{
-  flex-direction: row-reverse ;
+.aboutsg_witness_swaraj_kriya_section_main {
+  flex-direction: row-reverse;
   border-radius: 10px;
-  background: var(--SRM, #F5EADA);
+  background: var(--SRM, #f5eada);
   padding: 60px;
 }
-.aboutsg_witness_swaraj_kriya_section_main .biographysm_right{
+.aboutsg_witness_swaraj_kriya_section_main .biographysm_right {
   justify-content: unset;
 }
-.aboutsg_witness_swaraj_kriya_section_main .biographysm_right .biographysmr_text{
+.aboutsg_witness_swaraj_kriya_section_main
+  .biographysm_right
+  .biographysmr_text {
   margin-top: 10px;
 }
-.aboutsg_witness_swaraj_kriya_section_main .biographysm_right .biographysmr_counter{
+.aboutsg_witness_swaraj_kriya_section_main
+  .biographysm_right
+  .biographysmr_counter {
   margin-top: auto;
 }
 /* .aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left{
   border: 1px solid red;
 } */
-.aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left{
+.aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left {
   display: flex;
   flex-direction: column;
-  gap:24px;
+  gap: 24px;
 }
-.aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left .awsksm_blbtm{
+.aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left .awsksm_blbtm {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 14px;
 }
-.boigraphysm_left .awsksm_bltop_inner{
+.boigraphysm_left .awsksm_bltop_inner {
   height: 0;
   width: 100%;
   padding-top: 53%;
@@ -5711,7 +5829,7 @@ input[type="radio"]:checked {
   overflow: hidden;
   border-radius: 10px;
 }
-.boigraphysm_left .awsksm_blbtm .awsksm_blbtm_item{
+.boigraphysm_left .awsksm_blbtm .awsksm_blbtm_item {
   height: 0;
   width: 100%;
   position: relative;
@@ -5720,25 +5838,12 @@ input[type="radio"]:checked {
   border-radius: 10px;
 }
 .awsksm_bltop_inner img,
-.awsksm_blbtm_item_inner img{
+.awsksm_blbtm_item_inner img {
   height: 100%;
   width: 100%;
   position: absolute;
   inset: 0;
   object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* about sriguru page ends */
