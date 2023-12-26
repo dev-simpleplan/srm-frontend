@@ -560,7 +560,13 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".dhayan_sangha_banner_btn").click(function () {
+  $(".dhayan_sangha_banner_btn a").click(function () {
+    $(".body-wrapper").addClass("blur");
+    $(".main-header").addClass("blur");
+  });
+});
+$(document).ready(function () {
+  $(".storiesmis_para p a").click(function () {
     $(".body-wrapper").addClass("blur");
     $(".main-header").addClass("blur");
   });

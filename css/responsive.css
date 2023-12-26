@@ -109,6 +109,19 @@
   }
   /* sacred store page ends */
   
+  /* about sriguru page start */
+  .aboutsg_witness_swaraj_kriya_section_main{
+    flex-direction: column;
+  }
+  .aboutsg_witness_swaraj_kriya_section_main .boigraphysm_left,
+  .aboutsg_witness_swaraj_kriya_section_main .biographysm_right
+  {
+     width: 100%;  
+  }
+  .boigraphysm_left .awsksm_bltop_inner{
+    padding-top: 52%;
+  }
+  /* about sriguru page ends */
 
 }
 /* 1300 px End */
@@ -1073,7 +1086,116 @@
     width: 90%;
     left: 5%;
   }
+  .sscience_main{
+    flex-direction: column;
+    gap:60px;
+  }
+  .ssciencem_left,.ssciencem_right{
+    width: 100%;
+  }
+  .sscienceml_top {
+    gap:20px;
+  }
+  .ssciencem_left {
+    gap:30px;
+  }
+  .ssciencem_right{
+    flex-direction: row;
+  }
+  .ssciencemr_item {
+    padding-top: 33%;
+  }
+  
   /* about swaraj kriya page ends */
+  /* about sriguru page start */
+  .biographysmr_text .biographysmr_para1 p, .biographysmr_text .biographysmr_para3 p {
+    color: var(--SRM-Grey, #6b6970);
+    max-height: 100px;
+    overflow: auto;
+}
+.about_sriguru_banner .scroll-btn-box {
+  bottom: 0px;
+  left: 2%;
+}
+.biographysmr_counter_wrap .spiritual-grid {
+  margin-top: 20px;
+}
+.biographys_main {
+  gap: 32px;
+}
+.biographysmr_text {
+  margin-top: 18px;
+  gap: 16px;
+}
+.meditation_artist_section{
+  padding-top: 0px;
+}
+.pathtism_card_main{
+  justify-content: center;
+}
+
+  /* about sriguru page ends */
+   /* privacy policy page start*/
+   .policy_banner_section{
+    padding: 120px 0px;
+  }
+  .policy_banner_section .center_div .centerd_inner h2{
+    margin-bottom: 60px;
+ }
+ .policy_banner_section .center_div .centerd_inner h3{
+   margin-bottom: 40px;
+ }
+ .policy_banner_section .center_div .centerd_inner h5{
+   margin-bottom: 24px;
+ }
+ .policy_banner_section .center_div .centerd_inner p{
+   margin-bottom: 32px;
+ }
+  /* privacy policy page ends */
+   
+  /* contact us page start */
+  .getits_main{
+    flex-direction: column;
+    gap:40px;
+  }
+  .getitsm_left,.getintsm_right{
+    width: 100%;
+  }
+  .getitsml_top .fsmt_name{
+    justify-content:unset;
+    flex-wrap: wrap;
+  }
+  .cwsg_main{
+    flex-direction: column-reverse;
+    gap:30px;
+  }
+  .cwsg_main_right_inner{
+    border-radius: 10px;
+  }
+  .cwsg_main_right,.cwsg_main_left{
+    width: 100%;
+  }
+  .cwsg_main_left{
+    justify-content: unset;
+    padding: 30px 20px 30px 0px;
+  }
+  .cwsg_main_left_btm{
+    width: 30%;
+  }
+  /* contact us page ends */
+
+  /* contact sriguru page start */
+  .contactsgbs_main{
+    flex-direction: column-reverse;
+  }
+  .contactsgbs_main_right{
+    width: 100%;
+  }
+  .contactsgbs_main_left{
+    width: 100%;
+  }
+ 
+  /* contact sriguru page ends */
 }
 /* 991 px End */
 
@@ -1813,6 +1935,43 @@
     left: 0%;
   }
   /* about swaraj kriya page ends */
+  
+  /* about sriguru page start */
+  .biographys_main{
+    flex-direction: column;
+  }
+  .boigraphysm_left, .biographysm_right {
+    width: 100%;
+}
+.biographysmr_text .biographysmr_para1 p, .biographysmr_text .biographysmr_para3 p {
+  max-height: 150px;
+}
+.certaintym_inner {
+  padding: 30px 40px 200px 70px;
+}
+  /* about sriguru page ends */
+  
+  /* privacy policy page start*/
+  .policy_banner_section{
+    padding: 100px 0px;
+  }
+  .centerd_inner{
+    width: 100%;
+  }
+  .policy_banner_section .center_div .centerd_inner h2{
+    margin-bottom: 40px;
+ }
+ .policy_banner_section .center_div .centerd_inner h3{
+   margin-bottom: 32px;
+ }
+ .policy_banner_section .center_div .centerd_inner h5{
+   margin-bottom: 20px;
+ }
+ .policy_banner_section .center_div .centerd_inner p{
+   margin-bottom: 28px;
+   max-width: 79ch;
+ }
+  /* privacy policy page ends */
 
 }
 /* 767 px End */
@@ -1890,6 +2049,24 @@
     gap:18px;
   }
   /* upcoming event register page ends */
+
+  
+  /* about swaraj kriya page start */
+  .mosm_inner{
+    padding: 18px;
+  }
+  .mosmi_btm {
+    margin-top: 20px;
+    gap:20px;
+  }
+  .certaintym_inner {
+    padding: 30px 40px 80px 70px;
+}
+.certaintym_img {
+  width: 50ch;
+}
+  /* about swaraj kriya page ends */
+
 }
 /* 650 ends */
 
@@ -1916,6 +2093,26 @@
   }
   /* upcomng event register page ends */
 
+  /* about swaraj kriya page start */
+  .ssciencem_right{
+    flex-direction: column;
+  }
+  .ssciencemr_item{
+    padding-top: 67%;
+  }
+  /* about swaraj kriya page ends */
+  
+  /* contact us page start */
+  .getitsml_top .getitsmlt_message{
+    margin-top: 56px;
+  }
+  /* contact us page ends  */
+  
+  /* contact sriguru page start */
+   .contactsgbs_main_left .contactsgbs_main_message{
+    margin-top: 56px;
+   }
+  /* contact sriguru page ends */
 }
 /* 600 ends */
 
@@ -2213,6 +2410,14 @@
     width: auto;
   }
   /* dhyan sangha page ends */
+  /* about swaraj kriya page start */
+  .biographysmr_counter_wrap .spiritual-counter-num .spiritualnum {
+    font-size: 24px;
+  }
+  .spiritual-title h4{
+    font-size: 16px;
+  }
+  /* about swaraj kriya page ends */
 }
 /* 500 px End */
 
@@ -2242,6 +2447,18 @@
     margin-top: 72px;
 }
   /* sacred page ends */
+
+  /* about swaraj kriya page start */
+  .howtesmbc_btm p {
+    min-width: 35ch;
+  }
+  /* about swaraj kriya page ends */
+
+  /* about sriguru page start */
+  .certaintym_img {
+    width: 40ch;
+  }
+  /* about sriguru page ends */
 }
 /* 450 ends */
 
