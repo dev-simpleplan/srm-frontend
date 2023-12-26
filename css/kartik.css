@@ -1182,13 +1182,13 @@ section.past-event-section {
 .main #main-carousel .splide__arrow {
   display: none;
 }
-.my-slider-progress {
+.main #thumbnail-carousel .my-slider-progress {
   background: #ccc;
   overflow: hidden;
   width: 5px; 
 }
 
-.my-slider-progress-bar {
+.main #thumbnail-carousel .my-slider-progress-bar {
   background: #CF9E69;
   transition: height 400ms ease; /* Use height instead of width for vertical progress */
   height: 0px; /* Initial height is 0, it will increase based on progress */
