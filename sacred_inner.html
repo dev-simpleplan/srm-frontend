@@ -300,53 +300,8 @@
                                         </li>
                                   </ul>
                                 </div>
+                            </div>                         
                             </div>
-                           
-                            </div>
-                       <!-- <div class="sbbl_scroll">
-                            <div class="sbbls_main">
-                                <div class="sbblsm_top_arrow"></div>
-                                <div class="swiper mySwiper4">
-                                    <div class="sbblsm_imgs swiper-wrapper">
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-img4.svg" alt="">
-                                        </div>
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-img5.svg" alt="">
-                                        </div>
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-img6.svg" alt="">
-                                        </div>
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-img7.svg" alt="">
-                                        </div>
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-sim8.svg" alt="">
-                                        </div>
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-img9.svg" alt="">
-                                        </div>
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-img4.svg" alt="">
-                                        </div>
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-img5.svg" alt="">
-                                        </div>
-                                        <div class="sbblsmi_inner swiper-slide">
-                                                <img src="img/si-img6.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                </div>
-                                <div class="sbblsm_btm_arrow"></div>
-                            </div>
-                       </div> -->
-                       <!-- <div class="sbbl_img">
-                         <div class="sbbli_inner">
-                            <img src="img/si-img1.png" alt="">
-                         </div>
-                       </div> -->
                     </div>
                     <div class="sbb_right">
                          <div class="sbbr_heading">
@@ -369,21 +324,21 @@
                                   <div class="sbbrl_text">
                                     <p>Sprial Notebook Variant</p>
                                   </div>
-                                  <div class="sbbrl_dropdown">
+                                  <div class=" fsmtcc_select">
                                     <div class="nasmd_right">
                                         <div class="sort-by-box nav-left">
-                                            <div class="nasmdr_nav sbbrnd_nav">
+                                            <div class="nasmdr_nav">
                                                 <ul>
                                                     <li class="has_subs nasmdrn1"> 
-                                                        <div class="has_subs_inner">Choose an Option
+                                                        <div class="has_subs_inner fsmtcc_subs_inner">Choose an Option
                                                             <span>
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
                                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.71625 7.11811C5.00915 6.82521 5.48402 6.82521 5.77691 7.11811L9.74658 11.0878L13.7163 7.11811C14.0091 6.82521 14.484 6.82521 14.7769 7.11811C15.0698 7.411 15.0698 7.88587 14.7769 8.17877L10.2769 12.6788C9.98402 12.9717 9.50914 12.9717 9.21625 12.6788L4.71625 8.17877C4.42336 7.88587 4.42336 7.411 4.71625 7.11811Z" fill="#6B6970"></path>
                                                                 </svg>
                                                             </span>
                                                         </div>
-                                                        <div class="hs_nav_dropdown hnd1">
-                                                            <ul class="nav-dropdown-list hnd_list">
+                                                        <div class="hs_nav_dropdown hnd1 fsmt_ct_dropdown">
+                                                            <ul class="nav-dropdown-list">
                                                                 <li><a href="">Price (High - Low)</a></li>
                                                                 <li><a href="">Price (Low - High)</a></li>
                                                                 <li><a href="">New Arrivals</a></li>
@@ -392,9 +347,9 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div>                        
                                     </div>
-                                  </div>
+                                </div>
                               </div>
                               <div class="sbbrn_right">
                                   <div class="sbbrnr_text">
@@ -792,20 +747,52 @@
     
 
     <script>
-         document.addEventListener('DOMContentLoaded', function () {
-    // Get all tabs and dropdowns
+document.addEventListener('DOMContentLoaded', function () {
     var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
-    
-    tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-            var dropdown = this.querySelector('.hs_nav_dropdown');
+    var listItems = document.querySelectorAll('.hnd1 .nav-dropdown-list li');
+    var span = document.querySelector(".has_subs_inner span svg");
+
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function (event) {
+            var dropdown = this.querySelector('.fsmt_ct_dropdown');
             if (dropdown) {
                 var currentDisplay = window.getComputedStyle(dropdown).display;
                 dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
-                         }
-            });
+
+                // Rotate the SVG when the dropdown is closed
+                if (currentDisplay === 'block') {
+                    span.style.transform = 'rotate(0deg)';
+                } else {
+                    span.style.transform = 'rotate(180deg)';
+                }
+            }
+
+            // Stop the click event propagation to prevent immediate hiding of the dropdown
+            event.stopPropagation();
         });
-    });   
+    });
+
+    listItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            var hsInner = document.querySelector('.nasmdrn1 .has_subs_inner').closest('div');
+            span.style.transform = 'rotate(0deg)';
+            hsInner.classList.remove("clicked");
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (event) {
+        var dropdowns = document.querySelectorAll('.fsmt_ct_dropdown');
+        dropdowns.forEach(function (dropdown) {
+            if (!dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+                span.style.transform = 'rotate(0deg)'; // Rotate the SVG when the dropdown is closed
+            }
+        });
+    });
+});
+
+
 
     document.addEventListener("DOMContentLoaded", function () {
     var main = new Splide("#main-carousel", {

@@ -1032,6 +1032,19 @@
       width: 80%;
   }
     /* sacred page ends */
+    /* sacred inner page start */
+    .sacred_banner_btm{
+      flex-direction: column;
+      gap:20px;
+    }
+    .sbb_left,.sbb_right{
+      width: 100%;
+    }
+    .sbb_left .main #thumbnail-carousel{
+      height: 62%;
+      top:14%;
+    }
+    /* sacred inner page ends */
 
     /* noresult page start */
     .no_result_banner{
@@ -1135,6 +1148,7 @@
 }
 
   /* about sriguru page ends */
+  
    /* privacy policy page start*/
    .policy_banner_section{
     padding: 120px 0px;
@@ -2447,6 +2461,15 @@
     margin-top: 72px;
 }
   /* sacred page ends */
+  /* sacred inner start */
+  .sbb_left .main #thumbnail-carousel {
+    height: 92%;
+    top: 4%;
+}
+  .sbb_left .main #main-carousel {
+    width: 65%;
+  }
+  /* sacred inner ends */
 
   /* about swaraj kriya page start */
   .howtesmbc_btm p {

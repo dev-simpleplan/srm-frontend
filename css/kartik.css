@@ -617,41 +617,41 @@ a.not-signed-link {
 }
 
 /* updated css */
-.upcoming-event-info-box h1,
-.upcoming-event-info-box h2,
-.upcoming-event-info-box h3,
-.upcoming-event-info-box h4,
-.upcoming-event-info-box h5,
-.upcoming-event-info-box h6 {
+.upcoming-event-info h1,
+.upcoming-event-info h2,
+.upcoming-event-info h3,
+.upcoming-event-info h4,
+.upcoming-event-info h5,
+.upcoming-event-info h6 {
   margin-top: 30px !important;
 }
-/* .upcoming-event-info-box h1:first-child,
-.upcoming-event-info-box h2:first-child,
-.upcoming-event-info-box h3:first-child,
-.upcoming-event-info-box h4:first-child,
-.upcoming-event-info-box h5:first-child,
-.upcoming-event-info-box h6:first-child {
+.upcoming-event-info h1:first-child,
+.upcoming-event-info h2:first-child,
+.upcoming-event-info h3:first-child,
+.upcoming-event-info h4:first-child,
+.upcoming-event-info h5:first-child,
+.upcoming-event-info h6:first-child {
   margin-top: 0px !important;
-} */
+}
 
-.upcoming-event-info-box p {
+.upcoming-event-info p {
   margin-top: 10px !important;
 }
-.upcoming-event-info-box ol {
+.upcoming-event-info ol {
   margin-top: 10px !important;
 }
-.upcoming-event-info-box ol li:before {
+.upcoming-event-info ol li:before {
   counter-increment: listitem !important;
   content: counters(listitem, ".") "." !important;
 }
-.upcoming-event-info-box ul li:before {
+.upcoming-event-info ul li:before {
   content: "\2022" !important;
   color: #6b6970 !important;
   position: absolute !important;
   left: 0 !important;
   font-weight: bold !important;
 }
-.upcoming-event-info-box img {
+.upcoming-event-info img {
   width: 100% !important;
 }
 .past-event-section-splide {
@@ -1107,7 +1107,7 @@ section.past-event-section {
   display: flex;
   flex-direction: column;
   margin-top: 32px;
-  gap: 36px;
+  /* gap: 36px; */
 }
 .glimpse-slder-box
   .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {

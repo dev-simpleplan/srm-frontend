@@ -1042,26 +1042,62 @@
     <script src="js/custom.js"></script>
     
     <script>
-            var mySwiper = new Swiper('.swiper-container', {
-            loop: true,
-            speed: 1000,
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 3,  // Set the number of slides you want to show
+           var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    speed: 1000,
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 2, // Set the number of slides you want to show
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 205,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        // When window width is <= 767px
+        767: {
+            slidesPerView: 1,
             coverflowEffect: {
                 rotate: 0,
-                stretch: 0,
-                depth: 200,
+                stretch: 100,
+                depth: 50,
                 modifier: 1,
                 slideShadows: false,
             },
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+        },
+        // When window width is <= 991px
+        991: {
+            slidesPerView: 2,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 150,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
             },
-            });
+        },
+        // When window width is <= 1199px
+        // 1199: {
+        //     slidesPerView: 2,
+        //     coverflowEffect: {
+        //         rotate: 0,
+        //         stretch: 205,
+        //         depth: 200,
+        //         modifier: 1,
+        //         slideShadows: false,
+        //     },
+        // },
+    },
+});
+
 
     </script>
  
