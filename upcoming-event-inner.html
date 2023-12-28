@@ -229,7 +229,7 @@
                 <div class="login-popup-box">
                     <div class="login-popup-box-btn">
                         <a href="#" class="login-btn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signinPopup">Login</a>
-                        <a href="#" class="login-btn nofill">Sign Up</a>
+                        <a href="#" class="login-btn nofill" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupPopup" >Sign Up</a>
                     </div>
                     <div class="login-popup-or">
                         <span>Or</span>
@@ -249,7 +249,7 @@
         </div>
         </div>
     </div>
-    <div class="modal modal2 fade" id="signinPopup" role="dialog" tabindex="-1">
+    <div class="modal modal2 fade userDetails" id="signinPopup" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered login-modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -275,6 +275,61 @@
                     <div class="fsmn_email">
                         <div class="fsmne_text">
                             <p>Password :</p>
+                        </div>
+                        <div class="fsmnn_input">
+                            <input type="password" placeholder="Enter Your Password Here">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_btn">
+                    <a href="#" class="login-btn nofill">Submit</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal modal3 fade userDetails" id="signupPopup" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="nav-cross modal_cross" id="modal_cross">
+                    <div class="nav-cross-btn modal_cross_btn" data-bs-dismiss="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                            <path d="M1 1.28809L15.7509 16.039" stroke="#6B6970" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M15.7521 1L1.00117 15.7509" stroke="#6B6970" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="fsmt_name">
+                    <div class="fsmnn">
+                     <div class="fsmnn_text">
+                        <p>Username :</p>
+                     </div>
+                     <div class="fsmnn_input">
+                        <input type="text" name="" id="" placeholder="Enter Your UserName Here">
+                     </div>
+                    </div>
+                    <div class="fsmn_email">
+                        <div class="fsmne_text">
+                            <p>Email :</p>
+                        </div>
+                        <div class="fsmnn_input">
+                            <input type="email" placeholder="Enter Your Password Here">
+                        </div>
+                    </div>
+                    <div class="fsmn_email">
+                        <div class="fsmne_text">
+                            <p>Password :</p>
+                        </div>
+                        <div class="fsmnn_input">
+                            <input type="password" placeholder="Enter Your Password Here">
+                        </div>
+                    </div>
+                    <div class="fsmn_email">
+                        <div class="fsmne_text">
+                            <p>Confirm Password :</p>
                         </div>
                         <div class="fsmnn_input">
                             <input type="password" placeholder="Enter Your Password Here">

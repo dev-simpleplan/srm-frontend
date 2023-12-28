@@ -758,37 +758,31 @@ section.by_sriguru.testimonaial-sriguru-section
   object-fit: cover;
 }
 
-#signinPopup .modal-body{
+.userDetails .modal-body{
   margin-top: 40px;
 }
-#signinPopup .modal-body .fsmt_name{
+.userDetails .modal-body .fsmt_name{
    display: flex;
    flex-direction: column;
    gap:20px;
-   justify-content: center;
-   align-items: center;
 }
-#signinPopup .modal-body .fsmt_name .fsmnn_input
+.userDetails .modal-body .fsmt_name .fsmnn_input
 {
   background: #FFF;
 }
-#signinPopup .modal-body .fsmt_name input{
+.userDetails .modal-body .fsmt_name input{
   border: none;
 }
-#signinPopup .modal-body .fsmt_name .fsmnn,
-#signinPopup .modal-body .fsmt_name .fsmn_email{
+.userDetails .modal-body .fsmt_name .fsmnn,
+.userDetails .modal-body .fsmt_name .fsmn_email{
   width: 100%;
   display: flex;
-  flex-direction: row !important;
-  align-items: center;
-  justify-content: center;
 }
-#signinPopup .modal-body .fsmt_name .fsmnn_text,
-#signinPopup .modal-body .fsmt_name .fsmne_text{
+.userDetails .modal-body .fsmt_name .fsmnn_text,
+.userDetails .modal-body .fsmt_name .fsmne_text{
   color: #FFF;
-  text-align: center;
 }
-#signinPopup .modal-body .submit_btn{
+.userDetails .modal-body .submit_btn{
   display: flex;
   justify-content: center;
   margin-top: 20px;
