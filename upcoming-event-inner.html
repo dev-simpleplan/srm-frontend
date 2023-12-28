@@ -19,10 +19,11 @@
     <!-- Sources Sans pro  Font End-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/splide.min.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/themes/splide-skyblue.min.css"
@@ -211,8 +212,7 @@
     <!-- Header End -->
  
     <!-- Modal Start -->
-        
-    <div class="modal fade" id="loginPopup" role="dialog" tabindex="-1">
+    <div class="modal modal1 fade" id="loginPopup" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered login-modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -228,7 +228,7 @@
             <div class="modal-body">
                 <div class="login-popup-box">
                     <div class="login-popup-box-btn">
-                        <a href="#" class="login-btn">Login</a>
+                        <a href="#" class="login-btn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signinPopup">Login</a>
                         <a href="#" class="login-btn nofill">Sign Up</a>
                     </div>
                     <div class="login-popup-or">
@@ -249,6 +249,46 @@
         </div>
         </div>
     </div>
+    <div class="modal modal2 fade" id="signinPopup" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="nav-cross modal_cross" id="modal_cross">
+                    <div class="nav-cross-btn modal_cross_btn" data-bs-dismiss="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                            <path d="M1 1.28809L15.7509 16.039" stroke="#6B6970" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M15.7521 1L1.00117 15.7509" stroke="#6B6970" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="fsmt_name">
+                    <div class="fsmnn">
+                     <div class="fsmnn_text">
+                        <p>Username :</p>
+                     </div>
+                     <div class="fsmnn_input">
+                        <input type="text" name="" id="" placeholder="Enter Your UserName Here">
+                     </div>
+                    </div>
+                    <div class="fsmn_email">
+                        <div class="fsmne_text">
+                            <p>Password :</p>
+                        </div>
+                        <div class="fsmnn_input">
+                            <input type="password" placeholder="Enter Your Password Here">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_btn">
+                    <a href="#" class="login-btn nofill">Submit</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
 
      <!-- Modal Ends -->
 
@@ -388,10 +428,10 @@
                             </div>
                         </div>
                         <div class="upcoming-register-buttons">
-                            <a href="#" class="custom-btn purple "  data-bs-toggle="modal" data-bs-target="#loginPopup">Register Now
+                            <a href="#" class="custom-btn purple " >Register Now
                                 <span class="arrow">&gt;</span>
                             </a>
-                            <a href="#" class="not-signed-link">Not Signed In?</a> 
+                            <a href="#" class="not-signed-link" data-bs-toggle="modal" data-bs-target="#loginPopup"  >Not Signed In?</a> 
                         </div>
                     </div>
                 </div>
@@ -400,16 +440,62 @@
         <!-- Upcoming Event Inner Description Section End -->
 
           <!-- spacer -->
-          <div class="spacer_40">
+          <div class="spacer">
         </div>
         <!-- spacer -->
        
+        <!-- marquee section start -->
+        <section class="marquee_section">
+            <div class="scrolling-icons-wrap">
+                <div class="scroll-in">
+                    <div id="splide" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="splide-images">
+                                        <img src="img/ue-inner.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide-images">
+                                        <img src="img/a-srm-img0.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide-images">
+                                        <img src="img/slider6.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide-images">
+                                        <img src="img/slider4.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide-images">
+                                        <img src="img/slider3.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="scrolling-content">
+                    <div class="container">
+                        <div class="scrolling-content-in">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- marquee section ends -->
 
 
-         <!-- spacer -->
-         <!-- <div class="spacer-120"> -->
-        </div>
-        <!-- spacer -->
+        <!-- spacer start -->
+        <div class="spacer_40"></div>
+        <!-- spacer ends -->
+        
 
         <!-- Upcoming Events Section start  -->
         <section class="additional-upcoming-event-section">
@@ -531,7 +617,7 @@
 
          <!-- spacer -->
          <!-- <div class="spacer-120"> -->
-        </div>
+        <!-- </div> -->
         <!-- spacer -->
 
         <!-- Past Events Section Start -->
@@ -635,7 +721,7 @@
                             </div>
                             <div class="swiper-pagination"></div>
                         </div> -->
-                        <div class="splide past-event-section-splide">
+                        <div class="splide past-event-section-splide" id="splide2">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
@@ -1052,33 +1138,57 @@
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
+    <script src="js/splide-extension-auto-scroll.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/gsap-animation.js"></script>
 
 
      <script>
-         var splide = new Splide( '.splide', {
-        type   : 'loop',
-        perPage: 4,
-        gap:'40px',
-        perMove:1,
-        opacity:1,
-        breakpoints: {
-        767: {
-        perPage: 3,
-        },
-        600:{
-            perPage:2,
-        },
-        500:{
-            perPage:1,
-        }
+        //Icons Auto Scroll   
 
-    }
+          //Icons Auto Scroll   
+        document.addEventListener('DOMContentLoaded', function () {
+          new Splide('#splide', {
+            type   : 'loop',
+            drag   : 'free',
+            gap: '10px',
+            arrows : false,
+            pagination : false,
+            focus  : 'center',
+            pauseOnHover: false,
+            perPage: 2.5,
+            autoScroll: {
+              speed: 1,
+            },
+          }).mount(window.splide.Extensions);
+
+          new Splide( '#splide2', {
+                type   : 'loop',
+                perPage: 4,
+                gap:'40px',
+                perMove:1,
+                opacity:1,
+                breakpoints: {
+                767: {
+                perPage: 3,
+                },
+                600:{
+                perPage:2,
+                },
+                500:{
+                perPage:1,
+                }
+                }
+            }).mount();
         });
-
-        splide.mount();
+        //Icons Auto Scroll
+    
+        //Icons Auto Scroll
+        document.addEventListener('load', function(){
+            
+        })
+        
 
      </script>
     

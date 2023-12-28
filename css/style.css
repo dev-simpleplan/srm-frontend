@@ -5727,6 +5727,7 @@ input[type="radio"]:checked {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  width: 50%;
 }
 .guidingvsml_heading{
   display: flex;
@@ -5837,13 +5838,14 @@ background: var(--SRM, #F5EADA);
 
 .about_srm_carousel_section{
   overflow: hidden;
+  /* border: 1px solid red; */
+  width: 98%;
 }
 .aboutsrmcs_main{
   position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
 }
 .aboutsrmcsm_top{
   display: flex;
@@ -5855,7 +5857,7 @@ background: var(--SRM, #F5EADA);
 .aboutsrmcsm_top .aboutsrmcsmt_item{
   display: flex;
   align-items: center;
-  width: 34%;
+  width: 33%;
 }
 .aboutsrmcsmti_svg{
   height: 29px;
@@ -5863,10 +5865,23 @@ background: var(--SRM, #F5EADA);
 }
 .aboutsrmcsm_top .aboutsrmcsmt_item .aboutsrmcsmti_hr{
   width: 100%;
+  /* border:1px solid red; */
 }
-.aboutsrmcsm_top .aboutsrmcsmt_item .aboutsrmcsmti_hr hr{
+.aboutsrmcsm_top .aboutsrmcsmt_item .aboutsrmcsmti_hr .hr1{
   width: 450px;
 }
+.aboutsrmcsm_top .aboutsrmcsmt_item .aboutsrmcsmti_hr .hr2{
+   /* color:red; */
+   /* height: 2px; */
+   opacity:1 !important;
+}
+.aboutsrmcsm_top  .at_item2 .aboutsrmcsmti_hr  .hr2,
+.aboutsrmcsm_top  .at_item3 .aboutsrmcsmti_hr  .hr2,
+.aboutsrmcsm_top  .at_item4 .aboutsrmcsmti_hr  .hr2{
+  width: 0%;
+}
+
+
 
 .aboutsrmcsm_btm{
   position: relative;
@@ -6147,6 +6162,9 @@ background: var(--SRM, #F5EADA);
   display: flex;
   justify-content: space-between;
 }
+.learn_from_sriguru_section_wrapper{
+  margin-top: 0px !important;
+}
 .aboutsg_witness_swaraj_kriya_section_main {
   flex-direction: row-reverse;
   border-radius: 10px;
@@ -6241,6 +6259,9 @@ background: var(--SRM, #F5EADA);
   height: 10px;
   transition: width 400ms ease;
   width: 0;
+}
+.program_facility_section .history-slider-wrapper{
+  margin-top: 30px;
 }
 /* about SRSRC page ends */
 

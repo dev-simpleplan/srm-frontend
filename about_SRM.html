@@ -509,56 +509,50 @@
           <div class="container-fluid">
               <div class="aboutsrmcs_main">
                   <div class="aboutsrmcsm_top">
-                      <div class="aboutsrmcsmt_item">
+                      <div class="aboutsrmcsmt_item at_item1">
                         <div class="aboutsrmcsmti_svg svg_item1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                                 <circle cx="15.2578" cy="14.7656" r="14.5" fill="#CF9E69"/>
                               </svg>
-                        </div>
+                        </div>                      
                         <div class="aboutsrmcsmti_hr">
-                            <hr>
+                            <hr class="hr1">
+                            <hr class="hr2">
                         </div>
                       </div>
-                      <div class="aboutsrmcsmt_item">
+                      <div class="aboutsrmcsmt_item at_item2">
                         <div class="aboutsrmcsmti_svg svg_item2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                                 <circle cx="15.2578" cy="14.7656" r="14" stroke="#CF9E69"/>
                               </svg>
                         </div>
                         <div class="aboutsrmcsmti_hr">
-                            <hr>
+                            <hr class="hr1">
+                            <hr class="hr2">
                         </div>
                       </div>
-                      <div class="aboutsrmcsmt_item ">
+                      <div class="aboutsrmcsmt_item at_item3">
                         <div class="aboutsrmcsmti_svg svg_item3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                                 <circle cx="15.2578" cy="14.7656" r="14" stroke="#CF9E69"/>
                               </svg>
                         </div>
                         <div class="aboutsrmcsmti_hr">
-                            <hr>
+                            <hr class="hr1">
+                            <hr class="hr2">
                         </div>
                       </div>
-                      <div class="aboutsrmcsmt_item">
+                      <div class="aboutsrmcsmt_item at_item4">
                         <div class="aboutsrmcsmti_svg svg_item4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                                 <circle cx="15.2578" cy="14.7656" r="14" stroke="#CF9E69"/>
                               </svg>
                         </div>
                         <div class="aboutsrmcsmti_hr">
-                            <hr>
+                            <hr class="hr1">
+                            <hr class="hr2">
                         </div>
                       </div>
-                      <!-- <div class="aboutsrmcsmt_item">
-                        <div class="aboutsrmcsmti_svg svg_item4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <circle cx="15.2578" cy="14.7656" r="14" stroke="#CF9E69"/>
-                              </svg>
-                        </div>
-                        <div class="aboutsrmcsmti_hr">
-                            <hr>
-                        </div>
-                      </div> -->
                   </div>
                   <div class="aboutsrmcsm_btm">
                       <div class="aboutsrmcsmb_item">
@@ -889,25 +883,32 @@
     <script>
         
         gsap.set('.aboutsrmcsmti_hr hr',{opacity:'.2'})
+        gsap.set('.at_item1 .aboutsrmcsmti_hr .hr2',{width:"70%"})
+        gsap.set('.aboutsrmcs_main',{xPercent:50})
 
-       let tl = gsap.timeline({
-       scrollTrigger: {
-      trigger: ".about_srm_carousel_section",
-      start: "top top",
-      end: "200% bottom",
-      pin: true,
-      markers: false,
-      scrub: 1,
-    },
-  })
-  tl.to('.aboutsrmcsm_btm .aboutsrmcsmb_item',{xPercent:-130})
-  tl.to('.aboutsrmcsmti_hr hr',{opacity:1},0)
-  tl.to('.aboutsrmcsm_top .aboutsrmcsmt_item',{xPercent:-120},0)
-  tl.to('.svg_item2 svg circle',{fill:' #CF9E69',duration:0},'<.1')
-  tl.to('.svg_item3 svg circle',{fill:' #CF9E69',duration:0},'<.1')
-  tl.to('.svg_item4 svg circle',{fill:' #CF9E69',duration:0},'<.2')
-  
-   
+        let tl = gsap.timeline()
+        tl.to('.aboutsrmcs_main',{xPercent:-50})
+        // tl.to('.aboutsrmcsm_top .aboutsrmcsmt_item',{xPercent:-130},0)
+        // tl.to('.aboutsrmcsm_btm .aboutsrmcsmb_item',{xPercent:-130},0)
+        tl.to('.at_item1 .aboutsrmcsmti_hr .hr2',{width:"100%"},)
+        // tl.to('.svg_item2 svg circle',{fill:' #CF9E69',duration:0},0.1)
+        // tl.to('.at_item2 .aboutsrmcsmti_hr .hr2',{width:"100%"},0.1)
+        // tl.to('.svg_item3 svg circle',{fill:' #CF9E69',duration:0},0.3)
+        // tl.to('.at_item3 .aboutsrmcsmti_hr .hr2',{width:"100%"},0.3)
+        // tl.to('.svg_item4 svg circle',{fill:' #CF9E69',duration:0},0.4)
+        // tl.to('.at_item4 .aboutsrmcsmti_hr .hr2',{width:"100%"},0.4)
+        
+        ScrollTrigger.create({
+            trigger: ".about_srm_carousel_section",
+            start: "top top",
+            end: "+=500",
+            animation: tl,
+            pin:true,
+            markers:false,
+            scrub:1,
+        });
+
+        
 
 
     </script>

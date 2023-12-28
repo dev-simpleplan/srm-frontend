@@ -1148,6 +1148,18 @@
 }
 
   /* about sriguru page ends */
+
+  /* about SRM page start  */
+  .guidingvs_main,
+  .seek_exp_s_main,
+  .experience_sec_main
+  { 
+    width: 100%;
+  }
+  .srmbtts_main{
+    flex-direction: row !important;
+  }
+  /* about SRM page ends */
   
    /* privacy policy page start*/
    .policy_banner_section{
@@ -1964,6 +1976,18 @@
   padding: 30px 40px 200px 70px;
 }
   /* about sriguru page ends */
+
+  /* about srm page start*/
+  .srmbtts_main{
+    flex-direction: column-reverse !important;
+  }
+  .srmbtts_main .srmbttsm_right{
+    width: 100%;
+  }
+  .srmbtts_main .srmbttsm_left{
+    width: 100%;
+  }
+  /* about srm page ends */
   
   /* privacy policy page start*/
   .policy_banner_section{
@@ -2080,6 +2104,13 @@
   width: 50ch;
 }
   /* about swaraj kriya page ends */
+
+  /* about srm start */
+  .guidingvsmt_item,
+  .guidingvsmb_item{
+    padding: 20px;
+  }
+  /* about srm ends */
 
 }
 /* 650 ends */
