@@ -28,6 +28,49 @@ body {
   line-height: normal;
   line-height: 150%;
 }
+
+.editors_data p{
+  margin-top: 10px;
+}
+.editors_data h1
+.editors_data h2
+.editors_data h3
+.editors_data h4
+.editors_data h5
+.editors_data h6{
+  font-family: var(--headingfont);
+  margin:20px 0px;
+}
+.editors_data ul{
+  margin-top: 10px;
+}
+.editors_data ul li{
+ list-style-type: disc;
+}
+.editors_data ol{
+  margin-top: 10px;
+}
+.editors_data ol li{
+  list-style-type: decimal;
+}
+
+.editors_data img{
+   width: 100%;
+}
+
+.editors_data figure{
+  width: 100%;
+}
+.editors_data a{
+  color: #CF9E69;
+  transition: .5s ease all;
+}
+.editors_data a:hover{
+  color: #49378D;
+}
+
+
+
 /* to hide he scrollbar add the class hideScroll */
 .hideScroll::-webkit-scrollbar{
     display: none;

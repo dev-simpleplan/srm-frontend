@@ -1048,11 +1048,12 @@
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 2, // Set the number of slides you want to show
+    slidesPerView:'auto', // Set the number of slides you want to show
     coverflowEffect: {
         rotate: 0,
-        stretch: 200,
+        stretch: 260,
         depth: 200,
+        scale: 1,
         modifier: 1,
         slideShadows: false,
     },
@@ -1086,6 +1087,22 @@
     //     },
     // },
 });
+
+// Initialize Swiper
+// var mySwiper = new Swiper('.swiper-container', {
+//   // Your Swiper configuration options
+// });
+
+// // Trigger previous slide on left arrow click
+// $(".leftarrow2").click(function (e) {
+//   mySwiper.slidePrev();
+// });
+
+// // Trigger next slide on right arrow click
+// $(".rightarrow2").click(function (e) {
+//   mySwiper.slideNext();
+// });
+
 
 
     </script>
