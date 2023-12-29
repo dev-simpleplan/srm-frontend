@@ -173,6 +173,17 @@
   padding: 22px 50px 22px 60px;
   gap: 60px;
   align-items: center;
+  width: 80%;
+  transition: .5s ease all;
+}
+.all-event-box:hover{
+  border-radius: 5.209px;
+  border-bottom: 1.059px solid #FCDFB7;
+  background: #F8F1E9;
+  box-shadow: 0px 0px 20px 0px rgba(211, 140, 44, 0.52);
+}
+.all-event-box .all-event-date{
+  width: 30%;
 }
 .ae-date {
   color: #d38c2c;
@@ -241,6 +252,10 @@
   display: inline-flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
+}
+.all-event-box-list a{
+  width: 100%;
 }
 .event-checkbx-wrapper {
   margin-top: 30px;
@@ -617,43 +632,6 @@ a.not-signed-link {
 }
 
 /* updated css */
-.upcoming-event-info h1,
-.upcoming-event-info h2,
-.upcoming-event-info h3,
-.upcoming-event-info h4,
-.upcoming-event-info h5,
-.upcoming-event-info h6 {
-  margin-top: 30px !important;
-}
-.upcoming-event-info h1:first-child,
-.upcoming-event-info h2:first-child,
-.upcoming-event-info h3:first-child,
-.upcoming-event-info h4:first-child,
-.upcoming-event-info h5:first-child,
-.upcoming-event-info h6:first-child {
-  margin-top: 0px !important;
-}
-
-.upcoming-event-info p {
-  margin-top: 10px !important;
-}
-.upcoming-event-info ol {
-  margin-top: 10px !important;
-}
-.upcoming-event-info ol li:before {
-  counter-increment: listitem !important;
-  content: counters(listitem, ".") "." !important;
-}
-.upcoming-event-info ul li:before {
-  content: "\2022" !important;
-  color: #6b6970 !important;
-  position: absolute !important;
-  left: 0 !important;
-  font-weight: bold !important;
-}
-.upcoming-event-info img {
-  width: 100% !important;
-}
 .past-event-section-splide {
   padding-bottom: 56px;
 }
@@ -1255,35 +1233,6 @@ section.past-event-section {
  border: 2px solid var(--SRM-Orange, #CF9E69);
 }
 
-.glimpse-content-wrapper img{
-  width: 100% !important;
-  border-radius: 10px !important;
-}
-.glimpse-content-wrapper p{
-  margin-top: 32px !important;
-}
-.glimpse-content-wrapper h1,
-.glimpse-content-wrapper h2,
-.glimpse-content-wrapper h3,
-.glimpse-content-wrapper h4,
-.glimpse-content-wrapper h5,
-.glimpse-content-wrapper h6 {
-  margin-top: 32px !important;
-}
-.glimpse-content-wrapper ol {
-  margin-top: 10px !important;
-}
-.glimpse-content-wrapper ol li:before {
-  counter-increment: listitem !important;
-  content: counters(listitem, ".") "." !important;
-}
-.glimpse-content-wrapper ul li:before {
-  content: "\2022" !important;
-  color: #6b6970 !important;
-  position: absolute !important;
-  left: 0 !important;
-  font-weight: bold !important;
-}
 /* Past event Inner Page CSS End */
 
 /* Resposnive Screen */
@@ -1419,6 +1368,7 @@ section.past-event-section {
   }
   .all-event-box {
     display: flex;
+    width: 100%;
   }
   .all-event-filter-box {
     width: 100%;

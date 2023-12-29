@@ -2647,9 +2647,8 @@ section.related-videos .rv-wrapper .nav-arrow button img {
 /* Wisdom Talk Inner Ends */
 
 /* Wisdom Blog Inner */
-
 .article-topic p {
-  color: var(--paracolor, #6b6970);
+  color: var(--srmorange);
   font-feature-settings: "clig" off, "liga" off;
   font-family: var(--bodyFont);
   font-size: 12px;
@@ -2658,6 +2657,11 @@ section.related-videos .rv-wrapper .nav-arrow button img {
   line-height: 126.5%; /* 15.18px */
   letter-spacing: 1.596px;
   text-transform: uppercase;
+  transition: .5s ease all;
+}
+.article-topic:hover p{
+  color: var(--srmpurple);
+  cursor: pointer;
 }
 .topics_left_heading h3.font-32 {
   font-weight: 500;

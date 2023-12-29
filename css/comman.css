@@ -30,43 +30,56 @@ body {
 }
 
 .editors_data p{
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
-.editors_data h1
-.editors_data h2
-.editors_data h3
-.editors_data h4
-.editors_data h5
+.editors_data h1,
+.editors_data h2,
+.editors_data h3,
+.editors_data h4,
+.editors_data h5,
 .editors_data h6{
   font-family: var(--headingfont);
-  margin:20px 0px;
+  margin-top:20px  !important;
 }
 .editors_data ul{
-  margin-top: 10px;
+  margin-top: 10px !important;
+  padding-left: 30px !important;
+}
+.editors_data ul li ul{
+  margin-top: 0px !important;
 }
 .editors_data ul li{
- list-style-type: disc;
+ list-style-type: disc !important;
+
 }
 .editors_data ol{
-  margin-top: 10px;
+  margin-top: 10px !important;
+  padding-left: 25px !important;
 }
 .editors_data ol li{
-  list-style-type: decimal;
+  list-style-type: decimal !important;
+ 
+}
+.editors_data strong{
+  font-size: 16px !important;
+  font-weight: 400 !important;
 }
 
 .editors_data img{
-   width: 100%;
+  margin-top: 30px !important;
+   width: 100% !important;
+   border-radius: 10px !important;
 }
 
 .editors_data figure{
-  width: 100%;
+  width: 100% !important;
 }
 .editors_data a{
-  color: #CF9E69;
-  transition: .5s ease all;
+  color: #CF9E69 !important;
+  transition: .5s ease all !important;
 }
 .editors_data a:hover{
-  color: #49378D;
+  color: #49378D !important;
 }
 
 
