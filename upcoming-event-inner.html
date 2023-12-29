@@ -1218,24 +1218,26 @@
             },
           }).mount(window.splide.Extensions);
 
-          new Splide( '#splide2', {
-                type   : 'loop',
-                perPage: 4,
-                gap:'40px',
-                perMove:1,
-                opacity:1,
-                breakpoints: {
+          new Splide('#splide2', {
+            type: 'loop',
+            perPage: 4,
+            gap: '40px',
+            perMove: 1,
+            opacity: 1,
+            autoplay: true, // Add this line for autoplay
+            interval: 3000, // Set the autoplay interval in milliseconds (e.g., 3000 for 3 seconds)
+            breakpoints: {
                 767: {
-                perPage: 3,
+                    perPage: 3,
                 },
-                600:{
-                perPage:2,
+                600: {
+                    perPage: 2,
                 },
-                500:{
-                perPage:1,
+                500: {
+                    perPage: 1,
                 }
-                }
-            }).mount();
+            }
+        }).mount();
         });
         //Icons Auto Scroll
     
