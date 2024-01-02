@@ -31,6 +31,7 @@ body {
 
 .editors_data p{
   margin-top: 10px !important;
+  color:#6b6970;
 }
 .editors_data h1,
 .editors_data h2,
@@ -40,10 +41,6 @@ body {
 .editors_data h6{
   font-family: var(--headingfont);
   margin-top:20px  !important;
-}
-.editors_data ul{
-  margin-top: 10px !important;
-  padding-left: 30px !important;
 }
 .editors_data ul li ul{
   margin-top: 0px !important;

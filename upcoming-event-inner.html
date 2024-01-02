@@ -1200,7 +1200,18 @@
 
 
      <script>
-        //Icons Auto Scroll   
+      
+      document.addEventListener('DOMContentLoaded', function() {
+            var listItems = document.querySelectorAll('.hnd1 .nav-dropdown-list li');
+            var span = document.querySelector(".has_subs_inner span svg");
++           listItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    var hsInner = document.querySelector('.nasmdrn1 .has_subs_inner').closest('div');
+                    span.style.transform = 'rotate(0deg)';
+                    hsInner.classList.remove("clicked");
+                });
+            });
+        });
 
           //Icons Auto Scroll   
         document.addEventListener('DOMContentLoaded', function () {

@@ -173,7 +173,7 @@
   padding: 22px 50px 22px 60px;
   gap: 60px;
   align-items: center;
-  width: 80%;
+  width: 100%;
   transition: .5s ease all;
 }
 .all-event-box:hover{
@@ -184,6 +184,9 @@
 }
 .all-event-box .all-event-date{
   width: 30%;
+}
+.all-event-box  .event-info{
+  width: 70%;
 }
 .ae-date {
   color: #d38c2c;
@@ -402,6 +405,10 @@ section.witness-section.witness-layout-new:before {
   bottom: -60px;
   z-index: -1;
   background-position: bottom;
+}
+
+.all-event-section .all-event-box-wrapper .all-event-box{
+     width: 70%;
 }
 /* Upcoming Event Page CSS End */
 
@@ -685,7 +692,7 @@ a.not-signed-link {
   transition: 0.5s ease all;
 }
 .past-event-slider-wrapper .newest-talks-box:hover .featured-title h5 {
-  color: var(--srmpurple);
+  color: var(--srmpurple) !important;
 }
 span.swiper-pagination-bullet {
   transform: scale(1) !important;
@@ -992,6 +999,9 @@ section.past-event-section {
   text-align: center;
   margin-top: 65px;
 }
+.event-load-more-wrapper .load-more-btn:hover{
+  color:#B7557F !important;
+}
 /* Past event page End */
 
 /* Past event Inner Page CSS Start */
@@ -1233,6 +1243,10 @@ section.past-event-section {
  border: 2px solid var(--SRM-Orange, #CF9E69);
 }
 
+
+.past-event-section-splide .splide__slide .newest-talks-box:hover{
+  transform: translateY(0px) !important;
+}
 /* Past event Inner Page CSS End */
 
 /* Resposnive Screen */
@@ -1269,6 +1283,9 @@ section.past-event-section {
     position: relative;
     padding-bottom: 300px;
   }
+  .all-event-section .all-event-box-wrapper .all-event-box{
+    width: 100%;
+}
   .upcoming-event-inner-flex {
     flex-direction: column-reverse;
     gap: 30px;

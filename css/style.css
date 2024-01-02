@@ -1724,7 +1724,8 @@ section.talks-section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
+  object-fit: cover;
 }
 .featured-title h6 {
   color: var(--srm-black, #25232b);
@@ -2010,6 +2011,11 @@ ul.more.topic-list li a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 95px;
+}
+.blog-grid-3  .blog-topic-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .all-topic-cta .cta-arrow {
   margin-left: 0;
@@ -2740,7 +2746,7 @@ section.related-videos .rv-wrapper .nav-arrow button img {
 }
 .blog-inner .blogs_right_btm_item1 {
   justify-content: space-between;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 .blog-inner .blogs_right_btm_item1 .topics_left,
 .blog-inner .blogs_right_btm_item1 .topics_right {
@@ -2754,9 +2760,12 @@ section.related-videos .rv-wrapper .nav-arrow button img {
 }
 .topic-covered {
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   justify-content: space-between;
   margin-top: 80px;
+}
+.topic-covered .tc-left{
+  width: 70%;
 }
 .topic-covered .tc-left .tc-head {
   color: var(--headingcolor, #25232b);
@@ -2842,6 +2851,7 @@ section.related-videos .rv-wrapper .nav-arrow button img {
 .album-section.blog-inner .heading-title h2 a span {
   width: 10px;
   padding-top: 4px;
+  display: inline-flex;
 }
 .album-section.blog-inner .heading-title h2 a {
   display: flex;
@@ -3038,6 +3048,7 @@ hr {
 .blogs_right_btm_item1 {
   display: flex;
   gap: 100px;
+  /* border: 1px solid red; */
 }
 .topics_left_top_date p {
   color: var(--paracolor);
@@ -3067,12 +3078,20 @@ hr {
 .blogs_right_btm hr:last-child {
   margin: 36px 0px 0px 0px;
 }
+.blogs_right_btm_item1 > a{
+  width: 70% !important;
+}
 .topics_left {
   width: 100%;
 }
 .topics_right {
   width: 20%;
 }
+div.heateor_sss_sharing_ul{
+  display: flex;
+  gap:12px;
+}
+
 .blogs_right_icon_list a {
   height: 32px;
   width: 32px;
@@ -4368,7 +4387,7 @@ hr {
   z-index: 99;
 }
 .nasmdr_nav .has_subs .has_subs_inner {
-  padding: 12px 9px;
+  padding: 6px 9px;
   color: #6b6970;
   font-size: 12px;
   font-weight: 600;
@@ -5697,6 +5716,9 @@ input[type="radio"]:checked {
 .srm_featured_video_section::before{
    content: '';
    background-image: none !important;
+}
+.about_srm_banner .asrmb_content_para p{
+  font-size: 16px;
 }
 .guidingvs_main{
   width: 85%;
