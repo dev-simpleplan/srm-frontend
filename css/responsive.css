@@ -1985,6 +1985,9 @@
   /* about swaraj kriya page ends */
   
   /* about sriguru page start */
+  .aboutsg_witness_swaraj_kriya_section_main{
+    padding: 30px;
+  }
   .biographys_main{
     flex-direction: column;
   }
@@ -2178,6 +2181,16 @@
   }
   /* about swaraj kriya page ends */
   
+  /* about srsrc page start */
+  .about_srsrc_banner{
+    padding: 100px 0px 0px;
+  }
+  .aboutsgbm_left{
+    width: 100%;
+  }
+  .aboutsgbm_right{
+    display: none;
+  }
    /* about srm start */
    .aboutsrmcs_main_carousel .splide .splide__arrows{
     width: 25%;
@@ -2216,6 +2229,7 @@
     margin-top: 56px;
    }
   /* contact sriguru page ends */
+
 }
 /* 600 ends */
 
@@ -2525,6 +2539,9 @@
   }
 
   /* about swaraj kriya page ends */
+
+  
+  /* about srsrc page ends */
 }
 /* 500 px End */
 
