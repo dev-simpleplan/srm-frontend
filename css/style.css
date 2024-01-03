@@ -4150,17 +4150,19 @@ div.heateor_sss_sharing_ul{
   padding-top: 70px;
   padding-bottom: 120px;
   position: relative;
+  overflow: hidden;
+  background: #FDFDFD;
 }
 .sacred_banner::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 30%;
-  background-image: url(../img/sacred-bg-img2.png);
+  height: 33%;
+  background-image: url(../img/sacred-banner-bg-img.png);
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: 0;
-  z-index: -1;
+  bottom: -44;
+  z-index: 0;
   background-position: bottom;
 }
 .sb_main {
@@ -4231,7 +4233,9 @@ div.heateor_sss_sharing_ul{
   min-width: 120px;
   text-align: center;
 }
-
+.sacred_carousel_section{
+  margin-top: 37px;
+}
 .scs_main {
   display: flex;
 }
@@ -4448,6 +4452,11 @@ div.heateor_sss_sharing_ul{
   font-weight: 400;
   line-height: 150%;
 }
+.nasmit_price{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
 .nasmit_price p {
   margin-top: 24px;
   font-size: 24px;
@@ -4457,8 +4466,19 @@ div.heateor_sss_sharing_ul{
   text-transform: capitalize;
   font-family: var(--headingfont);
 }
+.nasmit_price .regular{
+    text-decoration: line-through;
+}
+
 .nasmi_btn a {
   width: 100%;
+}
+.nasm_items.nasm_items2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.nasm_items2 .nasmi_inner{
+  max-width: 320px;
 }
 
 .nasm_items .nasmi_1,
@@ -5315,19 +5335,22 @@ input[type="radio"]:checked {
 /* about swaraj kriya page start */
 
 .about_swaraj_kriya_banner {
-  padding: 70px 0px;
+  padding: 70px 0px 100px;
   position: relative;
+  background: linear-gradient(260deg, #FFF 1.16%, #F9F6F3 95.93%);
+
 }
+
 .about_swaraj_kriya_banner::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 30%;
-  background-image: url(../img/course-banner-img.png);
+  height: 40%;
+  background-image: url(../img/swaraj-kriya-banner-bg-img.png);
   background-size: cover;
   background-repeat: no-repeat;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
   background-position: bottom;
 }
 .askbanner_main {
@@ -5403,18 +5426,19 @@ input[type="radio"]:checked {
 }
 .kriya_tool {
   padding-top: 120px;
-  padding-bottom: 200px;
+  padding-bottom: 240px;
   position: relative;
+  overflow: hidden;
 }
 .kriya_tool::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 30%;
-  background-image: url(../img/course-banner-img.png);
+  height: 40%;
+  background-image: url(../img/swaraj-kriya-bg-img2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: 0;
+  bottom: -42;
   z-index: -1;
   background-position: bottom;
 }
@@ -5465,6 +5489,7 @@ input[type="radio"]:checked {
 .ssciencemlt_btm {
   display: flex;
   gap: 40px;
+  margin-top: 14px;
 }
 .sciencemlb_left {
   border-right: 1px solid #d4cfcf;
@@ -5505,14 +5530,14 @@ input[type="radio"]:checked {
 }
 .how_to_enroll_section {
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 .how_to_enroll_section::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 30%;
-  background-image: url(../img/course-banner-img.png);
+  background-image: url(../img/swaraj-kriya-bg-img3.png);
   background-size: cover;
   background-repeat: no-repeat;
   bottom: 0;
@@ -5592,10 +5617,15 @@ input[type="radio"]:checked {
 .storiesmi_scroll_main .swiper-slide-next,
 .storiesmi_scroll_main .swiper-slide-prev
  {
-    opacity: .5;
+    opacity: 1;
+    background-color: #f7efe5;
+    border-radius: 8.373px;
+
 }
 .storiesmi_scroll_main .swiper-slide-active{
   opacity: 1;
+  background-color: #f8f4f0;
+  border-radius: 10px;
 }
 .storiesmi_scroll_main .swiper-container .swiper-button-prev{
   left:46%;
@@ -5622,20 +5652,28 @@ input[type="radio"]:checked {
   border-radius: 50%;
   background-color: #49378D;
 }
-.storiesmi_scroll {
-  /* margin-top: 40px; */
+.storiesmi_scroll{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 48px 85px 34px 85px;
+  border-radius: 10px;
+}
+.storiesmi_scroll_main .swiper-slide.swiper-slide-visible.swiper-slide-next .storiesmi_scroll,
+.storiesmi_scroll_main .swiper-slide.swiper-slide-visible.swiper-slide-prev .storiesmi_scroll {
+  /* margin-top: 40px; */
+  
   /* gap: 32px; */
   /* border: 1px solid red; */
-  border-radius: 10px;
-  background: #f8f4f0;
-  padding: 48px 85px 34px 85px;
+ 
+  background: #f7efe5;
+ 
   /* max-width: 670px;
   min-width: 670px; */
 }
-
+.storiesmi_scroll_main .swiper-slide.swiper-slide-visible.swiper-slide-active .storiesmi_scroll {
+  background: #f8f4f0;
+}
 
 .storiesmis_para{
   margin-top: 43px;
@@ -5701,6 +5739,9 @@ input[type="radio"]:checked {
 /* about swaraj kriya page ends */
 
 /* about SRM page start  */
+.about_srm_banner .aboutsgbml_heading h1{
+  max-width: 20ch;
+}
 .about_srm_banner .aboutsrm_banner_cwrapper .banner-content-title h1{
   max-width: 20ch;
 }
@@ -5979,7 +6020,9 @@ background: var(--SRM, #F5EADA);
   width: 100%;
   opacity: 1 !important;
 }
-
+.aboutsrm_timeline .cwsg_main_left_btm{
+  width: 50%;
+}
 
 
 
@@ -5988,10 +6031,13 @@ background: var(--SRM, #F5EADA);
 
 /* about sriguru page start */
 .about_sriguru_banner {
-  padding: 100px 0px;
+  padding: 100px 0px 0px;
   /* border: 1px solid red; */
   position: relative;
+  background: linear-gradient(260deg, #FFF 1.16%, #F9F6F3 95.93%);
 }
+
+
 .model_3d_div {
   width: 100%;
   border-radius: 20px;
@@ -5999,18 +6045,23 @@ background: var(--SRM, #F5EADA);
   height: 600px;
   text-align: center;
 }
-.aboutsgb_main {
-  display: flex;
-  justify-content: space-between;
+.aboutsgb_main{
+  position: relative;
+
 }
-.aboutsgbm_left {
-  width: 50%;
+.aboutsgbm_left{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 80px;
+}
+.aboutsgbm_left_inner{
+  width: 40%;
 }
 .aboutsgbm_right {
-  position: absolute;
-  width: 60%;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
 }
 .aboutsgbml_para1 p {
   color: #25232b;
@@ -6021,7 +6072,7 @@ background: var(--SRM, #F5EADA);
   line-height: 120%;
 }
 .aboutsgbml_para2 {
-  margin-top: 24px;
+  margin-top: 14px;
 }
 .aboutsgbml_para2 {
   color: #6b6970;
@@ -6032,36 +6083,30 @@ background: var(--SRM, #F5EADA);
   color: #cf9e69;
 }
 .aboutsgbmr_inner {
-  width: 100%;
-  position: relative;
-  height: 0;
-  padding-top: 64%;
-  overflow: hidden;
+  width: 80%;
+  margin-left: auto;
 }
 .aboutsgbmr_inner img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  inset: 0;
-  object-fit: cover;
+  height: auto;
 }
-.about_sriguru_banner .scroll-btn-box {
+/* .about_sriguru_banner .scroll-btn-box {
   bottom: 0px;
   left: 6%;
-}
+} */
 .biography_section {
   padding-top: 120px;
   position: relative;
+  overflow: hidden;
 }
 .biography_section::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 15%;
-  background-image: url(../img/course-banner-img.png);
+  height: 23%;
+  background-image: url(../img/about-sriguru-bg-img.png);
   background-size: cover;
   background-repeat: no-repeat;
-  top: 0;
+  top: -17px;
   z-index: -1;
   background-position: bottom;
 }
@@ -6170,6 +6215,10 @@ background: var(--SRM, #F5EADA);
   max-width: 77ch;
   max-height: 150px;
   overflow: auto;
+  margin-top: 16px;
+}
+.certaintyi_para p{
+  color:#6B6970 ;
 }
 .certaintym_img {
   position: absolute;
@@ -6197,10 +6246,21 @@ background: var(--SRM, #F5EADA);
 .meditation_artist_section_main .biographysm_right {
   justify-content: center;
 }
+.about_sriguru_biography {
+  padding-top: 0px !important;
+}
+.about_sriguru_biography::before{
+  height: 0 !important;
+  width: 0 !important;
+}
+.about_sriguru_testimonial:before {
+  bottom: -44px !important;
+}
+
 .pathtism_card_main {
   margin-top: 40px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   gap: 32px;
   flex-wrap: wrap;
 }
@@ -6340,12 +6400,38 @@ background: var(--SRM, #F5EADA);
 .program_facility_section .history-slider-wrapper{
   margin-top: 30px;
 }
+.about_srssrc_testimonial::before{
+  background-image: url(../img/about-srsrc-bg-img123.png) !important;
+}
 /* about SRSRC page ends */
 
 
 /* about_shirimad_rajchandra page start */
+/* .about_srimad_rajchandra_banner .aboutsgbm_left_inner{
+  width: 40%;
+} */
+.about_srimad_rajchandra_banner .aboutsgbmr_inner{
+  margin-left: 0;
+  width: 90%;
+}
 .about_shirimad_rajchandra_banner .aboutsgbml_para2{
   max-width: 54ch;
+}
+.about_srajchandra_biography{
+  position: relative;
+  overflow: hidden;
+}
+.about_srajchandra_biography::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 26%;
+  background-image: url(../img/srimad-rajc-bg-img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -17px;
+  z-index: -1;
+  background-position: bottom;
 }
 .about_srajchandra_biography .biographysm_right{
   align-items: center;
@@ -6357,6 +6443,22 @@ background: var(--SRM, #F5EADA);
 .about_srajchandra_biography .biographysml_inner{
   padding-top: 94%;
 }
+.srimad_rajchandra_testimonial{
+  padding-bottom: 150px !important;
+}
+.srimad_rajchandra_testimonial::before{
+  height: 40% !important;
+  bottom: 40px !important;
+  background-image: url(../img/srimad-rajchandra-bg-img21.png) !important;
+}
+.srimad_rajchandra_certainty{
+  margin-top: 20px;
+}
+.srimad_rajchandra_testimonial2::before{
+   height: 50% !important;
+   bottom: -43px !important;
+}
+
 /* about_shirimad_rajchandra page ends */
 
 
@@ -6577,6 +6679,7 @@ background: var(--SRM, #F5EADA);
   border-radius: 10px;
   background: var(--SRM, #f5eada);
   gap: 100px;
+  overflow: hidden;
 }
 .cwsg_main_left {
   width: 30%;

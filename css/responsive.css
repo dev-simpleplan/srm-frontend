@@ -107,6 +107,11 @@
   .nasm_items .nasmi_3 .nasmi_inner {
     min-width: auto;
   }
+  .nasm_items.nasm_items2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
   /* sacred store page ends */
   
   /* about sriguru page start */
@@ -194,6 +199,11 @@
   }
   /* course page ends */
 
+  /* about sriguru page start */
+  .aboutsgbm_left{
+    padding-top: 0px;
+  }
+  /* about sriguru page ends */
   /* abour SRM page start */
   .aboutsrmcs_main_carousel .splide .splide__arrows{
     width: 13%;
@@ -998,6 +1008,7 @@
   /* meditation main page ends */
 
     /* sacred page start */
+   
     .sacred_banner {
       padding-top: 70px;
       padding-bottom:80px ;
@@ -1153,8 +1164,15 @@
 .meditation_artist_section{
   padding-top: 0px;
 }
+/* .pathtism_card_main{
+  justify-content: center;
+} */
+
 .pathtism_card_main{
   justify-content: center;
+}
+.aboutsgbmr_inner{
+  width:100%;
 }
 
   /* about sriguru page ends */
@@ -1997,8 +2015,29 @@
 .biographysmr_text .biographysmr_para1 p, .biographysmr_text .biographysmr_para3 p {
   max-height: 150px;
 }
+/* .aboutsgb_main{
+  display: flex;
+  flex-direction:column-reverse ;
+} */
+.aboutsgbm_right{
+  width:70%;
+  margin-top: 20px;
+}
+.aboutsgbmr_inner{
+  width: 100%;
+}
+/* .about_sriguru_banner .scroll-btn-box{
+  left: 88%;
+} */
 .certaintym_inner {
   padding: 30px 40px 200px 70px;
+}
+.aboutsgbm_left{
+  position: relative;
+  height: auto;
+}
+.aboutsgbm_left_inner{
+  width: 100%;
 }
   /* about sriguru page ends */
 
@@ -2187,9 +2226,6 @@
   }
   .aboutsgbm_left{
     width: 100%;
-  }
-  .aboutsgbm_right{
-    display: none;
   }
    /* about srm start */
    .aboutsrmcs_main_carousel .splide .splide__arrows{
@@ -2611,6 +2647,9 @@
   /* about sriguru page start */
   .certaintym_img {
     width: 40ch;
+  }
+  .aboutsgbm_right{
+    width: 100%;
   }
   /* about sriguru page ends */
   /* about srm page start */
