@@ -1300,6 +1300,7 @@ span.swiper-pagination-progressbar-fill {
   display: flex;
   gap: 60px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .featured-topic-flex {
   display: flex;
@@ -3895,7 +3896,7 @@ div.heateor_sss_sharing_ul{
   text-transform: capitalize;
 }
 .accordion-button::after {
-  margin-left: 24px;
+  margin-left: auto;
 }
 
 .faqs_main .accordion .accordion-item {
@@ -4290,10 +4291,7 @@ div.heateor_sss_sharing_ul{
 .scsmr_link svg {
   margin-left: 9px;
 }
-.scsm_right .mySwiper3 {
-  height: 100%;
-}
-.scsm_right .mySwiper3 .swiper-pagination {
+.mySwiper3 .swiper-pagination {
   bottom: 40px;
   justify-content: flex-end;
   padding-right: 40px;
@@ -4391,7 +4389,7 @@ div.heateor_sss_sharing_ul{
   z-index: 99;
 }
 .nasmdr_nav .has_subs .has_subs_inner {
-  padding: 6px 9px;
+  padding: 12px 12px;
   color: #6b6970;
   font-size: 12px;
   font-weight: 600;
@@ -4413,11 +4411,15 @@ div.heateor_sss_sharing_ul{
 .hs_nav_dropdown .nav-dropdown-list {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  /* row-gap: 10px; */
   background-color: #fff;
   font-weight: 400;
   line-height: 128%;
   /* padding: 6px 10px; */
+  margin-top: 0px;
+}
+.hs_nav_dropdown .nav-dropdown-list li{
+  padding: 4px 0px;
 }
 .nasmi_inner_img img {
   height: 100%;
@@ -6494,16 +6496,17 @@ background: var(--SRM, #F5EADA);
 .contact_us_banner {
   padding: 100px 0px;
   position: relative;
+  overflow: hidden;
 }
 .contact_us_banner::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 30%;
-  background-image: url(../img/course-banner-img.png);
+  height: 90%;
+  background-image: url(../img/contact-us-banner-bg-img.png);
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: 0;
+  bottom: -130px;
   z-index: -1;
   background-position: bottom;
 }
@@ -6776,6 +6779,7 @@ background: var(--SRM, #F5EADA);
   display: flex;
   gap: 77px;
   margin-top: 50px;
+  width: 100%;
 }
 .faqsm_inner .faqsm_left {
   width: 30%;
@@ -6786,7 +6790,9 @@ background: var(--SRM, #F5EADA);
 .faqsm_inner .faqsm_right {
   width: 70%;
 }
-
+.faqsm_right .tabcontent{
+  display: none;
+}
 .faqsm_inner .faqsm_left button {
   padding: 20px 100px;
   border: none;
@@ -6797,10 +6803,14 @@ background: var(--SRM, #F5EADA);
   font-size: 18px;
   text-transform: capitalize;
 }
-.active_btn_color {
+.button_background{
   border: 1px solid #D8CECE;
   background-color: #F0E9E1 !important;
 }
+/* .active_btn_color {
+  border: 1px solid #D8CECE;
+  background-color: #F0E9E1 !important;
+} */
 .active_accordion_header {
   color: var(--SRM-Black, #25232b);
   font-size: 16px;

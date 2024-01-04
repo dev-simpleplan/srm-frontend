@@ -221,84 +221,343 @@
                         <div class="faqsm_inner">
                             <div class="faqsm_left">
                                 <div class="faqsml_cat01 catagory_item">
-                                    <button class="active_btn_color" onclick='openAccordion(0)'>Category 01</button>
+                                    <button class="tablinks cat_item" onclick="openCategory('event','cat1')">Category 01</button>
                                 </div>
                                 <div class="faqsml_cat02 catagory_item">
-                                    <button onclick='openAccordion(1)'>Category 02</button>
+                                    <button class="tablinks cat_item" onclick="openCategory('event','cat2')">Category 02</button>
                                 </div>
                                 <div class="faqsml_cat03 catagory_item">
-                                    <button onclick='openAccordion(2)'>Category 03</button>
+                                    <button class="tablinks cat_item" onclick="openCategory('event','cat3')">Category 03</button>
                                 </div>
                               <div class="faqsml_cat04 catagory_item">
-                                <button onclick='openAccordion(3)'>Category 04</button>
+                                <button class="tablinks cat_item" onclick="openCategory('event','cat4')">Category 04</button>
                               </div>
                              <div class="faqsml_cat05 catagory_item">
-                                <button onclick='openAccordion(4)'>Category 05</button>
+                                <button class="tablinks cat_item" onclick="openCategory('event','cat5')">Category 05</button>
                             </div>
                             </div>
                             <div class="faqsm_right">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button active_accordion_header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
-                                        </button>
-                                      </h2>
-                                      <div  class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
-                                        </button>
-                                      </h2>
-                                      <div  class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
-                                        </button>
-                                      </h2>
-                                      <div  class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
-                                          </button>
-                                        </h2>
-                                        <div  class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
-                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                <div class="tabcontent" id="cat1" style="display: block;">
+                                    <div class="accordion" id="accordionExample1">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button active_accordion_header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                 ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne"  class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+                                            <div class="accordion-body">
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
                                           </div>
                                         </div>
-                                      </div>
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
-                                          </button>
-                                        </h2>
-                                        <div  class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
-                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
                                           </div>
                                         </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
                                       </div>
-                                  </div>
+                                </div>
+                                <div class="tabcontent" id="cat2">
+                                    <div class="accordion " id="accordionExample2">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button active_accordion_header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                Lorem  dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseSix"  class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class="tabcontent" id="cat3">
+                                    <div class="accordion " id="accordionExample3">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button active_accordion_header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                                                 dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseEleven"  class="accordion-collapse collapse show" data-bs-parent="#accordionExample3">
+                                            <div class="accordion-body">
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelv" aria-expanded="false" aria-controls="collapseTwelv">
+                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwelv" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThrteen" aria-expanded="false" aria-controls="collapseThrteen">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThrteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div> 
+                                </div>
+                                <div class="tabcontent" id="cat4">
+                                    <div class="accordion " id="accordionExample4">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button active_accordion_header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen">
+                                                sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseSixteen"  class="accordion-collapse collapse show" data-bs-parent="#accordionExample4">
+                                            <div class="accordion-body">
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseEighteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNinteen" aria-expanded="false" aria-controls="collapseNinteen">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseNinteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseTwenty" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class="tabcontent" id="cat5">
+                                    <div class="accordion " id="accordionExample5">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button active_accordion_header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyOne" aria-expanded="true" aria-controls="collapseTwentyOne">
+                                                 amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwentyOne"  class="accordion-collapse collapse show" data-bs-parent="#accordionExample5">
+                                            <div class="accordion-body">
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
+                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwentyTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwentyThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                                            <div class="accordion-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseTwentyFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue sapien nullam diam aliquam. Semper integer pulvinar massa?
+                                              </button>
+                                            </h2>
+                                            <div id="collapseTwentyFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                                              <div class="accordion-body">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra habitant malesuada cras lectus augue. Non velit risus, vestibulum, enim netus mauris. Ultrices mi enim vel sodales sed senectus molestie facilisis pellentesque. Curabitur porta magna justo, suspendisse tellus. Massa sed amet amet magna.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div> 
+                                </div>
+                                
                                   <div class="faqsm_loadmore">
                                     <a href="" class="modal_opener">Load More
                                          <span>
@@ -569,35 +828,65 @@
     <script src="js/gsap-animation.js"></script>
 
     <script>
-function openAccordion(index) {
-    var accordionItems = document.querySelectorAll('.accordion-item');
-    var buttons = document.querySelectorAll('.catagory_item  button');
 
-    accordionItems.forEach(function(item, i) {
-        var accordionButton = item.querySelector('.accordion-button');
-        var accordionCollapse = item.querySelector('.accordion-collapse');
-        // let btn  = buttons[i].querySelector('button'); // Fix this line
+$(document).ready(function () {
+    // Add active class to the initially opened accordion item
+    $('.accordion-button[aria-expanded="true"]').addClass('active_accordion_header');
 
-        if (i === index) {
-            accordionButton.classList.remove('collapsed');
-            accordionButton.classList.add('active_accordion_header');
-            accordionCollapse.classList.add('show');
-            buttons[i].classList.add('active_btn_color');
-            // console.log(buttons[i]);
-        } else {
-            accordionButton.classList.add('collapsed');
-            accordionButton.classList.remove('active_accordion_header');
-            accordionCollapse.classList.remove('show');
-            buttons[i].classList.remove('active_btn_color');
-
-        }
+    // Handle accordion events to toggle active class
+    $('.accordion').on('show.bs.collapse', function (event) {
+        var button = $(event.target).prev('.accordion-header').find('.accordion-button');
+        button.addClass('active_accordion_header');
     });
-}
+
+    $('.accordion').on('hide.bs.collapse', function (event) {
+        var button = $(event.target).prev('.accordion-header').find('.accordion-button');
+        button.removeClass('active_accordion_header');
+    });
+});
 
 
+$(document).ready(function() {
+        // Add background to the first .csmt_item element
+        $(".cat_item:first").addClass("button_background");
 
+        // Handle click events for .csmt_item elements
+        $(".cat_item").click(function() {
+            $(".cat_item").removeClass("button_background");
+            $(this).addClass("button_background");
+        });
+    });
+
+        function openCategory(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
 
     </script>
     
 </body>
 </html>
+
+                             
+                                  
+                                  
+                                  
+                                  
+
+
+
+
+
+
+
+
+

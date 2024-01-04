@@ -295,7 +295,7 @@
                  </div>
                  <div class="getintsm_right contactsgbs_main_right">
                     <div class="contactsgbsmr_inner">
-                        <img src="img/c-sriguru.png" alt="">
+                        <img src="img/banner.png" alt="">
                     </div>
                  </div>
             </div>
@@ -546,30 +546,52 @@
    
 
     <script>
-         document.addEventListener('DOMContentLoaded', function () {
-            var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
-            
-            tabs.forEach(function(tab) {
-                tab.addEventListener('click', function() {
-                    var dropdown = this.querySelector('.fsmt_ct_dropdown');
-                    if (dropdown) {
-                        var currentDisplay = window.getComputedStyle(dropdown).display;
-                        dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
-                                }
-                    });
-                });
-            }); 
-            document.addEventListener('DOMContentLoaded', function() {
-            var listItems = document.querySelectorAll('.hnd1 .nav-dropdown-list li');
-            var span = document.querySelector(".has_subs_inner span svg");
-+           listItems.forEach(function(item) {
-                item.addEventListener('click', function() {
-                    var hsInner = document.querySelector('.nasmdrn1 .has_subs_inner').closest('div');
+        document.addEventListener('DOMContentLoaded', function () {
+    var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
+    var listItems = document.querySelectorAll('.hnd1 .nav-dropdown-list li');
+    var span = document.querySelector(".has_subs_inner span svg");
+
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function (event) {
+            var dropdown = this.querySelector('.fsmt_ct_dropdown');
+            if (dropdown) {
+                var currentDisplay = window.getComputedStyle(dropdown).display;
+                dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+
+                // Rotate the SVG when the dropdown is closed
+                if (currentDisplay === 'block') {
                     span.style.transform = 'rotate(0deg)';
-                    hsInner.classList.remove("clicked");
-                });
-            });
+                } else {
+                    span.style.transform = 'rotate(180deg)';
+                }
+            }
+
+            // Stop the click event propagation to prevent immediate hiding of the dropdown
+            event.stopPropagation();
         });
+    });
+
+    listItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            var hsInner = document.querySelector('.nasmdrn1 .has_subs_inner').closest('div');
+            span.style.transform = 'rotate(0deg)';
+            hsInner.classList.remove("clicked");
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (event) {
+        var dropdowns = document.querySelectorAll('.fsmt_ct_dropdown');
+        dropdowns.forEach(function (dropdown) {
+            if (!dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+                span.style.transform = 'rotate(0deg)'; // Rotate the SVG when the dropdown is closed
+            }
+        });
+    });
+});
+
+
     </script>
  
 </body>

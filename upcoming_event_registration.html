@@ -599,7 +599,7 @@
                                 <div class="sort-by-box nav-left">
                                     <div class="nasmdr_nav">
                                         <ul>
-                                            <li class="has_subs nasmdrn1 sselecto_sub"> 
+                                            <li class="has_subs nasmdrn2 sselecto_sub "> 
                                                 <div class="has_subs_inner sselecto_inner">Select
                                                     <span>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
@@ -607,7 +607,7 @@
                                                         </svg>
                                                     </span>
                                                 </div>
-                                                <div class="hs_nav_dropdown hnd1 submit_select_dropdown ">
+                                                <div class="hs_nav_dropdown hnd2 submit_select_dropdown ">
                                                     <ul class="nav-dropdown-list">
                                                         <li><a href="">Facebook</a></li>
                                                         <li><a href="">Instagram</a></li>
@@ -655,7 +655,7 @@
      <!-- Body Wrapper End -->
 
       <!-- Footer start -->
-    <footer class="main-footer" id="main-footer">
+      <footer class="main-footer" id="main-footer">
         <div class="container-fluid">
             <div class="footer-top">
                 <div class="footer-in">
@@ -772,7 +772,15 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                           <img src="img/Mask group.svg" alt="" class="ftr_twtr_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                                <g clip-path="url(#clip0_1321_2997)">
+                                                <path d="M23.186 3.1248C22.2284 3.80028 21.1681 4.31691 20.046 4.6548C19.4438 3.96231 18.6434 3.47149 17.7531 3.24873C16.8628 3.02596 15.9255 3.082 15.0681 3.40926C14.2107 3.73651 13.4745 4.3192 12.959 5.07852C12.4436 5.83783 12.1737 6.73714 12.186 7.6548V8.6548C10.4287 8.70037 8.68731 8.31061 7.11704 7.52025C5.54678 6.72988 4.19635 5.56344 3.18604 4.1248C3.18604 4.1248 -0.813965 13.1248 8.18604 17.1248C6.12656 18.5228 3.67319 19.2237 1.18604 19.1248C10.186 24.1248 21.186 19.1248 21.186 7.6248C21.1851 7.34626 21.1583 7.0684 21.106 6.7948C22.1266 5.7883 22.8469 4.51751 23.186 3.1248V3.1248Z" stroke="#CF9E69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_1321_2997">
+                                                <rect width="24" height="24" fill="white" transform="translate(0.186035 0.125)"/>
+                                                </clipPath>
+                                                </defs>
                                             </svg>
                                         </a>
                                     </li>
@@ -885,32 +893,68 @@
    
     <script>
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
-            
-            tabs.forEach(function(tab) {
-                tab.addEventListener('click', function() {
-                    var dropdown = this.querySelector('.fsmt_ct_dropdown');
-                    if (dropdown) {
-                        var currentDisplay = window.getComputedStyle(dropdown).display;
-                        dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
-                                }
-                    });
-                });
-            }); 
-            document.addEventListener('DOMContentLoaded', function () {
-            var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
-            
-            tabs.forEach(function(tab) {
-                tab.addEventListener('click', function() {
-                    var dropdown = this.querySelector('.submit_select_dropdown');
-                    if (dropdown) {
-                        var currentDisplay = window.getComputedStyle(dropdown).display;
-                        dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
-                                }
-                    });
-                });
-            });
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Get all tabs and dropdowns
+//     var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
+    
+//     tabs.forEach(function(tab) {
+//         tab.addEventListener('click', function() {
+//             var dropdown = this.querySelector('.hs_nav_dropdown');
+//             if (dropdown) {
+//                 var currentDisplay = window.getComputedStyle(dropdown).display;
+//                 dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+//                          }
+//             });
+//         });
+//     });   
+
+    // rotate the svg inside the span on click of nav-dropdown list item
+    document.addEventListener('DOMContentLoaded', function () {
+    // Get all tabs and dropdowns
+    var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
+
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            var dropdown = this.querySelector('.hs_nav_dropdown');
+            if (dropdown) {
+                var currentDisplay = window.getComputedStyle(dropdown).display;
+                dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+            }
+        });
+    });
+
+    // rotate the svg inside the span on click of nav-dropdown list item
+    // First Dropdown
+    var listItems1 = document.querySelectorAll('.nasmdrn1 .nav-dropdown-list li');
+    var span1 = document.querySelector(".nasmdrn1 .has_subs_inner span svg");
+
+    listItems1.forEach(function (item) {
+    item.addEventListener('click', function () {
+        var hsInner1 = document.querySelector('.fsmtcc_subs_inner');
+        span1.style.transform = (span1.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
+        console.log("Before removal:", hsInner1.classList.contains("clicked"));
+        hsInner1.classList.remove("clicked");
+        console.log("After removal:", hsInner1.classList.contains("clicked"));
+    });
+});
+
+
+
+    // Second Dropdown
+    var listItems2 = document.querySelectorAll('.nasmdrn2 .nav-dropdown-list li');
+    var span2 = document.querySelector(".nasmdrn2 .has_subs_inner span svg");
+
+    listItems2.forEach(function (item) {
+        item.addEventListener('click', function () {
+            var hsInner2 = document.querySelector('.sselecto_inner');
+            span2.style.transform = (span2.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
+            hsInner2.classList.remove("clicked");
+        });
+    });
+});
+
+
+
  
             // toggle to show the member details div
             function toggleMemberDiv(show) {

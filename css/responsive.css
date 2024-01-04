@@ -1256,6 +1256,22 @@
   }
  
   /* contact sriguru page ends */
+  /* faq page start */
+  .faqsm_inner{
+    display: flex;
+    flex-direction: column;
+  }
+  .faqsm_inner .faqsm_left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .faqsm_inner .faqsm_left,
+  .faqsm_inner .faqsm_right {
+    width: 100%;
+  }
+  /* faq page ends */
 }
 /* 991 px End */
 
@@ -1960,6 +1976,11 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
+  .mySwiper3 .swiper-pagination {
+    bottom: 20px;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
   /* sacerd page ends */
 
   /* product page start */
@@ -2600,11 +2621,26 @@
     display: flex;
     position: relative;
     height: 32px;
-    gap: 44px;
-    flex-direction: column;
+    gap:10;
+    /* flex-direction: column; */
+  }
+  .nasmd_right .nasmdr_nav{
+    width: 160px;
   }
   .nasm_items {
     margin-top: 72px;
+}
+.nasmit_price p{
+  font-size: 20px;
+}
+.sbms_right{
+  width: 100%;
+}
+.nasmdr_nav .has_subs .has_subs_inner{
+  font-size: 10px;
+}
+.form_setion .nasmdr_nav .has_subs .has_subs_inner{
+  font-size: 16px;
 }
   /* sacred page ends */
   /* sacred inner start */
@@ -2679,6 +2715,10 @@
   }
 
   /* phase 2 start */
+  /* sacred store page start */
+  
+
+  /* sacred store page ends */
    /* about srm page start */
    .aboutsrmcs_main_carousel .splide .splide__arrows{
     width: 35%;
