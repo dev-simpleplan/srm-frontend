@@ -4311,6 +4311,7 @@ div.heateor_sss_sharing_ul{
 .nas_top {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .nas_top .rightarrow,
