@@ -356,7 +356,12 @@ span.event-accordian-span svg {
 }
 .all-event-btn {
   margin-top: 45px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.all-event-btn a{
+  color: #b7557f;
+  font-weight: 600;
 }
 a.event-load-more {
   color: var(--srm-pink, #b7557f);

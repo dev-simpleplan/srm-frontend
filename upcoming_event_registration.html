@@ -298,12 +298,12 @@
                     <div class="fsm_top">
                         <div class="fsmt_name">
                             <div class="fsmnn">
-                             <div class="fsmnn_text">
-                                <p>Full name</p>
-                             </div>
-                             <div class="fsmnn_input">
-                                <input type="text" name="" id="" placeholder="Input Field">
-                             </div>
+                                <div class="fsmnn_text">
+                                    <p>Full name</p>
+                                </div>
+                                <div class="fsmnn_input">
+                                    <input type="text" name="" id="" placeholder="Input Field">
+                                </div>
                             </div>
                             <div class="fsmn_email">
                                 <div class="fsmne_text">
@@ -412,7 +412,7 @@
                                             <div class="nasmdr_nav">
                                                 <ul>
                                                     <li class="has_subs nasmdrn1"> 
-                                                        <div class="has_subs_inner fsmtcc_subs_inner">Select Category
+                                                        <div class="has_subs_inner fsmtcc_subs_inner">Select
                                                             <span>
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
                                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.71625 7.11811C5.00915 6.82521 5.48402 6.82521 5.77691 7.11811L9.74658 11.0878L13.7163 7.11811C14.0091 6.82521 14.484 6.82521 14.7769 7.11811C15.0698 7.411 15.0698 7.88587 14.7769 8.17877L10.2769 12.6788C9.98402 12.9717 9.50914 12.9717 9.21625 12.6788L4.71625 8.17877C4.42336 7.88587 4.42336 7.411 4.71625 7.11811Z" fill="#6B6970"></path>
@@ -421,9 +421,9 @@
                                                         </div>
                                                         <div class="hs_nav_dropdown hnd1 fsmt_ct_dropdown">
                                                             <ul class="nav-dropdown-list">
-                                                                <li><a href="">Price (High - Low)</a></li>
-                                                                <li><a href="">Price (Low - High)</a></li>
-                                                                <li><a href="">New Arrivals</a></li>
+                                                                <li><a href="">Delhi</a></li>
+                                                                <li><a href="">Noida</a></li>
+                                                                <li><a href="">Amritsar</a></li>
                                                             </ul>
                                                         </div>
                                                     </li>
@@ -893,32 +893,19 @@
    
     <script>
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Get all tabs and dropdowns
-//     var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
-    
-//     tabs.forEach(function(tab) {
-//         tab.addEventListener('click', function() {
-//             var dropdown = this.querySelector('.hs_nav_dropdown');
-//             if (dropdown) {
-//                 var currentDisplay = window.getComputedStyle(dropdown).display;
-//                 dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
-//                          }
-//             });
-//         });
-//     });   
-
-    // rotate the svg inside the span on click of nav-dropdown list item
     document.addEventListener('DOMContentLoaded', function () {
     // Get all tabs and dropdowns
     var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
 
     tabs.forEach(function (tab) {
-        tab.addEventListener('click', function () {
+        tab.addEventListener('click', function (event) {
             var dropdown = this.querySelector('.hs_nav_dropdown');
             if (dropdown) {
                 var currentDisplay = window.getComputedStyle(dropdown).display;
                 dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+
+                // Stop the click event propagation to prevent immediate hiding of the dropdown
+                event.stopPropagation();
             }
         });
     });
@@ -929,16 +916,12 @@
     var span1 = document.querySelector(".nasmdrn1 .has_subs_inner span svg");
 
     listItems1.forEach(function (item) {
-    item.addEventListener('click', function () {
-        var hsInner1 = document.querySelector('.fsmtcc_subs_inner');
-        span1.style.transform = (span1.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
-        console.log("Before removal:", hsInner1.classList.contains("clicked"));
-        hsInner1.classList.remove("clicked");
-        console.log("After removal:", hsInner1.classList.contains("clicked"));
+        item.addEventListener('click', function () {
+            var hsInner1 = document.querySelector('.fsmtcc_subs_inner');
+            span1.style.transform = (span1.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
+            hsInner1.classList.remove("clicked");
+        });
     });
-});
-
-
 
     // Second Dropdown
     var listItems2 = document.querySelectorAll('.nasmdrn2 .nav-dropdown-list li');
@@ -951,9 +934,24 @@
             hsInner2.classList.remove("clicked");
         });
     });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function (event) {
+        var hsInner2 = document.querySelector('.sselecto_inner');
+        var hsInner1 = document.querySelector('.fsmtcc_subs_inner');
+        var dropdowns = document.querySelectorAll('.hs_nav_dropdown');
+        dropdowns.forEach(function (dropdown) {
+            if (!dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+                hsInner2.classList.remove("clicked");
+                hsInner1.classList.remove("clicked");
+                // Rotate the SVG when the dropdown is closed
+                span1.style.transform = 'rotate(0deg)';
+                span2.style.transform = 'rotate(0deg)';
+            }
+        });
+    });
 });
-
-
 
  
             // toggle to show the member details div

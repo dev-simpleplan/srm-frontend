@@ -3697,7 +3697,7 @@ div.heateor_sss_sharing_ul{
   column-gap: 80px;
 }
 .rsm_left {
-  width: 30%;
+  width: 40%;
 }
 .rsml_img {
   height: 0;
@@ -3714,7 +3714,7 @@ div.heateor_sss_sharing_ul{
   object-fit: cover;
 }
 .rsm_right {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -3753,6 +3753,18 @@ div.heateor_sss_sharing_ul{
 
 /* course inner page start */
 
+.course_inner_header .course_nav_list_inner >a{
+  color:#FDFDFD !important;
+}
+.course_inner_header.header-active .course_nav_list_inner >a{
+  color:#6b6970 !important;
+}
+.course_inner_header.header-active #mySvg path{
+  stroke: #6b6970;
+}
+.course_inner_header.header-active #mySvg2 path{
+  fill:#6b6970;
+}
 .vsm_img {
   width: 100%;
   height: 0;
@@ -4376,7 +4388,7 @@ div.heateor_sss_sharing_ul{
   gap: 14px;
 }
 .nasmd_right .nasmdr_nav {
-  width: 190px;
+  width: 200px;
   position: relative;
 }
 .nasmdr_nav .has_subs {
@@ -4389,7 +4401,7 @@ div.heateor_sss_sharing_ul{
   z-index: 99;
 }
 .nasmdr_nav .has_subs .has_subs_inner {
-  padding: 12px 12px;
+  padding: 6px 16px;
   color: #6b6970;
   font-size: 12px;
   font-weight: 600;
@@ -4401,7 +4413,7 @@ div.heateor_sss_sharing_ul{
   align-items: center;
 }
 .hs_nav_dropdown {
-  padding: 0px 12px 14px;
+  /* padding: 6px 12px 14px; */
   color: #6b6970;
   font-size: 12px;
   font-weight: 400;
@@ -4417,9 +4429,22 @@ div.heateor_sss_sharing_ul{
   line-height: 128%;
   /* padding: 6px 10px; */
   margin-top: 0px;
+  border-bottom-left-radius:7px ;
+  border-bottom-right-radius:7px;
 }
 .hs_nav_dropdown .nav-dropdown-list li{
-  padding: 4px 0px;
+  padding: 4px 16px;
+}
+.hs_nav_dropdown .nav-dropdown-list li:first-child{
+  padding-top: 14px;
+}
+.hs_nav_dropdown .nav-dropdown-list li:last-child{
+  padding-bottom: 20px;
+  border-bottom-left-radius:7px ;
+  border-bottom-right-radius:7px;
+  overflow: hidden;
+  /* margin-bottom: 5px; */
+  /* border: 1px solid red; */
 }
 .nasmi_inner_img img {
   height: 100%;
@@ -4508,9 +4533,16 @@ div.heateor_sss_sharing_ul{
   line-height: 127.5%;
   text-transform: capitalize;
 }
-.np_inner .npi_prev,
+.np_inner .npi_prev
+{
+  height: 18px;
+  width: 18px;
+  color: #b7557f;
+  cursor: pointer;
+}
 .np_inner .npi_next {
-  font-size: 18px;
+  height: 18px;
+  width: 18px;
   color: #b7557f;
   cursor: pointer;
 }
@@ -4833,20 +4865,39 @@ div.heateor_sss_sharing_ul{
 /* sacred inner page ends */
 
 /* dhayan sangha page start */
-.dhyan_sangha_banner {
+/* .dhyan_sangha_banner {
   position: relative;
+} */
+.dhyan_sangha_banner_main{
+  overflow: hidden;
 }
-.dhyan_sangha_banner::before {
+.dhyan_sangha_banner .aboutsgbm_right .aboutsgbmr_inner{
+  width: 100%;
+}
+
+.dhyan_sangha_banner_main::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 30%;
-  background-image: url(../img/event-layout-bg.png);
+  width: 50%;
+  height: 20%;
+  background-image: url(../img/feat-overlay.png);
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: -60px;
+  bottom: 0px;
   z-index: 0;
   background-position: bottom;
+}
+.dhyan_sangha_banner_main .aboutsgbml_para2{
+  margin-top: 20px;
+}
+
+.countries_section .nasmd_right .nasmdr_nav {
+   width: 220px;
+}
+.countries_section .nasmdr_nav .has_subs .has_subs_inner {
+  padding: 5px 16px;
+  font-weight: 400;
+  font-size: 16px;
 }
 .dsb_content_para p {
   color: #6b6970;
@@ -4859,12 +4910,19 @@ div.heateor_sss_sharing_ul{
 .dhayan_sangha_banner_btn {
   margin-top: 40px;
 }
+.countries_section .all-event-box-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+}
+
 .sswbw_main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 40px;
 }
+
 .ss_heading {
   width: 100%;
   /* border: 1px solid red; */
@@ -4879,6 +4937,13 @@ div.heateor_sss_sharing_ul{
   background: #fdfaf7;
   padding: 40px 22px;
   max-width: 380px;
+  transition: .5s ease all;
+}
+.sswbwm_card:hover{
+  border-radius: 5.209px;
+  /* border-bottom: 1.059px solid #FCDFB7; */
+  background: #F8F1E9;
+  box-shadow: 0px 0px 20px 0px rgba(211, 140, 44, 0.52);
 }
 .sswbwmc_heading h5 {
   color: #000;
@@ -5059,6 +5124,9 @@ div.heateor_sss_sharing_ul{
 /* thank you page ends */
 
 /* registration page start */
+.regbsm_heading h2{
+  font-size: 40px;
+}
 .regbsmed_heading p {
   color: #333;
   font-size: 24px;
@@ -5121,6 +5189,7 @@ div.heateor_sss_sharing_ul{
 .fsmt_ct {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .fsmt_name .fsmnn {
   width: 30%;
@@ -5200,13 +5269,14 @@ input[type="radio"]:checked {
   flex-wrap: wrap;
 }
 .nasmdr_nav .has_subs .fsmtcc_subs_inner {
-  padding: 6px 9px;
+  padding: 6px 16px;
   color: #6b6970;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: capitalize;
 }
+
 .register_member {
   margin-top: 44px;
 }
@@ -5308,6 +5378,7 @@ input[type="radio"]:checked {
   font-weight: 400;
   letter-spacing: 0;
   font-size: 16px;
+  padding:6px 16px;
 }
 .nasmdr_nav .sselecto_sub {
   border: 1px solid #49378d;
@@ -5508,7 +5579,30 @@ input[type="radio"]:checked {
   display: flex;
   align-items: center;
   gap: 10px;
+  transform: translateX(-100%);
+  transition: 1s ease all;
+  /* overflow: hidden; */
+  opacity: 0;
 }
+.ssciencemltb_item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.ssciencemltb_item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.ssciencemltb_item:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+.in-viewport .ssciencemltb_item  {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.was-in-viewport .ssciencemltb_item  {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
 .sciencemlb_list {
   display: flex;
   flex-direction: column;
@@ -5564,7 +5658,30 @@ input[type="radio"]:checked {
   background: #f8f4f0;
   max-width: 413px;
   padding: 30px 24px;
+  transform: translateX(-100%);
+transition: 1s ease all;
+/* overflow: hidden; */
+opacity: 0;
 }
+.howtesmb_card:nth-child(1) {
+transition-delay: 0.1s;
+}
+.howtesmb_card:nth-child(2) {
+transition-delay: 0.3s;
+}
+.howtesmb_card:nth-child(3) {
+transition-delay: 0.5s;
+}
+
+.in-viewport .howtesmb_card  {
+transform: translateX(0%);
+opacity: 1;
+}
+.was-in-viewport .howtesmb_card  {
+transform: translateX(0%);
+opacity: 1;
+}
+
 .howtesmbc_top {
   display: flex;
   align-items: center;
@@ -5755,6 +5872,9 @@ input[type="radio"]:checked {
 }
 .srm_featured_video_section{
   padding-bottom: 0px;
+}
+.about_srm_featured_slider_wrap{
+  padding: 0px;
 }
 .srm_featured_video_section::before{
    content: '';
@@ -6038,6 +6158,9 @@ background: var(--SRM, #F5EADA);
   position: relative;
   background: linear-gradient(260deg, #FFF 1.16%, #F9F6F3 95.93%);
 }
+.about_sriguru_banner .banner-content-wrapper{
+  top: 50px;
+}
 
 
 .model_3d_div {
@@ -6055,14 +6178,14 @@ background: var(--SRM, #F5EADA);
   width: 100%;
   height: 100%;
   position: absolute;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 .aboutsgbm_left_inner{
   width: 40%;
 }
 .aboutsgbm_right {
   position: relative;
-  width: 50%;
+  width: 40%;
   margin-left: auto;
 }
 .aboutsgbml_para1 p {
@@ -6072,6 +6195,7 @@ background: var(--SRM, #F5EADA);
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
+  padding-bottom: 0px;
 }
 .aboutsgbml_para2 {
   margin-top: 14px;
@@ -6085,11 +6209,12 @@ background: var(--SRM, #F5EADA);
   color: #cf9e69;
 }
 .aboutsgbmr_inner {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
 }
+
 .aboutsgbmr_inner img {
-  height: auto;
+  /* height: auto; */
 }
 /* .about_sriguru_banner .scroll-btn-box {
   bottom: 0px;
@@ -6166,7 +6291,16 @@ background: var(--SRM, #F5EADA);
   position: relative;
   overflow: hidden;
   border-radius: 24px;
+  transition: 1s ease all;
+  clip-path: inset(0 0 0% 100%);
 }
+.element.in-viewport .biographysml_inner{
+  clip-path: inset(0 0 0% 0%);
+}
+.element.was-in-viewport .biographysml_inner{
+  clip-path: inset(0 0 0% 0%);
+}
+
 .biographysml_inner img {
   height: 100%;
   width: 100%;
@@ -6174,6 +6308,7 @@ background: var(--SRM, #F5EADA);
   inset: 0;
   object-fit: cover;
 }
+
 .biographysmr_counter_wrap .spiritual-grid {
   margin-top: 80px;
   display: flex;
@@ -6244,7 +6379,16 @@ background: var(--SRM, #F5EADA);
 
 .meditation_artists_inner {
   padding-top: 60%;
+  /* clip-path: inset(0 0 0% 100%);
+  transition: 1s ease all; */
 }
+/* .element.in-viewport .meditation_artists_inner {
+  clip-path: inset(0 0 0% 0);
+}
+.element.was-in-viewport .meditation_artists_inner {
+  clip-path: inset(0 0 0% 0);
+} */
+
 .meditation_artist_section_main .biographysm_right {
   justify-content: center;
 }
@@ -6273,6 +6417,33 @@ background: var(--SRM, #F5EADA);
   /* border: 1px solid red; */
   max-height: 110px;
   overflow: auto;
+  transform: translateX(-100%);
+  transition: 1s ease all;
+  /* overflow: hidden; */
+  opacity: 0;
+}
+.pathtism_card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.pathtism_card:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.pathtism_card:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.pathtism_card:nth-child(4) {
+  transition-delay: 0.7s;
+}
+.pathtism_card:nth-child(5) {
+  transition-delay: 0.9s;
+}
+.in-viewport .pathtism_card  {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.was-in-viewport .pathtism_card  {
+  transform: translateX(0%);
+  opacity: 1;
 }
 .pathtism_card::-webkit-scrollbar {
   display: none;
@@ -6300,10 +6471,13 @@ background: var(--SRM, #F5EADA);
 .learn_from_sriguru_section_title {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .learn_from_sriguru_section_wrapper{
   margin-top: 0px !important;
 }
+
 .aboutsg_witness_swaraj_kriya_section_main {
   flex-direction: row-reverse;
   border-radius: 10px;
@@ -6365,16 +6539,25 @@ background: var(--SRM, #F5EADA);
 /* about sriguru page ends */
 
 /* about SRSRC page start */
+
+.about_srsrc_banner .aboutsgbmr_inner.banner-img{
+  padding-top: 75%;
+}
+
+
+
+
+
 .programafm_carousel {
   margin-top: 40px;
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .programafm_carousel #main-slider .splide__track .splide__list .splide__slide {
   height: 100% !important;
 }
 .programafm_carousel #thumbnail-slider {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 80% !important;
   position: absolute;
   left: 10%;
@@ -6412,6 +6595,12 @@ background: var(--SRM, #F5EADA);
 /* .about_srimad_rajchandra_banner .aboutsgbm_left_inner{
   width: 40%;
 } */
+/* .about_srimad_rajchandra_banner .aboutsgbm_right{
+  width: 50%;
+} */
+.about_srimad_rajchandra_banner .aboutsgbm_right .banner-img{
+  padding-top: 80%;
+}
 .about_srimad_rajchandra_banner .aboutsgbmr_inner{
   margin-left: 0;
   width: 90%;
@@ -6743,7 +6932,23 @@ background: var(--SRM, #F5EADA);
 /* contact sriguru page start */
 .contact_sirguru_banner_section {
   padding: 120px 0px;
+  position: relative;
+  overflow: hidden;
 }
+.contact_sirguru_banner_section::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  background-image: url(../img/contact-sriguru-bg-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -142px;
+  z-index: -1;
+  background-position: bottom;
+}
+
+
 .contactsgbs_main {
   display: flex;
   justify-content: space-between;

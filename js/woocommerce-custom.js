@@ -8,47 +8,63 @@ $(document).ready(function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-// Get all tabs and dropdowns
-var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
+    // Get all tabs and dropdowns
+    var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
+    var dropdowns = document.querySelectorAll('.hs_nav_dropdown');
 
-tabs.forEach(function(tab) {
-tab.addEventListener('click', function() {
-    var dropdown = this.querySelector('.hs_nav_dropdown');
-    if (dropdown) {
-        var currentDisplay = window.getComputedStyle(dropdown).display;
-        dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
-                 }
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function (event) {
+            var dropdown = this.querySelector('.hs_nav_dropdown');
+            if (dropdown) {
+                var currentDisplay = window.getComputedStyle(dropdown).display;
+                dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+            }
+
+            event.stopPropagation();
+        });
     });
-});
-});   
 
+    // rotate the svg inside the span on click of nav-dropdown list item
+    // First Dropdown
+    var listItems1 = document.querySelectorAll('.hnd1 .nav-dropdown-list li');
+    var span1 = document.querySelector(".nasmdrn1 .has_subs_inner span svg");
 
-// rotate the svg inside the span on click of nav-dropdown list item
-document.addEventListener('DOMContentLoaded', function() {
-    var listItems = document.querySelectorAll('.hnd1 .nav-dropdown-list li');
-    var span = document.querySelector(".has_subs_inner span svg");
-+           listItems.forEach(function(item) {
-        item.addEventListener('click', function() {
-            var hsInner = document.querySelector('.nasmdrn1 .has_subs_inner').closest('div');
-            span.style.transform = 'rotate(0deg)';
-            hsInner.classList.remove("clicked");
+    listItems1.forEach(function (item) {
+        item.addEventListener('click', function () {
+            var hsInner1 = document.querySelector('.nasmdrn1 .has_subs_inner').closest('div');
+            span1.style.transform = 'rotate(0deg)';
+            hsInner1.classList.remove("clicked");
+        });
+    });
+
+    // Second Dropdown
+    var listItems2 = document.querySelectorAll('.hnd2 .nav-dropdown-list li');
+    var span2 = document.querySelector(".nasmdrn2 .has_subs_inner span svg");
+
+    listItems2.forEach(function (item) {
+        item.addEventListener('click', function () {
+            var hsInner2 = document.querySelector('.nasmdrn2 .has_subs_inner').closest('div');
+            span2.style.transform = 'rotate(0deg)';
+            hsInner2.classList.remove("clicked");
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function (event) {
+        var hsInner1 = document.querySelector('.nasmdrn1 .has_subs_inner');
+        var hsInner2 = document.querySelector('.nasmdrn2 .has_subs_inner');
+        dropdowns.forEach(function (dropdown) {
+            if (!dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+                hsInner1.classList.remove('clicked');
+                hsInner2.classList.remove('clicked');
+                span1.style.transform = 'rotate(0deg)';
+                span2.style.transform = 'rotate(0deg)';
+            }
         });
     });
 });
-document.addEventListener('DOMContentLoaded', function() {
-    var listItems = document.querySelectorAll('.hnd2 .nav-dropdown-list li');
-    var svg = document.querySelector(".nasmdrn2 .has_subs_inner span svg");
-+           listItems.forEach(function(item) {
-        item.addEventListener('click', function() {
-            console.log(item);
-            console.log(svg);
-            var hsInner = document.querySelector('.nasmdrn2 .has_subs_inner').closest('div');
-            console.log(hsInner);
-            svg.style.transform = 'rotate(0deg)';
-            hsInner.classList.remove("clicked");
-        });
-    });
-});
+
     var swiper = new Swiper(".mySwiper3", {
     spaceBetween: 30,
     centeredSlides: true,

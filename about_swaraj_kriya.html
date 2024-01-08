@@ -359,20 +359,20 @@
        <!-- science section start -->
            <section class="science_section">
              <div class="container-fluid">
-                  <div class="sscience_main">
+                  <div class="sscience_main element i-v">
                       <div class="ssciencem_left">
                          <div class="sscienceml_top">
                             <div class="ssciencemlt_item1">
-                                <div class="ssciencemlt_heading">
-                                    <h3>The Science</h3>
+                                <div class="ssciencemlt_heading trans">
+                                    <h3 class="trans-first">The Science</h3>
                                 </div>
-                                <div class="ssciencemlt_para">
-                                    <p>While Sri Guru’s all-encompassing talks impart an intellectual clarity of the path, it is the practice of meditation techniques, specifically SwaRaj Kriya, that enables people to understand the intent of her talks on an experiential level. </p>
+                                <div class="ssciencemlt_para trans">
+                                    <p class="trans-second">While Sri Guru’s all-encompassing talks impart an intellectual clarity of the path, it is the practice of meditation techniques, specifically SwaRaj Kriya, that enables people to understand the intent of her talks on an experiential level. </p>
                                 </div>                             
                             </div>
                             <div class="ssciencemlt_item2">
-                                <div class="ssciencemlti_para">
-                                    <p>The Kriya is a yogic technique that utilizes:</p>
+                                <div class="ssciencemlti_para trans">
+                                    <p class="trans-third">The Kriya is a yogic technique that utilizes:</p>
                                 </div>
                                 <div class="ssciencemlt_btm">
                                     <div class="ssciencemltb_item">
@@ -413,8 +413,8 @@
                                </div>
                                 </div>
                             </div>
-                            <div class="ssciencemlt_item3">
-                               <p>This is through a carefully constructed process to expand the level of individual consciousness. Consistent practitioners of SwaRaj Kriya have listed its many benefits.</p>
+                            <div class="ssciencemlt_item3 trans">
+                               <p class="trans-forth">This is through a carefully constructed process to expand the level of individual consciousness. Consistent practitioners of SwaRaj Kriya have listed its many benefits.</p>
                             </div>
                          </div>
                          <div class="scienceml_btm">
@@ -565,13 +565,13 @@
        <!-- how to enroll section start -->
        <section class="how_to_enroll_section">
         <div class="container-fluid">
-           <div class="howtes_main">
+           <div class="howtes_main element i-v">
              <div class="howtesm_top">
-                <div class="htesmtop_heading">
-                   <h3>How to Enroll</h3>
+                <div class="htesmtop_heading trans">
+                   <h3 class="trans-first">How to Enroll</h3>
                 </div>
-                <div class="htesmtop_para">
-                  <p>The SwaRaj Kriya program is offered free of cost. But the program demands the practitioner's discipline and a sound understanding of the Kriya’s scientific framework. A simple three step process has been laid down to facilitate initiation into the program.</p>
+                <div class="htesmtop_para trans">
+                  <p class="trans-second">The SwaRaj Kriya program is offered free of cost. But the program demands the practitioner's discipline and a sound understanding of the Kriya’s scientific framework. A simple three step process has been laid down to facilitate initiation into the program.</p>
                 </div>
              </div>
              <div class="howtesm_btm">
@@ -1062,46 +1062,8 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    // breakpoints: {
-    //     // When window width is <= 767px
-    //     767: {
-    //         slidesPerView: 1,
-    //         coverflowEffect: {
-    //             rotate: 0,
-    //             stretch: 100,
-    //             depth: 50,
-    //             modifier: 1,
-    //             slideShadows: false,
-    //         },
-    //     },
-    //     // When window width is <= 991px
-    //     991: {
-    //         slidesPerView: 2,
-    //         coverflowEffect: {
-    //             rotate: 0,
-    //             stretch: 150,
-    //             depth: 100,
-    //             modifier: 1,
-    //             slideShadows: false,
-    //         },
-    //     },
-    // },
 });
 
-// Initialize Swiper
-// var mySwiper = new Swiper('.swiper-container', {
-//   // Your Swiper configuration options
-// });
-
-// // Trigger previous slide on left arrow click
-// $(".leftarrow2").click(function (e) {
-//   mySwiper.slidePrev();
-// });
-
-// // Trigger next slide on right arrow click
-// $(".rightarrow2").click(function (e) {
-//   mySwiper.slideNext();
-// });
 
 
 
@@ -1112,3 +1074,38 @@
 
 </html>
 
+.pathtism_card {
+    display: flex;
+    gap: 25px;
+    max-width: 230px;
+    /* border: 1px solid red; */
+    max-height: 110px;
+    overflow: auto;
+    transform: translateX(-100%);
+    transition: 1s ease all;
+    /* overflow: hidden; */
+    opacity: 0;
+  }
+  .pathtism_card:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .pathtism_card:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .pathtism_card:nth-child(3) {
+    transition-delay: 0.5s;
+  }
+  .pathtism_card:nth-child(4) {
+    transition-delay: 0.7s;
+  }
+  .pathtism_card:nth-child(5) {
+    transition-delay: 0.9s;
+  }
+  .in-viewport .pathtism_card  {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  .was-in-viewport .pathtism_card  {
+    transform: translateX(0%);
+    opacity: 1;
+  }
