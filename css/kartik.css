@@ -662,8 +662,52 @@ a.not-signed-link {
 .past-event-section-splide .splide__arrows {
   display: none;
 }
-.past-event-section-splide .splide
 
+
+.modal4 .modal4_password svg{
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.modal4 .modal4_password .tooltip_text{
+  visibility: hidden;
+  /* width: 120px; */
+  /* background: linear-gradient( 180deg, rgba(78, 62, 136, 0.2) 67.02%, rgba(0, 0, 0, 0.2) 97.11% ), linear-gradient( 180deg, rgba(92, 69, 183, 0.2) 0%, rgba(27, 16, 64, 0.2) 20.04% ), linear-gradient(180deg, #49378d 0%, #3d2c7d 50%, #49378d 100%); */
+  background: var(--SRM, #f5eada);
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  transition: visibility 0.3s;
+  max-height: 80px;
+  overflow: auto;
+}
+.modal4 .modal4_password svg:hover + .tooltip_text {
+         visibility: visible;
+}
+.modal4 .modal4_password .tooltip_text:hover{
+  visibility:visible;
+}
+.account_text{
+  text-align: center;
+  margin-top: 20px;
+}
+.account_text p{
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight:400;
+}
+.account_text span{
+  margin-left: 5px;
+}
+.forgot_passowrd a{
+  color: #FFF;
+  text-transform: capitalize;
+}
 /* Upcoming Event Inner Page CSS End */
 
 /* Additional Upcoming Event  Start */

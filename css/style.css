@@ -1888,6 +1888,14 @@ ul.more.topic-list li a:hover {
 .modal-header {
   border-bottom: none !important;
 }
+.modal_heading{
+  margin-bottom: 20px;
+}
+.modal_heading h2{
+  text-align: center;
+  color: #FFF;
+  text-transform: capitalize;
+}
 
 /* modal section ends */
 
@@ -4174,7 +4182,7 @@ div.heateor_sss_sharing_ul{
   background-image: url(../img/sacred-banner-bg-img.png);
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: -44;
+  bottom: -44px;
   z-index: 0;
   background-position: bottom;
 }
