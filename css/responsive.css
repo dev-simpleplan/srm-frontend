@@ -482,6 +482,9 @@
   .wisdom-wrapper {
     gap: 50px;
   }
+  .blogs_right_btm_item1 > a {
+    width: 100% !important;
+   }
   .spiritual-coounter-wrap {
     margin-top: 30px;
   }

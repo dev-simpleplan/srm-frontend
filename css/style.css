@@ -1891,7 +1891,12 @@ ul.more.topic-list li a:hover {
 .modal_heading{
   margin-bottom: 20px;
 }
-.modal_heading h2{
+.modal_heading p{
+  text-align: center;
+  color: #FFF;
+  margin-top: 5px;
+}
+.modal_heading h3{
   text-align: center;
   color: #FFF;
   text-transform: capitalize;

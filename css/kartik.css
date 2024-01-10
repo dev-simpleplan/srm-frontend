@@ -685,6 +685,7 @@ a.not-signed-link {
   transition: visibility 0.3s;
   max-height: 80px;
   overflow: auto;
+  top:30px;
 }
 .modal4 .modal4_password svg:hover + .tooltip_text {
          visibility: visible;
@@ -696,6 +697,9 @@ a.not-signed-link {
   text-align: center;
   margin-top: 20px;
 }
+.account_text a{
+  color:var(--srmorange);
+}
 .account_text p{
   text-transform: uppercase;
   color: #FFF;
@@ -704,10 +708,61 @@ a.not-signed-link {
 .account_text span{
   margin-left: 5px;
 }
+.guest_password {
+  display: flex;
+  align-items: center;
+  gap:4px;
+  position: relative;
+}
 .forgot_passowrd a{
-  color: #FFF;
+  color: var(--srmorange);
   text-transform: capitalize;
 }
+.modal2 .fsmnn_input,
+.modal3 .fsmnn_input,
+.modal4 .fsmnn_input,
+.modal5 .fsmnn_input
+{
+  width: 100%;
+  position: relative;
+}
+#signupPopup .login-modal-dialog .modal-body,
+#signinPopup .login-modal-dialog .modal-body,
+#loginguest .login-modal-dialog .modal-body{
+  margin-top: 0px;
+}
+/* .input_wrapper{
+  height: 70px;
+} */
+.input_wrapper label{
+  color: red;
+  font-weight: 400;
+  margin-top: 5px;
+  /* position: absolute;
+  left:0px;
+  top:60px; */
+}
+
+#logincaptchadiv,
+#signupcaptchadiv,
+#forgetcaptchadiv
+{
+  display: flex;
+  justify-content: center;
+}
+.guest_login_wrapper{
+  display: flex;
+  gap:50px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.guest_login_wrapper a{
+ text-transform: capitalize;
+ font-weight: 500;
+ color: var(--srmorange);
+ font-size: 20px;
+}
+
 /* Upcoming Event Inner Page CSS End */
 
 /* Additional Upcoming Event  Start */
@@ -798,7 +853,7 @@ section.by_sriguru.testimonaial-sriguru-section
 .userDetails .modal-body .fsmt_name{
    display: flex;
    flex-direction: column;
-   gap:20px;
+   gap:10px;
 }
 .userDetails .modal-body .fsmt_name .fsmnn_input
 {
@@ -819,7 +874,7 @@ section.by_sriguru.testimonaial-sriguru-section
 .userDetails .modal-body .submit_btn{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 
