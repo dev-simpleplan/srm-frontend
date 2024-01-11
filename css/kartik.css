@@ -743,9 +743,7 @@ a.not-signed-link {
   top:60px; */
 }
 
-#logincaptchadiv,
-#signupcaptchadiv,
-#forgetcaptchadiv
+.captchavalidationdiv
 {
   display: flex;
   justify-content: center;

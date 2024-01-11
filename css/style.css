@@ -2333,6 +2333,11 @@ section.video-directory .vd-wrapper {
 section.yt-video-section {
   padding-top: 80px;
 }
+.yt-video-section .heateor_sss_sharing_ul a{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
 .ytvs-content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -3241,6 +3246,11 @@ div.heateor_sss_sharing_ul{
   font-weight: 400;
   font-size: 20px;
   color: var(--srmorange);
+  padding: 0px 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .btn_welcom_text a {
   border-bottom: 2px solid var(--srmorange);
@@ -3409,6 +3419,8 @@ div.heateor_sss_sharing_ul{
 .tstl_img {
   height: 4px;
   width: 4px;
+  display: flex;
+  align-items: center;
 }
 .talks_series_heading {
   margin-top: 12px;
@@ -3425,6 +3437,7 @@ div.heateor_sss_sharing_ul{
   gap: 7px;
   align-items: center;
   margin-top: 16px;
+  flex-wrap: wrap;
 }
 .talks_series_btm_item1 {
   display: flex;
