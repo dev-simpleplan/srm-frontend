@@ -226,6 +226,11 @@
 /* 1100 px start */
 
 @media screen and (max-width: 1100px) {
+  .srm-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* phase 2 */
   /* course page start*/
   .rsmr_btn {
     margin-top: 14px;
@@ -293,14 +298,14 @@
   .navigation .nav-left {
     position: fixed;
     z-index: 1;
-    left: 0;
+    left: -100%;
     right: 0;
     overflow-x: hidden;
     padding-top: 0px;
     z-index: 9999;
     transition: 1s ease-in-out;
     top: 0px;
-    clip-path: inset(0% 100% 0% 0%);
+    /* clip-path: inset(0% 100% 0% 0%); */
     width: 50%;
     background: #f0e9e1;
     height: 100%;
@@ -320,7 +325,8 @@
     gap: 12px;
   }
   .navigation .nav-left.active {
-    clip-path: inset(0 0 0 0%);
+    /* clip-path: inset(0 0 0 0%); */
+    left: 0%;
   }
   .nav_list ul {
     flex-direction: column;
@@ -455,9 +461,7 @@
   .featured-video-section {
     padding-bottom: 60px;
   }
-  .srm-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
   .srm-help-box:before {
     width: 70%;
     right: 30px;
@@ -1441,6 +1445,7 @@
   }
   .swiper.history-thumbnail {
     margin-top: -100px;
+    display: none;
   }
   .weekly-wisdom-newsletter-wrap {
     width: 100%;
@@ -2684,9 +2689,9 @@
   .sbms_right {
     width: 100%;
   }
-  .nasmdr_nav .has_subs .has_subs_inner {
+  /* .nasmdr_nav .has_subs .has_subs_inner {
     font-size: 10px;
-  }
+  } */
   .form_setion .nasmdr_nav .has_subs .has_subs_inner {
     font-size: 16px;
   }

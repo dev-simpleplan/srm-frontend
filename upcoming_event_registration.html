@@ -893,126 +893,126 @@
    
     <script>
 
-    document.addEventListener('DOMContentLoaded', function () {
-    // Get all tabs and dropdowns
-    var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
-
-    tabs.forEach(function (tab) {
-        tab.addEventListener('click', function (event) {
-            var dropdown = this.querySelector('.hs_nav_dropdown');
-            if (dropdown) {
-                var currentDisplay = window.getComputedStyle(dropdown).display;
-                dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
-
-                // Stop the click event propagation to prevent immediate hiding of the dropdown
-                event.stopPropagation();
-            }
+        document.addEventListener('DOMContentLoaded', function () {
+        // Get all tabs and dropdowns
+        var tabs = document.querySelectorAll('.nasmdr_nav .has_subs');
+    
+        tabs.forEach(function (tab) {
+            tab.addEventListener('click', function (event) {
+                var dropdown = this.querySelector('.hs_nav_dropdown');
+                if (dropdown) {
+                    var currentDisplay = window.getComputedStyle(dropdown).display;
+                    dropdown.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+    
+                    // Stop the click event propagation to prevent immediate hiding of the dropdown
+                    event.stopPropagation();
+                }
+            });
         });
-    });
-
-    // rotate the svg inside the span on click of nav-dropdown list item
-    // First Dropdown
-    var listItems1 = document.querySelectorAll('.nasmdrn1 .nav-dropdown-list li');
-    var span1 = document.querySelector(".nasmdrn1 .has_subs_inner span svg");
-
-    listItems1.forEach(function (item) {
-        item.addEventListener('click', function () {
-            var hsInner1 = document.querySelector('.fsmtcc_subs_inner');
-            span1.style.transform = (span1.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
-            hsInner1.classList.remove("clicked");
-        });
-    });
-
-    // Second Dropdown
-    var listItems2 = document.querySelectorAll('.nasmdrn2 .nav-dropdown-list li');
-    var span2 = document.querySelector(".nasmdrn2 .has_subs_inner span svg");
-
-    listItems2.forEach(function (item) {
-        item.addEventListener('click', function () {
-            var hsInner2 = document.querySelector('.sselecto_inner');
-            span2.style.transform = (span2.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
-            hsInner2.classList.remove("clicked");
-        });
-    });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function (event) {
-        var hsInner2 = document.querySelector('.sselecto_inner');
-        var hsInner1 = document.querySelector('.fsmtcc_subs_inner');
-        var dropdowns = document.querySelectorAll('.hs_nav_dropdown');
-        dropdowns.forEach(function (dropdown) {
-            if (!dropdown.contains(event.target)) {
-                dropdown.style.display = 'none';
-                hsInner2.classList.remove("clicked");
+    
+        // rotate the svg inside the span on click of nav-dropdown list item
+        // First Dropdown
+        var listItems1 = document.querySelectorAll('.nasmdrn1 .nav-dropdown-list li');
+        var span1 = document.querySelector(".nasmdrn1 .has_subs_inner span svg");
+    
+        listItems1.forEach(function (item) {
+            item.addEventListener('click', function () {
+                var hsInner1 = document.querySelector('.fsmtcc_subs_inner');
+                span1.style.transform = (span1.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
                 hsInner1.classList.remove("clicked");
-                // Rotate the SVG when the dropdown is closed
-                span1.style.transform = 'rotate(0deg)';
-                span2.style.transform = 'rotate(0deg)';
-            }
+            });
+        });
+    
+        // Second Dropdown
+        var listItems2 = document.querySelectorAll('.nasmdrn2 .nav-dropdown-list li');
+        var span2 = document.querySelector(".nasmdrn2 .has_subs_inner span svg");
+    
+        listItems2.forEach(function (item) {
+            item.addEventListener('click', function () {
+                var hsInner2 = document.querySelector('.sselecto_inner');
+                span2.style.transform = (span2.style.transform === 'rotate(180deg)') ? 'rotate(0deg)' : 'rotate(180deg)';
+                hsInner2.classList.remove("clicked");
+            });
+        });
+    
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function (event) {
+            var hsInner2 = document.querySelector('.sselecto_inner');
+            var hsInner1 = document.querySelector('.fsmtcc_subs_inner');
+            var dropdowns = document.querySelectorAll('.hs_nav_dropdown');
+            dropdowns.forEach(function (dropdown) {
+                if (!dropdown.contains(event.target)) {
+                    dropdown.style.display = 'none';
+                    hsInner2.classList.remove("clicked");
+                    hsInner1.classList.remove("clicked");
+                    // Rotate the SVG when the dropdown is closed
+                    span1.style.transform = 'rotate(0deg)';
+                    span2.style.transform = 'rotate(0deg)';
+                }
+            });
         });
     });
-});
-
- 
-            // toggle to show the member details div
-            function toggleMemberDiv(show) {
-            var memberDiv = document.getElementById("member_details");
-            memberDiv.style.display = show ? "block" : "none";
+    
+     
+                // toggle to show the member details div
+                function toggleMemberDiv(show) {
+                var memberDiv = document.getElementById("member_details");
+                memberDiv.style.display = show ? "block" : "none";
+                }
+    
+                // function to clone the member_details div
+                let memberCount = 1;
+    
+                // copy the div on click of copy button
+                function copyMore(button) {
+                var parentDiv = button.closest('.member_inner');
+                if (parentDiv) {
+                    var addMoreDiv = document.querySelector('.add_more');
+                    var clonedDiv = parentDiv.cloneNode(true);
+                    memberCount++;
+                    clonedDiv.querySelector('.member_number h5').innerText = 'Member #' + memberCount;
+                    clonedDiv.querySelectorAll('.fsmtg_btn input[type="radio"]').forEach(function (radio) {
+                        radio.name = 'member' + memberCount;
+                        radio.id = radio.id.replace(/\d+$/, memberCount);
+                    });
+                    clonedDiv.style.display = "block";
+                    addMoreDiv.parentNode.insertBefore(clonedDiv, addMoreDiv);
+                }
             }
-
-            // function to clone the member_details div
-            let memberCount = 1;
-
-            // copy the div on click of copy button
-            function copyMore(button) {
-            var parentDiv = button.closest('.member_inner');
-            if (parentDiv) {
+    
+                // add new div on click of add more button
+                function addMore() {
                 var addMoreDiv = document.querySelector('.add_more');
-                var clonedDiv = parentDiv.cloneNode(true);
+                var memberDiv = document.getElementById("member_inner");
+                var clonedDiv = memberDiv.cloneNode(true);
                 memberCount++;
                 clonedDiv.querySelector('.member_number h5').innerText = 'Member #' + memberCount;
                 clonedDiv.querySelectorAll('.fsmtg_btn input[type="radio"]').forEach(function (radio) {
                     radio.name = 'member' + memberCount;
                     radio.id = radio.id.replace(/\d+$/, memberCount);
+                    radio.checked = false;
+                });
+                clonedDiv.querySelectorAll('input[type="text"], input[type="tel"], input[type="number"]').forEach(function (input) {
+                    input.value = '';
                 });
                 clonedDiv.style.display = "block";
                 addMoreDiv.parentNode.insertBefore(clonedDiv, addMoreDiv);
             }
-        }
-
-            // add new div on click of add more button
-            function addMore() {
-            var addMoreDiv = document.querySelector('.add_more');
-            var memberDiv = document.getElementById("member_inner");
-            var clonedDiv = memberDiv.cloneNode(true);
-            memberCount++;
-            clonedDiv.querySelector('.member_number h5').innerText = 'Member #' + memberCount;
-            clonedDiv.querySelectorAll('.fsmtg_btn input[type="radio"]').forEach(function (radio) {
-                radio.name = 'member' + memberCount;
-                radio.id = radio.id.replace(/\d+$/, memberCount);
-                radio.checked = false;
-            });
-            clonedDiv.querySelectorAll('input[type="text"], input[type="tel"], input[type="number"]').forEach(function (input) {
-                input.value = '';
-            });
-            clonedDiv.style.display = "block";
-            addMoreDiv.parentNode.insertBefore(clonedDiv, addMoreDiv);
-        }
-           
-            // function to remove the member details div
-            function deleteDetail(detail_btn) {
-             var detailDiv = detail_btn.parentElement.parentElement.parentElement;
-        
-        // Check if there is more than one div before removing
-        if (document.querySelectorAll('.member_inner').length > 1) {
-            detailDiv.remove();
-            memberCount--;
-        } else {
-           
+               
+                // function to remove the member details div
+                function deleteDetail(detail_btn) {
+                 var detailDiv = detail_btn.parentElement.parentElement.parentElement;
             
+            // Check if there is more than one div before removing
+            if (document.querySelectorAll('.member_inner').length > 1) {
+                detailDiv.remove();
+                memberCount--;
+            } else {
+               
+                
+            }
         }
-    }
-    </script>
+        </script>
 
     
  

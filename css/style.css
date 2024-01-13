@@ -374,6 +374,7 @@ section.banner.height-100vh.parallax-banner {
 .custom-btn.purple:hover span {
   opacity: 1;
   margin-left: 5px;
+  display: inline-flex;
 }
 .custom-btn.purple span {
   opacity: 0;
@@ -596,6 +597,7 @@ span.swiper-pagination-bullet {
   background-image: url(../img/srmhelp1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   left: 0;
   top: 0px;
   z-index: 2;
@@ -676,6 +678,7 @@ span.swiper-pagination-bullet {
   line-height: 126.5%; /* 10.12px */
   letter-spacing: 1.766px;
   text-decoration-line: underline;
+  text-transform: uppercase;
 }
 
 /* SRM Help Section End */
@@ -1302,6 +1305,23 @@ span.swiper-pagination-progressbar-fill {
   align-items: center;
   flex-wrap: wrap;
 }
+.wisdom-category-box .category-icon{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color:#F0E9E1 ;
+  transition: .3s ease all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wisdom-category-box .category-icon img{
+  height: 30px;
+  width: 30px;
+}
+.wisdom-category-box .category-icon:hover{
+  background-color:#CF9E69 ;
+}
 .featured-topic-flex {
   display: flex;
   align-items: center;
@@ -1317,7 +1337,7 @@ span.swiper-pagination-progressbar-fill {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 0px;
   background-color: var(--srmpurple);
   left: 0;
   bottom: 0px;
@@ -1336,7 +1356,7 @@ span.swiper-pagination-progressbar-fill {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 0px;
   background-color: var(--srmpurple);
   left: 0;
   bottom: 0px;
@@ -1630,6 +1650,11 @@ ul.similiar-blog-ul li a:hover {
 .newest-talk-wrapper {
   padding-top: 65px;
   overflow: hidden;
+}
+.talks-section .newest-talk-wrapper .swiper-button-next svg,
+.talks-section .newest-talk-wrapper  .swiper-button-prev svg {
+  width: 16px;
+  height: 16px;
 }
 section.talks-section {
   overflow: hidden;
@@ -2352,7 +2377,7 @@ section.yt-video-section {
 }
 .ytvs-content-wrapper .ytvs-left .yt-video {
   position: relative;
-  padding-top: 56%;
+  padding-top: 50%;
   border-radius: 16px;
   overflow: hidden;
   z-index: auto;
@@ -3952,6 +3977,14 @@ div.heateor_sss_sharing_ul{
   display: flex;
   justify-content: center;
   margin-top: 56px;
+  align-items: center;
+}
+.faqsm_loadmore button{
+  border: none;
+  background-color: transparent;
+  color: #b7557f;
+  font-weight: 600;
+  font-size: 16px;
 }
 .faqsm_loadmore a {
   color: #b7557f;
@@ -4925,7 +4958,9 @@ div.heateor_sss_sharing_ul{
   padding: 5px 16px;
   font-weight: 400;
   font-size: 16px;
+  color: #6b6970;
 }
+
 .dsb_content_para p {
   color: #6b6970;
   font-size: 16px;
@@ -4939,10 +4974,15 @@ div.heateor_sss_sharing_ul{
 }
 .countries_section .all-event-box-wrapper{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap:40px;
 }
-
+.ssw_box_wrapper a{
+  display: inline-block;
+}
 .sswbw_main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -266,7 +266,28 @@ $(document).ready(function () {
   // Define a media query
   var mediaQuery = window.matchMedia('(max-width: 991px)');
 
-  $('.sort-by-box.nav-left .has_subs_inner').on('click', function (event) {
+  // Check if the media query matches
+  if (mediaQuery.matches) {
+    // Your existing code goes here
+    $('.sort-by-box.nav-left .has_subs_inner').on('click', function (event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor element
+      $(this).toggleClass('clicked');
+      var svg = $(this).find('span svg');
+      if ($(this).hasClass('clicked')) {
+        svg.css('transform', 'rotate(180deg)');
+        $('.sort-by-box.nav-left .nav-dropdown').slideDown(); // Use .show() to display the nav-dropdown
+      } else {
+        svg.css('transform', 'rotate(0deg)');
+        $('.sort-by-box.nav-left .nav-dropdown').slideUp(); // Use .hide() to hide the nav-dropdown
+      }
+    });
+  }
+});
+$(document).ready(function () {
+  // Define a media query
+  var mediaQuery = window.matchMedia('(max-width: 991px)');
+
+  $('.nasmd_right .sort-by-box.nav-left .has_subs_inner').on('click', function (event) {
     event.preventDefault(); // Prevent the default behavior of the anchor element
     $(this).toggleClass('clicked');
     var svg = $(this).find('span svg');
@@ -596,24 +617,24 @@ $(document).ready(function (){
 
 // Sort by dropdown function
 
-$(document).ready(function () {
-  $(".all_episode_section .sort-by-dropdown-box .sort-by-box.nav-left  .has_subs .has_subs_inner  ").click(function () {
-    if ($(this).parent(".has_subs").hasClass("active")) {
-      $(this)
-        .parent(".has_subs")
-        .removeClass("active")
-        .find(".nav-dropdown")
-        .slideUp();
-    } else {
-      $(" .nav-dropdown").slideUp();
-      $(".has_subs").removeClass("active");
-      $(this)
-        .parent(".has_subs")
-        .addClass("active")
-        .find(" .nav-dropdown")
-        .slideDown();
-    }
-    return false;
-  });
-});
+// $(document).ready(function () {
+//   $(".all_episode_section .sort-by-dropdown-box .sort-by-box.nav-left  .has_subs .has_subs_inner  ").click(function () {
+//     if ($(this).parent(".has_subs").hasClass("active")) {
+//       $(this)
+//         .parent(".has_subs")
+//         .removeClass("active")
+//         .find(".nav-dropdown")
+//         .slideUp();
+//     } else {
+//       $(" .nav-dropdown").slideUp();
+//       $(".has_subs").removeClass("active");
+//       $(this)
+//         .parent(".has_subs")
+//         .addClass("active")
+//         .find(" .nav-dropdown")
+//         .slideDown();
+//     }
+//     return false;
+//   });
+// });
 
