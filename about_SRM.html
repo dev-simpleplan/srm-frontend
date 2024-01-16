@@ -1033,30 +1033,33 @@
 
     <script>
         
-        gsap.set('.aboutsrmcsmti_hr hr',{opacity:'.2'})
-        gsap.set('.at_item1 .aboutsrmcsmti_hr .hr2',{width:"80%"})
-        // gsap.set('.aboutsrmcs_main',{xPercent:50})
-
-        let tl = gsap.timeline()
-        tl.to('.aboutsrmcsm_top .aboutsrmcsmt_item',{xPercent:-130},1)
-        tl.to('.aboutsrmcsm_btm .aboutsrmcsmb_item',{xPercent:-170},1)
-        tl.to('.at_item1 .aboutsrmcsmti_hr .hr2',{width:"100%"},0)
-        tl.to('.svg_item2 svg circle',{fill:' #CF9E69',duration:0},.7)
-        tl.to('.at_item2 .aboutsrmcsmti_hr .hr2',{width:"100%"},.7)
-        tl.to('.svg_item3 svg circle',{fill:' #CF9E69',duration:0})
-        tl.to('.at_item3 .aboutsrmcsmti_hr .hr2',{width:"100%"})
-        tl.to('.svg_item4 svg circle',{fill:' #CF9E69',duration:0})
-        tl.to('.at_item4 .aboutsrmcsmti_hr .hr2',{width:"100%"})
         
+        document.addEventListener("DOMContentLoaded", function() {
+        gsap.set('.aboutsrmcsmti_hr hr', { opacity: '.2' });
+        gsap.set('.at_item1 .aboutsrmcsmti_hr .hr2', { width: "80%" });
+
+        let tl = gsap.timeline();
+        tl.to('.aboutsrmcsm_top .aboutsrmcsmt_item', { xPercent: -130 }, 1);
+        tl.to('.aboutsrmcsm_btm .aboutsrmcsmb_item', { xPercent: -170 }, 1);
+        tl.to('.at_item1 .aboutsrmcsmti_hr .hr2', { width: "100%" }, 0);
+        tl.to('.svg_item2 svg circle', { fill: ' #CF9E69', duration: 0 }, .7);
+        tl.to('.at_item2 .aboutsrmcsmti_hr .hr2', { width: "100%" }, .7);
+        tl.to('.svg_item3 svg circle', { fill: ' #CF9E69', duration: 0 });
+        tl.to('.at_item3 .aboutsrmcsmti_hr .hr2', { width: "100%" });
+        tl.to('.svg_item4 svg circle', { fill: ' #CF9E69', duration: 0 });
+        tl.to('.at_item4 .aboutsrmcsmti_hr .hr2', { width: "100%" });
+
         ScrollTrigger.create({
             trigger: ".about_srm_carousel_section",
             start: "top top",
             end: "200% bottom",
             animation: tl,
-            pin:true,
-            markers:false,
-            scrub:1,
-        });
+            pin: true,
+            markers: false,
+            scrub: 1,
+    });
+});
+
 
         var splide = new Splide( '.splide', {
         type   : 'loop',
