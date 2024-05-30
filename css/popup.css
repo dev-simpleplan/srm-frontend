@@ -6,7 +6,7 @@
     background-image: url(../img/modal-bg.png);
     background-repeat: no-repeat;
     background-size: 110%;
-    background-position: 0% 94%;
+    background-position: 0% 90%;
 }
 .login-modal .modal-header {
     position: relative;
@@ -33,6 +33,7 @@
     font-size: 20px;
     font-weight: 400;
     color: #25232B;
+    text-transform: capitalize;
 }
 .lmb-top .lmb-heading .confirm-code {
     margin-top: 12px;
@@ -52,7 +53,10 @@
     margin-top: 30px;
 }
 .lmb-form .form-group {
-    
+    margin-top: 10px;
+}
+.lmb-form .form-group:first-child {
+    margin-top: 0;
 }
 .lmb-form .form-group .form-row {
     display: flex;
@@ -60,6 +64,12 @@
     gap: 10px;
 }
 .lmb-form .form-group .form-row .form-item:last-child {
+    width: calc(100% - 25%);
+}
+.lmb-form .form-group .form-row.equal .form-item {
+    width: 50%;
+}
+.lmb-form .form-group .form-row.equal .form-item .select2 {
     width: 100%;
 }
 .lmb-form .form-group .form-row select,.lmb-form .form-group input, .lmb-form .form-group .form-row .selection {
@@ -70,10 +80,13 @@
     display: block;
     color: #7E715E;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
 }
-.lmb-form .form-group .form-row input::placeholder, .lmb-form .form-group .form-row .selection::placeholder {
+.lmb-form .form-group input::placeholder, .lmb-form .form-group .selection::placeholder {
     color: #C5B59D;
+}
+.lmb-form .form-group input:focus {
+    background-color: #FBF7F2;
 }
 .lmb-form .form-group .form-row .selection {
     padding: 6px 10px;
@@ -108,8 +121,19 @@
     color: #8E7D63;
     font-size: 14px;
 }
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #DCBB97;
+    color: #8E7D63;
+}
+.select2-container--default .select2-results__option--selected {
+    background-color: #DCBB97;
+    color: #8E7D63;
+}
 .lmb-form .form-button {
-    margin: 12px 0;
+    margin: 20px 0 12px 0;
+}
+.lmb-form .form-button.extraspace {
+    margin-top: 40px;
 }
 .lmb-form .form-button input, .lmb-form .form-button .submit-button {
     width: 100%;
@@ -230,9 +254,10 @@
 }
 .lmb-signup p span {
     color: #49378D;
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
     cursor: pointer;
+    font-weight: 500;
 }
 .lmb-signup p span::before {
     content: '';

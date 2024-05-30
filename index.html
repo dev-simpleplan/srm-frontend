@@ -1283,7 +1283,7 @@
     </footer>
     <!-- Footer End -->
     
-    <!-- LogIn With OPT Modal Starts -->
+    <!-- LogIn With OTP Modal Starts -->
     <div class="modal fade" id="LoginWithOtpModal" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered login-modal">
         <div class="modal-content">
@@ -1569,7 +1569,7 @@
                                 </div>
                             </div>
                             <div class="lmb-signup">
-                                <p>Don’t have an account? <span data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">Create an account</span></p>
+                                <p>Don’t have an account? <span data-bs-toggle="modal" data-bs-target="#CreateAccountWithOtpModal">Create an account</span></p>
                             </div>
                         </div>
                     </div>
@@ -1578,9 +1578,9 @@
         </div>
         </div>
     </div>
-    <!-- LogIn With OPT Modal End -->
+    <!-- LogIn With OTP Modal End -->
     
-    <!-- Confirm OPT Modal Starts -->
+    <!-- Confirm OTP Modal Starts -->
     <div class="modal fade" id="ConfirmOtpModal" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered login-modal">
         <div class="modal-content">
@@ -1644,7 +1644,7 @@
                                 </div>
                             </div>
                             <div class="lmb-signup">
-                                <p>Don’t have an account? <span data-bs-toggle="modal" data-bs-target="#SignupWithOtpModal">Create an account</span></p>
+                                <p>Don’t have an account? <span data-bs-toggle="modal" data-bs-target="#CreateAccountWithOtpModal">Create an account</span></p>
                             </div>
                         </div>
                     </div>
@@ -1653,9 +1653,9 @@
         </div>
         </div>
     </div>
-    <!-- Confirm OPT Modal End -->
+    <!-- Confirm OTP Modal End -->
     
-    <!-- Confirm OPT With Values Modal Starts -->
+    <!-- Confirm OTP With Values Modal Starts -->
     <div class="modal fade" id="ConfirmOtpModalWithValue" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered login-modal">
         <div class="modal-content">
@@ -1684,7 +1684,7 @@
                             <div class="lmb-heading">
                                 <h4>Confirm OTP</h4>
                                 <div class="confirm-code">
-                                    <p>We have send code on +91 9876543210. <a href="">Change Number</a></p>
+                                    <p>We have send code on +91 9876543210. <span data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">Change Number</span></p>
                                 </div>
                             </div>
                             <div class="lmb-form confirm-otp">
@@ -1722,7 +1722,7 @@
                                 </div>
                             </div>
                             <div class="lmb-signup">
-                                <p>Don’t have an account? <span data-bs-toggle="modal" data-bs-target="#SignupWithOtpModal">Create an account</span></p>
+                                <p>Don’t have an account? <span data-bs-toggle="modal" data-bs-target="#CreateAccountWithOtpModal">Create an account</span></p>
                             </div>
                         </div>
                     </div>
@@ -1731,7 +1731,1132 @@
         </div>
         </div>
     </div>
-    <!-- Confirm OPT With Values Modal End -->
+    <!-- Confirm OTP With Values Modal End -->
+    
+    <!-- Create Account With OTP Modal Starts -->
+    <div class="modal fade" id="CreateAccountWithOtpModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-logo">
+                    <svg width="62" height="20" viewBox="0 0 62 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5693 9.81445L23.1992 12.7698L25.5693 15.7252L27.9394 12.7698L25.5693 9.81445Z" fill="#EDB666"/>
+                        <path d="M27.8889 0.490234V6.53574H27.6045C27.2418 2.93862 20.4325 2.13275 20.4325 7.91305V15.8458L23.0749 19.141H13.122L15.751 15.8458V3.78552L13.5103 0.929801H13.5028L13.122 0.504887V5.97456H12.8722C12.1725 4.73938 11.0905 3.69174 9.95891 2.96206C9.94537 2.95474 9.9243 2.94155 9.91076 2.93422C8.68282 2.15766 7.06665 1.68586 5.77701 1.68586C4.96591 1.71956 4.33389 1.96278 3.87642 2.40821C3.41745 2.88734 3.20226 3.46903 3.20226 4.22508C3.20226 4.88004 3.73045 5.55551 4.25714 5.93353C4.78383 6.3057 5.21421 6.48739 5.9907 6.76431L8.95219 7.77825C9.82649 8.07569 10.5052 8.42001 11.1643 8.78485C11.9468 9.21709 12.5728 9.81783 13.1341 10.5343C13.6683 11.2567 13.9106 12.2149 13.9106 13.3842C13.9106 14.4772 13.6668 15.4033 13.1687 16.193C12.6405 16.9842 12.01 17.6377 11.2335 18.1183C11.226 18.1256 11.2184 18.1256 11.2124 18.133C10.0898 18.8202 8.76408 19.1454 7.43232 19.1454H0.180579V11.9468H0.457466C0.492077 12.0611 0.555279 12.1622 0.59591 12.2706C1.05488 13.3241 2.6846 16.6472 5.06975 17.5645C5.70027 17.8414 6.32627 18.0114 6.97034 18.0656C7.12383 18.0788 7.28334 18.0861 7.43533 18.0861C8.2389 18.0861 8.94617 17.8766 9.50747 17.4648C10.0763 17.0853 10.3532 16.4714 10.3532 15.5806C10.3532 14.8245 10.1109 14.2428 9.61882 13.8325C9.08461 13.4193 8.45259 13.0413 7.6761 12.7322L6.00424 12.1036C5.12392 11.7988 3.45206 11.1248 2.67557 10.6779C1.89909 10.1988 1.26706 9.57754 0.774983 8.78778C0.249801 8.03466 0 7.00021 0 5.77089C0 5.04854 0.180579 4.39358 0.457466 3.74596C0.776488 3.13203 1.23395 2.54301 1.79525 2.06388C2.35655 1.58475 3.03071 1.20673 3.84181 0.896101C4.65442 0.6265 5.53474 0.4917 6.51889 0.4917H20.4325V4.34963L23.3639 0.490234H27.8889Z" fill="#EDB666"/>
+                        <path d="M51.4364 19.1387H61.6181L58.9756 15.8434V6.10558C58.9756 6.01766 58.9756 5.92389 58.9681 5.83598C58.9605 5.51216 58.941 5.19421 58.8988 4.88358C58.8853 4.78834 58.8718 4.69457 58.8507 4.59933C58.3165 2.06596 56.0833 0.142126 53.3656 0.00732611C53.2618 0 53.164 0 53.0601 0C52.5951 0 52.1377 0.0600741 51.6727 0.161174C51.6456 0.1685 51.611 0.174361 51.5824 0.181687C51.45 0.208061 51.3251 0.241762 51.1942 0.276927C50.5561 0.445427 49.9602 0.688654 49.432 0.999281C48.8707 1.30258 48.3365 1.68061 47.879 2.0601C47.3869 2.47183 46.9987 2.93777 46.6511 3.38466C45.8189 1.56046 44.0357 0.237366 41.9064 0.0278392C41.8236 0.0205131 41.7393 0.0146522 41.6566 0.0146522C41.5452 0.00146522 41.4278 0.00146522 41.3105 0.00146522C41.2066 0.00146522 41.1028 0.00146522 40.999 0.00879133C39.8689 0.0424914 38.8275 0.312092 37.9126 0.79122C36.9284 1.30405 36.0812 2.0264 35.3123 2.88502V0.486453H27.9943L30.6232 3.78467V15.8434L27.9883 19.1387H37.9547L35.3123 15.8434V4.3561C35.4642 4.20079 35.6177 4.0528 35.7772 3.91068C35.854 3.84328 35.9292 3.77588 36.006 3.72166C36.1098 3.62642 36.2212 3.54584 36.3385 3.46525C36.3596 3.45206 36.3807 3.43887 36.4002 3.42422C37.0112 3.01982 37.7531 2.78246 38.5506 2.78246C40.5475 2.78246 42.1848 4.255 42.3789 6.14514C42.3924 6.27408 42.4 6.40155 42.4 6.53049C42.4135 6.80742 42.421 7.09753 42.421 7.40816V15.8434L39.7786 19.1387H49.7871L47.1447 15.8434V6.10558C47.1447 6.02499 47.1447 5.93708 47.1371 5.85502C47.1296 5.48432 47.1101 5.11948 47.0393 4.78102C47.0318 4.70629 47.0122 4.63303 46.9972 4.56563C47.0047 4.5583 47.0107 4.54512 47.0243 4.53926C47.1356 4.41764 47.253 4.30336 47.3644 4.1876C47.572 3.99273 47.7812 3.80958 47.9889 3.65426C48.0716 3.58686 48.1559 3.51946 48.2462 3.46525C48.2944 3.43155 48.35 3.39785 48.3982 3.37001C48.9941 3.00517 49.6878 2.79564 50.4372 2.79564C51.7479 2.79564 52.9127 3.43741 53.6064 4.41618C54.0021 4.97736 54.1887 5.65868 54.2309 6.34148C54.273 7.05064 54.2926 7.76567 54.2926 8.47484V15.8434L51.4349 19.1387H51.4364Z" fill="#EDB666"/>
+                    </svg>
+                </div>
+                <div class="nav-cross modal_cross" id="modal_cross">
+                    <div class="nav-cross-btn" data-bs-dismiss="modal">
+                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 34.8346C28.4746 34.8346 35.75 27.7458 35.75 19.0013C35.75 10.2568 28.4746 3.16797 19.5 3.16797C10.5254 3.16797 3.25 10.2568 3.25 19.0013C3.25 27.7458 10.5254 34.8346 19.5 34.8346Z" fill="#F9F3EC"/>
+                            <path d="M24.375 14.25L14.625 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.625 14.25L24.375 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal_main">
+                    <div class="login-modal-body">
+                        <div class="lmb-top">
+                            <div class="lmb-heading">
+                                <h4>Create an account</h4>
+                            </div>
+                            <div class="lmb-form">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="form-item">
+                                                <select name="countryCode" id="selection">
+                                                    <option data-countryCode="DZ" value="213">+213</option>
+                                                    <option data-countryCode="AD" value="376">+376</option>
+                                                    <option data-countryCode="AO" value="244">+244</option>
+                                                    <option data-countryCode="AI" value="1264">+1264</option>
+                                                    <option data-countryCode="AG" value="1268">+1268</option>
+                                                    <option data-countryCode="AR" value="54">+54</option>
+                                                    <option data-countryCode="AM" value="374">+374</option>
+                                                    <option data-countryCode="AW" value="297">+297</option>
+                                                    <option data-countryCode="AU" value="61">+61</option>
+                                                    <option data-countryCode="AT" value="43">+43</option>
+                                                    <option data-countryCode="AZ" value="994">+994</option>
+                                                    <option data-countryCode="BS" value="1242">+1242</option>
+                                                    <option data-countryCode="BH" value="973">+973</option>
+                                                    <option data-countryCode="BD" value="880">+880</option>
+                                                    <option data-countryCode="BB" value="1246">+1246</option>
+                                                    <option data-countryCode="BY" value="375">+375</option>
+                                                    <option data-countryCode="BE" value="32">+32</option>
+                                                    <option data-countryCode="BZ" value="501">+501</option>
+                                                    <option data-countryCode="BJ" value="229">+229</option>
+                                                    <option data-countryCode="BM" value="1441">+1441</option>
+                                                    <option data-countryCode="BT" value="975">+975</option>
+                                                    <option data-countryCode="BO" value="591">+591</option>
+                                                    <option data-countryCode="BA" value="387">+387</option>
+                                                    <option data-countryCode="BW" value="267">+267</option>
+                                                    <option data-countryCode="BR" value="55">+55</option>
+                                                    <option data-countryCode="BN" value="673">+673</option>
+                                                    <option data-countryCode="BG" value="359">+359</option>
+                                                    <option data-countryCode="BF" value="226">+226</option>
+                                                    <option data-countryCode="BI" value="257">+257</option>
+                                                    <option data-countryCode="KH" value="855">+855</option>
+                                                    <option data-countryCode="CM" value="237">+237</option>
+                                                    <option data-countryCode="CA" value="1">+1</option>
+                                                    <option data-countryCode="CV" value="238">+238</option>
+                                                    <option data-countryCode="KY" value="1345">+1345</option>
+                                                    <option data-countryCode="CF" value="236">+236</option>
+                                                    <option data-countryCode="CL" value="56">+56</option>
+                                                    <option data-countryCode="CN" value="86">+86</option>
+                                                    <option data-countryCode="CO" value="57">+57</option>
+                                                    <option data-countryCode="KM" value="269">+269</option>
+                                                    <option data-countryCode="CG" value="242">+242</option>
+                                                    <option data-countryCode="CK" value="682">+682</option>
+                                                    <option data-countryCode="CR" value="506">+506</option>
+                                                    <option data-countryCode="HR" value="385">+385</option>
+                                                    <option data-countryCode="CU" value="53">+53</option>
+                                                    <option data-countryCode="CY" value="90392">+90392</option>
+                                                    <option data-countryCode="CY" value="357">+357</option>
+                                                    <option data-countryCode="CZ" value="42">+42</option>
+                                                    <option data-countryCode="DK" value="45">+45</option>
+                                                    <option data-countryCode="DJ" value="253">+253</option>
+                                                    <option data-countryCode="DM" value="1809">+1809</option>
+                                                    <option data-countryCode="DO" value="1809">+1809</option>
+                                                    <option data-countryCode="EC" value="593">+593</option>
+                                                    <option data-countryCode="EG" value="20">+20</option>
+                                                    <option data-countryCode="SV" value="503">+503</option>
+                                                    <option data-countryCode="GQ" value="240">+240</option>
+                                                    <option data-countryCode="ER" value="291">+291</option>
+                                                    <option data-countryCode="EE" value="372">+372</option>
+                                                    <option data-countryCode="ET" value="251">+251</option>
+                                                    <option data-countryCode="FK" value="500">+500</option>
+                                                    <option data-countryCode="FO" value="298">+298</option>
+                                                    <option data-countryCode="FJ" value="679">+679</option>
+                                                    <option data-countryCode="FI" value="358">+358</option>
+                                                    <option data-countryCode="FR" value="33">+33</option>
+                                                    <option data-countryCode="GF" value="594">+594</option>
+                                                    <option data-countryCode="PF" value="689">+689</option>
+                                                    <option data-countryCode="GA" value="241">+241</option>
+                                                    <option data-countryCode="GM" value="220">+220</option>
+                                                    <option data-countryCode="GE" value="7880">+7880</option>
+                                                    <option data-countryCode="DE" value="49">+49</option>
+                                                    <option data-countryCode="GH" value="233">+233</option>
+                                                    <option data-countryCode="GI" value="350">+350</option>
+                                                    <option data-countryCode="GR" value="30">+30</option>
+                                                    <option data-countryCode="GL" value="299">+299</option>
+                                                    <option data-countryCode="GD" value="1473">+1473</option>
+                                                    <option data-countryCode="GP" value="590">+590</option>
+                                                    <option data-countryCode="GU" value="671">+671</option>
+                                                    <option data-countryCode="GT" value="502">+502</option>
+                                                    <option data-countryCode="GN" value="224">+224</option>
+                                                    <option data-countryCode="GW" value="245">+245</option>
+                                                    <option data-countryCode="GY" value="592">+592</option>
+                                                    <option data-countryCode="HT" value="509">+509</option>
+                                                    <option data-countryCode="HN" value="504">+504</option>
+                                                    <option data-countryCode="HK" value="852">+852</option>
+                                                    <option data-countryCode="HU" value="36">+36</option>
+                                                    <option data-countryCode="IS" value="354">+354</option>
+                                                    <option data-countryCode="IN" value="91">+91</option>
+                                                    <option data-countryCode="ID" value="62">+62</option>
+                                                    <option data-countryCode="IR" value="98">+98</option>
+                                                    <option data-countryCode="IQ" value="964">+964</option>
+                                                    <option data-countryCode="IE" value="353">+353</option>
+                                                    <option data-countryCode="IL" value="972">+972</option>
+                                                    <option data-countryCode="IT" value="39">+39</option>
+                                                    <option data-countryCode="JM" value="1876">+1876</option>
+                                                    <option data-countryCode="JP" value="81">+81</option>
+                                                    <option data-countryCode="JO" value="962">+962</option>
+                                                    <option data-countryCode="KZ" value="7">+7</option>
+                                                    <option data-countryCode="KE" value="254">+254</option>
+                                                    <option data-countryCode="KI" value="686">+686</option>
+                                                    <option data-countryCode="KP" value="850">+850</option>
+                                                    <option data-countryCode="KR" value="82">+82</option>
+                                                    <option data-countryCode="KW" value="965">+965</option>
+                                                    <option data-countryCode="KG" value="996">+996</option>
+                                                    <option data-countryCode="LA" value="856">+856</option>
+                                                    <option data-countryCode="LV" value="371">+371</option>
+                                                    <option data-countryCode="LB" value="961">+961</option>
+                                                    <option data-countryCode="LS" value="266">+266</option>
+                                                    <option data-countryCode="LR" value="231">+231</option>
+                                                    <option data-countryCode="LY" value="218">+218</option>
+                                                    <option data-countryCode="LI" value="417">+417</option>
+                                                    <option data-countryCode="LT" value="370">+370</option>
+                                                    <option data-countryCode="LU" value="352">+352</option>
+                                                    <option data-countryCode="MO" value="853">+853</option>
+                                                    <option data-countryCode="MK" value="389">+389</option>
+                                                    <option data-countryCode="MG" value="261">+261</option>
+                                                    <option data-countryCode="MW" value="265">+265</option>
+                                                    <option data-countryCode="MY" value="60">+60</option>
+                                                    <option data-countryCode="MV" value="960">+960</option>
+                                                    <option data-countryCode="ML" value="223">+223</option>
+                                                    <option data-countryCode="MT" value="356">+356</option>
+                                                    <option data-countryCode="MH" value="692">+692</option>
+                                                    <option data-countryCode="MQ" value="596">+596</option>
+                                                    <option data-countryCode="MR" value="222">+222</option>
+                                                    <option data-countryCode="YT" value="269">+269</option>
+                                                    <option data-countryCode="MX" value="52">+52</option>
+                                                    <option data-countryCode="FM" value="691">+691</option>
+                                                    <option data-countryCode="MD" value="373">+373</option>
+                                                    <option data-countryCode="MC" value="377">+377</option>
+                                                    <option data-countryCode="MN" value="976">+976</option>
+                                                    <option data-countryCode="MS" value="1664">+1664</option>
+                                                    <option data-countryCode="MA" value="212">+212</option>
+                                                    <option data-countryCode="MZ" value="258">+258</option>
+                                                    <option data-countryCode="MN" value="95">+95</option>
+                                                    <option data-countryCode="NA" value="264">+264</option>
+                                                    <option data-countryCode="NR" value="674">+674</option>
+                                                    <option data-countryCode="NP" value="977">+977</option>
+                                                    <option data-countryCode="NL" value="31">+31</option>
+                                                    <option data-countryCode="NC" value="687">+687</option>
+                                                    <option data-countryCode="NZ" value="64">+64</option>
+                                                    <option data-countryCode="NI" value="505">+505</option>
+                                                    <option data-countryCode="NE" value="227">+227</option>
+                                                    <option data-countryCode="NG" value="234">+234</option>
+                                                    <option data-countryCode="NU" value="683">+683</option>
+                                                    <option data-countryCode="NF" value="672">+672</option>
+                                                    <option data-countryCode="NP" value="670">+670</option>
+                                                    <option data-countryCode="NO" value="47">+47</option>
+                                                    <option data-countryCode="OM" value="968">+968</option>
+                                                    <option data-countryCode="PW" value="680">+680</option>
+                                                    <option data-countryCode="PA" value="507">+507</option>
+                                                    <option data-countryCode="PG" value="675">+675</option>
+                                                    <option data-countryCode="PY" value="595">+595</option>
+                                                    <option data-countryCode="PE" value="51">+51</option>
+                                                    <option data-countryCode="PH" value="63">+63</option>
+                                                    <option data-countryCode="PL" value="48">+48</option>
+                                                    <option data-countryCode="PT" value="351">+351</option>
+                                                    <option data-countryCode="PR" value="1787">+1787</option>
+                                                    <option data-countryCode="QA" value="974">+974</option>
+                                                    <option data-countryCode="RE" value="262">+262</option>
+                                                    <option data-countryCode="RO" value="40">+40</option>
+                                                    <option data-countryCode="RU" value="7">+7</option>
+                                                    <option data-countryCode="RW" value="250">+250</option>
+                                                    <option data-countryCode="SM" value="378">+378</option>
+                                                    <option data-countryCode="ST" value="239">+239</option>
+                                                    <option data-countryCode="SA" value="966">+966</option>
+                                                    <option data-countryCode="SN" value="221">+221</option>
+                                                    <option data-countryCode="CS" value="381">+381</option>
+                                                    <option data-countryCode="SC" value="248">+248</option>
+                                                    <option data-countryCode="SL" value="232">+232</option>
+                                                    <option data-countryCode="SG" value="65">+65</option>
+                                                    <option data-countryCode="SK" value="421">+421</option>
+                                                    <option data-countryCode="SI" value="386">+386</option>
+                                                    <option data-countryCode="SB" value="677">+677</option>
+                                                    <option data-countryCode="SO" value="252">+252</option>
+                                                    <option data-countryCode="ZA" value="27">+27</option>
+                                                    <option data-countryCode="ES" value="34">+34</option>
+                                                    <option data-countryCode="LK" value="94">+94</option>
+                                                    <option data-countryCode="SH" value="290">+290</option>
+                                                    <option data-countryCode="KN" value="1869">+1869</option>
+                                                    <option data-countryCode="SC" value="1758">+1758</option>
+                                                    <option data-countryCode="SD" value="249">+249</option>
+                                                    <option data-countryCode="SR" value="597">+597</option>
+                                                    <option data-countryCode="SZ" value="268">+268</option>
+                                                    <option data-countryCode="SE" value="46">+46</option>
+                                                    <option data-countryCode="CH" value="41">+41</option>
+                                                    <option data-countryCode="SI" value="963">+963</option>
+                                                    <option data-countryCode="TW" value="886">+886</option>
+                                                    <option data-countryCode="TJ" value="7">+7</option>
+                                                    <option data-countryCode="TH" value="66">+66</option>
+                                                    <option data-countryCode="TG" value="228">+228</option>
+                                                    <option data-countryCode="TO" value="676">+676</option>
+                                                    <option data-countryCode="TT" value="1868">+1868</option>
+                                                    <option data-countryCode="TN" value="216">+216</option>
+                                                    <option data-countryCode="TR" value="90">+90</option>
+                                                    <option data-countryCode="TM" value="7">+7</option>
+                                                    <option data-countryCode="TM" value="993">+993</option>
+                                                    <option data-countryCode="TC" value="1649">+1649</option>
+                                                    <option data-countryCode="TV" value="688">+688</option>
+                                                    <option data-countryCode="UG" value="256">+256</option>
+                                                    <option data-countryCode="UA" value="380">+380</option>
+                                                    <option data-countryCode="AE" value="971">+971</option>
+                                                    <option data-countryCode="UY" value="598">+598</option>
+                                                    <option data-countryCode="UZ" value="7">+7</option>
+                                                    <option data-countryCode="VU" value="678">+678</option>
+                                                    <option data-countryCode="VA" value="379">+379</option>
+                                                    <option data-countryCode="VE" value="58">+58</option>
+                                                    <option data-countryCode="VN" value="84">+84</option>
+                                                    <option data-countryCode="VG" value="1284">+1284</option>
+                                                    <option data-countryCode="VI" value="1340">+1340</option>
+                                                    <option data-countryCode="WF" value="681">+681</option>
+                                                    <option data-countryCode="YE" value="969">+969</option>
+                                                    <option data-countryCode="YE" value="967">+967</option>
+                                                    <option data-countryCode="ZM" value="260">+260</option>
+                                                    <option data-countryCode="ZW" value="263">+263</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-item">
+                                                <input type="text" placeholder="xxxxxxxxxx">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <!--<input type="submit" value="Get Otp" data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#CreateAccountWithDetailsOtpModal" class="submit-button disabled">Get Otp</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lmb-bottom">
+                            <div class="line">
+                               <div class="lb"></div>
+                                or
+                                <div class="la"></div>
+                            </div>
+                            <div class="googlebutton">
+                                <button class="gbtn"> <span>
+                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.56928 0.396899C3.91374 0.905408 2.48599 1.87057 1.49577 3.15063C0.505543 4.43068 0.00503159 5.95816 0.0677509 7.50868C0.13047 9.05921 0.753114 10.5511 1.84423 11.7651C2.93534 12.9792 4.43741 13.8514 6.1298 14.2538C7.50186 14.5672 8.93937 14.581 10.3188 14.2939C11.5684 14.0454 12.7237 13.5138 13.6715 12.7512C14.658 11.9332 15.3741 10.8927 15.7427 9.74141C16.1432 8.48942 16.2145 7.17283 15.9511 5.89266H8.24629V8.72249H12.7084C12.6192 9.17383 12.4281 9.6046 12.1465 9.98902C11.8649 10.3734 11.4986 10.7036 11.0696 10.9598C10.5248 11.279 9.91053 11.4937 9.26635 11.5901C8.62033 11.6965 7.95769 11.6965 7.31167 11.5901C6.65685 11.4704 6.03742 11.2311 5.49291 10.8876C4.61803 10.3392 3.96111 9.56024 3.6159 8.66174C3.26495 7.74641 3.26495 6.75412 3.6159 5.83879C3.86162 5.1972 4.26785 4.61303 4.80424 4.12989C5.41808 3.56684 6.19521 3.16438 7.05038 2.96664C7.90556 2.76891 8.80572 2.78355 9.65211 3.00896C10.3133 3.18859 10.918 3.50258 11.4178 3.92588C11.9209 3.4827 12.4232 3.03838 12.9246 2.59291C13.1835 2.35337 13.4657 2.12528 13.7207 1.88001C12.9576 1.25137 12.062 0.762181 11.0851 0.440453C9.3061 -0.131485 7.35954 -0.146855 5.56928 0.396899Z" fill="white"/>
+                                    <path d="M5.57957 0.397456C7.36967 -0.146667 9.31623 -0.131702 11.0954 0.439864C12.0725 0.763777 12.9677 1.25532 13.7297 1.8863C13.4708 2.13157 13.1976 2.3608 12.9336 2.5992C12.4313 3.04314 11.9295 3.48555 11.4281 3.92643C10.9283 3.50314 10.3236 3.18915 9.66239 3.00952C8.81628 2.78332 7.91615 2.76783 7.06075 2.96475C6.20535 3.16168 5.42774 3.56341 4.81323 4.12586C4.27683 4.609 3.87061 5.19317 3.62489 5.83476L0.941406 3.9952C1.90193 2.30872 3.56501 1.01869 5.57957 0.397456Z" fill="#E33629"/>
+                                    <path d="M0.223013 5.81846C0.367141 5.18553 0.606604 4.5726 0.934983 3.99609L3.61846 5.84024C3.26751 6.75557 3.26751 7.74786 3.61846 8.66319C2.7244 9.27447 1.82991 9.8888 0.934983 10.5062C0.113176 9.05783 -0.13746 7.40759 0.223013 5.81846Z" fill="#F8BD00"/>
+                                    <path d="M8.24667 5.89062H15.9515C16.2149 7.1708 16.1436 8.48739 15.7431 9.73938C15.3744 10.8907 14.6584 11.9312 13.6719 12.7491C12.8059 12.1509 11.936 11.5572 11.07 10.9589C11.4993 10.7025 11.8658 10.3719 12.1474 9.98709C12.429 9.60226 12.6199 9.17105 12.7088 8.71931H8.24667C8.24537 7.77718 8.24667 6.8339 8.24667 5.89062Z" fill="#587DBD"/>
+                                    <path d="M0.941406 10.5051C1.83633 9.89383 2.73082 9.2795 3.62489 8.66211C3.97078 9.56091 4.62864 10.3399 5.50449 10.8879C6.0507 11.2299 6.67146 11.4672 7.32713 11.5848C7.97315 11.6912 8.63579 11.6912 9.28181 11.5848C9.92599 11.4884 10.5402 11.2736 11.085 10.9544C11.9511 11.5527 12.8209 12.1464 13.687 12.7447C12.7393 13.5077 11.584 14.0397 10.3342 14.2885C8.95483 14.5756 7.51732 14.5619 6.14526 14.2484C5.06009 13.9919 4.04647 13.5396 3.16793 12.92C2.23813 12.2663 1.47866 11.4426 0.941406 10.5051Z" fill="#319F43"/>
+                                    </svg>
+                                </span>Continue with Google</button>
+                            </div>
+                            <div class="assistance">
+                                <p>Not sure how to proceed from here?</p>
+                                <a href="">Get Assistance </a>
+                                <div class="sm-logo">
+                                    <a href=""><img src="img/whatsapp.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="lmb-signup">
+                                <p>Already have an account? <span data-bs-toggle="modal" data-bs-target="#LoginWithOtpModal">Log In</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Create Account With OTP Modal End -->
+    
+    <!-- Create Account With OTP Modal Starts -->
+    <div class="modal fade" id="CreateAccountWithDetailsOtpModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-logo">
+                    <svg width="62" height="20" viewBox="0 0 62 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5693 9.81445L23.1992 12.7698L25.5693 15.7252L27.9394 12.7698L25.5693 9.81445Z" fill="#EDB666"/>
+                        <path d="M27.8889 0.490234V6.53574H27.6045C27.2418 2.93862 20.4325 2.13275 20.4325 7.91305V15.8458L23.0749 19.141H13.122L15.751 15.8458V3.78552L13.5103 0.929801H13.5028L13.122 0.504887V5.97456H12.8722C12.1725 4.73938 11.0905 3.69174 9.95891 2.96206C9.94537 2.95474 9.9243 2.94155 9.91076 2.93422C8.68282 2.15766 7.06665 1.68586 5.77701 1.68586C4.96591 1.71956 4.33389 1.96278 3.87642 2.40821C3.41745 2.88734 3.20226 3.46903 3.20226 4.22508C3.20226 4.88004 3.73045 5.55551 4.25714 5.93353C4.78383 6.3057 5.21421 6.48739 5.9907 6.76431L8.95219 7.77825C9.82649 8.07569 10.5052 8.42001 11.1643 8.78485C11.9468 9.21709 12.5728 9.81783 13.1341 10.5343C13.6683 11.2567 13.9106 12.2149 13.9106 13.3842C13.9106 14.4772 13.6668 15.4033 13.1687 16.193C12.6405 16.9842 12.01 17.6377 11.2335 18.1183C11.226 18.1256 11.2184 18.1256 11.2124 18.133C10.0898 18.8202 8.76408 19.1454 7.43232 19.1454H0.180579V11.9468H0.457466C0.492077 12.0611 0.555279 12.1622 0.59591 12.2706C1.05488 13.3241 2.6846 16.6472 5.06975 17.5645C5.70027 17.8414 6.32627 18.0114 6.97034 18.0656C7.12383 18.0788 7.28334 18.0861 7.43533 18.0861C8.2389 18.0861 8.94617 17.8766 9.50747 17.4648C10.0763 17.0853 10.3532 16.4714 10.3532 15.5806C10.3532 14.8245 10.1109 14.2428 9.61882 13.8325C9.08461 13.4193 8.45259 13.0413 7.6761 12.7322L6.00424 12.1036C5.12392 11.7988 3.45206 11.1248 2.67557 10.6779C1.89909 10.1988 1.26706 9.57754 0.774983 8.78778C0.249801 8.03466 0 7.00021 0 5.77089C0 5.04854 0.180579 4.39358 0.457466 3.74596C0.776488 3.13203 1.23395 2.54301 1.79525 2.06388C2.35655 1.58475 3.03071 1.20673 3.84181 0.896101C4.65442 0.6265 5.53474 0.4917 6.51889 0.4917H20.4325V4.34963L23.3639 0.490234H27.8889Z" fill="#EDB666"/>
+                        <path d="M51.4364 19.1387H61.6181L58.9756 15.8434V6.10558C58.9756 6.01766 58.9756 5.92389 58.9681 5.83598C58.9605 5.51216 58.941 5.19421 58.8988 4.88358C58.8853 4.78834 58.8718 4.69457 58.8507 4.59933C58.3165 2.06596 56.0833 0.142126 53.3656 0.00732611C53.2618 0 53.164 0 53.0601 0C52.5951 0 52.1377 0.0600741 51.6727 0.161174C51.6456 0.1685 51.611 0.174361 51.5824 0.181687C51.45 0.208061 51.3251 0.241762 51.1942 0.276927C50.5561 0.445427 49.9602 0.688654 49.432 0.999281C48.8707 1.30258 48.3365 1.68061 47.879 2.0601C47.3869 2.47183 46.9987 2.93777 46.6511 3.38466C45.8189 1.56046 44.0357 0.237366 41.9064 0.0278392C41.8236 0.0205131 41.7393 0.0146522 41.6566 0.0146522C41.5452 0.00146522 41.4278 0.00146522 41.3105 0.00146522C41.2066 0.00146522 41.1028 0.00146522 40.999 0.00879133C39.8689 0.0424914 38.8275 0.312092 37.9126 0.79122C36.9284 1.30405 36.0812 2.0264 35.3123 2.88502V0.486453H27.9943L30.6232 3.78467V15.8434L27.9883 19.1387H37.9547L35.3123 15.8434V4.3561C35.4642 4.20079 35.6177 4.0528 35.7772 3.91068C35.854 3.84328 35.9292 3.77588 36.006 3.72166C36.1098 3.62642 36.2212 3.54584 36.3385 3.46525C36.3596 3.45206 36.3807 3.43887 36.4002 3.42422C37.0112 3.01982 37.7531 2.78246 38.5506 2.78246C40.5475 2.78246 42.1848 4.255 42.3789 6.14514C42.3924 6.27408 42.4 6.40155 42.4 6.53049C42.4135 6.80742 42.421 7.09753 42.421 7.40816V15.8434L39.7786 19.1387H49.7871L47.1447 15.8434V6.10558C47.1447 6.02499 47.1447 5.93708 47.1371 5.85502C47.1296 5.48432 47.1101 5.11948 47.0393 4.78102C47.0318 4.70629 47.0122 4.63303 46.9972 4.56563C47.0047 4.5583 47.0107 4.54512 47.0243 4.53926C47.1356 4.41764 47.253 4.30336 47.3644 4.1876C47.572 3.99273 47.7812 3.80958 47.9889 3.65426C48.0716 3.58686 48.1559 3.51946 48.2462 3.46525C48.2944 3.43155 48.35 3.39785 48.3982 3.37001C48.9941 3.00517 49.6878 2.79564 50.4372 2.79564C51.7479 2.79564 52.9127 3.43741 53.6064 4.41618C54.0021 4.97736 54.1887 5.65868 54.2309 6.34148C54.273 7.05064 54.2926 7.76567 54.2926 8.47484V15.8434L51.4349 19.1387H51.4364Z" fill="#EDB666"/>
+                    </svg>
+                </div>
+                <div class="nav-cross modal_cross" id="modal_cross">
+                    <div class="nav-cross-btn" data-bs-dismiss="modal">
+                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 34.8346C28.4746 34.8346 35.75 27.7458 35.75 19.0013C35.75 10.2568 28.4746 3.16797 19.5 3.16797C10.5254 3.16797 3.25 10.2568 3.25 19.0013C3.25 27.7458 10.5254 34.8346 19.5 34.8346Z" fill="#F9F3EC"/>
+                            <path d="M24.375 14.25L14.625 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.625 14.25L24.375 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal_main">
+                    <div class="login-modal-body">
+                        <div class="lmb-top">
+                            <div class="lmb-heading">
+                                <h4>Create an account</h4>
+                            </div>
+                            <div class="lmb-form">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter your name" value="Rahul Jain">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="form-item">
+                                                <select name="countryCode" id="selection">
+                                                    <option data-countryCode="DZ" value="213">+213</option>
+                                                    <option data-countryCode="AD" value="376">+376</option>
+                                                    <option data-countryCode="AO" value="244">+244</option>
+                                                    <option data-countryCode="AI" value="1264">+1264</option>
+                                                    <option data-countryCode="AG" value="1268">+1268</option>
+                                                    <option data-countryCode="AR" value="54">+54</option>
+                                                    <option data-countryCode="AM" value="374">+374</option>
+                                                    <option data-countryCode="AW" value="297">+297</option>
+                                                    <option data-countryCode="AU" value="61">+61</option>
+                                                    <option data-countryCode="AT" value="43">+43</option>
+                                                    <option data-countryCode="AZ" value="994">+994</option>
+                                                    <option data-countryCode="BS" value="1242">+1242</option>
+                                                    <option data-countryCode="BH" value="973">+973</option>
+                                                    <option data-countryCode="BD" value="880">+880</option>
+                                                    <option data-countryCode="BB" value="1246">+1246</option>
+                                                    <option data-countryCode="BY" value="375">+375</option>
+                                                    <option data-countryCode="BE" value="32">+32</option>
+                                                    <option data-countryCode="BZ" value="501">+501</option>
+                                                    <option data-countryCode="BJ" value="229">+229</option>
+                                                    <option data-countryCode="BM" value="1441">+1441</option>
+                                                    <option data-countryCode="BT" value="975">+975</option>
+                                                    <option data-countryCode="BO" value="591">+591</option>
+                                                    <option data-countryCode="BA" value="387">+387</option>
+                                                    <option data-countryCode="BW" value="267">+267</option>
+                                                    <option data-countryCode="BR" value="55">+55</option>
+                                                    <option data-countryCode="BN" value="673">+673</option>
+                                                    <option data-countryCode="BG" value="359">+359</option>
+                                                    <option data-countryCode="BF" value="226">+226</option>
+                                                    <option data-countryCode="BI" value="257">+257</option>
+                                                    <option data-countryCode="KH" value="855">+855</option>
+                                                    <option data-countryCode="CM" value="237">+237</option>
+                                                    <option data-countryCode="CA" value="1">+1</option>
+                                                    <option data-countryCode="CV" value="238">+238</option>
+                                                    <option data-countryCode="KY" value="1345">+1345</option>
+                                                    <option data-countryCode="CF" value="236">+236</option>
+                                                    <option data-countryCode="CL" value="56">+56</option>
+                                                    <option data-countryCode="CN" value="86">+86</option>
+                                                    <option data-countryCode="CO" value="57">+57</option>
+                                                    <option data-countryCode="KM" value="269">+269</option>
+                                                    <option data-countryCode="CG" value="242">+242</option>
+                                                    <option data-countryCode="CK" value="682">+682</option>
+                                                    <option data-countryCode="CR" value="506">+506</option>
+                                                    <option data-countryCode="HR" value="385">+385</option>
+                                                    <option data-countryCode="CU" value="53">+53</option>
+                                                    <option data-countryCode="CY" value="90392">+90392</option>
+                                                    <option data-countryCode="CY" value="357">+357</option>
+                                                    <option data-countryCode="CZ" value="42">+42</option>
+                                                    <option data-countryCode="DK" value="45">+45</option>
+                                                    <option data-countryCode="DJ" value="253">+253</option>
+                                                    <option data-countryCode="DM" value="1809">+1809</option>
+                                                    <option data-countryCode="DO" value="1809">+1809</option>
+                                                    <option data-countryCode="EC" value="593">+593</option>
+                                                    <option data-countryCode="EG" value="20">+20</option>
+                                                    <option data-countryCode="SV" value="503">+503</option>
+                                                    <option data-countryCode="GQ" value="240">+240</option>
+                                                    <option data-countryCode="ER" value="291">+291</option>
+                                                    <option data-countryCode="EE" value="372">+372</option>
+                                                    <option data-countryCode="ET" value="251">+251</option>
+                                                    <option data-countryCode="FK" value="500">+500</option>
+                                                    <option data-countryCode="FO" value="298">+298</option>
+                                                    <option data-countryCode="FJ" value="679">+679</option>
+                                                    <option data-countryCode="FI" value="358">+358</option>
+                                                    <option data-countryCode="FR" value="33">+33</option>
+                                                    <option data-countryCode="GF" value="594">+594</option>
+                                                    <option data-countryCode="PF" value="689">+689</option>
+                                                    <option data-countryCode="GA" value="241">+241</option>
+                                                    <option data-countryCode="GM" value="220">+220</option>
+                                                    <option data-countryCode="GE" value="7880">+7880</option>
+                                                    <option data-countryCode="DE" value="49">+49</option>
+                                                    <option data-countryCode="GH" value="233">+233</option>
+                                                    <option data-countryCode="GI" value="350">+350</option>
+                                                    <option data-countryCode="GR" value="30">+30</option>
+                                                    <option data-countryCode="GL" value="299">+299</option>
+                                                    <option data-countryCode="GD" value="1473">+1473</option>
+                                                    <option data-countryCode="GP" value="590">+590</option>
+                                                    <option data-countryCode="GU" value="671">+671</option>
+                                                    <option data-countryCode="GT" value="502">+502</option>
+                                                    <option data-countryCode="GN" value="224">+224</option>
+                                                    <option data-countryCode="GW" value="245">+245</option>
+                                                    <option data-countryCode="GY" value="592">+592</option>
+                                                    <option data-countryCode="HT" value="509">+509</option>
+                                                    <option data-countryCode="HN" value="504">+504</option>
+                                                    <option data-countryCode="HK" value="852">+852</option>
+                                                    <option data-countryCode="HU" value="36">+36</option>
+                                                    <option data-countryCode="IS" value="354">+354</option>
+                                                    <option data-countryCode="IN" value="91">+91</option>
+                                                    <option data-countryCode="ID" value="62">+62</option>
+                                                    <option data-countryCode="IR" value="98">+98</option>
+                                                    <option data-countryCode="IQ" value="964">+964</option>
+                                                    <option data-countryCode="IE" value="353">+353</option>
+                                                    <option data-countryCode="IL" value="972">+972</option>
+                                                    <option data-countryCode="IT" value="39">+39</option>
+                                                    <option data-countryCode="JM" value="1876">+1876</option>
+                                                    <option data-countryCode="JP" value="81">+81</option>
+                                                    <option data-countryCode="JO" value="962">+962</option>
+                                                    <option data-countryCode="KZ" value="7">+7</option>
+                                                    <option data-countryCode="KE" value="254">+254</option>
+                                                    <option data-countryCode="KI" value="686">+686</option>
+                                                    <option data-countryCode="KP" value="850">+850</option>
+                                                    <option data-countryCode="KR" value="82">+82</option>
+                                                    <option data-countryCode="KW" value="965">+965</option>
+                                                    <option data-countryCode="KG" value="996">+996</option>
+                                                    <option data-countryCode="LA" value="856">+856</option>
+                                                    <option data-countryCode="LV" value="371">+371</option>
+                                                    <option data-countryCode="LB" value="961">+961</option>
+                                                    <option data-countryCode="LS" value="266">+266</option>
+                                                    <option data-countryCode="LR" value="231">+231</option>
+                                                    <option data-countryCode="LY" value="218">+218</option>
+                                                    <option data-countryCode="LI" value="417">+417</option>
+                                                    <option data-countryCode="LT" value="370">+370</option>
+                                                    <option data-countryCode="LU" value="352">+352</option>
+                                                    <option data-countryCode="MO" value="853">+853</option>
+                                                    <option data-countryCode="MK" value="389">+389</option>
+                                                    <option data-countryCode="MG" value="261">+261</option>
+                                                    <option data-countryCode="MW" value="265">+265</option>
+                                                    <option data-countryCode="MY" value="60">+60</option>
+                                                    <option data-countryCode="MV" value="960">+960</option>
+                                                    <option data-countryCode="ML" value="223">+223</option>
+                                                    <option data-countryCode="MT" value="356">+356</option>
+                                                    <option data-countryCode="MH" value="692">+692</option>
+                                                    <option data-countryCode="MQ" value="596">+596</option>
+                                                    <option data-countryCode="MR" value="222">+222</option>
+                                                    <option data-countryCode="YT" value="269">+269</option>
+                                                    <option data-countryCode="MX" value="52">+52</option>
+                                                    <option data-countryCode="FM" value="691">+691</option>
+                                                    <option data-countryCode="MD" value="373">+373</option>
+                                                    <option data-countryCode="MC" value="377">+377</option>
+                                                    <option data-countryCode="MN" value="976">+976</option>
+                                                    <option data-countryCode="MS" value="1664">+1664</option>
+                                                    <option data-countryCode="MA" value="212">+212</option>
+                                                    <option data-countryCode="MZ" value="258">+258</option>
+                                                    <option data-countryCode="MN" value="95">+95</option>
+                                                    <option data-countryCode="NA" value="264">+264</option>
+                                                    <option data-countryCode="NR" value="674">+674</option>
+                                                    <option data-countryCode="NP" value="977">+977</option>
+                                                    <option data-countryCode="NL" value="31">+31</option>
+                                                    <option data-countryCode="NC" value="687">+687</option>
+                                                    <option data-countryCode="NZ" value="64">+64</option>
+                                                    <option data-countryCode="NI" value="505">+505</option>
+                                                    <option data-countryCode="NE" value="227">+227</option>
+                                                    <option data-countryCode="NG" value="234">+234</option>
+                                                    <option data-countryCode="NU" value="683">+683</option>
+                                                    <option data-countryCode="NF" value="672">+672</option>
+                                                    <option data-countryCode="NP" value="670">+670</option>
+                                                    <option data-countryCode="NO" value="47">+47</option>
+                                                    <option data-countryCode="OM" value="968">+968</option>
+                                                    <option data-countryCode="PW" value="680">+680</option>
+                                                    <option data-countryCode="PA" value="507">+507</option>
+                                                    <option data-countryCode="PG" value="675">+675</option>
+                                                    <option data-countryCode="PY" value="595">+595</option>
+                                                    <option data-countryCode="PE" value="51">+51</option>
+                                                    <option data-countryCode="PH" value="63">+63</option>
+                                                    <option data-countryCode="PL" value="48">+48</option>
+                                                    <option data-countryCode="PT" value="351">+351</option>
+                                                    <option data-countryCode="PR" value="1787">+1787</option>
+                                                    <option data-countryCode="QA" value="974">+974</option>
+                                                    <option data-countryCode="RE" value="262">+262</option>
+                                                    <option data-countryCode="RO" value="40">+40</option>
+                                                    <option data-countryCode="RU" value="7">+7</option>
+                                                    <option data-countryCode="RW" value="250">+250</option>
+                                                    <option data-countryCode="SM" value="378">+378</option>
+                                                    <option data-countryCode="ST" value="239">+239</option>
+                                                    <option data-countryCode="SA" value="966">+966</option>
+                                                    <option data-countryCode="SN" value="221">+221</option>
+                                                    <option data-countryCode="CS" value="381">+381</option>
+                                                    <option data-countryCode="SC" value="248">+248</option>
+                                                    <option data-countryCode="SL" value="232">+232</option>
+                                                    <option data-countryCode="SG" value="65">+65</option>
+                                                    <option data-countryCode="SK" value="421">+421</option>
+                                                    <option data-countryCode="SI" value="386">+386</option>
+                                                    <option data-countryCode="SB" value="677">+677</option>
+                                                    <option data-countryCode="SO" value="252">+252</option>
+                                                    <option data-countryCode="ZA" value="27">+27</option>
+                                                    <option data-countryCode="ES" value="34">+34</option>
+                                                    <option data-countryCode="LK" value="94">+94</option>
+                                                    <option data-countryCode="SH" value="290">+290</option>
+                                                    <option data-countryCode="KN" value="1869">+1869</option>
+                                                    <option data-countryCode="SC" value="1758">+1758</option>
+                                                    <option data-countryCode="SD" value="249">+249</option>
+                                                    <option data-countryCode="SR" value="597">+597</option>
+                                                    <option data-countryCode="SZ" value="268">+268</option>
+                                                    <option data-countryCode="SE" value="46">+46</option>
+                                                    <option data-countryCode="CH" value="41">+41</option>
+                                                    <option data-countryCode="SI" value="963">+963</option>
+                                                    <option data-countryCode="TW" value="886">+886</option>
+                                                    <option data-countryCode="TJ" value="7">+7</option>
+                                                    <option data-countryCode="TH" value="66">+66</option>
+                                                    <option data-countryCode="TG" value="228">+228</option>
+                                                    <option data-countryCode="TO" value="676">+676</option>
+                                                    <option data-countryCode="TT" value="1868">+1868</option>
+                                                    <option data-countryCode="TN" value="216">+216</option>
+                                                    <option data-countryCode="TR" value="90">+90</option>
+                                                    <option data-countryCode="TM" value="7">+7</option>
+                                                    <option data-countryCode="TM" value="993">+993</option>
+                                                    <option data-countryCode="TC" value="1649">+1649</option>
+                                                    <option data-countryCode="TV" value="688">+688</option>
+                                                    <option data-countryCode="UG" value="256">+256</option>
+                                                    <option data-countryCode="UA" value="380">+380</option>
+                                                    <option data-countryCode="AE" value="971">+971</option>
+                                                    <option data-countryCode="UY" value="598">+598</option>
+                                                    <option data-countryCode="UZ" value="7">+7</option>
+                                                    <option data-countryCode="VU" value="678">+678</option>
+                                                    <option data-countryCode="VA" value="379">+379</option>
+                                                    <option data-countryCode="VE" value="58">+58</option>
+                                                    <option data-countryCode="VN" value="84">+84</option>
+                                                    <option data-countryCode="VG" value="1284">+1284</option>
+                                                    <option data-countryCode="VI" value="1340">+1340</option>
+                                                    <option data-countryCode="WF" value="681">+681</option>
+                                                    <option data-countryCode="YE" value="969">+969</option>
+                                                    <option data-countryCode="YE" value="967">+967</option>
+                                                    <option data-countryCode="ZM" value="260">+260</option>
+                                                    <option data-countryCode="ZW" value="263">+263</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-item">
+                                                <input type="text" placeholder="xxxxxxxxxx" value="987654321">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <!--<input type="submit" value="Get Otp" data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#CreateAccountConfirmOtpModal" class="submit-button">Get Otp</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lmb-bottom">
+                            <div class="line">
+                               <div class="lb"></div>
+                                or
+                                <div class="la"></div>
+                            </div>
+                            <div class="googlebutton">
+                                <button class="gbtn"> <span>
+                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.56928 0.396899C3.91374 0.905408 2.48599 1.87057 1.49577 3.15063C0.505543 4.43068 0.00503159 5.95816 0.0677509 7.50868C0.13047 9.05921 0.753114 10.5511 1.84423 11.7651C2.93534 12.9792 4.43741 13.8514 6.1298 14.2538C7.50186 14.5672 8.93937 14.581 10.3188 14.2939C11.5684 14.0454 12.7237 13.5138 13.6715 12.7512C14.658 11.9332 15.3741 10.8927 15.7427 9.74141C16.1432 8.48942 16.2145 7.17283 15.9511 5.89266H8.24629V8.72249H12.7084C12.6192 9.17383 12.4281 9.6046 12.1465 9.98902C11.8649 10.3734 11.4986 10.7036 11.0696 10.9598C10.5248 11.279 9.91053 11.4937 9.26635 11.5901C8.62033 11.6965 7.95769 11.6965 7.31167 11.5901C6.65685 11.4704 6.03742 11.2311 5.49291 10.8876C4.61803 10.3392 3.96111 9.56024 3.6159 8.66174C3.26495 7.74641 3.26495 6.75412 3.6159 5.83879C3.86162 5.1972 4.26785 4.61303 4.80424 4.12989C5.41808 3.56684 6.19521 3.16438 7.05038 2.96664C7.90556 2.76891 8.80572 2.78355 9.65211 3.00896C10.3133 3.18859 10.918 3.50258 11.4178 3.92588C11.9209 3.4827 12.4232 3.03838 12.9246 2.59291C13.1835 2.35337 13.4657 2.12528 13.7207 1.88001C12.9576 1.25137 12.062 0.762181 11.0851 0.440453C9.3061 -0.131485 7.35954 -0.146855 5.56928 0.396899Z" fill="white"/>
+                                    <path d="M5.57957 0.397456C7.36967 -0.146667 9.31623 -0.131702 11.0954 0.439864C12.0725 0.763777 12.9677 1.25532 13.7297 1.8863C13.4708 2.13157 13.1976 2.3608 12.9336 2.5992C12.4313 3.04314 11.9295 3.48555 11.4281 3.92643C10.9283 3.50314 10.3236 3.18915 9.66239 3.00952C8.81628 2.78332 7.91615 2.76783 7.06075 2.96475C6.20535 3.16168 5.42774 3.56341 4.81323 4.12586C4.27683 4.609 3.87061 5.19317 3.62489 5.83476L0.941406 3.9952C1.90193 2.30872 3.56501 1.01869 5.57957 0.397456Z" fill="#E33629"/>
+                                    <path d="M0.223013 5.81846C0.367141 5.18553 0.606604 4.5726 0.934983 3.99609L3.61846 5.84024C3.26751 6.75557 3.26751 7.74786 3.61846 8.66319C2.7244 9.27447 1.82991 9.8888 0.934983 10.5062C0.113176 9.05783 -0.13746 7.40759 0.223013 5.81846Z" fill="#F8BD00"/>
+                                    <path d="M8.24667 5.89062H15.9515C16.2149 7.1708 16.1436 8.48739 15.7431 9.73938C15.3744 10.8907 14.6584 11.9312 13.6719 12.7491C12.8059 12.1509 11.936 11.5572 11.07 10.9589C11.4993 10.7025 11.8658 10.3719 12.1474 9.98709C12.429 9.60226 12.6199 9.17105 12.7088 8.71931H8.24667C8.24537 7.77718 8.24667 6.8339 8.24667 5.89062Z" fill="#587DBD"/>
+                                    <path d="M0.941406 10.5051C1.83633 9.89383 2.73082 9.2795 3.62489 8.66211C3.97078 9.56091 4.62864 10.3399 5.50449 10.8879C6.0507 11.2299 6.67146 11.4672 7.32713 11.5848C7.97315 11.6912 8.63579 11.6912 9.28181 11.5848C9.92599 11.4884 10.5402 11.2736 11.085 10.9544C11.9511 11.5527 12.8209 12.1464 13.687 12.7447C12.7393 13.5077 11.584 14.0397 10.3342 14.2885C8.95483 14.5756 7.51732 14.5619 6.14526 14.2484C5.06009 13.9919 4.04647 13.5396 3.16793 12.92C2.23813 12.2663 1.47866 11.4426 0.941406 10.5051Z" fill="#319F43"/>
+                                    </svg>
+                                </span>Continue with Google</button>
+                            </div>
+                            <div class="assistance">
+                                <p>Not sure how to proceed from here?</p>
+                                <a href="">Get Assistance </a>
+                                <div class="sm-logo">
+                                    <a href=""><img src="img/whatsapp.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="lmb-signup">
+                                <p>Already have an account? <span data-bs-toggle="modal" data-bs-target="#LoginWithOtpModal">Log In</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Create Account With OTP Modal End -->
+    
+    <!-- CreateAccount Confirm OTP Modal Starts -->
+    <div class="modal fade" id="CreateAccountConfirmOtpModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-logo">
+                    <svg width="62" height="20" viewBox="0 0 62 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5693 9.81445L23.1992 12.7698L25.5693 15.7252L27.9394 12.7698L25.5693 9.81445Z" fill="#EDB666"/>
+                        <path d="M27.8889 0.490234V6.53574H27.6045C27.2418 2.93862 20.4325 2.13275 20.4325 7.91305V15.8458L23.0749 19.141H13.122L15.751 15.8458V3.78552L13.5103 0.929801H13.5028L13.122 0.504887V5.97456H12.8722C12.1725 4.73938 11.0905 3.69174 9.95891 2.96206C9.94537 2.95474 9.9243 2.94155 9.91076 2.93422C8.68282 2.15766 7.06665 1.68586 5.77701 1.68586C4.96591 1.71956 4.33389 1.96278 3.87642 2.40821C3.41745 2.88734 3.20226 3.46903 3.20226 4.22508C3.20226 4.88004 3.73045 5.55551 4.25714 5.93353C4.78383 6.3057 5.21421 6.48739 5.9907 6.76431L8.95219 7.77825C9.82649 8.07569 10.5052 8.42001 11.1643 8.78485C11.9468 9.21709 12.5728 9.81783 13.1341 10.5343C13.6683 11.2567 13.9106 12.2149 13.9106 13.3842C13.9106 14.4772 13.6668 15.4033 13.1687 16.193C12.6405 16.9842 12.01 17.6377 11.2335 18.1183C11.226 18.1256 11.2184 18.1256 11.2124 18.133C10.0898 18.8202 8.76408 19.1454 7.43232 19.1454H0.180579V11.9468H0.457466C0.492077 12.0611 0.555279 12.1622 0.59591 12.2706C1.05488 13.3241 2.6846 16.6472 5.06975 17.5645C5.70027 17.8414 6.32627 18.0114 6.97034 18.0656C7.12383 18.0788 7.28334 18.0861 7.43533 18.0861C8.2389 18.0861 8.94617 17.8766 9.50747 17.4648C10.0763 17.0853 10.3532 16.4714 10.3532 15.5806C10.3532 14.8245 10.1109 14.2428 9.61882 13.8325C9.08461 13.4193 8.45259 13.0413 7.6761 12.7322L6.00424 12.1036C5.12392 11.7988 3.45206 11.1248 2.67557 10.6779C1.89909 10.1988 1.26706 9.57754 0.774983 8.78778C0.249801 8.03466 0 7.00021 0 5.77089C0 5.04854 0.180579 4.39358 0.457466 3.74596C0.776488 3.13203 1.23395 2.54301 1.79525 2.06388C2.35655 1.58475 3.03071 1.20673 3.84181 0.896101C4.65442 0.6265 5.53474 0.4917 6.51889 0.4917H20.4325V4.34963L23.3639 0.490234H27.8889Z" fill="#EDB666"/>
+                        <path d="M51.4364 19.1387H61.6181L58.9756 15.8434V6.10558C58.9756 6.01766 58.9756 5.92389 58.9681 5.83598C58.9605 5.51216 58.941 5.19421 58.8988 4.88358C58.8853 4.78834 58.8718 4.69457 58.8507 4.59933C58.3165 2.06596 56.0833 0.142126 53.3656 0.00732611C53.2618 0 53.164 0 53.0601 0C52.5951 0 52.1377 0.0600741 51.6727 0.161174C51.6456 0.1685 51.611 0.174361 51.5824 0.181687C51.45 0.208061 51.3251 0.241762 51.1942 0.276927C50.5561 0.445427 49.9602 0.688654 49.432 0.999281C48.8707 1.30258 48.3365 1.68061 47.879 2.0601C47.3869 2.47183 46.9987 2.93777 46.6511 3.38466C45.8189 1.56046 44.0357 0.237366 41.9064 0.0278392C41.8236 0.0205131 41.7393 0.0146522 41.6566 0.0146522C41.5452 0.00146522 41.4278 0.00146522 41.3105 0.00146522C41.2066 0.00146522 41.1028 0.00146522 40.999 0.00879133C39.8689 0.0424914 38.8275 0.312092 37.9126 0.79122C36.9284 1.30405 36.0812 2.0264 35.3123 2.88502V0.486453H27.9943L30.6232 3.78467V15.8434L27.9883 19.1387H37.9547L35.3123 15.8434V4.3561C35.4642 4.20079 35.6177 4.0528 35.7772 3.91068C35.854 3.84328 35.9292 3.77588 36.006 3.72166C36.1098 3.62642 36.2212 3.54584 36.3385 3.46525C36.3596 3.45206 36.3807 3.43887 36.4002 3.42422C37.0112 3.01982 37.7531 2.78246 38.5506 2.78246C40.5475 2.78246 42.1848 4.255 42.3789 6.14514C42.3924 6.27408 42.4 6.40155 42.4 6.53049C42.4135 6.80742 42.421 7.09753 42.421 7.40816V15.8434L39.7786 19.1387H49.7871L47.1447 15.8434V6.10558C47.1447 6.02499 47.1447 5.93708 47.1371 5.85502C47.1296 5.48432 47.1101 5.11948 47.0393 4.78102C47.0318 4.70629 47.0122 4.63303 46.9972 4.56563C47.0047 4.5583 47.0107 4.54512 47.0243 4.53926C47.1356 4.41764 47.253 4.30336 47.3644 4.1876C47.572 3.99273 47.7812 3.80958 47.9889 3.65426C48.0716 3.58686 48.1559 3.51946 48.2462 3.46525C48.2944 3.43155 48.35 3.39785 48.3982 3.37001C48.9941 3.00517 49.6878 2.79564 50.4372 2.79564C51.7479 2.79564 52.9127 3.43741 53.6064 4.41618C54.0021 4.97736 54.1887 5.65868 54.2309 6.34148C54.273 7.05064 54.2926 7.76567 54.2926 8.47484V15.8434L51.4349 19.1387H51.4364Z" fill="#EDB666"/>
+                    </svg>
+                </div>
+                <div class="nav-cross modal_cross" id="modal_cross">
+                    <div class="nav-cross-btn" data-bs-dismiss="modal">
+                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 34.8346C28.4746 34.8346 35.75 27.7458 35.75 19.0013C35.75 10.2568 28.4746 3.16797 19.5 3.16797C10.5254 3.16797 3.25 10.2568 3.25 19.0013C3.25 27.7458 10.5254 34.8346 19.5 34.8346Z" fill="#F9F3EC"/>
+                            <path d="M24.375 14.25L14.625 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.625 14.25L24.375 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal_main">
+                    <div class="login-modal-body">
+                        <div class="lmb-top">
+                            <div class="lmb-heading">
+                                <h4>Confirm OTP</h4>
+                                <div class="confirm-code">
+                                    <p>We have send code on +91 9876543210. <span data-bs-toggle="modal" data-bs-target="#CreateAccountWithDetailsOtpModal">Change Number</span></p>
+                                </div>
+                            </div>
+                            <div class="lmb-form confirm-otp">
+                                <form action="">
+                                    <div class="form-group">
+                                        <div class="otp-inputs">
+                                            <input type="text" name="otp1" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp2" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp3" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp4" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp5" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp6" class="otp-input" maxlength="1" required>
+                                        </div>
+                                        <div class="resend-code">
+                                            <p>Re-send code in <span class="countdown">1:00</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <!--<input type="submit" value="Confirm OTP">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#CreateAccountConfirmOtpModalWithValue" class="submit-button disabled">Confirm Otp</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lmb-bottom">
+                            
+                            <div class="assistance">
+                                <p>Not sure how to proceed from here?</p>
+                                <a href="">Get Assistance </a>
+                                <div class="sm-logo">
+                                    <a href=""><img src="img/whatsapp.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="lmb-signup">
+                                <p>Already have an account? <span data-bs-toggle="modal" data-bs-target="#LoginWithOtpModal">Log In</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- CreateAccount Confirm OTP Modal End -->
+    
+    <!-- CreateAccount Confirm OTP With Values Modal Starts -->
+    <div class="modal fade" id="CreateAccountConfirmOtpModalWithValue" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-logo">
+                    <svg width="62" height="20" viewBox="0 0 62 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5693 9.81445L23.1992 12.7698L25.5693 15.7252L27.9394 12.7698L25.5693 9.81445Z" fill="#EDB666"/>
+                        <path d="M27.8889 0.490234V6.53574H27.6045C27.2418 2.93862 20.4325 2.13275 20.4325 7.91305V15.8458L23.0749 19.141H13.122L15.751 15.8458V3.78552L13.5103 0.929801H13.5028L13.122 0.504887V5.97456H12.8722C12.1725 4.73938 11.0905 3.69174 9.95891 2.96206C9.94537 2.95474 9.9243 2.94155 9.91076 2.93422C8.68282 2.15766 7.06665 1.68586 5.77701 1.68586C4.96591 1.71956 4.33389 1.96278 3.87642 2.40821C3.41745 2.88734 3.20226 3.46903 3.20226 4.22508C3.20226 4.88004 3.73045 5.55551 4.25714 5.93353C4.78383 6.3057 5.21421 6.48739 5.9907 6.76431L8.95219 7.77825C9.82649 8.07569 10.5052 8.42001 11.1643 8.78485C11.9468 9.21709 12.5728 9.81783 13.1341 10.5343C13.6683 11.2567 13.9106 12.2149 13.9106 13.3842C13.9106 14.4772 13.6668 15.4033 13.1687 16.193C12.6405 16.9842 12.01 17.6377 11.2335 18.1183C11.226 18.1256 11.2184 18.1256 11.2124 18.133C10.0898 18.8202 8.76408 19.1454 7.43232 19.1454H0.180579V11.9468H0.457466C0.492077 12.0611 0.555279 12.1622 0.59591 12.2706C1.05488 13.3241 2.6846 16.6472 5.06975 17.5645C5.70027 17.8414 6.32627 18.0114 6.97034 18.0656C7.12383 18.0788 7.28334 18.0861 7.43533 18.0861C8.2389 18.0861 8.94617 17.8766 9.50747 17.4648C10.0763 17.0853 10.3532 16.4714 10.3532 15.5806C10.3532 14.8245 10.1109 14.2428 9.61882 13.8325C9.08461 13.4193 8.45259 13.0413 7.6761 12.7322L6.00424 12.1036C5.12392 11.7988 3.45206 11.1248 2.67557 10.6779C1.89909 10.1988 1.26706 9.57754 0.774983 8.78778C0.249801 8.03466 0 7.00021 0 5.77089C0 5.04854 0.180579 4.39358 0.457466 3.74596C0.776488 3.13203 1.23395 2.54301 1.79525 2.06388C2.35655 1.58475 3.03071 1.20673 3.84181 0.896101C4.65442 0.6265 5.53474 0.4917 6.51889 0.4917H20.4325V4.34963L23.3639 0.490234H27.8889Z" fill="#EDB666"/>
+                        <path d="M51.4364 19.1387H61.6181L58.9756 15.8434V6.10558C58.9756 6.01766 58.9756 5.92389 58.9681 5.83598C58.9605 5.51216 58.941 5.19421 58.8988 4.88358C58.8853 4.78834 58.8718 4.69457 58.8507 4.59933C58.3165 2.06596 56.0833 0.142126 53.3656 0.00732611C53.2618 0 53.164 0 53.0601 0C52.5951 0 52.1377 0.0600741 51.6727 0.161174C51.6456 0.1685 51.611 0.174361 51.5824 0.181687C51.45 0.208061 51.3251 0.241762 51.1942 0.276927C50.5561 0.445427 49.9602 0.688654 49.432 0.999281C48.8707 1.30258 48.3365 1.68061 47.879 2.0601C47.3869 2.47183 46.9987 2.93777 46.6511 3.38466C45.8189 1.56046 44.0357 0.237366 41.9064 0.0278392C41.8236 0.0205131 41.7393 0.0146522 41.6566 0.0146522C41.5452 0.00146522 41.4278 0.00146522 41.3105 0.00146522C41.2066 0.00146522 41.1028 0.00146522 40.999 0.00879133C39.8689 0.0424914 38.8275 0.312092 37.9126 0.79122C36.9284 1.30405 36.0812 2.0264 35.3123 2.88502V0.486453H27.9943L30.6232 3.78467V15.8434L27.9883 19.1387H37.9547L35.3123 15.8434V4.3561C35.4642 4.20079 35.6177 4.0528 35.7772 3.91068C35.854 3.84328 35.9292 3.77588 36.006 3.72166C36.1098 3.62642 36.2212 3.54584 36.3385 3.46525C36.3596 3.45206 36.3807 3.43887 36.4002 3.42422C37.0112 3.01982 37.7531 2.78246 38.5506 2.78246C40.5475 2.78246 42.1848 4.255 42.3789 6.14514C42.3924 6.27408 42.4 6.40155 42.4 6.53049C42.4135 6.80742 42.421 7.09753 42.421 7.40816V15.8434L39.7786 19.1387H49.7871L47.1447 15.8434V6.10558C47.1447 6.02499 47.1447 5.93708 47.1371 5.85502C47.1296 5.48432 47.1101 5.11948 47.0393 4.78102C47.0318 4.70629 47.0122 4.63303 46.9972 4.56563C47.0047 4.5583 47.0107 4.54512 47.0243 4.53926C47.1356 4.41764 47.253 4.30336 47.3644 4.1876C47.572 3.99273 47.7812 3.80958 47.9889 3.65426C48.0716 3.58686 48.1559 3.51946 48.2462 3.46525C48.2944 3.43155 48.35 3.39785 48.3982 3.37001C48.9941 3.00517 49.6878 2.79564 50.4372 2.79564C51.7479 2.79564 52.9127 3.43741 53.6064 4.41618C54.0021 4.97736 54.1887 5.65868 54.2309 6.34148C54.273 7.05064 54.2926 7.76567 54.2926 8.47484V15.8434L51.4349 19.1387H51.4364Z" fill="#EDB666"/>
+                    </svg>
+                </div>
+                <div class="nav-cross modal_cross" id="modal_cross">
+                    <div class="nav-cross-btn" data-bs-dismiss="modal">
+                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 34.8346C28.4746 34.8346 35.75 27.7458 35.75 19.0013C35.75 10.2568 28.4746 3.16797 19.5 3.16797C10.5254 3.16797 3.25 10.2568 3.25 19.0013C3.25 27.7458 10.5254 34.8346 19.5 34.8346Z" fill="#F9F3EC"/>
+                            <path d="M24.375 14.25L14.625 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.625 14.25L24.375 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal_main">
+                    <div class="login-modal-body">
+                        <div class="lmb-top">
+                            <div class="lmb-heading">
+                                <h4>Confirm OTP</h4>
+                                <div class="confirm-code">
+                                    <p>We have send code on +91 9876543210. <span data-bs-toggle="modal" data-bs-target="#CreateAccountWithDetailsOtpModal">Change Number</span></p>
+                                </div>
+                            </div>
+                            <div class="lmb-form confirm-otp">
+                                <form action="">
+                                    <div class="form-group">
+                                        <div class="otp-inputs">
+                                            <input type="text" name="otp1" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp2" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp3" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp4" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp5" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp6" class="otp-input" maxlength="1" required value="1">
+                                        </div>
+                                        <div class="otp-error">
+                                            <p><span><img src="img/otp-error.svg" alt=""></span>Invalid/ expired OTP. Please request a new code </p>
+                                        </div>
+                                        <div class="resend-code active">
+                                            <p data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">Re-send code</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <!--<input type="submit" value="Confirm OTP">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#CreateAccountConfirmOtpModalFinal" class="submit-button">Confirm Otp</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lmb-bottom">
+                            <div class="assistance">
+                                <p>Not sure how to proceed from here?</p>
+                                <a href="">Get Assistance </a>
+                                <div class="sm-logo">
+                                    <a href=""><img src="img/whatsapp.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="lmb-signup">
+                                <p>Already have an account? <span data-bs-toggle="modal" data-bs-target="#LoginWithOtpModal">Log In</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- CreateAccount Confirm OTP With Values Modal End -->
+    
+    <!-- CreateAccount Confirm OTP With Values Modal Starts -->
+    <div class="modal fade" id="CreateAccountConfirmOtpModalFinal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-logo">
+                    <svg width="62" height="20" viewBox="0 0 62 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5693 9.81445L23.1992 12.7698L25.5693 15.7252L27.9394 12.7698L25.5693 9.81445Z" fill="#EDB666"/>
+                        <path d="M27.8889 0.490234V6.53574H27.6045C27.2418 2.93862 20.4325 2.13275 20.4325 7.91305V15.8458L23.0749 19.141H13.122L15.751 15.8458V3.78552L13.5103 0.929801H13.5028L13.122 0.504887V5.97456H12.8722C12.1725 4.73938 11.0905 3.69174 9.95891 2.96206C9.94537 2.95474 9.9243 2.94155 9.91076 2.93422C8.68282 2.15766 7.06665 1.68586 5.77701 1.68586C4.96591 1.71956 4.33389 1.96278 3.87642 2.40821C3.41745 2.88734 3.20226 3.46903 3.20226 4.22508C3.20226 4.88004 3.73045 5.55551 4.25714 5.93353C4.78383 6.3057 5.21421 6.48739 5.9907 6.76431L8.95219 7.77825C9.82649 8.07569 10.5052 8.42001 11.1643 8.78485C11.9468 9.21709 12.5728 9.81783 13.1341 10.5343C13.6683 11.2567 13.9106 12.2149 13.9106 13.3842C13.9106 14.4772 13.6668 15.4033 13.1687 16.193C12.6405 16.9842 12.01 17.6377 11.2335 18.1183C11.226 18.1256 11.2184 18.1256 11.2124 18.133C10.0898 18.8202 8.76408 19.1454 7.43232 19.1454H0.180579V11.9468H0.457466C0.492077 12.0611 0.555279 12.1622 0.59591 12.2706C1.05488 13.3241 2.6846 16.6472 5.06975 17.5645C5.70027 17.8414 6.32627 18.0114 6.97034 18.0656C7.12383 18.0788 7.28334 18.0861 7.43533 18.0861C8.2389 18.0861 8.94617 17.8766 9.50747 17.4648C10.0763 17.0853 10.3532 16.4714 10.3532 15.5806C10.3532 14.8245 10.1109 14.2428 9.61882 13.8325C9.08461 13.4193 8.45259 13.0413 7.6761 12.7322L6.00424 12.1036C5.12392 11.7988 3.45206 11.1248 2.67557 10.6779C1.89909 10.1988 1.26706 9.57754 0.774983 8.78778C0.249801 8.03466 0 7.00021 0 5.77089C0 5.04854 0.180579 4.39358 0.457466 3.74596C0.776488 3.13203 1.23395 2.54301 1.79525 2.06388C2.35655 1.58475 3.03071 1.20673 3.84181 0.896101C4.65442 0.6265 5.53474 0.4917 6.51889 0.4917H20.4325V4.34963L23.3639 0.490234H27.8889Z" fill="#EDB666"/>
+                        <path d="M51.4364 19.1387H61.6181L58.9756 15.8434V6.10558C58.9756 6.01766 58.9756 5.92389 58.9681 5.83598C58.9605 5.51216 58.941 5.19421 58.8988 4.88358C58.8853 4.78834 58.8718 4.69457 58.8507 4.59933C58.3165 2.06596 56.0833 0.142126 53.3656 0.00732611C53.2618 0 53.164 0 53.0601 0C52.5951 0 52.1377 0.0600741 51.6727 0.161174C51.6456 0.1685 51.611 0.174361 51.5824 0.181687C51.45 0.208061 51.3251 0.241762 51.1942 0.276927C50.5561 0.445427 49.9602 0.688654 49.432 0.999281C48.8707 1.30258 48.3365 1.68061 47.879 2.0601C47.3869 2.47183 46.9987 2.93777 46.6511 3.38466C45.8189 1.56046 44.0357 0.237366 41.9064 0.0278392C41.8236 0.0205131 41.7393 0.0146522 41.6566 0.0146522C41.5452 0.00146522 41.4278 0.00146522 41.3105 0.00146522C41.2066 0.00146522 41.1028 0.00146522 40.999 0.00879133C39.8689 0.0424914 38.8275 0.312092 37.9126 0.79122C36.9284 1.30405 36.0812 2.0264 35.3123 2.88502V0.486453H27.9943L30.6232 3.78467V15.8434L27.9883 19.1387H37.9547L35.3123 15.8434V4.3561C35.4642 4.20079 35.6177 4.0528 35.7772 3.91068C35.854 3.84328 35.9292 3.77588 36.006 3.72166C36.1098 3.62642 36.2212 3.54584 36.3385 3.46525C36.3596 3.45206 36.3807 3.43887 36.4002 3.42422C37.0112 3.01982 37.7531 2.78246 38.5506 2.78246C40.5475 2.78246 42.1848 4.255 42.3789 6.14514C42.3924 6.27408 42.4 6.40155 42.4 6.53049C42.4135 6.80742 42.421 7.09753 42.421 7.40816V15.8434L39.7786 19.1387H49.7871L47.1447 15.8434V6.10558C47.1447 6.02499 47.1447 5.93708 47.1371 5.85502C47.1296 5.48432 47.1101 5.11948 47.0393 4.78102C47.0318 4.70629 47.0122 4.63303 46.9972 4.56563C47.0047 4.5583 47.0107 4.54512 47.0243 4.53926C47.1356 4.41764 47.253 4.30336 47.3644 4.1876C47.572 3.99273 47.7812 3.80958 47.9889 3.65426C48.0716 3.58686 48.1559 3.51946 48.2462 3.46525C48.2944 3.43155 48.35 3.39785 48.3982 3.37001C48.9941 3.00517 49.6878 2.79564 50.4372 2.79564C51.7479 2.79564 52.9127 3.43741 53.6064 4.41618C54.0021 4.97736 54.1887 5.65868 54.2309 6.34148C54.273 7.05064 54.2926 7.76567 54.2926 8.47484V15.8434L51.4349 19.1387H51.4364Z" fill="#EDB666"/>
+                    </svg>
+                </div>
+                <div class="nav-cross modal_cross" id="modal_cross">
+                    <div class="nav-cross-btn" data-bs-dismiss="modal">
+                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 34.8346C28.4746 34.8346 35.75 27.7458 35.75 19.0013C35.75 10.2568 28.4746 3.16797 19.5 3.16797C10.5254 3.16797 3.25 10.2568 3.25 19.0013C3.25 27.7458 10.5254 34.8346 19.5 34.8346Z" fill="#F9F3EC"/>
+                            <path d="M24.375 14.25L14.625 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.625 14.25L24.375 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal_main">
+                    <div class="login-modal-body">
+                        <div class="lmb-top">
+                            <div class="lmb-heading">
+                                <h4>Confirm OTP</h4>
+                                <div class="confirm-code">
+                                    <p>We have send code on +91 9876543210. <span data-bs-toggle="modal" data-bs-target="#CreateAccountWithDetailsOtpModal">Change Number</span></p>
+                                </div>
+                            </div>
+                            <div class="lmb-form confirm-otp">
+                                <form action="">
+                                    <div class="form-group">
+                                        <div class="otp-inputs">
+                                            <input type="text" name="otp1" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp2" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp3" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp4" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp5" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp6" class="otp-input" maxlength="1" required value="1">
+                                        </div>
+                                        <div class="resend-code active">
+                                            <p data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">Re-send code</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <!--<input type="submit" value="Confirm OTP">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#AccountCompleteProfileModal" class="submit-button">Confirm Otp</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lmb-bottom">
+                            
+                            <div class="assistance">
+                                <p>Not sure how to proceed from here?</p>
+                                <a href="">Get Assistance </a>
+                                <div class="sm-logo">
+                                    <a href=""><img src="img/whatsapp.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="lmb-signup">
+                                <p>Already have an account? <span data-bs-toggle="modal" data-bs-target="#LoginWithOtpModal">Log In</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- CreateAccount Confirm OTP With Values Modal End -->
+    
+    <!-- CreateAccount Complete Profile Modal Starts -->
+    <div class="modal fade" id="AccountCompleteProfileModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-logo">
+                    <svg width="62" height="20" viewBox="0 0 62 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5693 9.81445L23.1992 12.7698L25.5693 15.7252L27.9394 12.7698L25.5693 9.81445Z" fill="#EDB666"/>
+                        <path d="M27.8889 0.490234V6.53574H27.6045C27.2418 2.93862 20.4325 2.13275 20.4325 7.91305V15.8458L23.0749 19.141H13.122L15.751 15.8458V3.78552L13.5103 0.929801H13.5028L13.122 0.504887V5.97456H12.8722C12.1725 4.73938 11.0905 3.69174 9.95891 2.96206C9.94537 2.95474 9.9243 2.94155 9.91076 2.93422C8.68282 2.15766 7.06665 1.68586 5.77701 1.68586C4.96591 1.71956 4.33389 1.96278 3.87642 2.40821C3.41745 2.88734 3.20226 3.46903 3.20226 4.22508C3.20226 4.88004 3.73045 5.55551 4.25714 5.93353C4.78383 6.3057 5.21421 6.48739 5.9907 6.76431L8.95219 7.77825C9.82649 8.07569 10.5052 8.42001 11.1643 8.78485C11.9468 9.21709 12.5728 9.81783 13.1341 10.5343C13.6683 11.2567 13.9106 12.2149 13.9106 13.3842C13.9106 14.4772 13.6668 15.4033 13.1687 16.193C12.6405 16.9842 12.01 17.6377 11.2335 18.1183C11.226 18.1256 11.2184 18.1256 11.2124 18.133C10.0898 18.8202 8.76408 19.1454 7.43232 19.1454H0.180579V11.9468H0.457466C0.492077 12.0611 0.555279 12.1622 0.59591 12.2706C1.05488 13.3241 2.6846 16.6472 5.06975 17.5645C5.70027 17.8414 6.32627 18.0114 6.97034 18.0656C7.12383 18.0788 7.28334 18.0861 7.43533 18.0861C8.2389 18.0861 8.94617 17.8766 9.50747 17.4648C10.0763 17.0853 10.3532 16.4714 10.3532 15.5806C10.3532 14.8245 10.1109 14.2428 9.61882 13.8325C9.08461 13.4193 8.45259 13.0413 7.6761 12.7322L6.00424 12.1036C5.12392 11.7988 3.45206 11.1248 2.67557 10.6779C1.89909 10.1988 1.26706 9.57754 0.774983 8.78778C0.249801 8.03466 0 7.00021 0 5.77089C0 5.04854 0.180579 4.39358 0.457466 3.74596C0.776488 3.13203 1.23395 2.54301 1.79525 2.06388C2.35655 1.58475 3.03071 1.20673 3.84181 0.896101C4.65442 0.6265 5.53474 0.4917 6.51889 0.4917H20.4325V4.34963L23.3639 0.490234H27.8889Z" fill="#EDB666"/>
+                        <path d="M51.4364 19.1387H61.6181L58.9756 15.8434V6.10558C58.9756 6.01766 58.9756 5.92389 58.9681 5.83598C58.9605 5.51216 58.941 5.19421 58.8988 4.88358C58.8853 4.78834 58.8718 4.69457 58.8507 4.59933C58.3165 2.06596 56.0833 0.142126 53.3656 0.00732611C53.2618 0 53.164 0 53.0601 0C52.5951 0 52.1377 0.0600741 51.6727 0.161174C51.6456 0.1685 51.611 0.174361 51.5824 0.181687C51.45 0.208061 51.3251 0.241762 51.1942 0.276927C50.5561 0.445427 49.9602 0.688654 49.432 0.999281C48.8707 1.30258 48.3365 1.68061 47.879 2.0601C47.3869 2.47183 46.9987 2.93777 46.6511 3.38466C45.8189 1.56046 44.0357 0.237366 41.9064 0.0278392C41.8236 0.0205131 41.7393 0.0146522 41.6566 0.0146522C41.5452 0.00146522 41.4278 0.00146522 41.3105 0.00146522C41.2066 0.00146522 41.1028 0.00146522 40.999 0.00879133C39.8689 0.0424914 38.8275 0.312092 37.9126 0.79122C36.9284 1.30405 36.0812 2.0264 35.3123 2.88502V0.486453H27.9943L30.6232 3.78467V15.8434L27.9883 19.1387H37.9547L35.3123 15.8434V4.3561C35.4642 4.20079 35.6177 4.0528 35.7772 3.91068C35.854 3.84328 35.9292 3.77588 36.006 3.72166C36.1098 3.62642 36.2212 3.54584 36.3385 3.46525C36.3596 3.45206 36.3807 3.43887 36.4002 3.42422C37.0112 3.01982 37.7531 2.78246 38.5506 2.78246C40.5475 2.78246 42.1848 4.255 42.3789 6.14514C42.3924 6.27408 42.4 6.40155 42.4 6.53049C42.4135 6.80742 42.421 7.09753 42.421 7.40816V15.8434L39.7786 19.1387H49.7871L47.1447 15.8434V6.10558C47.1447 6.02499 47.1447 5.93708 47.1371 5.85502C47.1296 5.48432 47.1101 5.11948 47.0393 4.78102C47.0318 4.70629 47.0122 4.63303 46.9972 4.56563C47.0047 4.5583 47.0107 4.54512 47.0243 4.53926C47.1356 4.41764 47.253 4.30336 47.3644 4.1876C47.572 3.99273 47.7812 3.80958 47.9889 3.65426C48.0716 3.58686 48.1559 3.51946 48.2462 3.46525C48.2944 3.43155 48.35 3.39785 48.3982 3.37001C48.9941 3.00517 49.6878 2.79564 50.4372 2.79564C51.7479 2.79564 52.9127 3.43741 53.6064 4.41618C54.0021 4.97736 54.1887 5.65868 54.2309 6.34148C54.273 7.05064 54.2926 7.76567 54.2926 8.47484V15.8434L51.4349 19.1387H51.4364Z" fill="#EDB666"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal_main">
+                    <div class="login-modal-body">
+                        <div class="lmb-top">
+                            <div class="lmb-heading">
+                                <h4>complete your profile</h4>
+                            </div>
+                            <div class="lmb-form">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter your name" value="Rahul Jain">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="form-item">
+                                                <select name="countryCode" id="selection">
+                                                    <option data-countryCode="DZ" value="213">+213</option>
+                                                    <option data-countryCode="AD" value="376">+376</option>
+                                                    <option data-countryCode="AO" value="244">+244</option>
+                                                    <option data-countryCode="AI" value="1264">+1264</option>
+                                                    <option data-countryCode="AG" value="1268">+1268</option>
+                                                    <option data-countryCode="AR" value="54">+54</option>
+                                                    <option data-countryCode="AM" value="374">+374</option>
+                                                    <option data-countryCode="AW" value="297">+297</option>
+                                                    <option data-countryCode="AU" value="61">+61</option>
+                                                    <option data-countryCode="AT" value="43">+43</option>
+                                                    <option data-countryCode="AZ" value="994">+994</option>
+                                                    <option data-countryCode="BS" value="1242">+1242</option>
+                                                    <option data-countryCode="BH" value="973">+973</option>
+                                                    <option data-countryCode="BD" value="880">+880</option>
+                                                    <option data-countryCode="BB" value="1246">+1246</option>
+                                                    <option data-countryCode="BY" value="375">+375</option>
+                                                    <option data-countryCode="BE" value="32">+32</option>
+                                                    <option data-countryCode="BZ" value="501">+501</option>
+                                                    <option data-countryCode="BJ" value="229">+229</option>
+                                                    <option data-countryCode="BM" value="1441">+1441</option>
+                                                    <option data-countryCode="BT" value="975">+975</option>
+                                                    <option data-countryCode="BO" value="591">+591</option>
+                                                    <option data-countryCode="BA" value="387">+387</option>
+                                                    <option data-countryCode="BW" value="267">+267</option>
+                                                    <option data-countryCode="BR" value="55">+55</option>
+                                                    <option data-countryCode="BN" value="673">+673</option>
+                                                    <option data-countryCode="BG" value="359">+359</option>
+                                                    <option data-countryCode="BF" value="226">+226</option>
+                                                    <option data-countryCode="BI" value="257">+257</option>
+                                                    <option data-countryCode="KH" value="855">+855</option>
+                                                    <option data-countryCode="CM" value="237">+237</option>
+                                                    <option data-countryCode="CA" value="1">+1</option>
+                                                    <option data-countryCode="CV" value="238">+238</option>
+                                                    <option data-countryCode="KY" value="1345">+1345</option>
+                                                    <option data-countryCode="CF" value="236">+236</option>
+                                                    <option data-countryCode="CL" value="56">+56</option>
+                                                    <option data-countryCode="CN" value="86">+86</option>
+                                                    <option data-countryCode="CO" value="57">+57</option>
+                                                    <option data-countryCode="KM" value="269">+269</option>
+                                                    <option data-countryCode="CG" value="242">+242</option>
+                                                    <option data-countryCode="CK" value="682">+682</option>
+                                                    <option data-countryCode="CR" value="506">+506</option>
+                                                    <option data-countryCode="HR" value="385">+385</option>
+                                                    <option data-countryCode="CU" value="53">+53</option>
+                                                    <option data-countryCode="CY" value="90392">+90392</option>
+                                                    <option data-countryCode="CY" value="357">+357</option>
+                                                    <option data-countryCode="CZ" value="42">+42</option>
+                                                    <option data-countryCode="DK" value="45">+45</option>
+                                                    <option data-countryCode="DJ" value="253">+253</option>
+                                                    <option data-countryCode="DM" value="1809">+1809</option>
+                                                    <option data-countryCode="DO" value="1809">+1809</option>
+                                                    <option data-countryCode="EC" value="593">+593</option>
+                                                    <option data-countryCode="EG" value="20">+20</option>
+                                                    <option data-countryCode="SV" value="503">+503</option>
+                                                    <option data-countryCode="GQ" value="240">+240</option>
+                                                    <option data-countryCode="ER" value="291">+291</option>
+                                                    <option data-countryCode="EE" value="372">+372</option>
+                                                    <option data-countryCode="ET" value="251">+251</option>
+                                                    <option data-countryCode="FK" value="500">+500</option>
+                                                    <option data-countryCode="FO" value="298">+298</option>
+                                                    <option data-countryCode="FJ" value="679">+679</option>
+                                                    <option data-countryCode="FI" value="358">+358</option>
+                                                    <option data-countryCode="FR" value="33">+33</option>
+                                                    <option data-countryCode="GF" value="594">+594</option>
+                                                    <option data-countryCode="PF" value="689">+689</option>
+                                                    <option data-countryCode="GA" value="241">+241</option>
+                                                    <option data-countryCode="GM" value="220">+220</option>
+                                                    <option data-countryCode="GE" value="7880">+7880</option>
+                                                    <option data-countryCode="DE" value="49">+49</option>
+                                                    <option data-countryCode="GH" value="233">+233</option>
+                                                    <option data-countryCode="GI" value="350">+350</option>
+                                                    <option data-countryCode="GR" value="30">+30</option>
+                                                    <option data-countryCode="GL" value="299">+299</option>
+                                                    <option data-countryCode="GD" value="1473">+1473</option>
+                                                    <option data-countryCode="GP" value="590">+590</option>
+                                                    <option data-countryCode="GU" value="671">+671</option>
+                                                    <option data-countryCode="GT" value="502">+502</option>
+                                                    <option data-countryCode="GN" value="224">+224</option>
+                                                    <option data-countryCode="GW" value="245">+245</option>
+                                                    <option data-countryCode="GY" value="592">+592</option>
+                                                    <option data-countryCode="HT" value="509">+509</option>
+                                                    <option data-countryCode="HN" value="504">+504</option>
+                                                    <option data-countryCode="HK" value="852">+852</option>
+                                                    <option data-countryCode="HU" value="36">+36</option>
+                                                    <option data-countryCode="IS" value="354">+354</option>
+                                                    <option data-countryCode="IN" value="91">+91</option>
+                                                    <option data-countryCode="ID" value="62">+62</option>
+                                                    <option data-countryCode="IR" value="98">+98</option>
+                                                    <option data-countryCode="IQ" value="964">+964</option>
+                                                    <option data-countryCode="IE" value="353">+353</option>
+                                                    <option data-countryCode="IL" value="972">+972</option>
+                                                    <option data-countryCode="IT" value="39">+39</option>
+                                                    <option data-countryCode="JM" value="1876">+1876</option>
+                                                    <option data-countryCode="JP" value="81">+81</option>
+                                                    <option data-countryCode="JO" value="962">+962</option>
+                                                    <option data-countryCode="KZ" value="7">+7</option>
+                                                    <option data-countryCode="KE" value="254">+254</option>
+                                                    <option data-countryCode="KI" value="686">+686</option>
+                                                    <option data-countryCode="KP" value="850">+850</option>
+                                                    <option data-countryCode="KR" value="82">+82</option>
+                                                    <option data-countryCode="KW" value="965">+965</option>
+                                                    <option data-countryCode="KG" value="996">+996</option>
+                                                    <option data-countryCode="LA" value="856">+856</option>
+                                                    <option data-countryCode="LV" value="371">+371</option>
+                                                    <option data-countryCode="LB" value="961">+961</option>
+                                                    <option data-countryCode="LS" value="266">+266</option>
+                                                    <option data-countryCode="LR" value="231">+231</option>
+                                                    <option data-countryCode="LY" value="218">+218</option>
+                                                    <option data-countryCode="LI" value="417">+417</option>
+                                                    <option data-countryCode="LT" value="370">+370</option>
+                                                    <option data-countryCode="LU" value="352">+352</option>
+                                                    <option data-countryCode="MO" value="853">+853</option>
+                                                    <option data-countryCode="MK" value="389">+389</option>
+                                                    <option data-countryCode="MG" value="261">+261</option>
+                                                    <option data-countryCode="MW" value="265">+265</option>
+                                                    <option data-countryCode="MY" value="60">+60</option>
+                                                    <option data-countryCode="MV" value="960">+960</option>
+                                                    <option data-countryCode="ML" value="223">+223</option>
+                                                    <option data-countryCode="MT" value="356">+356</option>
+                                                    <option data-countryCode="MH" value="692">+692</option>
+                                                    <option data-countryCode="MQ" value="596">+596</option>
+                                                    <option data-countryCode="MR" value="222">+222</option>
+                                                    <option data-countryCode="YT" value="269">+269</option>
+                                                    <option data-countryCode="MX" value="52">+52</option>
+                                                    <option data-countryCode="FM" value="691">+691</option>
+                                                    <option data-countryCode="MD" value="373">+373</option>
+                                                    <option data-countryCode="MC" value="377">+377</option>
+                                                    <option data-countryCode="MN" value="976">+976</option>
+                                                    <option data-countryCode="MS" value="1664">+1664</option>
+                                                    <option data-countryCode="MA" value="212">+212</option>
+                                                    <option data-countryCode="MZ" value="258">+258</option>
+                                                    <option data-countryCode="MN" value="95">+95</option>
+                                                    <option data-countryCode="NA" value="264">+264</option>
+                                                    <option data-countryCode="NR" value="674">+674</option>
+                                                    <option data-countryCode="NP" value="977">+977</option>
+                                                    <option data-countryCode="NL" value="31">+31</option>
+                                                    <option data-countryCode="NC" value="687">+687</option>
+                                                    <option data-countryCode="NZ" value="64">+64</option>
+                                                    <option data-countryCode="NI" value="505">+505</option>
+                                                    <option data-countryCode="NE" value="227">+227</option>
+                                                    <option data-countryCode="NG" value="234">+234</option>
+                                                    <option data-countryCode="NU" value="683">+683</option>
+                                                    <option data-countryCode="NF" value="672">+672</option>
+                                                    <option data-countryCode="NP" value="670">+670</option>
+                                                    <option data-countryCode="NO" value="47">+47</option>
+                                                    <option data-countryCode="OM" value="968">+968</option>
+                                                    <option data-countryCode="PW" value="680">+680</option>
+                                                    <option data-countryCode="PA" value="507">+507</option>
+                                                    <option data-countryCode="PG" value="675">+675</option>
+                                                    <option data-countryCode="PY" value="595">+595</option>
+                                                    <option data-countryCode="PE" value="51">+51</option>
+                                                    <option data-countryCode="PH" value="63">+63</option>
+                                                    <option data-countryCode="PL" value="48">+48</option>
+                                                    <option data-countryCode="PT" value="351">+351</option>
+                                                    <option data-countryCode="PR" value="1787">+1787</option>
+                                                    <option data-countryCode="QA" value="974">+974</option>
+                                                    <option data-countryCode="RE" value="262">+262</option>
+                                                    <option data-countryCode="RO" value="40">+40</option>
+                                                    <option data-countryCode="RU" value="7">+7</option>
+                                                    <option data-countryCode="RW" value="250">+250</option>
+                                                    <option data-countryCode="SM" value="378">+378</option>
+                                                    <option data-countryCode="ST" value="239">+239</option>
+                                                    <option data-countryCode="SA" value="966">+966</option>
+                                                    <option data-countryCode="SN" value="221">+221</option>
+                                                    <option data-countryCode="CS" value="381">+381</option>
+                                                    <option data-countryCode="SC" value="248">+248</option>
+                                                    <option data-countryCode="SL" value="232">+232</option>
+                                                    <option data-countryCode="SG" value="65">+65</option>
+                                                    <option data-countryCode="SK" value="421">+421</option>
+                                                    <option data-countryCode="SI" value="386">+386</option>
+                                                    <option data-countryCode="SB" value="677">+677</option>
+                                                    <option data-countryCode="SO" value="252">+252</option>
+                                                    <option data-countryCode="ZA" value="27">+27</option>
+                                                    <option data-countryCode="ES" value="34">+34</option>
+                                                    <option data-countryCode="LK" value="94">+94</option>
+                                                    <option data-countryCode="SH" value="290">+290</option>
+                                                    <option data-countryCode="KN" value="1869">+1869</option>
+                                                    <option data-countryCode="SC" value="1758">+1758</option>
+                                                    <option data-countryCode="SD" value="249">+249</option>
+                                                    <option data-countryCode="SR" value="597">+597</option>
+                                                    <option data-countryCode="SZ" value="268">+268</option>
+                                                    <option data-countryCode="SE" value="46">+46</option>
+                                                    <option data-countryCode="CH" value="41">+41</option>
+                                                    <option data-countryCode="SI" value="963">+963</option>
+                                                    <option data-countryCode="TW" value="886">+886</option>
+                                                    <option data-countryCode="TJ" value="7">+7</option>
+                                                    <option data-countryCode="TH" value="66">+66</option>
+                                                    <option data-countryCode="TG" value="228">+228</option>
+                                                    <option data-countryCode="TO" value="676">+676</option>
+                                                    <option data-countryCode="TT" value="1868">+1868</option>
+                                                    <option data-countryCode="TN" value="216">+216</option>
+                                                    <option data-countryCode="TR" value="90">+90</option>
+                                                    <option data-countryCode="TM" value="7">+7</option>
+                                                    <option data-countryCode="TM" value="993">+993</option>
+                                                    <option data-countryCode="TC" value="1649">+1649</option>
+                                                    <option data-countryCode="TV" value="688">+688</option>
+                                                    <option data-countryCode="UG" value="256">+256</option>
+                                                    <option data-countryCode="UA" value="380">+380</option>
+                                                    <option data-countryCode="AE" value="971">+971</option>
+                                                    <option data-countryCode="UY" value="598">+598</option>
+                                                    <option data-countryCode="UZ" value="7">+7</option>
+                                                    <option data-countryCode="VU" value="678">+678</option>
+                                                    <option data-countryCode="VA" value="379">+379</option>
+                                                    <option data-countryCode="VE" value="58">+58</option>
+                                                    <option data-countryCode="VN" value="84">+84</option>
+                                                    <option data-countryCode="VG" value="1284">+1284</option>
+                                                    <option data-countryCode="VI" value="1340">+1340</option>
+                                                    <option data-countryCode="WF" value="681">+681</option>
+                                                    <option data-countryCode="YE" value="969">+969</option>
+                                                    <option data-countryCode="YE" value="967">+967</option>
+                                                    <option data-countryCode="ZM" value="260">+260</option>
+                                                    <option data-countryCode="ZW" value="263">+263</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-item">
+                                                <input type="text" placeholder="xxxxxxxxxx" value="987654321">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row equal">
+                                            <div class="form-item">
+                                                <select name="gender" id="gender">
+                                                    <option data-code="Female" value="Female">Female</option>
+                                                    <option data-code="Male" value="Male">Male</option>
+                                                    <option data-code="Preferred not to say" value="Preferred not to say">Preferred not to say</option>
+                                                    <option data-code="Others" value="Others">Others</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-item">
+                                                <input type="date" id="birthday" name="Date Of Birth">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter Country">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Enter City">
+                                    </div>
+                                    <div class="form-button extraspace">
+                                        <!--<input type="submit" value="Get Otp" data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#CreateAccountConfirmOtpModal" class="submit-button disabled">Complete Your Profile</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lmb-bottom">
+                            
+                            <div class="assistance">
+                                <p>Not sure how to proceed from here?</p>
+                                <a href="">Get Assistance </a>
+                                <div class="sm-logo">
+                                    <a href=""><img src="img/whatsapp.svg" alt=""></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- CreateAccount Complete Profile Modal Starts -->
 
     <!-- JS Starts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -1750,7 +2875,7 @@
     <script>
         
         $(document).ready(function() {
-          var $select2Element = $('#selection').select2();
+          var $select2Element = $('.form-item select').select2();
 
           $select2Element.on('select2:opening', function() {
             $('.select2-container--open').addClass('my-custom-class');
