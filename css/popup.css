@@ -41,10 +41,12 @@
     color: #a1927c;
     font-size: 12px;
 }
-.lmb-top .lmb-heading .confirm-code p a {
-    letter-spacing: 1px;
+.lmb-top .lmb-heading .confirm-code p a, .lmb-top .lmb-heading .confirm-code p span {
+    letter-spacing: 0.5px;
     font-weight: 600;
     color: #D29F5A;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .lmb-top .lmb-form {
     margin-top: 30px;
@@ -109,7 +111,7 @@
 .lmb-form .form-button {
     margin: 12px 0;
 }
-.lmb-form .form-button input {
+.lmb-form .form-button input, .lmb-form .form-button .submit-button {
     width: 100%;
     height: 38px;
     display: flex;
@@ -125,10 +127,18 @@
     transition: .3s ease all;
     border: none;
     border: 1px solid #D29F5A;
+    cursor: pointer;
 }
-.lmb-form .form-button input:hover {
+.lmb-form .form-button input:hover, .lmb-form .form-button .submit-button:hover {
     background-color: var(--srmpurple);
     border-color: var(--srmpurple);
+}
+.lmb-form .form-button .submit-button.disabled {
+    background-color: #DCBB97;
+/*    pointer-events: none;*/
+}
+.lmb-form .form-button .submit-button.disabled:hover {
+    border-color: #DCBB97;
 }
 .lmb-bottom {
     margin-top: 30px;
@@ -238,11 +248,12 @@
     align-items: center;
     width: 65%;
     margin: 0 auto;
-    gap: 16px;
+    gap: 10px;
 }
 .otp-inputs input {
     width: 100%;
     text-align: center;
+    padding: 6px 2px;
 }
 .lmb-form .form-group .resend-code {
     margin-top: 20px;
@@ -252,4 +263,31 @@
     text-align: center;
     font-size: 14px;
     color: #A1927C;
+}
+.resend-code.active p {
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: #D29F5A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lmb-form .form-group .otp-error {
+    margin-top: 10px;
+}
+.otp-error p {
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    color: #A61E1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.otp-error p span {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+}
+.otp-error p span img {
+    width: 16px;
 }

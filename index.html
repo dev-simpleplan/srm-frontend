@@ -1282,7 +1282,8 @@
         </div>
     </footer>
     <!-- Footer End -->
-
+    
+    <!-- LogIn With OPT Modal Starts -->
     <div class="modal fade" id="LoginWithOtpModal" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered login-modal">
         <div class="modal-content">
@@ -1537,7 +1538,8 @@
                                         </div>
                                     </div>
                                     <div class="form-button">
-                                        <input type="submit" value="Get Otp">
+                                        <!--<input type="submit" value="Get Otp" data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal" class="submit-button">Get Otp</div>
                                     </div>
                                 </form>
                             </div>
@@ -1576,8 +1578,85 @@
         </div>
         </div>
     </div>
+    <!-- LogIn With OPT Modal End -->
     
+    <!-- Confirm OPT Modal Starts -->
     <div class="modal fade" id="ConfirmOtpModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-logo">
+                    <svg width="62" height="20" viewBox="0 0 62 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5693 9.81445L23.1992 12.7698L25.5693 15.7252L27.9394 12.7698L25.5693 9.81445Z" fill="#EDB666"/>
+                        <path d="M27.8889 0.490234V6.53574H27.6045C27.2418 2.93862 20.4325 2.13275 20.4325 7.91305V15.8458L23.0749 19.141H13.122L15.751 15.8458V3.78552L13.5103 0.929801H13.5028L13.122 0.504887V5.97456H12.8722C12.1725 4.73938 11.0905 3.69174 9.95891 2.96206C9.94537 2.95474 9.9243 2.94155 9.91076 2.93422C8.68282 2.15766 7.06665 1.68586 5.77701 1.68586C4.96591 1.71956 4.33389 1.96278 3.87642 2.40821C3.41745 2.88734 3.20226 3.46903 3.20226 4.22508C3.20226 4.88004 3.73045 5.55551 4.25714 5.93353C4.78383 6.3057 5.21421 6.48739 5.9907 6.76431L8.95219 7.77825C9.82649 8.07569 10.5052 8.42001 11.1643 8.78485C11.9468 9.21709 12.5728 9.81783 13.1341 10.5343C13.6683 11.2567 13.9106 12.2149 13.9106 13.3842C13.9106 14.4772 13.6668 15.4033 13.1687 16.193C12.6405 16.9842 12.01 17.6377 11.2335 18.1183C11.226 18.1256 11.2184 18.1256 11.2124 18.133C10.0898 18.8202 8.76408 19.1454 7.43232 19.1454H0.180579V11.9468H0.457466C0.492077 12.0611 0.555279 12.1622 0.59591 12.2706C1.05488 13.3241 2.6846 16.6472 5.06975 17.5645C5.70027 17.8414 6.32627 18.0114 6.97034 18.0656C7.12383 18.0788 7.28334 18.0861 7.43533 18.0861C8.2389 18.0861 8.94617 17.8766 9.50747 17.4648C10.0763 17.0853 10.3532 16.4714 10.3532 15.5806C10.3532 14.8245 10.1109 14.2428 9.61882 13.8325C9.08461 13.4193 8.45259 13.0413 7.6761 12.7322L6.00424 12.1036C5.12392 11.7988 3.45206 11.1248 2.67557 10.6779C1.89909 10.1988 1.26706 9.57754 0.774983 8.78778C0.249801 8.03466 0 7.00021 0 5.77089C0 5.04854 0.180579 4.39358 0.457466 3.74596C0.776488 3.13203 1.23395 2.54301 1.79525 2.06388C2.35655 1.58475 3.03071 1.20673 3.84181 0.896101C4.65442 0.6265 5.53474 0.4917 6.51889 0.4917H20.4325V4.34963L23.3639 0.490234H27.8889Z" fill="#EDB666"/>
+                        <path d="M51.4364 19.1387H61.6181L58.9756 15.8434V6.10558C58.9756 6.01766 58.9756 5.92389 58.9681 5.83598C58.9605 5.51216 58.941 5.19421 58.8988 4.88358C58.8853 4.78834 58.8718 4.69457 58.8507 4.59933C58.3165 2.06596 56.0833 0.142126 53.3656 0.00732611C53.2618 0 53.164 0 53.0601 0C52.5951 0 52.1377 0.0600741 51.6727 0.161174C51.6456 0.1685 51.611 0.174361 51.5824 0.181687C51.45 0.208061 51.3251 0.241762 51.1942 0.276927C50.5561 0.445427 49.9602 0.688654 49.432 0.999281C48.8707 1.30258 48.3365 1.68061 47.879 2.0601C47.3869 2.47183 46.9987 2.93777 46.6511 3.38466C45.8189 1.56046 44.0357 0.237366 41.9064 0.0278392C41.8236 0.0205131 41.7393 0.0146522 41.6566 0.0146522C41.5452 0.00146522 41.4278 0.00146522 41.3105 0.00146522C41.2066 0.00146522 41.1028 0.00146522 40.999 0.00879133C39.8689 0.0424914 38.8275 0.312092 37.9126 0.79122C36.9284 1.30405 36.0812 2.0264 35.3123 2.88502V0.486453H27.9943L30.6232 3.78467V15.8434L27.9883 19.1387H37.9547L35.3123 15.8434V4.3561C35.4642 4.20079 35.6177 4.0528 35.7772 3.91068C35.854 3.84328 35.9292 3.77588 36.006 3.72166C36.1098 3.62642 36.2212 3.54584 36.3385 3.46525C36.3596 3.45206 36.3807 3.43887 36.4002 3.42422C37.0112 3.01982 37.7531 2.78246 38.5506 2.78246C40.5475 2.78246 42.1848 4.255 42.3789 6.14514C42.3924 6.27408 42.4 6.40155 42.4 6.53049C42.4135 6.80742 42.421 7.09753 42.421 7.40816V15.8434L39.7786 19.1387H49.7871L47.1447 15.8434V6.10558C47.1447 6.02499 47.1447 5.93708 47.1371 5.85502C47.1296 5.48432 47.1101 5.11948 47.0393 4.78102C47.0318 4.70629 47.0122 4.63303 46.9972 4.56563C47.0047 4.5583 47.0107 4.54512 47.0243 4.53926C47.1356 4.41764 47.253 4.30336 47.3644 4.1876C47.572 3.99273 47.7812 3.80958 47.9889 3.65426C48.0716 3.58686 48.1559 3.51946 48.2462 3.46525C48.2944 3.43155 48.35 3.39785 48.3982 3.37001C48.9941 3.00517 49.6878 2.79564 50.4372 2.79564C51.7479 2.79564 52.9127 3.43741 53.6064 4.41618C54.0021 4.97736 54.1887 5.65868 54.2309 6.34148C54.273 7.05064 54.2926 7.76567 54.2926 8.47484V15.8434L51.4349 19.1387H51.4364Z" fill="#EDB666"/>
+                    </svg>
+                </div>
+                <div class="nav-cross modal_cross" id="modal_cross">
+                    <div class="nav-cross-btn" data-bs-dismiss="modal">
+                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 34.8346C28.4746 34.8346 35.75 27.7458 35.75 19.0013C35.75 10.2568 28.4746 3.16797 19.5 3.16797C10.5254 3.16797 3.25 10.2568 3.25 19.0013C3.25 27.7458 10.5254 34.8346 19.5 34.8346Z" fill="#F9F3EC"/>
+                            <path d="M24.375 14.25L14.625 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.625 14.25L24.375 23.75" stroke="#F3C280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal_main">
+                    <div class="login-modal-body">
+                        <div class="lmb-top">
+                            <div class="lmb-heading">
+                                <h4>Confirm OTP</h4>
+                                <div class="confirm-code">
+                                    <p>We have send code on +91 9876543210. <span  data-bs-toggle="modal" data-bs-target="#LoginWithOtpModal">Change Number</span></p>
+                                </div>
+                            </div>
+                            <div class="lmb-form confirm-otp">
+                                <form action="">
+                                    <div class="form-group">
+                                        <div class="otp-inputs">
+                                            <input type="text" name="otp1" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp2" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp3" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp4" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp5" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp6" class="otp-input" maxlength="1" required>
+                                        </div>
+                                        <div class="resend-code">
+                                            <p>Re-send code in <span class="countdown">1:00</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <!--<input type="submit" value="Confirm OTP">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#ConfirmOtpModalWithValue" class="submit-button disabled">Confirm Otp</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lmb-bottom">
+                            
+                            <div class="assistance">
+                                <p>Not sure how to proceed from here?</p>
+                                <a href="">Get Assistance </a>
+                                <div class="sm-logo">
+                                    <a href=""><img src="img/whatsapp.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="lmb-signup">
+                                <p>Don’t have an account? <span data-bs-toggle="modal" data-bs-target="#SignupWithOtpModal">Create an account</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Confirm OPT Modal End -->
+    
+    <!-- Confirm OPT With Values Modal Starts -->
+    <div class="modal fade" id="ConfirmOtpModalWithValue" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered login-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1612,17 +1691,23 @@
                                 <form action="">
                                     <div class="form-group">
                                         <div class="otp-inputs">
-                                            <input type="text" name="otp1" class="otp-input" maxlength="1" required>
-                                            <input type="text" name="otp2" class="otp-input" maxlength="1" required>
-                                            <input type="text" name="otp3" class="otp-input" maxlength="1" required>
-                                            <input type="text" name="otp4" class="otp-input" maxlength="1" required>
+                                            <input type="text" name="otp1" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp2" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp3" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp4" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp5" class="otp-input" maxlength="1" required value="1">
+                                            <input type="text" name="otp6" class="otp-input" maxlength="1" required value="1">
                                         </div>
-                                        <div class="resend-code">
-                                            <p>Re-send code in <span class="countdown">1:00</span></p>
+                                        <div class="otp-error">
+                                            <p><span><img src="img/otp-error.svg" alt=""></span>Invalid/ expired OTP. Please request a new code </p>
+                                        </div>
+                                        <div class="resend-code active">
+                                            <p data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal">Re-send code</p>
                                         </div>
                                     </div>
                                     <div class="form-button">
-                                        <input type="submit" value="Confirm OTP">
+                                        <!--<input type="submit" value="Confirm OTP">-->
+                                        <div data-bs-toggle="modal" data-bs-target="#ConfirmOtpModal" class="submit-button">Confirm Otp</div>
                                     </div>
                                 </form>
                             </div>
@@ -1646,6 +1731,7 @@
         </div>
         </div>
     </div>
+    <!-- Confirm OPT With Values Modal End -->
 
     <!-- JS Starts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -1662,19 +1748,6 @@
 
 
     <script>
-        
-        
-        
-//        $(document).ready(function() {
-//            $('#selection').select2({
-//              containerCssClass: 'my-custom-class'
-//            });
-//          });
-        
-//        $(document).ready(function() {
-//      var select2Element = $('#selection').select2();
-//      select2Element.data('select2').$container.addClass('my-custom-class');
-//    });
         
         $(document).ready(function() {
           var $select2Element = $('#selection').select2();
