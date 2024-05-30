@@ -120,6 +120,7 @@
 .select2-results__option {
     color: #8E7D63;
     font-size: 14px;
+    border-top: 1px solid #E7DCCD;
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     background-color: #DCBB97;
