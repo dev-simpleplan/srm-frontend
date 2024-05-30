@@ -396,7 +396,7 @@ $(".mobile-navigation .footer-label").click(function (e) {
 setTimeout(function () {
   $(".loader").addClass("active");
   $("body").removeClass("stay");
-}, 2000);
+}, 100);
 
 // Scroll button offset
 // function checkOffset() {
